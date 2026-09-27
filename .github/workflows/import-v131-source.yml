@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
       - name: Download and verify the authorized source snapshot
         env:
-          SOURCE_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-014c-8210-8668-c228feab6d63/raw?se=2026-09-27T02%3A57%3A02Z&sp=r&sv=2026-02-06&sr=b&scid=1b2dc702-50dc-5f5d-94d6-866cc88a083b&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-27T02%3A37%3A09Z&ske=2026-09-28T02%3A37%3A09Z&sks=b&skv=2026-02-06&sig=Q9fNgNwOYaWjJfsu7MI7z9EeQMMOfkJhjTN2fjTS/S0%3D'
+          SOURCE_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-4484-8210-9ece-55a992ddf6b2/raw?se=2026-09-27T03%3A02%3A27Z&sp=r&sv=2026-02-06&sr=b&scid=1ddb52d3-e5d0-54a4-8581-90966b1d40fc&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-26T18%3A50%3A57Z&ske=2026-09-27T18%3A50%3A57Z&sks=b&skv=2026-02-06&sig=hQ%2Bp/RIfHdJFCeKd4IDkC2TjNm/jKU8uBCX%2B9e6Rp88%3D'
         run: |
           python3 - <<'PY'
           import hashlib, json, os, pathlib, re, stat, subprocess, urllib.request, zipfile
@@ -75,7 +75,7 @@ jobs:
           report = root / 'docs/repository-import'
           report.mkdir(parents=True, exist_ok=True)
           (report / 'SOURCE-INVENTORY.json').write_text(json.dumps({'archive': 'Super-Wiss-1.3.1-Source-Candidate.zip', 'archive_sha256': digest, 'status': 'source-candidate-not-an-android-release', 'files': records}, ensure_ascii=False, indent=2) + '\n')
-          (report / 'README.md').write_text('# v1.3.1 repository import\n\nAll 1,552 files from the supplied source candidate are expanded directly into the repository. No bootstrap or split-pack restore is required for this version. Older source packs remain as historical material.\n\nThe ten final weapon PNGs are still pending. No APK or AAB is produced by this import. The public QA keystore is retained only for testing.\n\nSOURCE-INVENTORY.json records every archive member and SHA-256. The accompanying logs are source tests executed during import, not Android device evidence.\n')
+          (report / 'README.md').write_text('# v1.3.1 repository import\n\nAll 1,552 files from the supplied source candidate are expanded directly into the repository. No bootstrap or split-pack restore is required for this version. Older source packs remain as historical material.\n\nThe ten final weapon PNGs are still pending. No APK or AAB is produced by this import. The public QA keystore is retained only for testing.\n\nSOURCE-INVENTORY.json records every archive member and SHA-256. Logs and current-map-validation.json are source checks executed during import, not Android device evidence. The original artifacts/v130-map-validation.json is preserved as historical evidence.\n')
           for offset in range(0, len(records), 80):
               subprocess.run(['git', 'add', '-f', '--', *[r['path'] for r in records[offset:offset+80]]], check=True)
           print('Verified and expanded', len(records), 'source files')
@@ -93,13 +93,17 @@ jobs:
           npm run test:weapon-ui | tee docs/repository-import/weapon-ui.txt
           npm run validate:maps | tee docs/repository-import/maps.txt
           python3 - <<'PY'
-          import hashlib, json, pathlib
+          import hashlib, json, os, pathlib, shutil, zipfile
           root = pathlib.Path.cwd()
+          historical = 'artifacts/v130-map-validation.json'
+          shutil.copyfile(root/historical, root/'docs/repository-import/current-map-validation.json')
+          with zipfile.ZipFile(pathlib.Path(os.environ['RUNNER_TEMP'])/'source-v131.zip') as z:
+              (root/historical).write_bytes(z.read('Super-Wiss-Ascension-1.3.1/'+historical))
           report = json.loads((root/'docs/repository-import/SOURCE-INVENTORY.json').read_text())
           for entry in report['files']:
               if hashlib.sha256((root/entry['path']).read_bytes()).hexdigest() != entry['sha256']:
                   raise SystemExit('Source changed during validation: ' + entry['path'])
-          print('Every source file matches the authorized archive after validation')
+          print('Every source file matches the authorized archive; new map evidence is stored separately')
           PY
       - name: Commit full source without rewriting history
         env:
