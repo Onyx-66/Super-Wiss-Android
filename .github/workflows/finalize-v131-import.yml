@@ -1,0 +1,117 @@
+name: Finalize v1.3.1 source snapshot
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/finalize-v131-import.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: super-wiss-source-import
+  cancel-in-progress: false
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the imported source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Restore supplied reference material and documentation
+        env:
+          SOURCE_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-6b30-8210-be86-bee77ed87700/raw?se=2026-09-27T03%3A05%3A36Z&sp=r&sv=2026-02-06&sr=b&scid=77667eb4-90b1-51db-b8a7-0f20540deaf4&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-27T02%3A38%3A09Z&ske=2026-09-28T02%3A38%3A09Z&sks=b&skv=2026-02-06&sig=fhYSyAem1H/E4IppcX66HEEE9pDuZrmy2B8SEW21UlQ%3D'
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, stat, subprocess, urllib.request, zipfile
+          root = pathlib.Path.cwd()
+          if (root/'VERSION').read_text().strip() != '1.3.1':
+              raise SystemExit('Expected imported v1.3.1 source')
+          if subprocess.run(['git','show-ref','--verify','--quiet','refs/tags/v1.3.1']).returncode == 0:
+              raise SystemExit('Existing v1.3.1 tag will not be overwritten')
+          source_inventory = json.loads((root/'docs/repository-import/SOURCE-INVENTORY.json').read_text())
+          for entry in source_inventory['files']:
+              if hashlib.sha256((root/entry['path']).read_bytes()).hexdigest() != entry['sha256']:
+                  raise SystemExit('Unexpected source modification before finalization: '+entry['path'])
+          archive = pathlib.Path(os.environ['RUNNER_TEMP'])/'references-v131.zip'
+          try:
+              req = urllib.request.Request(os.environ['SOURCE_URL'], headers={'User-Agent':'Super-Wiss-Repository-Importer/1.0'})
+              with urllib.request.urlopen(req, timeout=120) as src, archive.open('wb') as dst:
+                  while chunk := src.read(1024*1024):
+                      dst.write(chunk)
+          except Exception as exc:
+              raise SystemExit('Reference transfer failed: '+type(exc).__name__+' '+str(getattr(exc,'code',''))) from None
+          digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+          if digest != '0d955c88c296542c6770ec642bfbd994761ec91e84b111b990207c5051e2f696':
+              raise SystemExit('Reference archive SHA-256 mismatch')
+          records = []
+          with zipfile.ZipFile(archive) as z:
+              if len(z.infolist()) != 79:
+                  raise SystemExit('Unexpected reference file count')
+              for info in z.infolist():
+                  name=info.filename
+                  p=pathlib.PurePosixPath(name)
+                  allowed = name in {'README.md','VERSIONING.md','.gitignore'} or name.startswith('agent-skills/') or name.startswith('design/references/ui/')
+                  if not allowed or p.is_absolute() or '..' in p.parts or '.git' in p.parts or '.github' in p.parts or '\\' in name or info.is_dir() or stat.S_ISLNK(info.external_attr>>16):
+                      raise SystemExit('Unexpected reference path')
+                  if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.pem','.key','.jks','.keystore'}:
+                      raise SystemExit('Unexpected sensitive/font file')
+                  data=z.read(info)
+                  dest=root/name
+                  dest.parent.mkdir(parents=True,exist_ok=True)
+                  dest.write_bytes(data)
+                  dest.chmod(0o644)
+                  records.append({'path':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+          if len(list((root/'agent-skills').glob('*/SKILL.md'))) != 16:
+              raise SystemExit('Expected 16 supplied skills')
+          if len(list((root/'design/references/ui').glob('sw_*.png'))) != 10:
+              raise SystemExit('Expected 10 supplied UI mockups')
+          (root/'docs/repository-import/REFERENCE-INVENTORY.json').write_text(json.dumps({'archive_sha256':digest,'files':records},ensure_ascii=False,indent=2)+'\n')
+          subprocess.run(['git','add','--',*[r['path'] for r in records]],check=True)
+          print('Verified 79 reference/documentation files; 16 skills; 10 UI target mockups')
+          PY
+      - name: Use project Node version
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22.16.0
+      - name: Recheck source without changing historical evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run validate | tee docs/repository-import/assets.txt
+          npm test | tee docs/repository-import/core.txt
+          npm run test:weapon-ui | tee docs/repository-import/weapon-ui.txt
+          npm run validate:maps | tee docs/repository-import/maps.txt
+          cp artifacts/v130-map-validation.json docs/repository-import/current-map-validation.json
+          git restore --worktree -- artifacts/v130-map-validation.json
+          python3 - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path.cwd()
+          original=json.loads((root/'docs/repository-import/SOURCE-INVENTORY.json').read_text())
+          references=json.loads((root/'docs/repository-import/REFERENCE-INVENTORY.json').read_text())
+          expected={e['path']:e for e in original['files']}
+          expected.update({e['path']:e for e in references['files']})
+          for path,e in expected.items():
+              if hashlib.sha256((root/path).read_bytes()).hexdigest()!=e['sha256']:
+                  raise SystemExit('Final source mismatch: '+path)
+          (root/'docs/repository-import/FINAL-VERIFICATION.json').write_text(json.dumps({'version':'1.3.1','status':'source-candidate','verified_files':len(expected),'core_tests':203,'weapon_ui_tests':24,'maps_validated':15,'android_build_executed':False,'missing_final_weapon_pngs':10,'skills':16,'target_mockups':10},indent=2)+'\n')
+          print('Final source inventory verified:',len(expected),'files')
+          PY
+      - name: Commit and tag the verified source candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Onyx-66'
+          git config user.email '157172129+Onyx-66@users.noreply.github.com'
+          git rm -- .github/workflows/import-v131-source.yml .github/workflows/check-source-transfer.yml .github/workflows/finalize-v131-import.yml
+          git add -- docs/repository-import
+          git commit -m 'docs(project): add supplied skills, UI references and v1.3.1 handoff' -m 'Preserve 16 supplied Agent Skill packs and ten target UI mockups as references, not implemented screens. Add README runtime previews, normal-clone instructions and safe ignore rules. Retire one-time transfer workflows. Full original gameplay/assets remain unchanged. Revalidated 203 core tests, 24 weapon/UI tests and 15 maps. Final weapon PNGs and Android build remain pending.'
+          git tag -a v1.3.1 -m 'Super Wiss Ascension v1.3.1 - verified source candidate' -m 'Complete normal-file source snapshot, supplied skills and UI design references. 203 core tests, 24 weapon/UI tests and 15 map validations passed. No Android APK/AAB built by this import; ten final weapon PNGs remain pending. Not a production release.'
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" push --atomic origin HEAD:main refs/tags/v1.3.1
+          echo "Final source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Annotated tag: v1.3.1 (source candidate only)' >> "$GITHUB_STEP_SUMMARY"
