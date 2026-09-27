@@ -10,21 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - name: Report transfer HTTP status without logging file contents or credentials
+      - name: Verify renewed transfer URL
         env:
-          SOURCE_URL: 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-fc30-81f4-abbd-92218e27cf83/raw?se=2026-09-27T02%3A49%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=231a55d9-8d89-5831-b3aa-fb49c7cc14a4&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-26T18%3A48%3A19Z&ske=2026-09-27T18%3A48%3A19Z&sks=b&skv=2026-02-06&sig=U2e/BrAf4bZoUYq8/9SMVD5XC7/aqE6nhcxvli1iht0%3D'
+          SOURCE_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-014c-8210-8668-c228feab6d63/raw?se=2026-09-27T02%3A57%3A02Z&sp=r&sv=2026-02-06&sr=b&scid=1b2dc702-50dc-5f5d-94d6-866cc88a083b&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-27T02%3A37%3A09Z&ske=2026-09-28T02%3A37%3A09Z&sks=b&skv=2026-02-06&sig=Q9fNgNwOYaWjJfsu7MI7z9EeQMMOfkJhjTN2fjTS/S0%3D'
         run: |
           python3 - <<'PY'
           import os, urllib.request, urllib.error, re
           try:
-              with urllib.request.urlopen(os.environ['SOURCE_URL'], timeout=40) as response:
+              req = urllib.request.Request(os.environ['SOURCE_URL'], headers={'User-Agent': 'Super-Wiss-Repository-Importer/1.0'})
+              with urllib.request.urlopen(req, timeout=40) as response:
                   print('HTTP', response.status, 'Type', response.headers.get('Content-Type'), 'Bytes', response.headers.get('Content-Length'))
                   print('ZIP header:', response.read(4) == b'PK\x03\x04')
           except urllib.error.HTTPError as exc:
-              print('HTTP', exc.code, exc.reason)
-              body = exc.read(3000).decode('utf-8', errors='replace')
-              codes = re.findall(r'<Code>([^<]+)</Code>|<ErrorCode>([^<]+)</ErrorCode>', body)
-              print('Storage error codes:', codes)
-              print('Error category:', 'authentication' if 'Authentication' in body else 'authorization' if 'Authorization' in body else 'not-found' if 'NotFound' in body else 'other')
+              print('HTTP', exc.code, exc.reason, 'server=', exc.headers.get('Server'), 'content-type=', exc.headers.get('Content-Type'))
+              body = exc.read(800).decode('utf-8', errors='replace')
+              body = re.sub(r'https?://\S+|sig=[^\s<]+', '[redacted URL]', body)
+              print('Transfer error:', body[:500])
               raise SystemExit(1)
           PY
