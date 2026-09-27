@@ -1,0 +1,5 @@
+
+> super-wiss-odyssey@1.1.0 validate
+> node scripts/validate-assets.mjs
+
+PASS: 317 manifest assets, 15 maps, 10 heroes and 9 pets.

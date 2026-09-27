@@ -1,0 +1,440 @@
+{
+  "note": "Additional recorded replay of the same ordinary-input pilots covered by the 124-test core suite. Not an additional independent test count or human playthrough.",
+  "maps": [
+    {
+      "world": 1,
+      "name": "Sunpetal Valley",
+      "baseColumns": 172,
+      "columns": 860,
+      "multiplier": 5,
+      "logicalWidth": 34400,
+      "enemies": 35,
+      "coins": 451,
+      "routePickups": 30,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 100 coins",
+        "Finish without a knockout"
+      ],
+      "music": "frontier",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 100.05,
+        "knockouts": 0,
+        "score": 118580
+      }
+    },
+    {
+      "world": 2,
+      "name": "Moonlit Grove",
+      "baseColumns": 180,
+      "columns": 900,
+      "multiplier": 5,
+      "logicalWidth": 36000,
+      "enemies": 40,
+      "coins": 478,
+      "routePickups": 30,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Defeat 16 monsters",
+        "Finish under 345s"
+      ],
+      "music": "moonlight",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 114.217,
+        "knockouts": 0,
+        "score": 113523
+      }
+    },
+    {
+      "world": 3,
+      "name": "Amber Skyway",
+      "baseColumns": 188,
+      "columns": 940,
+      "multiplier": 5,
+      "logicalWidth": 37600,
+      "enemies": 50,
+      "coins": 504,
+      "routePickups": 35,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 12 power-ups",
+        "Use either hero skill 12 times"
+      ],
+      "music": "skyward",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 105.367,
+        "knockouts": 0,
+        "score": 136597
+      }
+    },
+    {
+      "world": 4,
+      "name": "Coral Coast",
+      "baseColumns": 196,
+      "columns": 980,
+      "multiplier": 5,
+      "logicalWidth": 39200,
+      "enemies": 55,
+      "coins": 527,
+      "routePickups": 35,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 130 coins",
+        "Finish without a knockout"
+      ],
+      "music": "frontier",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 122.717,
+        "knockouts": 0,
+        "score": 133683
+      }
+    },
+    {
+      "world": 5,
+      "name": "Candy Canyon",
+      "baseColumns": 204,
+      "columns": 1020,
+      "multiplier": 5,
+      "logicalWidth": 40800,
+      "enemies": 65,
+      "coins": 546,
+      "routePickups": 40,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Defeat 20 monsters",
+        "Finish under 405s"
+      ],
+      "music": "skyward",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 134.167,
+        "knockouts": 1,
+        "score": 103679
+      }
+    },
+    {
+      "world": 6,
+      "name": "Frostpeak Pass",
+      "baseColumns": 212,
+      "columns": 1060,
+      "multiplier": 5,
+      "logicalWidth": 42400,
+      "enemies": 70,
+      "coins": 590,
+      "routePickups": 40,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 12 power-ups",
+        "Use either hero skill 12 times"
+      ],
+      "music": "moonlight",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 152.7,
+        "knockouts": 1,
+        "score": 120878
+      }
+    },
+    {
+      "world": 7,
+      "name": "Clockwork City",
+      "baseColumns": 220,
+      "columns": 1100,
+      "multiplier": 5,
+      "logicalWidth": 44000,
+      "enemies": 80,
+      "coins": 602,
+      "routePickups": 45,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 160 coins",
+        "Finish without a knockout"
+      ],
+      "music": "clockwork",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 173.9,
+        "knockouts": 2,
+        "score": 133251
+      }
+    },
+    {
+      "world": 8,
+      "name": "Mushroom Marsh",
+      "baseColumns": 228,
+      "columns": 1140,
+      "multiplier": 5,
+      "logicalWidth": 45600,
+      "enemies": 85,
+      "coins": 617,
+      "routePickups": 45,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Defeat 24 monsters",
+        "Finish under 465s"
+      ],
+      "music": "moonlight",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 159.55,
+        "knockouts": 2,
+        "score": 151505
+      }
+    },
+    {
+      "world": 9,
+      "name": "Ember Caverns",
+      "baseColumns": 236,
+      "columns": 1180,
+      "multiplier": 5,
+      "logicalWidth": 47200,
+      "enemies": 95,
+      "coins": 630,
+      "routePickups": 50,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 12 power-ups",
+        "Use either hero skill 12 times"
+      ],
+      "music": "clockwork",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 163.033,
+        "knockouts": 0,
+        "score": 125992
+      }
+    },
+    {
+      "world": 10,
+      "name": "Crystal Hollow",
+      "baseColumns": 244,
+      "columns": 1220,
+      "multiplier": 5,
+      "logicalWidth": 48800,
+      "enemies": 100,
+      "coins": 671,
+      "routePickups": 50,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 190 coins",
+        "Finish without a knockout"
+      ],
+      "music": "starlight",
+      "pilot": {
+        "hero": "loey",
+        "pet": "wolf",
+        "completed": true,
+        "simulationSeconds": 198.267,
+        "knockouts": 2,
+        "score": 170163
+      }
+    },
+    {
+      "world": 11,
+      "name": "Sunken Ruins",
+      "baseColumns": 252,
+      "columns": 1260,
+      "multiplier": 5,
+      "logicalWidth": 50400,
+      "enemies": 110,
+      "coins": 653,
+      "routePickups": 55,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Defeat 28 monsters",
+        "Finish under 525s"
+      ],
+      "music": "moonlight",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 163.8,
+        "knockouts": 2,
+        "score": 152942
+      }
+    },
+    {
+      "world": 12,
+      "name": "Thunder Citadel",
+      "baseColumns": 260,
+      "columns": 1300,
+      "multiplier": 5,
+      "logicalWidth": 52000,
+      "enemies": 115,
+      "coins": 698,
+      "routePickups": 55,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 12 power-ups",
+        "Use either hero skill 12 times"
+      ],
+      "music": "clockwork",
+      "pilot": {
+        "hero": "taky",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 162.733,
+        "knockouts": 1,
+        "score": 190363
+      }
+    },
+    {
+      "world": 13,
+      "name": "Sakura Summit",
+      "baseColumns": 268,
+      "columns": 1340,
+      "multiplier": 5,
+      "logicalWidth": 53600,
+      "enemies": 125,
+      "coins": 742,
+      "routePickups": 60,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 220 coins",
+        "Finish without a knockout"
+      ],
+      "music": "skyward",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 188.383,
+        "knockouts": 1,
+        "score": 126417
+      }
+    },
+    {
+      "world": 14,
+      "name": "Neon Nightway",
+      "baseColumns": 276,
+      "columns": 1380,
+      "multiplier": 5,
+      "logicalWidth": 55200,
+      "enemies": 130,
+      "coins": 766,
+      "routePickups": 60,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Defeat 32 monsters",
+        "Finish under 585s"
+      ],
+      "music": "clockwork",
+      "pilot": {
+        "hero": "wissem",
+        "pet": "turtle",
+        "completed": true,
+        "simulationSeconds": 178.55,
+        "knockouts": 2,
+        "score": 161650
+      }
+    },
+    {
+      "world": 15,
+      "name": "Starfall Sanctuary",
+      "baseColumns": 284,
+      "columns": 1420,
+      "multiplier": 5,
+      "logicalWidth": 56800,
+      "enemies": 140,
+      "coins": 772,
+      "routePickups": 65,
+      "checkpoints": 10,
+      "chests": 10,
+      "crates": 5,
+      "shrines": 5,
+      "objectives": [
+        "Reach the portal",
+        "Collect 12 power-ups",
+        "Use either hero skill 12 times"
+      ],
+      "music": "starlight",
+      "pilot": {
+        "hero": "wissem",
+        "pet": null,
+        "completed": true,
+        "simulationSeconds": 186.667,
+        "knockouts": 0,
+        "score": 202404
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+
+> super-wiss-odyssey@1.3.1 validate
+> node scripts/validate-assets.mjs
+
+PENDING ART: weapon/gauntlet: assets/weapons/gravity_gauntlet.png
+PENDING ART: weapon/dual: assets/weapons/twin_fang_dagger.png
+PENDING ART: weapon/staff: assets/weapons/orbit_crescent_staff.png
+PENDING ART: weapon/dagger: assets/weapons/shadow_knife.png
+PENDING ART: weapon/shield: assets/weapons/stonebreaker_hammer.png
+PENDING ART: weapon/sabre: assets/weapons/wind_scimitar.png
+PENDING ART: weapon/gadget: assets/weapons/clockwork_knuckle.png
+PENDING ART: weapon/bow: assets/weapons/sky_bow.png
+PENDING ART: weapon/lance: assets/weapons/sun_lance.png
+PENDING ART: weapon/frost_staff: assets/weapons/frost_staff.png
+PASS: 321 present assets; 10 explicitly pending weapon PNGs (331 entries); 15 maps, 10 heroes and 9 pets.

@@ -1,0 +1,21 @@
+{
+  "v2_signature": "valid RSA-SHA256",
+  "content_digest": "valid",
+  "certificate_sha256": "0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207",
+  "central_directory": 7689272,
+  "signing_block_offset": 7687220,
+  "file": "Super-Wiss-Nightfall-4.0.apk",
+  "bytes": 7690203,
+  "sha256": "3811a319460d1c72bd62b80ce00996bc7c93f21b782e7e2ab1bcc7b8591f99ae",
+  "zip_crc": "valid",
+  "v1_entry_digests": "valid; X-Android-APK-Signed: 2 present",
+  "dex_checksums": "valid",
+  "aligned_stored_entries": [
+    "resources.arsc"
+  ],
+  "tamper_rejections": [
+    "classes.dex",
+    "assets/game.html",
+    "resources.arsc"
+  ]
+}

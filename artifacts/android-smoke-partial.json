@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "name": "Android boot reached Home stage",
+      "pass": true
+    },
+    {
+      "name": "Android admission rejects incorrect six-digit code (no radio)",
+      "pass": true
+    },
+    {
+      "name": "all Android images decoded",
+      "pass": true
+    },
+    {
+      "name": "world started",
+      "pass": true
+    },
+    {
+      "name": "analog movement moves player",
+      "pass": true
+    },
+    {
+      "name": "jump rises",
+      "pass": true
+    },
+    {
+      "name": "attack executed",
+      "pass": true
+    },
+    {
+      "name": "dodge spends stamina",
+      "pass": true
+    },
+    {
+      "name": "knife spends ammunition",
+      "pass": true,
+      "detail": {
+        "knives": 13,
+        "throwCD": 0
+      }
+    },
+    {
+      "name": "both hero skills execute",
+      "pass": true
+    },
+    {
+      "name": "temporary pet summon consumes a use",
+      "pass": true
+    },
+    {
+      "name": "four control presets save independently on Android",
+      "pass": true
+    },
+    {
+      "name": "boss defeated on Android using ordinary inputs",
+      "pass": true,
+      "detail": {
+        "complete": true,
+        "failed": false,
+        "time": 23.1333333333333,
+        "hits": 3,
+        "bossHP": 0
+      }
+    },
+    {
+      "name": "no uncaught JS errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "save survives WebView restart",
+      "pass": true
+    },
+    {
+      "name": "native room UI generates six digits",
+      "pass": true,
+      "detail": "780935"
+    }
+  ],
+  "pageErrors": []
+}

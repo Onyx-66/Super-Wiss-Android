@@ -1,0 +1,100 @@
+[
+  {
+    "id": "shield",
+    "name": "Shield acorn",
+    "icon": "shield-halved",
+    "color": "#78d9fc",
+    "description": "Absorb one hit."
+  },
+  {
+    "id": "heart",
+    "name": "Healing heart",
+    "icon": "heart",
+    "color": "#ff7494",
+    "description": "Restore one heart."
+  },
+  {
+    "id": "spark",
+    "name": "Star charge",
+    "icon": "star",
+    "color": "#ffd56c",
+    "description": "Contact invincibility for 7 seconds. Falls remain dangerous."
+  },
+  {
+    "id": "magnet",
+    "name": "Magnet feather",
+    "icon": "magnet",
+    "color": "#d4a1ff",
+    "description": "Attract coins for 12 seconds."
+  },
+  {
+    "id": "double",
+    "name": "Coin clover",
+    "icon": "coins",
+    "color": "#a2e383",
+    "description": "Double coin value for 12 seconds."
+  },
+  {
+    "id": "haste",
+    "name": "Speed boots",
+    "icon": "shoe-prints",
+    "color": "#83e4c0",
+    "description": "20% faster for 10 seconds."
+  },
+  {
+    "id": "nova",
+    "name": "Nova bloom",
+    "icon": "star",
+    "color": "#e6aaff",
+    "description": "Orbiting stars strike nearby enemies for 10 seconds."
+  },
+  {
+    "id": "fire",
+    "name": "Fire fruit",
+    "icon": "fire",
+    "color": "#ff9a68",
+    "description": "Automatically launch fireballs at nearby enemies for 12 seconds; ignore fire-imp contact."
+  },
+  {
+    "id": "ice",
+    "name": "Ice blossom",
+    "icon": "snowflake",
+    "color": "#a9edff",
+    "description": "Freeze nearby foes and fire slowing ice shards for 12 seconds."
+  },
+  {
+    "id": "giant",
+    "name": "Giant heart",
+    "icon": "heart",
+    "color": "#fa709a",
+    "description": "Gain up to five hearts for 20 seconds; revert safely afterward."
+  },
+  {
+    "id": "thunder",
+    "name": "Thunder totem",
+    "icon": "bolt",
+    "color": "#ffe38c",
+    "description": "Lightning strikes nearby enemies for 12 seconds."
+  },
+  {
+    "id": "phase",
+    "name": "Phase crystal",
+    "icon": "moon",
+    "color": "#b4a0ff",
+    "description": "Pass through breakable bricks and cache blocks; ignore contact damage for 6 seconds. Solid ground stays solid."
+  },
+  {
+    "id": "rescue",
+    "name": "Phoenix feather",
+    "icon": "feather",
+    "color": "#ffa4c4",
+    "description": "One automatic rescue from a fall."
+  },
+  {
+    "id": "bomb",
+    "name": "Bomba cache",
+    "icon": "burst",
+    "color": "#ffb64d",
+    "description": "Immediately detonate a safe shockwave around you."
+  }
+]

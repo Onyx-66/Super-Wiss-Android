@@ -1,0 +1,24 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+keystore.properties
+*.p12
+*.pem
+*.key
+# The explicitly public qa/super-wiss-qa.jks is intentionally included.
+
+__pycache__/
+*.pyc
+*.download*
+*.bak
+node_modules/
+
+.env
+server/.env
+data/
+**/*.sqlite*
+
+.tools/
+artifacts/*-stdout.log
+artifacts/*-stderr.log

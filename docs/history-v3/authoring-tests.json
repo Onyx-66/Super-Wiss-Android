@@ -1,0 +1,13 @@
+{
+  "suite": "authoring helpers in temporary copy",
+  "passed": 7,
+  "checks": [
+    "list",
+    "length change and backup",
+    "append world16",
+    "validate expanded registry",
+    "bundle expanded game",
+    "simulate new map",
+    "reject invalid multiplier"
+  ]
+}

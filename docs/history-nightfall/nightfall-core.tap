@@ -1,0 +1,400 @@
+TAP version 13
+# Subtest: World 1: long route, 3 vertical seal chambers, final arena and boss
+ok 1 - World 1: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 14.753758
+  type: 'test'
+  ...
+# Subtest: World 2: long route, 3 vertical seal chambers, final arena and boss
+ok 2 - World 2: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.573562
+  type: 'test'
+  ...
+# Subtest: World 3: long route, 3 vertical seal chambers, final arena and boss
+ok 3 - World 3: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 5.554193
+  type: 'test'
+  ...
+# Subtest: World 4: long route, 3 vertical seal chambers, final arena and boss
+ok 4 - World 4: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.987075
+  type: 'test'
+  ...
+# Subtest: World 5: long route, 3 vertical seal chambers, final arena and boss
+ok 5 - World 5: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 5.106023
+  type: 'test'
+  ...
+# Subtest: World 6: long route, 3 vertical seal chambers, final arena and boss
+ok 6 - World 6: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.257102
+  type: 'test'
+  ...
+# Subtest: World 7: long route, 3 vertical seal chambers, final arena and boss
+ok 7 - World 7: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.23097
+  type: 'test'
+  ...
+# Subtest: World 8: long route, 3 vertical seal chambers, final arena and boss
+ok 8 - World 8: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.821601
+  type: 'test'
+  ...
+# Subtest: World 9: long route, 3 vertical seal chambers, final arena and boss
+ok 9 - World 9: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.96812
+  type: 'test'
+  ...
+# Subtest: World 10: long route, 3 vertical seal chambers, final arena and boss
+ok 10 - World 10: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.036665
+  type: 'test'
+  ...
+# Subtest: World 11: long route, 3 vertical seal chambers, final arena and boss
+ok 11 - World 11: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.535777
+  type: 'test'
+  ...
+# Subtest: World 12: long route, 3 vertical seal chambers, final arena and boss
+ok 12 - World 12: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.882807
+  type: 'test'
+  ...
+# Subtest: World 13: long route, 3 vertical seal chambers, final arena and boss
+ok 13 - World 13: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.44894
+  type: 'test'
+  ...
+# Subtest: World 14: long route, 3 vertical seal chambers, final arena and boss
+ok 14 - World 14: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.396929
+  type: 'test'
+  ...
+# Subtest: World 15: long route, 3 vertical seal chambers, final arena and boss
+ok 15 - World 15: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.294179
+  type: 'test'
+  ...
+# Subtest: Wissem: skill 1 costs focus and cannot spam
+ok 16 - Wissem: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.312495
+  type: 'test'
+  ...
+# Subtest: Wissem: skill 2 costs focus and cannot spam
+ok 17 - Wissem: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 0.920669
+  type: 'test'
+  ...
+# Subtest: Kossay: skill 1 costs focus and cannot spam
+ok 18 - Kossay: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 0.94236
+  type: 'test'
+  ...
+# Subtest: Kossay: skill 2 costs focus and cannot spam
+ok 19 - Kossay: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 3.187077
+  type: 'test'
+  ...
+# Subtest: Yakine: skill 1 costs focus and cannot spam
+ok 20 - Yakine: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 0.717823
+  type: 'test'
+  ...
+# Subtest: Yakine: skill 2 costs focus and cannot spam
+ok 21 - Yakine: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 0.739181
+  type: 'test'
+  ...
+# Subtest: Taky: skill 1 costs focus and cannot spam
+ok 22 - Taky: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.678498
+  type: 'test'
+  ...
+# Subtest: Taky: skill 2 costs focus and cannot spam
+ok 23 - Taky: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 0.93866
+  type: 'test'
+  ...
+# Subtest: Garsi: skill 1 costs focus and cannot spam
+ok 24 - Garsi: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.111295
+  type: 'test'
+  ...
+# Subtest: Garsi: skill 2 costs focus and cannot spam
+ok 25 - Garsi: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 2.044443
+  type: 'test'
+  ...
+# Subtest: Tounsi: skill 1 costs focus and cannot spam
+ok 26 - Tounsi: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.975948
+  type: 'test'
+  ...
+# Subtest: Tounsi: skill 2 costs focus and cannot spam
+ok 27 - Tounsi: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 2.301
+  type: 'test'
+  ...
+# Subtest: Youssef: skill 1 costs focus and cannot spam
+ok 28 - Youssef: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 2.482876
+  type: 'test'
+  ...
+# Subtest: Youssef: skill 2 costs focus and cannot spam
+ok 29 - Youssef: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 2.099991
+  type: 'test'
+  ...
+# Subtest: Loey: skill 1 costs focus and cannot spam
+ok 30 - Loey: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 3.003311
+  type: 'test'
+  ...
+# Subtest: Loey: skill 2 costs focus and cannot spam
+ok 31 - Loey: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 0.775793
+  type: 'test'
+  ...
+# Subtest: analog is dead-zoned, proportional, bounded, rejects NaN
+ok 32 - analog is dead-zoned, proportional, bounded, rejects NaN
+  ---
+  duration_ms: 0.300395
+  type: 'test'
+  ...
+# Subtest: analog provides slower walking than full deflection
+ok 33 - analog provides slower walking than full deflection
+  ---
+  duration_ms: 33.498968
+  type: 'test'
+  ...
+# Subtest: Nightmare is default; Inferno has one attempt and shorter telegraphs
+ok 34 - Nightmare is default; Inferno has one attempt and shorter telegraphs
+  ---
+  duration_ms: 2.883881
+  type: 'test'
+  ...
+# Subtest: knife ammunition has a hard cap on throws and cannot go negative
+ok 35 - knife ammunition has a hard cap on throws and cannot go negative
+  ---
+  duration_ms: 2.81034
+  type: 'test'
+  ...
+# Subtest: dodge costs 25 stamina, blocks damage then expires
+ok 36 - dodge costs 25 stamina, blocks damage then expires
+  ---
+  duration_ms: 4.049889
+  type: 'test'
+  ...
+# Subtest: melee has directional hitboxes, chain and hit-once budget
+ok 37 - melee has directional hitboxes, chain and hit-once budget
+  ---
+  duration_ms: 3.415579
+  type: 'test'
+  ...
+# Subtest: summons require soul, have only two charges, and expire after 18s
+ok 38 - summons require soul, have only two charges, and expire after 18s
+  ---
+  duration_ms: 115.705154
+  type: 'test'
+  ...
+# Subtest: warden summon attacks in the live simulation
+ok 39 - warden summon attacks in the live simulation
+  ---
+  duration_ms: 10.285589
+  type: 'test'
+  ...
+# Subtest: ravens summon attacks in the live simulation
+ok 40 - ravens summon attacks in the live simulation
+  ---
+  duration_ms: 8.48761
+  type: 'test'
+  ...
+# Subtest: sentinel summon attacks in the live simulation
+ok 41 - sentinel summon attacks in the live simulation
+  ---
+  duration_ms: 11.814699
+  type: 'test'
+  ...
+# Subtest: pet ultimates spend soul and charges, but not on failed activation
+ok 42 - pet ultimates spend soul and charges, but not on failed activation
+  ---
+  duration_ms: 1.375852
+  type: 'test'
+  ...
+# Subtest: Dragon Scales and Orca Flood cannot erase a boss
+ok 43 - Dragon Scales and Orca Flood cannot erase a boss
+  ---
+  duration_ms: 3.72867
+  type: 'test'
+  ...
+# Subtest: boss damage is capped and phase thresholds cannot be skipped
+ok 44 - boss damage is capped and phase thresholds cannot be skipped
+  ---
+  duration_ms: 1.037181
+  type: 'test'
+  ...
+# Subtest: Boss 1: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 45 - Boss 1: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.895874
+  type: 'test'
+  ...
+# Subtest: Boss 2: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 46 - Boss 2: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.073641
+  type: 'test'
+  ...
+# Subtest: Boss 3: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 47 - Boss 3: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.610115
+  type: 'test'
+  ...
+# Subtest: Boss 4: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 48 - Boss 4: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.22955
+  type: 'test'
+  ...
+# Subtest: Boss 5: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 49 - Boss 5: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.724046
+  type: 'test'
+  ...
+# Subtest: Boss 6: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 50 - Boss 6: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.989478
+  type: 'test'
+  ...
+# Subtest: Boss 7: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 51 - Boss 7: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.332657
+  type: 'test'
+  ...
+# Subtest: Boss 8: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 52 - Boss 8: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.6269
+  type: 'test'
+  ...
+# Subtest: Boss 9: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 53 - Boss 9: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.431926
+  type: 'test'
+  ...
+# Subtest: Boss 10: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 54 - Boss 10: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.436873
+  type: 'test'
+  ...
+# Subtest: Boss 11: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 55 - Boss 11: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.856006
+  type: 'test'
+  ...
+# Subtest: Boss 12: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 56 - Boss 12: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 3.396119
+  type: 'test'
+  ...
+# Subtest: Boss 13: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 57 - Boss 13: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.095276
+  type: 'test'
+  ...
+# Subtest: Boss 14: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 58 - Boss 14: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.574881
+  type: 'test'
+  ...
+# Subtest: Boss 15: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 59 - Boss 15: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.979209
+  type: 'test'
+  ...
+# Subtest: active arena keeps player inside and gates reject blink bypass
+ok 60 - active arena keeps player inside and gates reject blink bypass
+  ---
+  duration_ms: 1.449807
+  type: 'test'
+  ...
+# Subtest: seal requires actual fragment collection AND defeating its wardens
+ok 61 - seal requires actual fragment collection AND defeating its wardens
+  ---
+  duration_ms: 41.267637
+  type: 'test'
+  ...
+# Subtest: Endless preserves spent charges and rare timers; new boss and seals reset
+ok 62 - Endless preserves spent charges and rare timers; new boss and seals reset
+  ---
+  duration_ms: 6.645837
+  type: 'test'
+  ...
+# Subtest: v3 migration preserves owned pets/access, resets new boss medals and records
+ok 63 - v3 migration preserves owned pets/access, resets new boss medals and records
+  ---
+  duration_ms: 4.471888
+  type: 'test'
+  ...
+# Subtest: boss records are split by tier and pet; practice/local grant no currency
+ok 64 - boss records are split by tier and pet; practice/local grant no currency
+  ---
+  duration_ms: 5.281429
+  type: 'test'
+  ...
+# Subtest: profile sanitization strips markup and forbids arbitrary asset identifiers
+ok 65 - profile sanitization strips markup and forbids arbitrary asset identifiers
+  ---
+  duration_ms: 0.41208
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 727.460714

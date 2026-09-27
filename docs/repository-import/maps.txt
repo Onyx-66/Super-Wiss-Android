@@ -1,0 +1,19 @@
+
+> super-wiss-odyssey@1.3.1 validate:maps
+> node scripts/validate-routes.mjs
+
+{"world":0,"nodes":995,"reachable":991,"issues":[],"occupancy":[],"mechanic":"falling-log"}
+{"world":1,"nodes":1044,"reachable":1019,"issues":[],"occupancy":[],"mechanic":"spirit-pulse"}
+{"world":2,"nodes":1079,"reachable":1071,"issues":[],"occupancy":[],"mechanic":"gust"}
+{"world":3,"nodes":1076,"reachable":1060,"issues":[],"occupancy":[],"mechanic":"tide"}
+{"world":4,"nodes":1140,"reachable":1127,"issues":[],"occupancy":[],"mechanic":"bounce"}
+{"world":5,"nodes":1199,"reachable":1190,"issues":[],"occupancy":[],"mechanic":"icicle"}
+{"world":6,"nodes":1243,"reachable":1228,"issues":[],"occupancy":[],"mechanic":"piston"}
+{"world":7,"nodes":1240,"reachable":1225,"issues":[],"occupancy":[],"mechanic":"spores"}
+{"world":8,"nodes":1301,"reachable":1291,"issues":[],"occupancy":[],"mechanic":"heat-vent"}
+{"world":9,"nodes":1344,"reachable":1335,"issues":[],"occupancy":[],"mechanic":"crystal-pulse"}
+{"world":10,"nodes":1360,"reachable":1355,"issues":[],"occupancy":[],"mechanic":"flood"}
+{"world":11,"nodes":1418,"reachable":1413,"issues":[],"occupancy":[],"mechanic":"lightning"}
+{"world":12,"nodes":1456,"reachable":1446,"issues":[],"occupancy":[],"mechanic":"gust"}
+{"world":13,"nodes":1490,"reachable":1487,"issues":[],"occupancy":[],"mechanic":"laser"}
+{"world":14,"nodes":1538,"reachable":1525,"issues":[],"occupancy":[],"mechanic":"gravity-pulse"}

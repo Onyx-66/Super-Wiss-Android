@@ -1,0 +1,15 @@
+version: v3.0.3-22-57690eee-SNAPSHOT
+apkFileName: Super-Wiss-Playtest.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 41
+  versionName: 1.1.0-playtest
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc

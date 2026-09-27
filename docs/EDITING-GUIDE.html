@@ -1,0 +1,211 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Super Wiss Ascension — Editing Guide</title><style>body{margin:auto;max-width:940px;padding:38px 22px;background:#101b2c;color:#e9eef6;font:16px/1.65 system-ui}h1,h2,h3{color:#ffdb91;line-height:1.2}h2{margin-top:42px}pre{overflow:auto;background:#1c2b41;padding:18px;border-radius:12px}code{font-family:monospace}table{border-collapse:collapse;width:100%}td,th{padding:8px;border-bottom:1px solid #3c4960;text-align:left}img{max-width:100%;border-radius:12px}a{color:#92dded}</style><pre># Super Wiss Ascension 1.1.0 — editing and test guide
+
+## 1. Start here
+
+Install `artifacts/Super-Wiss-Ascension-1.1.0.apk` for phone testing. It is a signed QA APK,
+not an HTML file renamed as an APK. Minimum Android API26; an up-to-date system WebView is
+needed. It is intended to update the earlier playtest package using the same QA certificate.
+Do not uninstall or clear storage merely to update; that would erase local progress.
+Installation/update on a physical phone has not been exercised in this environment.
+
+The optimized APK contains useful content only; no dummy files were added to reach75MB.
+Its source code and decoded content are included. It remains a Canvas/WebView game in a native
+Java shell, not a Unity/Godot rewrite or a full3D game.
+
+![Home](ascension-home.png)
+
+## 2. New controls
+
+Analog is default. Small deflection walks, full deflection runs. Jump can be held for height.
+Use Strike for directional melee, Knife for ammo-limited throws, Dodge for stamina movement,
+and two skill buttons for focus abilities. A wall slide and jump-away help vertical chambers.
+
+**Settings → Edit layout** opens Control Studio. Select one of four slots, drag a control,
+and adjust its size/opacity. The selector and X/Y sliders also let you move a covered control
+such as Pause. Toggle Analog/Arrows. **Save &amp; apply** writes only that slot; **Cancel** discards
+buffered changes. Selecting another slot before saving discards the current unsaved buffer.
+Use the in-game **LAYOUT 1/2/3/4** button to cycle presets; keyboard Alt1..Alt4 selects directly.
+Save geometry is normalized to the screen and clamped inside its edges. Device cutouts and
+unusual aspect ratios still need phone testing. Do not overlap your own controls.
+
+![Control studio](ascension-controls.png)
+
+## 3. Timed companions
+
+Equipping a pet does not automatically summon it. **CALL PET** consumes soul and one call.
+No pet attacks/scouting/guard/supplies occur while inactive. Death or timer expiration ends
+its help and buffs. Checkpoints and endless transitions do not refill calls or reset cooldowns.
+
+| Pet | Active | Cooldown | Soul/call | Calls/run |
+|---|---:|---:|---:|---:|
+| Fang Wolf |12s|60s|35|3|
+| Sky Eagle |18s|55s|25|3|
+| Mole Digger |12s|70s|30|3|
+| Ember Fox |10s|75s|40|3|
+| Stone Turtle |14s|75s|35|3|
+| Dragon |10s|180s|80|1|
+| Orca |12s|180s|80|1|
+| Sky Wolf (fusion) |8s|90s|45|2|
+| Emberguard (fusion) |9s|90s|50|2|
+
+Dragon/Orca active buttons cost15 additional soul and end no later than their summon.
+The old45-second buff duration was deliberately removed for balance. Dragon Scales provides
+up to15 contact defeats only during its10-second call; it never erases a boss. Orca Flood
+suppresses ordinary enemies and shots during its12-second window; Prince provides temporary
+water support, not general damage immunity. Starting soul70 means ultimate calls require
+additional soul earned in play. With a100 soul cap, Orca cannot immediately pay for its80-cost
+call and both15-cost actives without earning more; choose one first.
+
+With no equipped pet, CALL becomes the existing limited18-second spirit summon.
+**Pets → select a pet → Test in practice** permits testing locked pets without ownership/rewards.
+
+## 4. Heroes, appearances and fusions
+
+Wissem, Kossay, Yakine, Taky, Garsi, Tounsi, Youssef and Loey remain. Rayan brings Sunlance and
+Dawn Rally; Mira brings Frost Nova and Glacier Step. Each has a backstory and two native skills.
+Their artwork derives from Garsi/Yakine with new palettes, not new hand-drawn animation sets.
+
+**Forge → Wardrobe**: Starter and Frostguard are free; Emberguard costs800 earned coins once
+per hero. These are palette appearances, not new modular clothing meshes or stat equipment.
+
+**Forge → Skills**: each hero&#x27;s native pair is free. A350-coin skill book permits borrowing a
+skill across heroes. Assign slotI/II; duplicate equipped skills are disallowed. Borrowed builds
+enter the Open local-rank category. Each skill still consumes focus and observes cooldowns.
+
+**Forge → Fusion**: deterministic recipes, no randomness, no real-money purchases, no parent
+consumption. Gravity Storm costs1600, Thunder Fang1400, Eclipse Bloom1800. Fused skills cost50
+focus and are equipped through the skill library. Sky Wolf costs1200 with Wolf+Eagle rescued;
+Emberguard costs1500 with Fox+Turtle rescued. These are curated recipes, not arbitrary merging.
+
+## 5. Local ranks and camera experiment
+
+Ranks are separate by mode, map, difficulty and Standard/Open loadout. Standard means native
+skills in native slots and no pet. Anything borrowed/fused or a pet makes Open. Solo map/boss
+records sort fastest adjusted time, fewer hits, then higher score. Campaign knockouts add3s.
+Endless sorts highest score then fewer hits. Grade starts100: −6/hit, −20/knockout, −1 per5s over
+par; S≥90/A≥75/B≥55/otherwiseC. Failed endless getsD. Old-version scores are not mixed into these
+new tables. Local records are editable-device data, not server-verified global competition.
+
+**Settings → First-person camera lab** starts practice only. This is an experimental
+perspective corridor projection of the existing2D map/collision system. Change movement
+direction to turn; it is NOT free-look true3D or a redesigned3D campaign. No rewards/ranks.
+
+## 6. Replace any image manually
+
+1. Work on a copy of the source folder. Find the asset key in `assets/manifest.json`.
+2. Look at its `path`, `frameWidth`, `frameHeight`, `frames` and actual PNG dimensions.
+3. Replace the PNG at that path, or register a new path and keep the key stable.
+4. Use actual RGBA transparency, not a painted checkerboard/black background. Preserve intended
+   dark outlines. Keep silhouettes inside each frame so a sword/wing is not clipped.
+5. A strip of14 128×160 hero frames is1792×160. The current order is idle0, run1–8, jump9,
+   fall10, attack11–12, dodge13. Change `drawHero` in `game/render.js` when changing the order.
+6. Menu cards use the same key plus `/still` where registered. Replace both the strip and
+   that still image. Outfits have their own `outfit/&lt;hero&gt;/&lt;variant&gt;` and `/still` entries.
+7. Run the validation and build below, test the preview, then rebuild/reinstall the APK.
+
+Do not insert new fonts without a license; this project uses platform fonts and attributed
+SVG icons. Assets you provide must have suitable reuse terms before a production release.
+
+## 7. Supplied community packs
+
+New files live in `assets/community/`; original identified art is in `art-source/community/`.
+Quintino Pixels supplies Wasteland/Starry Night environments, water/spikes and54 skill icons.
+Selected Batareya Mage Icons supply decorative badges. Credits and changes are in
+`licenses/COMMUNITY-ASSETS.md`; `docs/COMMUNITY-ASSET-AUDIT.json` records import checksums.
+The unidentified original `Icons` directory is not included. There are no new hero/boss
+animation packs in the user&#x27;s ZIP, so existing cutout-based animations were retained.
+
+Two community terrain families are used across the15 maps, together with existing props
+and layouts. This is not15 new independently illustrated world packs.
+
+## 8. Replace music and SFX
+
+Use `assets/manifest.json` audio entries; files live under `assets/audio/music/` and `sfx/`.
+Preserve their keys or change the corresponding lookups in `game/audio.js`/`game/maps.json`.
+Use licensed OGG or WAV audio with sensible volume and trimmed silence. Music should loop
+cleanly; test loop seams with headphones. Update metadata/path if the extension changes.
+This update retains the existing41 SFX and6 music loops; the ZIP did not supply audio.
+
+## 9. Change map width, add a map, change terrain
+
+`game/maps.json` holds each world&#x27;s parameters. The15 current widths are already5× the old
+base tile counts; do not multiply them again by mistake. `baseLength` documents that baseline.
+`tileSet` chooses `tiles/starry` or `tiles/waste`; `communityTheme` chooses layered scenery.
+`game/engine.js` generates routes, terrain and the three actual seal chambers. `regions` is
+five navigation labels, not five independent scene files. Each world ends with its boss.
+
+To enlarge a map, change its `length`, review the generation/checkpoint/chamber logic, then
+update tests that intentionally check the5× contract. Wider worlds need objective/par-time
+rebalance and human traversal tests, not just more empty columns.
+
+To add a world, copy a JSON entry with a new sequential ID and configure its tiles/background/
+music; add the matching boss definition/portrait; update atlas content, unlock rules, and the
+15-world validation boundaries in `arena.js`, `link.js`, `ascension.js` and tests. Current local
+multiplayer accepts world IDs0..14; do not assume a sixteenth map works without that update.
+Run `npm run map -- --help` to inspect the existing authoring helper before using it.
+
+## 10. Balance bosses, skills, pets and multiplayer
+
+- `game/bosses.js`: boss HP/attacks/phases and difficulty tiers.
+- `game/engine.js`: physics, wall slide/jump, combat, summon lifecycle, actual skill effects.
+- `game/heroes.json`: roster/backstories/two skill definitions.
+- `game/pets.json`: summon durations/cooldowns/costs/calls and descriptions.
+- `game/ascension.js`: outfit costs, skill books/fusions, sanitization and rank rules.
+- `game/controls.js`: four default layouts and safe geometry.
+- `game/ascension-ui.js`: new screens, editor, room code and summon HUD.
+- `game/arena.js`, `game/link.js`: authoritative raid/PvP rules and protocol5.
+- `app/src/main/java/com/superwiss/game/playtest/`: native pairedBluetooth/clipboard bridge.
+
+Changing a skill&#x27;s display card alone does not implement its gameplay effect. Update the
+engine and tests together. Do not decrease cooldowns without considering focus/soul budgets.
+
+## 11. Preview and tests
+
+```sh
+npm run validate
+npm run build
+npm test
+npm run serve
+# Browser suite requires Python Playwright and Chromium:
+npm run test:browser
+```
+
+The builder embeds all runtime assets into the offline HTML and synchronizes Android assets.
+No runtime CDN is needed. Test copies inject an observation hook and memory storage; neither
+is distributed in the APK. Test browser snapshots use a mocked radio transport, not hardware.
+
+## 12. Android packaging
+
+Open the directory with `settings.gradle` in Android Studio. The project retains AGP8.13.2,
+Gradle8.13/JDK17, compile/targetSDK36 and minSDK26. Obtain the required official tools on your
+machine. The wrapper helper verifies its pinned download checksum. That Gradle route was not
+executed here. After a successful build, `:app:assembleQa`/`:app:bundleQa` produce QA APK/AAB.
+No AAB was created in this delivery.
+
+The actual supplied APK was generated with this fallback:
+
+```sh
+DEX_TOOLS_LIB=/path/to/trusted/dex-tools/lib \
+APKTOOL_JAR=/path/to/trusted/apktool.jar \
+sh scripts/build-playtest.sh
+```
+
+`compile-native.sh` generates compile-only API signatures, compiles the real Java app with
+javac, and DEXes ONLY the application classes (the API stubs are not packaged). Apktool/AAPT2
+build the resources; the final DEX is injected, then QA signatures and integrity are checked.
+This is not a substitute for Android SDK lint or real-device runtime verification.
+
+Use the supplied public QA key only for tests. Production needs your own private upload key,
+final application identity, current Play requirements, a working deletion path, moderation,
+and real-device/pre-launch testing. Never upload secrets to GitHub.
+
+## 13. Known boundaries
+
+No physical Android installation, Bluetooth radios, true WebView storage, audio focus, thermal
+performance, four-phone latency, official `apksigner`, Gradle build or Google Play review was
+performed. Six ordinary-input Veteran boss pilot attempts produced one clear; later-boss/human
+balance remains unverified. See the test report, including unsuccessful pilot outcomes.
+
+No Google login, cloud save, Internet raids, guild implementation, fully modular costumes,
+new hand-drawn animation library,75MB padded package, or promise of virality is included.
+</pre></html>

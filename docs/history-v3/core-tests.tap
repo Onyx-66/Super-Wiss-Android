@@ -1,0 +1,759 @@
+
+> super-wiss-odyssey@3.0.0 test
+> node scripts/compile-content.mjs && node --test tests/v3.test.mjs
+
+Content compiled.
+TAP version 13
+# Subtest: content: 15 worlds, 8 named heroes, 16 unique skills, 13 monsters, 14 powers, 7 pets
+ok 1 - content: 15 worlds, 8 named heroes, 16 unique skills, 13 monsters, 14 powers, 7 pets
+  ---
+  duration_ms: 2.603675
+  type: 'test'
+  ...
+# Subtest: map 1: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 2 - map 1: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 2.420936
+  type: 'test'
+  ...
+# Subtest: map 2: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 3 - map 2: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 1.28998
+  type: 'test'
+  ...
+# Subtest: map 3: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 4 - map 3: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.840829
+  type: 'test'
+  ...
+# Subtest: map 4: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 5 - map 4: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 1.264302
+  type: 'test'
+  ...
+# Subtest: map 5: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 6 - map 5: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.819888
+  type: 'test'
+  ...
+# Subtest: map 6: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 7 - map 6: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.862891
+  type: 'test'
+  ...
+# Subtest: map 7: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 8 - map 7: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.763345
+  type: 'test'
+  ...
+# Subtest: map 8: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 9 - map 8: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 1.194479
+  type: 'test'
+  ...
+# Subtest: map 9: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 10 - map 9: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.979212
+  type: 'test'
+  ...
+# Subtest: map 10: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 11 - map 10: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.809902
+  type: 'test'
+  ...
+# Subtest: map 11: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 12 - map 11: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.571081
+  type: 'test'
+  ...
+# Subtest: map 12: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 13 - map 12: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.864313
+  type: 'test'
+  ...
+# Subtest: map 13: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 14 - map 13: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.715184
+  type: 'test'
+  ...
+# Subtest: map 14: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 15 - map 14: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 0.654574
+  type: 'test'
+  ...
+# Subtest: map 15: exactly five times the v2 width, populated sectors and safe checkpoint floors
+ok 16 - map 15: exactly five times the v2 width, populated sectors and safe checkpoint floors
+  ---
+  duration_ms: 1.174
+  type: 'test'
+  ...
+# Subtest: deterministic level generation
+ok 17 - deterministic level generation
+  ---
+  duration_ms: 3.688583
+  type: 'test'
+  ...
+# Subtest: map IDs clamp safely
+ok 18 - map IDs clamp safely
+  ---
+  duration_ms: 2.353276
+  type: 'test'
+  ...
+# Subtest: monster budgets increase and power budgets never decrease across the 15 worlds
+ok 19 - monster budgets increase and power budgets never decrease across the 15 worlds
+  ---
+  duration_ms: 9.781597
+  type: 'test'
+  ...
+# Subtest: all thirteen monsters occur in actual generated levels
+ok 20 - all thirteen monsters occur in actual generated levels
+  ---
+  duration_ms: 9.360217
+  type: 'test'
+  ...
+# Subtest: all pet rescue eggs exist in their documented map and on safe floor
+ok 21 - all pet rescue eggs exist in their documented map and on safe floor
+  ---
+  duration_ms: 5.810218
+  type: 'test'
+  ...
+# Subtest: idle spawn is safe
+ok 22 - idle spawn is safe
+  ---
+  duration_ms: 18.589325
+  type: 'test'
+  ...
+# Subtest: ordinary movement remains finite and changes direction
+ok 23 - ordinary movement remains finite and changes direction
+  ---
+  duration_ms: 1.730749
+  type: 'test'
+  ...
+# Subtest: held jump rises farther than a short tap
+ok 24 - held jump rises farther than a short tap
+  ---
+  duration_ms: 3.100927
+  type: 'test'
+  ...
+# Subtest: invalid dt guarded and excessive dt clamped
+ok 25 - invalid dt guarded and excessive dt clamped
+  ---
+  duration_ms: 0.776784
+  type: 'test'
+  ...
+# Subtest: Wissem / Gravity control: effect and independent cooldown
+ok 26 - Wissem / Gravity control: effect and independent cooldown
+  ---
+  duration_ms: 1.080121
+  type: 'test'
+  ...
+# Subtest: Wissem / Bomba: effect and independent cooldown
+ok 27 - Wissem / Bomba: effect and independent cooldown
+  ---
+  duration_ms: 0.718038
+  type: 'test'
+  ...
+# Subtest: Kossay / Twin fang: effect and independent cooldown
+ok 28 - Kossay / Twin fang: effect and independent cooldown
+  ---
+  duration_ms: 0.763455
+  type: 'test'
+  ...
+# Subtest: Kossay / Ranger snare: effect and independent cooldown
+ok 29 - Kossay / Ranger snare: effect and independent cooldown
+  ---
+  duration_ms: 0.880187
+  type: 'test'
+  ...
+# Subtest: Yakine / Arcane orbit: effect and independent cooldown
+ok 30 - Yakine / Arcane orbit: effect and independent cooldown
+  ---
+  duration_ms: 0.830563
+  type: 'test'
+  ...
+# Subtest: Yakine / Chrono well: effect and independent cooldown
+ok 31 - Yakine / Chrono well: effect and independent cooldown
+  ---
+  duration_ms: 0.736976
+  type: 'test'
+  ...
+# Subtest: Taky / Shadow step: effect and independent cooldown
+ok 32 - Taky / Shadow step: effect and independent cooldown
+  ---
+  duration_ms: 0.838084
+  type: 'test'
+  ...
+# Subtest: Taky / Night blades: effect and independent cooldown
+ok 33 - Taky / Night blades: effect and independent cooldown
+  ---
+  duration_ms: 1.124897
+  type: 'test'
+  ...
+# Subtest: Garsi / Iron bastion: effect and independent cooldown
+ok 34 - Garsi / Iron bastion: effect and independent cooldown
+  ---
+  duration_ms: 1.003848
+  type: 'test'
+  ...
+# Subtest: Garsi / Quake smash: effect and independent cooldown
+ok 35 - Garsi / Quake smash: effect and independent cooldown
+  ---
+  duration_ms: 0.859236
+  type: 'test'
+  ...
+# Subtest: Tounsi / Sirocco spin: effect and independent cooldown
+ok 36 - Tounsi / Sirocco spin: effect and independent cooldown
+  ---
+  duration_ms: 0.786158
+  type: 'test'
+  ...
+# Subtest: Tounsi / Dune vault: effect and independent cooldown
+ok 37 - Tounsi / Dune vault: effect and independent cooldown
+  ---
+  duration_ms: 0.642336
+  type: 'test'
+  ...
+# Subtest: Youssef / Pocket turret: effect and independent cooldown
+ok 38 - Youssef / Pocket turret: effect and independent cooldown
+  ---
+  duration_ms: 0.704438
+  type: 'test'
+  ...
+# Subtest: Youssef / Overclock: effect and independent cooldown
+ok 39 - Youssef / Overclock: effect and independent cooldown
+  ---
+  duration_ms: 0.703346
+  type: 'test'
+  ...
+# Subtest: Loey / Seeker arrows: effect and independent cooldown
+ok 40 - Loey / Seeker arrows: effect and independent cooldown
+  ---
+  duration_ms: 0.775152
+  type: 'test'
+  ...
+# Subtest: Loey / Windwalk: effect and independent cooldown
+ok 41 - Loey / Windwalk: effect and independent cooldown
+  ---
+  duration_ms: 0.666692
+  type: 'test'
+  ...
+# Subtest: holding either hero button never repeats without release
+ok 42 - holding either hero button never repeats without release
+  ---
+  duration_ms: 20.756843
+  type: 'test'
+  ...
+# Subtest: skills refuse invalid slots and dead/completed/failed runs
+ok 43 - skills refuse invalid slots and dead/completed/failed runs
+  ---
+  duration_ms: 0.487238
+  type: 'test'
+  ...
+# Subtest: Wissem crowd fury speeds recharge and increases Bomba radius
+ok 44 - Wissem crowd fury speeds recharge and increases Bomba radius
+  ---
+  duration_ms: 0.609448
+  type: 'test'
+  ...
+# Subtest: Bomba explodes via simulation and destroys nearby enemies/bricks
+ok 45 - Bomba explodes via simulation and destroys nearby enemies/bricks
+  ---
+  duration_ms: 1.119709
+  type: 'test'
+  ...
+# Subtest: Chrono slows hostile projectiles without slowing hero movement
+ok 46 - Chrono slows hostile projectiles without slowing hero movement
+  ---
+  duration_ms: 0.855199
+  type: 'test'
+  ...
+# Subtest: Iron bastion reflects an incoming projectile
+ok 47 - Iron bastion reflects an incoming projectile
+  ---
+  duration_ms: 0.496691
+  type: 'test'
+  ...
+# Subtest: airborne Quake lands and clears its slam state
+ok 48 - airborne Quake lands and clears its slam state
+  ---
+  duration_ms: 0.870773
+  type: 'test'
+  ...
+# Subtest: Pocket turret actually fires and defeats a target
+ok 49 - Pocket turret actually fires and defeats a target
+  ---
+  duration_ms: 2.001738
+  type: 'test'
+  ...
+# Subtest: homing seeker arrows actually defeat a moving enemy
+ok 50 - homing seeker arrows actually defeat a moving enemy
+  ---
+  duration_ms: 0.825125
+  type: 'test'
+  ...
+# Subtest: pickup Shield acorn: applies its configured mechanic
+ok 51 - pickup Shield acorn: applies its configured mechanic
+  ---
+  duration_ms: 0.522329
+  type: 'test'
+  ...
+# Subtest: pickup Healing heart: applies its configured mechanic
+ok 52 - pickup Healing heart: applies its configured mechanic
+  ---
+  duration_ms: 0.414491
+  type: 'test'
+  ...
+# Subtest: pickup Star charge: applies its configured mechanic
+ok 53 - pickup Star charge: applies its configured mechanic
+  ---
+  duration_ms: 0.368373
+  type: 'test'
+  ...
+# Subtest: pickup Magnet feather: applies its configured mechanic
+ok 54 - pickup Magnet feather: applies its configured mechanic
+  ---
+  duration_ms: 0.560826
+  type: 'test'
+  ...
+# Subtest: pickup Coin clover: applies its configured mechanic
+ok 55 - pickup Coin clover: applies its configured mechanic
+  ---
+  duration_ms: 0.42774
+  type: 'test'
+  ...
+# Subtest: pickup Speed boots: applies its configured mechanic
+ok 56 - pickup Speed boots: applies its configured mechanic
+  ---
+  duration_ms: 1.173499
+  type: 'test'
+  ...
+# Subtest: pickup Nova bloom: applies its configured mechanic
+ok 57 - pickup Nova bloom: applies its configured mechanic
+  ---
+  duration_ms: 0.417094
+  type: 'test'
+  ...
+# Subtest: pickup Fire fruit: applies its configured mechanic
+ok 58 - pickup Fire fruit: applies its configured mechanic
+  ---
+  duration_ms: 0.496301
+  type: 'test'
+  ...
+# Subtest: pickup Ice blossom: applies its configured mechanic
+ok 59 - pickup Ice blossom: applies its configured mechanic
+  ---
+  duration_ms: 0.485686
+  type: 'test'
+  ...
+# Subtest: pickup Giant heart: applies its configured mechanic
+ok 60 - pickup Giant heart: applies its configured mechanic
+  ---
+  duration_ms: 0.382684
+  type: 'test'
+  ...
+# Subtest: pickup Thunder totem: applies its configured mechanic
+ok 61 - pickup Thunder totem: applies its configured mechanic
+  ---
+  duration_ms: 0.402893
+  type: 'test'
+  ...
+# Subtest: pickup Phase crystal: applies its configured mechanic
+ok 62 - pickup Phase crystal: applies its configured mechanic
+  ---
+  duration_ms: 0.388963
+  type: 'test'
+  ...
+# Subtest: pickup Phoenix feather: applies its configured mechanic
+ok 63 - pickup Phoenix feather: applies its configured mechanic
+  ---
+  duration_ms: 0.349635
+  type: 'test'
+  ...
+# Subtest: pickup Bomba cache: applies its configured mechanic
+ok 64 - pickup Bomba cache: applies its configured mechanic
+  ---
+  duration_ms: 0.392489
+  type: 'test'
+  ...
+# Subtest: unknown pickup has no side effect
+ok 65 - unknown pickup has no side effect
+  ---
+  duration_ms: 0.356355
+  type: 'test'
+  ...
+# Subtest: giant heart expires after 20s and clamps health to normal maximum
+ok 66 - giant heart expires after 20s and clamps health to normal maximum
+  ---
+  duration_ms: 10.526355
+  type: 'test'
+  ...
+# Subtest: fire fruit shoots, ice freezes, thunder strikes through actual ticks
+ok 67 - fire fruit shoots, ice freezes, thunder strikes through actual ticks
+  ---
+  duration_ms: 7.123602
+  type: 'test'
+  ...
+# Subtest: phase crystal passes breakable blocks but remains on solid ground
+ok 68 - phase crystal passes breakable blocks but remains on solid ground
+  ---
+  duration_ms: 1.084708
+  type: 'test'
+  ...
+# Subtest: phase expiration inside a block resolves to non-overlapping space
+ok 69 - phase expiration inside a block resolves to non-overlapping space
+  ---
+  duration_ms: 1.028785
+  type: 'test'
+  ...
+# Subtest: rescue feather prevents one fall but not the next
+ok 70 - rescue feather prevents one fall but not the next
+  ---
+  duration_ms: 0.497773
+  type: 'test'
+  ...
+# Subtest: shield blocks exactly one damaging hit
+ok 71 - shield blocks exactly one damaging hit
+  ---
+  duration_ms: 0.395973
+  type: 'test'
+  ...
+# Subtest: a temporary invulnerability power never prevents a cliff death
+ok 72 - a temporary invulnerability power never prevents a cliff death
+  ---
+  duration_ms: 2.230605
+  type: 'test'
+  ...
+# Subtest: chests, crates and shrines open once and produce collectible power-ups
+ok 73 - chests, crates and shrines open once and produce collectible power-ups
+  ---
+  duration_ms: 1.125298
+  type: 'test'
+  ...
+# Subtest: overhead cache produces a visible pickup and becomes a used block
+ok 74 - overhead cache produces a visible pickup and becomes a used block
+  ---
+  duration_ms: 0.648395
+  type: 'test'
+  ...
+# Subtest: coin magnet moves coins, double gold doubles value not count
+ok 75 - coin magnet moves coins, double gold doubles value not count
+  ---
+  duration_ms: 0.710737
+  type: 'test'
+  ...
+# Subtest: Dragon Scales: exactly 15 actual contacts kill enemies with zero damage
+ok 76 - Dragon Scales: exactly 15 actual contacts kill enemies with zero damage
+  ---
+  duration_ms: 0.887247
+  type: 'test'
+  ...
+# Subtest: Dragon Scales does not refill at checkpoints or endless transitions
+ok 77 - Dragon Scales does not refill at checkpoints or endless transitions
+  ---
+  duration_ms: 1.334265
+  type: 'test'
+  ...
+# Subtest: Dragon Breath multiplies every kill award by exactly 3, not coins
+ok 78 - Dragon Breath multiplies every kill award by exactly 3, not coins
+  ---
+  duration_ms: 1.604453
+  type: 'test'
+  ...
+# Subtest: Dragon Breath lasts 45 seconds and has its own longer cooldown
+ok 79 - Dragon Breath lasts 45 seconds and has its own longer cooldown
+  ---
+  duration_ms: 35.521746
+  type: 'test'
+  ...
+# Subtest: Flood clears the entire current map, including spawn warnings and hostile shots
+ok 80 - Flood clears the entire current map, including spawn warnings and hostile shots
+  ---
+  duration_ms: 2.805162
+  type: 'test'
+  ...
+# Subtest: Flood suppresses added enemies and dynamic spawns for 45s, then stops
+ok 81 - Flood suppresses added enemies and dynamic spawns for 45s, then stops
+  ---
+  duration_ms: 37.181299
+  type: 'test'
+  ...
+# Subtest: Orca Prince supports every cliff without modifying the terrain tiles
+ok 82 - Orca Prince supports every cliff without modifying the terrain tiles
+  ---
+  duration_ms: 1.905227
+  type: 'test'
+  ...
+# Subtest: Orca Prince rescues a current fall and runs for exactly 45s
+ok 83 - Orca Prince rescues a current fall and runs for exactly 45s
+  ---
+  duration_ms: 29.977205
+  type: 'test'
+  ...
+# Subtest: Orca abilities have independent buttons/cooldowns and distinct protections
+ok 84 - Orca abilities have independent buttons/cooldowns and distinct protections
+  ---
+  duration_ms: 1.006212
+  type: 'test'
+  ...
+# Subtest: rare buffs and cooldowns persist across an endless world boundary
+ok 85 - rare buffs and cooldowns persist across an endless world boundary
+  ---
+  duration_ms: 2.520362
+  type: 'test'
+  ...
+# Subtest: ordinary pets cannot invoke unowned rare abilities
+ok 86 - ordinary pets cannot invoke unowned rare abilities
+  ---
+  duration_ms: 1.780903
+  type: 'test'
+  ...
+# Subtest: Wolf attacks automatically and waits for its bite interval
+ok 87 - Wolf attacks automatically and waits for its bite interval
+  ---
+  duration_ms: 1.338682
+  type: 'test'
+  ...
+# Subtest: Eagle reveals treasure and extends coin attraction
+ok 88 - Eagle reveals treasure and extends coin attraction
+  ---
+  duration_ms: 0.607816
+  type: 'test'
+  ...
+# Subtest: Mole rewards new forward distance, never idle farming
+ok 89 - Mole rewards new forward distance, never idle farming
+  ---
+  duration_ms: 2.180351
+  type: 'test'
+  ...
+# Subtest: Fox fires at enemies and produces a distance-gated supply
+ok 90 - Fox fires at enemies and produces a distance-gated supply
+  ---
+  duration_ms: 0.578722
+  type: 'test'
+  ...
+# Subtest: Turtle blocks one hit, regrows guard after 18s, does not protect a cliff
+ok 91 - Turtle blocks one hit, regrows guard after 18s, does not protect a cliff
+  ---
+  duration_ms: 12.271485
+  type: 'test'
+  ...
+# Subtest: a rescue egg is collected once and safely persisted
+ok 92 - a rescue egg is collected once and safely persisted
+  ---
+  duration_ms: 1.904575
+  type: 'test'
+  ...
+# Subtest: practice can test rare pets but awards no pets, stars, gold, stats, or records
+ok 93 - practice can test rare pets but awards no pets, stars, gold, stats, or records
+  ---
+  duration_ms: 1.09992
+  type: 'test'
+  ...
+# Subtest: pet equipment refuses locked pets and supports unequip
+ok 94 - pet equipment refuses locked pets and supports unequip
+  ---
+  duration_ms: 0.117853
+  type: 'test'
+  ...
+# Subtest: campaign has three attempts; endless has one
+ok 95 - campaign has three attempts; endless has one
+  ---
+  duration_ms: 0.748672
+  type: 'test'
+  ...
+# Subtest: slime stomps die and spiked enemies cannot be stomped
+ok 96 - slime stomps die and spiked enemies cannot be stomped
+  ---
+  duration_ms: 0.808301
+  type: 'test'
+  ...
+# Subtest: endless loop 15→1 keeps score, distance, health and pet without retaining old levels
+ok 97 - endless loop 15→1 keeps score, distance, health and pet without retaining old levels
+  ---
+  duration_ms: 8.035705
+  type: 'test'
+  ...
+# Subtest: distance-driven endless spawn intervals tighten but remain capped
+ok 98 - distance-driven endless spawn intervals tighten but remain capped
+  ---
+  duration_ms: 4.168279
+  type: 'test'
+  ...
+# Subtest: contact with campaign portal completes; endless advances
+ok 99 - contact with campaign portal completes; endless advances
+  ---
+  duration_ms: 1.074953
+  type: 'test'
+  ...
+# Subtest: failed run earns no campaign stars
+ok 100 - failed run earns no campaign stars
+  ---
+  duration_ms: 0.502781
+  type: 'test'
+  ...
+# Subtest: medals accumulate across replays and rewards are idempotent
+ok 101 - medals accumulate across replays and rewards are idempotent
+  ---
+  duration_ms: 1.020473
+  type: 'test'
+  ...
+# Subtest: stat banking counts deltas only
+ok 102 - stat banking counts deltas only
+  ---
+  duration_ms: 0.406489
+  type: 'test'
+  ...
+# Subtest: mission reward requires target and cannot be claimed twice
+ok 103 - mission reward requires target and cannot be claimed twice
+  ---
+  duration_ms: 0.180726
+  type: 'test'
+  ...
+# Subtest: daily rollover resets only daily stats and claims
+ok 104 - daily rollover resets only daily stats and claims
+  ---
+  duration_ms: 0.181297
+  type: 'test'
+  ...
+# Subtest: cosmetic trails only spend earned coins once
+ok 105 - cosmetic trails only spend earned coins once
+  ---
+  duration_ms: 0.1975
+  type: 'test'
+  ...
+# Subtest: top eight endless records retain actual attempts only
+ok 106 - top eight endless records retain actual attempts only
+  ---
+  duration_ms: 3.590939
+  type: 'test'
+  ...
+# Subtest: v2 migration preserves currency, hero mapping, settings and clears; resets long-map records
+ok 107 - v2 migration preserves currency, hero mapping, settings and clears; resets long-map records
+  ---
+  duration_ms: 0.661123
+  type: 'test'
+  ...
+# Subtest: v3 storage round trip, backup recovery and pet ownership
+ok 108 - v3 storage round trip, backup recovery and pet ownership
+  ---
+  duration_ms: 0.310077
+  type: 'test'
+  ...
+# Subtest: malformed saves sanitize and unavailable storage is explicit
+ok 109 - malformed saves sanitize and unavailable storage is explicit
+  ---
+  duration_ms: 0.320653
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 1: Sunpetal Valley
+ok 110 - ordinary-input long-map completion 1: Sunpetal Valley
+  ---
+  duration_ms: 283.626558
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 2: Moonlit Grove
+ok 111 - ordinary-input long-map completion 2: Moonlit Grove
+  ---
+  duration_ms: 247.972964
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 3: Amber Skyway
+ok 112 - ordinary-input long-map completion 3: Amber Skyway
+  ---
+  duration_ms: 323.369298
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 4: Coral Coast
+ok 113 - ordinary-input long-map completion 4: Coral Coast
+  ---
+  duration_ms: 220.911099
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 5: Candy Canyon
+ok 114 - ordinary-input long-map completion 5: Candy Canyon
+  ---
+  duration_ms: 384.041091
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 6: Frostpeak Pass
+ok 115 - ordinary-input long-map completion 6: Frostpeak Pass
+  ---
+  duration_ms: 185.16978
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 7: Clockwork City
+ok 116 - ordinary-input long-map completion 7: Clockwork City
+  ---
+  duration_ms: 244.314611
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 8: Mushroom Marsh
+ok 117 - ordinary-input long-map completion 8: Mushroom Marsh
+  ---
+  duration_ms: 232.018485
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 9: Ember Caverns
+ok 118 - ordinary-input long-map completion 9: Ember Caverns
+  ---
+  duration_ms: 227.150364
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 10: Crystal Hollow
+ok 119 - ordinary-input long-map completion 10: Crystal Hollow
+  ---
+  duration_ms: 336.815131
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 11: Sunken Ruins
+ok 120 - ordinary-input long-map completion 11: Sunken Ruins
+  ---
+  duration_ms: 244.943311
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 12: Thunder Citadel
+ok 121 - ordinary-input long-map completion 12: Thunder Citadel
+  ---
+  duration_ms: 209.932665
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 13: Sakura Summit
+ok 122 - ordinary-input long-map completion 13: Sakura Summit
+  ---
+  duration_ms: 308.974725
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 14: Neon Nightway
+ok 123 - ordinary-input long-map completion 14: Neon Nightway
+  ---
+  duration_ms: 414.774624
+  type: 'test'
+  ...
+# Subtest: ordinary-input long-map completion 15: Starfall Sanctuary
+ok 124 - ordinary-input long-map completion 15: Starfall Sanctuary
+  ---
+  duration_ms: 344.724371
+  type: 'test'
+  ...
+1..124
+# tests 124
+# suites 0
+# pass 124
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4628.886586

@@ -1,0 +1,30 @@
+✔ World 1 occupancy and rare power budget (77.437ms)
+✔ World 2 occupancy and rare power budget (80.625ms)
+✔ World 3 occupancy and rare power budget (70.3935ms)
+✔ World 4 occupancy and rare power budget (62.2197ms)
+✔ World 5 occupancy and rare power budget (74.9572ms)
+✔ World 6 occupancy and rare power budget (83.9523ms)
+✔ World 7 occupancy and rare power budget (115.8099ms)
+✔ World 8 occupancy and rare power budget (74.2153ms)
+✔ World 9 occupancy and rare power budget (96.5592ms)
+✔ World 10 occupancy and rare power budget (115.6881ms)
+✔ World 11 occupancy and rare power budget (133.6454ms)
+✔ World 12 occupancy and rare power budget (111.6041ms)
+✔ World 13 occupancy and rare power budget (113.976ms)
+✔ World 14 occupancy and rare power budget (165.7923ms)
+✔ World 15 occupancy and rare power budget (183.3133ms)
+✔ dynamic pickup cannot share an occupied cell or spawn inside terrain (57.4235ms)
+✔ crouch preserves feet and cannot stand into a low ceiling (65.3691ms)
+✔ discovery migration preserves known ids and rejects invalid ids (7.0364ms)
+✔ loey anticipates then launches weapon projectile (71.6194ms)
+✔ yakine anticipates then launches weapon projectile (46.4601ms)
+✔ youssef anticipates then launches weapon projectile (59.8754ms)
+✔ heavy guardian and agile rogue have distinct acceleration profiles; PvP stays normalized (0.3201ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2187.9901

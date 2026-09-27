@@ -1,0 +1,21 @@
+{
+  "version": "4.0.0-playtest",
+  "date": "2026-09-24",
+  "package": "com.superwiss.game.playtest",
+  "apkBytes": 7690203,
+  "apkSHA256": "3811a319460d1c72bd62b80ce00996bc7c93f21b782e7e2ab1bcc7b8591f99ae",
+  "bundleSHA256": "9868b804211f7c31dc6434cd681ded6cfeb3f6caf729f8288fd2ed338dba8abe",
+  "dexSHA256": "0d2329bf30acf24ecf4616065743c17351fbcf86e5253b20a83eff6c46bb87cc",
+  "gameBundleExactMatch": true,
+  "dexExactMatch": true,
+  "compiledAppClasses": 18,
+  "frameworkSignatureStubsInDEX": false,
+  "JavascriptInterfaceAnnotationsPresent": true,
+  "nativeCompile": "javac --release 8 with compile-only signatures + DX",
+  "apkPackaging": "Apktool/AAPT2, QA v1/v2 signing",
+  "officialSDKBuild": false,
+  "officialApksignerUsed": false,
+  "androidDeviceTested": false,
+  "bluetoothRadioTested": false,
+  "aabGenerated": false
+}

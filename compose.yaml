@@ -1,0 +1,27 @@
+# HTTPS staging template. Not executed in the build environment.
+services:
+  accounts:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    restart: unless-stopped
+    environment:
+      ALLOWED_ORIGINS: "https://appassets.androidplatform.net,https://${ACCOUNT_DOMAIN:?Set ACCOUNT_DOMAIN in .env}"
+    volumes:
+      - accounts_data:/app/data
+    expose: ["3000"]
+  proxy:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      ACCOUNT_DOMAIN: "${ACCOUNT_DOMAIN}"
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./server/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [accounts]
+volumes:
+  accounts_data:
+  caddy_data:
+  caddy_config:

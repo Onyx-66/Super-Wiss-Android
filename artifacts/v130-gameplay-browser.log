@@ -1,0 +1,7 @@
+PASS keyboard crouch changes collision height
+PASS standing restores collision height
+PASS active skills have no visible caption
+PASS first discovery safely pauses simulation
+PASS discovery persists once per save
+PASS repeat pickup does not interrupt
+PASS no runtime exceptions

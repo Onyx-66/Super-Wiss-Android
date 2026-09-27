@@ -1,0 +1,52 @@
+PASS boot required media ready 640
+PASS 10 missing weapon assets explicitly pending 640
+PASS logo loaded from registry 640
+PASS identity uses profile avatar independently 640
+PASS 10 non-overlapping bounded portrait cards 640
+PASS first row starts fully visible 640
+PASS original eight hero portraits remain distinct 640
+PASS last roster row reachable 640
+PASS re-enter roster starts at top 640
+PASS no uncaught JS exceptions 640
+PASS boot required media ready 800
+PASS 10 missing weapon assets explicitly pending 800
+PASS logo loaded from registry 800
+PASS identity uses profile avatar independently 800
+PASS 10 non-overlapping bounded portrait cards 800
+PASS first row starts fully visible 800
+PASS original eight hero portraits remain distinct 800
+PASS last roster row reachable 800
+PASS re-enter roster starts at top 800
+PASS no uncaught JS exceptions 800
+PASS boot required media ready 960
+PASS 10 missing weapon assets explicitly pending 960
+PASS logo loaded from registry 960
+PASS identity uses profile avatar independently 960
+PASS 10 non-overlapping bounded portrait cards 960
+PASS first row starts fully visible 960
+PASS original eight hero portraits remain distinct 960
+PASS last roster row reachable 960
+PASS re-enter roster starts at top 960
+PASS no uncaught JS exceptions 960
+PASS weapon cache/sprite path works; baked body suppresses duplicate overlay
+PASS missing real weapon returns false, not sticks
+PASS boot required media ready 1280
+PASS 10 missing weapon assets explicitly pending 1280
+PASS logo loaded from registry 1280
+PASS identity uses profile avatar independently 1280
+PASS 10 non-overlapping bounded portrait cards 1280
+PASS first row starts fully visible 1280
+PASS original eight hero portraits remain distinct 1280
+PASS last roster row reachable 1280
+PASS re-enter roster starts at top 1280
+PASS no uncaught JS exceptions 1280
+PASS boot required media ready 1600
+PASS 10 missing weapon assets explicitly pending 1600
+PASS logo loaded from registry 1600
+PASS identity uses profile avatar independently 1600
+PASS 10 non-overlapping bounded portrait cards 1600
+PASS first row starts fully visible 1600
+PASS original eight hero portraits remain distinct 1600
+PASS last roster row reachable 1600
+PASS re-enter roster starts at top 1600
+PASS no uncaught JS exceptions 1600

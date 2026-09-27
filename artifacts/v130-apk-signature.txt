@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Super Wiss QA ONLY, OU=Nonproduction, O=Super Wiss, C=TN
+Signer #1 certificate SHA-256 digest: 0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207
+Signer #1 certificate SHA-1 digest: 75090ef470551c1f7d64224b9ff385a2018a2f03
+Signer #1 certificate MD5 digest: b22be8a26fe2ccadc51c45358452ea59
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 4ac40bcf5b8fab97b6a7dbf8aee063665301785f99948cd58c456355977c58b0
+Signer #1 public key SHA-1 digest: b5953531467f48f31a829cdf731883068299d217
+Signer #1 public key MD5 digest: 233ca800eb6719a9a6388515d83c8ed8

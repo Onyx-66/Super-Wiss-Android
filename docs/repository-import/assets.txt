@@ -1,0 +1,5 @@
+
+> super-wiss-odyssey@1.3.1 validate
+> node scripts/validate-assets.mjs
+
+PASS: 321 present assets; 10 explicitly pending weapon PNGs (331 entries); 15 maps, 10 heroes and 9 pets.

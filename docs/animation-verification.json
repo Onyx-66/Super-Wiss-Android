@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "heroes": 8,
+    "pets": 7,
+    "enemies": 13,
+    "bosses": 15
+  },
+  "rgbaWithTransparency": true,
+  "assets": 183,
+  "audio": 47
+}

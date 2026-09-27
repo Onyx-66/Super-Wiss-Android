@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {cleanCosmetics,COSMETIC_PARTS}from '../game/cosmetics.js';import{defaultSave,sanitizeSave}from'../game/progress.js';import{ascApplyRun,ascResult}from'../game/ascension.js';import{createRun}from'../game/engine.js';
+test('eight cosmetic slots reject unknown or unowned accessories',()=>{assert.equal(COSMETIC_PARTS.length,8);assert.equal(cleanCosmetics({head:'<script>',boots:'ember'}).head,'original');assert.equal(cleanCosmetics({boots:'ember'}).boots,'original');assert.equal(cleanCosmetics({boots:'ember'},true).boots,'ember');});
+test('owned cosmetics survive save sanitization and never change combat resources',()=>{const s=defaultSave();s.ascension.ownedOutfits.push('wissem:ember');s.ascension.parts.wissem={head:'frost',weapon:'ember'};const clean=sanitizeSave(s),r=createRun();const hp=r.player.hp,focus=r.player.focus;ascApplyRun(clean,r);assert.equal(r.player.parts.weapon,'ember');assert.equal(r.player.parts.head,'frost');assert.equal(r.player.hp,hp);assert.equal(r.player.focus,focus);});
+test('all three graphics budgets survive save normalization',()=>{for(const quality of ['low','balanced','high']){const s=defaultSave();s.settings.quality=quality;assert.equal(sanitizeSave(s).settings.quality,quality);}});
+test('new solo records include player count, deaths, revives and rules revision',()=>{const r=createRun();r.knockouts=2;const row=ascResult(r);assert.equal(row.playerCount,1);assert.equal(row.deaths,2);assert.equal(row.revives,0);assert.equal(row.revision,4);});
+
+import {LocalMatch}from '../game/arena.js';
+import {meleeBox}from '../game/engine.js';
+test('hero weapon reaches differ but PvP reach stays normalized',()=>{const a=createRun(0,'garsi'),b=createRun(0,'kossay');assert.notEqual(meleeBox(a.player).w,meleeBox(b.player).w);const m=new LocalMatch({mode:'ffa',roster:[{id:'host',profile:{hero:'garsi'}},{id:'slot1',profile:{hero:'kossay'}}]});assert.equal(meleeBox(m.players[0].run.player).w,meleeBox(m.players[1].run.player).w);});
+test('every world has an optional elite above the main route',()=>{for(let i=0;i<15;i++){const r=createRun(i);const e=r.level.enemies.find(e=>e.isMiniBoss);assert.ok(e);assert.ok(e.y<350);assert.ok(e.patrolRight>e.patrolLeft);}});

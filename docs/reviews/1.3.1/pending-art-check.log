@@ -1,0 +1,16 @@
+
+> super-wiss-odyssey@1.3.1 validate:weapon-art
+> node scripts/validate-assets.mjs --require-weapons
+
+weapon/gauntlet: missing assets/weapons/gravity_gauntlet.png
+weapon/dual: missing assets/weapons/twin_fang_dagger.png
+weapon/staff: missing assets/weapons/orbit_crescent_staff.png
+weapon/dagger: missing assets/weapons/shadow_knife.png
+weapon/shield: missing assets/weapons/stonebreaker_hammer.png
+weapon/sabre: missing assets/weapons/wind_scimitar.png
+weapon/gadget: missing assets/weapons/clockwork_knuckle.png
+weapon/bow: missing assets/weapons/sky_bow.png
+weapon/lance: missing assets/weapons/sun_lance.png
+weapon/frost_staff: missing assets/weapons/frost_staff.png
+
+EXIT_CODE=1 (expected until the ten final PNGs arrive)

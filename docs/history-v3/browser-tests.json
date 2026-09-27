@@ -1,0 +1,279 @@
+{
+  "suite": "Chromium mobile emulation; NOT Android runtime",
+  "passed": 67,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "no observation hook in distributed production HTML",
+      "result": "pass"
+    },
+    {
+      "name": "production contains no external scripts, fonts or image links",
+      "result": "pass"
+    },
+    {
+      "name": "landscape home initializes",
+      "result": "pass"
+    },
+    {
+      "name": "fresh profile has no invented gold, pets or rival records",
+      "result": "pass"
+    },
+    {
+      "name": "all 78 shipped images decode",
+      "result": "pass"
+    },
+    {
+      "name": "new hero name and seven-pet badge visible",
+      "result": "pass"
+    },
+    {
+      "name": "all 15 campaign cards are present",
+      "result": "pass"
+    },
+    {
+      "name": "14 maps initially locked",
+      "result": "pass"
+    },
+    {
+      "name": "map details show five sectors and 860 tiles",
+      "result": "pass"
+    },
+    {
+      "name": "locked campaign cannot launch",
+      "result": "pass"
+    },
+    {
+      "name": "practice opens every map without modifying campaign clears",
+      "result": "pass"
+    },
+    {
+      "name": "practice note interpolates the current world count",
+      "result": "pass"
+    },
+    {
+      "name": "onboarding explains both skill buttons",
+      "result": "pass"
+    },
+    {
+      "name": "selected practice map starts",
+      "result": "pass"
+    },
+    {
+      "name": "eight renamed hero cards",
+      "result": "pass"
+    },
+    {
+      "name": "Wissem details expose Gravity and Bomba",
+      "result": "pass"
+    },
+    {
+      "name": "kossay: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "yakine: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "taky: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "garsi: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "tounsi: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "youssef: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "loey: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "wissem: equip selects hero and two skills",
+      "result": "pass"
+    },
+    {
+      "name": "pet sanctuary lists five super and two super-rare pets",
+      "result": "pass"
+    },
+    {
+      "name": "Dragon lists 15 charges and 45-second triple scoring",
+      "result": "pass"
+    },
+    {
+      "name": "locked rare pet cannot be equipped in campaign",
+      "result": "pass"
+    },
+    {
+      "name": "practice tests Orca without adding ownership",
+      "result": "pass"
+    },
+    {
+      "name": "both Orca buttons are visible",
+      "result": "pass"
+    },
+    {
+      "name": "all game buttons have 44px minimum hit areas",
+      "result": "pass"
+    },
+    {
+      "name": "real simultaneous touch moves and jumps",
+      "result": "pass"
+    },
+    {
+      "name": "two pointer captures coexist",
+      "result": "pass"
+    },
+    {
+      "name": "touch release clears all held pointers",
+      "result": "pass"
+    },
+    {
+      "name": "first hero touch activates low gravity",
+      "result": "pass"
+    },
+    {
+      "name": "second hero touch launches Bomba independently",
+      "result": "pass"
+    },
+    {
+      "name": "Flood touch clears all map enemies and starts 45s effect",
+      "result": "pass"
+    },
+    {
+      "name": "Prince touch starts separate water protection",
+      "result": "pass"
+    },
+    {
+      "name": "active pet buttons display remaining duration",
+      "result": "pass"
+    },
+    {
+      "name": "pause freezes rare buffs and game time",
+      "result": "pass"
+    },
+    {
+      "name": "native back adapter resumes the pause dialog",
+      "result": "pass"
+    },
+    {
+      "name": "run resumes after back",
+      "result": "pass"
+    },
+    {
+      "name": "native pause event pauses and releases controls",
+      "result": "pass"
+    },
+    {
+      "name": "native pause suspends WebAudio context",
+      "result": "pass"
+    },
+    {
+      "name": "Dragon shows its passive charge counter and one active button",
+      "result": "pass"
+    },
+    {
+      "name": "pet keyboard F activates Dragon Breath",
+      "result": "pass"
+    },
+    {
+      "name": "rapid skill tap is not dropped",
+      "result": "pass"
+    },
+    {
+      "name": "separate effect and music volumes update the engine and save",
+      "result": "pass"
+    },
+    {
+      "name": "mirrored controls setting applies",
+      "result": "pass"
+    },
+    {
+      "name": "all 32 audio files decode as valid buffers",
+      "result": "pass"
+    },
+    {
+      "name": "12 journey missions retained",
+      "result": "pass"
+    },
+    {
+      "name": "three daily missions retained",
+      "result": "pass"
+    },
+    {
+      "name": "records explicitly local and no invented competitors",
+      "result": "pass"
+    },
+    {
+      "name": "endless HUD advances to world16 loop2",
+      "result": "pass"
+    },
+    {
+      "name": "640x360: no body horizontal overflow",
+      "result": "pass"
+    },
+    {
+      "name": "640x360: both hero and both pet buttons fit viewport",
+      "result": "pass"
+    },
+    {
+      "name": "844x390: no body horizontal overflow",
+      "result": "pass"
+    },
+    {
+      "name": "844x390: both hero and both pet buttons fit viewport",
+      "result": "pass"
+    },
+    {
+      "name": "960x540: no body horizontal overflow",
+      "result": "pass"
+    },
+    {
+      "name": "960x540: both hero and both pet buttons fit viewport",
+      "result": "pass"
+    },
+    {
+      "name": "1280x720: no body horizontal overflow",
+      "result": "pass"
+    },
+    {
+      "name": "1280x720: both hero and both pet buttons fit viewport",
+      "result": "pass"
+    },
+    {
+      "name": "portrait shows landscape rotation hint",
+      "result": "pass"
+    },
+    {
+      "name": "all UI interactions completed without JavaScript errors",
+      "result": "pass"
+    },
+    {
+      "name": "game made no non-data external requests",
+      "result": "pass"
+    },
+    {
+      "name": "no failed asset/audio loads reported",
+      "result": "pass"
+    },
+    {
+      "name": "unmodified production bundle starts actual gameplay",
+      "result": "pass"
+    },
+    {
+      "name": "production has no injected test API",
+      "result": "pass"
+    }
+  ],
+  "pageErrors": [],
+  "networkRequests": [],
+  "warnings": [],
+  "storage": "test copy uses explicit in-memory adapter; physical persistence untested"
+}

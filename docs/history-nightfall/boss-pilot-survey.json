@@ -1,0 +1,167 @@
+[
+  {
+    "world": 1,
+    "hero": "garsi",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": true,
+    "seconds": 21.750000000000046,
+    "hits": 2,
+    "bossHP": 0,
+    "playerHP": 3
+  },
+  {
+    "world": 2,
+    "hero": "youssef",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": true,
+    "seconds": 17.600000000000282,
+    "hits": 4,
+    "bossHP": 0,
+    "playerHP": 1
+  },
+  {
+    "world": 3,
+    "hero": "loey",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 27.73333333333304,
+    "hits": 5,
+    "bossHP": 10,
+    "playerHP": 0
+  },
+  {
+    "world": 4,
+    "hero": "garsi",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 25.149999999999853,
+    "hits": 5,
+    "bossHP": 19,
+    "playerHP": 0
+  },
+  {
+    "world": 5,
+    "hero": "youssef",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 15.066666666666995,
+    "hits": 5,
+    "bossHP": 39,
+    "playerHP": 0
+  },
+  {
+    "world": 6,
+    "hero": "garsi",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 24.666666666666547,
+    "hits": 5,
+    "bossHP": 16,
+    "playerHP": 0
+  },
+  {
+    "world": 7,
+    "hero": "youssef",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 17.600000000000282,
+    "hits": 5,
+    "bossHP": 43,
+    "playerHP": 0
+  },
+  {
+    "world": 8,
+    "hero": "taky",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 16.033333333333704,
+    "hits": 5,
+    "bossHP": 50,
+    "playerHP": 0
+  },
+  {
+    "world": 9,
+    "hero": "wissem",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 41.666666666665584,
+    "hits": 5,
+    "bossHP": 32,
+    "playerHP": 0
+  },
+  {
+    "world": 10,
+    "hero": "youssef",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 14.316666666666958,
+    "hits": 5,
+    "bossHP": 75,
+    "playerHP": 0
+  },
+  {
+    "world": 11,
+    "hero": "youssef",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 26.583333333333105,
+    "hits": 5,
+    "bossHP": 42,
+    "playerHP": 0
+  },
+  {
+    "world": 12,
+    "hero": "garsi",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 23.766666666666598,
+    "hits": 5,
+    "bossHP": 55,
+    "playerHP": 0
+  },
+  {
+    "world": 13,
+    "hero": "yakine",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 33.93333333333269,
+    "hits": 5,
+    "bossHP": 60,
+    "playerHP": 0
+  },
+  {
+    "world": 14,
+    "hero": "garsi",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 18.35000000000024,
+    "hits": 5,
+    "bossHP": 83,
+    "playerHP": 0
+  },
+  {
+    "world": 15,
+    "hero": "loey",
+    "difficulty": "veteran",
+    "pet": "fox",
+    "complete": false,
+    "seconds": 17.266666666666968,
+    "hits": 5,
+    "bossHP": 88,
+    "playerHP": 0
+  }
+]

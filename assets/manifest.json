@@ -1,0 +1,1715 @@
+{
+  "images": {
+    "hero/wissem": {
+      "path": "assets/animated/hero-wissem.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/kossay": {
+      "path": "assets/animated/hero-kossay.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/yakine": {
+      "path": "assets/animated/hero-yakine.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/taky": {
+      "path": "assets/animated/hero-taky.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/garsi": {
+      "path": "assets/animated/hero-garsi.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/tounsi": {
+      "path": "assets/animated/hero-tounsi.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/youssef": {
+      "path": "assets/animated/hero-youssef.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/loey": {
+      "path": "assets/animated/hero-loey.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "enemy/slime": {
+      "path": "assets/animated/enemy-slime.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/beetle": {
+      "path": "assets/animated/enemy-beetle.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/bat": {
+      "path": "assets/animated/enemy-bat.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/crab": {
+      "path": "assets/animated/enemy-crab.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/sentry": {
+      "path": "assets/animated/enemy-sentry.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/spiker": {
+      "path": "assets/animated/enemy-spiker.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/imp": {
+      "path": "assets/animated/enemy-imp.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/ninja": {
+      "path": "assets/animated/enemy-ninja.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/wisp": {
+      "path": "assets/animated/enemy-wisp.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/maw": {
+      "path": "assets/animated/enemy-maw.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/golem": {
+      "path": "assets/animated/enemy-golem.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/drone": {
+      "path": "assets/animated/enemy-drone.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "enemy/hopper": {
+      "path": "assets/animated/enemy-hopper.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "power/shield": {
+      "path": "assets/powers/shield.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/nova": {
+      "path": "assets/powers/nova.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/fire": {
+      "path": "assets/powers/fire.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/ice": {
+      "path": "assets/powers/ice.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/magnet": {
+      "path": "assets/powers/magnet.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/haste": {
+      "path": "assets/powers/haste.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/giant": {
+      "path": "assets/powers/giant.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/double": {
+      "path": "assets/powers/double.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/thunder": {
+      "path": "assets/powers/thunder.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/phase": {
+      "path": "assets/powers/phase.png",
+      "frameWidth": 64,
+      "frameHeight": 64,
+      "frames": 1
+    },
+    "power/heart": {
+      "path": "assets/powers/heart.png",
+      "frames": 1,
+      "frameWidth": 64,
+      "frameHeight": 64
+    },
+    "power/spark": {
+      "path": "assets/powers/spark.png",
+      "frames": 1,
+      "frameWidth": 64,
+      "frameHeight": 64
+    },
+    "power/rescue": {
+      "path": "assets/powers/rescue.png",
+      "frames": 1,
+      "frameWidth": 64,
+      "frameHeight": 64
+    },
+    "power/bomb": {
+      "path": "assets/powers/bomb.png",
+      "frames": 1,
+      "frameWidth": 64,
+      "frameHeight": 64
+    },
+    "pet/wolf": {
+      "path": "assets/animated/pet-wolf.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/eagle": {
+      "path": "assets/animated/pet-eagle.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/mole": {
+      "path": "assets/animated/pet-mole.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/fox": {
+      "path": "assets/animated/pet-fox.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/turtle": {
+      "path": "assets/animated/pet-turtle.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/dragon": {
+      "path": "assets/animated/pet-dragon.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/orca": {
+      "path": "assets/animated/pet-orca.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "coin": {
+      "path": "assets/powers/coin-spin.png",
+      "frameWidth": 40,
+      "frameHeight": 48,
+      "frames": 8,
+      "fps": 10
+    },
+    "chest": {
+      "path": "assets/powers/chest.png",
+      "frames": 1,
+      "frameWidth": 80,
+      "frameHeight": 64
+    },
+    "shrine": {
+      "path": "assets/powers/shrine.png",
+      "frames": 1,
+      "frameWidth": 80,
+      "frameHeight": 64
+    },
+    "background/cosmic": {
+      "path": "assets/backgrounds/cosmic.png"
+    },
+    "background/sky": {
+      "path": "assets/backgrounds/sky.png"
+    },
+    "logo": {
+      "path": "assets/ui/logo.png"
+    },
+    "map/0": {
+      "path": "assets/backgrounds/map-0.png"
+    },
+    "map/1": {
+      "path": "assets/backgrounds/map-1.png"
+    },
+    "map/2": {
+      "path": "assets/backgrounds/map-2.png"
+    },
+    "map/3": {
+      "path": "assets/backgrounds/map-3.png"
+    },
+    "map/4": {
+      "path": "assets/backgrounds/map-4.png"
+    },
+    "map/5": {
+      "path": "assets/backgrounds/map-5.png"
+    },
+    "map/6": {
+      "path": "assets/backgrounds/map-6.png"
+    },
+    "map/7": {
+      "path": "assets/backgrounds/map-7.png"
+    },
+    "map/8": {
+      "path": "assets/backgrounds/map-8.png"
+    },
+    "map/9": {
+      "path": "assets/backgrounds/map-9.png"
+    },
+    "map/10": {
+      "path": "assets/backgrounds/map-10.png"
+    },
+    "map/11": {
+      "path": "assets/backgrounds/map-11.png"
+    },
+    "map/12": {
+      "path": "assets/backgrounds/map-12.png"
+    },
+    "map/13": {
+      "path": "assets/backgrounds/map-13.png"
+    },
+    "map/14": {
+      "path": "assets/backgrounds/map-14.png"
+    },
+    "tiles/0": {
+      "path": "assets/tiles/world-0.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/1": {
+      "path": "assets/tiles/world-1.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/2": {
+      "path": "assets/tiles/world-2.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/3": {
+      "path": "assets/tiles/world-3.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/4": {
+      "path": "assets/tiles/world-4.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/5": {
+      "path": "assets/tiles/world-5.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/6": {
+      "path": "assets/tiles/world-6.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/7": {
+      "path": "assets/tiles/world-7.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/8": {
+      "path": "assets/tiles/world-8.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/9": {
+      "path": "assets/tiles/world-9.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/10": {
+      "path": "assets/tiles/world-10.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/11": {
+      "path": "assets/tiles/world-11.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/12": {
+      "path": "assets/tiles/world-12.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/13": {
+      "path": "assets/tiles/world-13.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/14": {
+      "path": "assets/tiles/world-14.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "hero/wissem/still": {
+      "path": "assets/heroes/wissem.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/kossay/still": {
+      "path": "assets/heroes/kossay.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/yakine/still": {
+      "path": "assets/heroes/yakine.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/taky/still": {
+      "path": "assets/heroes/taky.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/garsi/still": {
+      "path": "assets/heroes/garsi.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/tounsi/still": {
+      "path": "assets/heroes/tounsi.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/youssef/still": {
+      "path": "assets/heroes/youssef.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/loey/still": {
+      "path": "assets/heroes/loey.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "enemy/slime/still": {
+      "path": "assets/enemies/slime.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/beetle/still": {
+      "path": "assets/enemies/beetle.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/bat/still": {
+      "path": "assets/enemies/bat.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/crab/still": {
+      "path": "assets/enemies/crab.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/sentry/still": {
+      "path": "assets/enemies/sentry.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/spiker/still": {
+      "path": "assets/enemies/spiker.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/imp/still": {
+      "path": "assets/enemies/imp.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/ninja/still": {
+      "path": "assets/enemies/ninja.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/wisp/still": {
+      "path": "assets/enemies/wisp.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/maw/still": {
+      "path": "assets/enemies/maw.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/golem/still": {
+      "path": "assets/enemies/golem.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/drone/still": {
+      "path": "assets/enemies/drone.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "enemy/hopper/still": {
+      "path": "assets/enemies/hopper.png",
+      "frameWidth": 112,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "pet/wolf/still": {
+      "path": "assets/pets/wolf.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/eagle/still": {
+      "path": "assets/pets/eagle.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/mole/still": {
+      "path": "assets/pets/mole.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/fox/still": {
+      "path": "assets/pets/fox.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/turtle/still": {
+      "path": "assets/pets/turtle.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/dragon/still": {
+      "path": "assets/pets/dragon.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/orca/still": {
+      "path": "assets/pets/orca.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "boss/briar-regent": {
+      "path": "assets/bosses/briar-regent.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/briar-regent/still": {
+      "path": "assets/bosses/briar-regent-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/moon-reaper": {
+      "path": "assets/bosses/moon-reaper.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/moon-reaper/still": {
+      "path": "assets/bosses/moon-reaper-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/auric-colossus": {
+      "path": "assets/bosses/auric-colossus.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/auric-colossus/still": {
+      "path": "assets/bosses/auric-colossus-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/tide-tyrant": {
+      "path": "assets/bosses/tide-tyrant.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/tide-tyrant/still": {
+      "path": "assets/bosses/tide-tyrant-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/sugar-witch": {
+      "path": "assets/bosses/sugar-witch.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/sugar-witch/still": {
+      "path": "assets/bosses/sugar-witch-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/frostbound": {
+      "path": "assets/bosses/frostbound.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/frostbound/still": {
+      "path": "assets/bosses/frostbound-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/iron-conductor": {
+      "path": "assets/bosses/iron-conductor.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/iron-conductor/still": {
+      "path": "assets/bosses/iron-conductor-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/mycelium-king": {
+      "path": "assets/bosses/mycelium-king.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/mycelium-king/still": {
+      "path": "assets/bosses/mycelium-king-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/cinder-maw": {
+      "path": "assets/bosses/cinder-maw.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/cinder-maw/still": {
+      "path": "assets/bosses/cinder-maw-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/prism-oracle": {
+      "path": "assets/bosses/prism-oracle.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/prism-oracle/still": {
+      "path": "assets/bosses/prism-oracle-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/abyss-leviathan": {
+      "path": "assets/bosses/abyss-leviathan.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/abyss-leviathan/still": {
+      "path": "assets/bosses/abyss-leviathan-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/storm-archon": {
+      "path": "assets/bosses/storm-archon.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/storm-archon/still": {
+      "path": "assets/bosses/storm-archon-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/scarlet-blade": {
+      "path": "assets/bosses/scarlet-blade.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/scarlet-blade/still": {
+      "path": "assets/bosses/scarlet-blade-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/null-engine": {
+      "path": "assets/bosses/null-engine.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/null-engine/still": {
+      "path": "assets/bosses/null-engine-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "boss/eclipse-sovereign": {
+      "path": "assets/bosses/eclipse-sovereign.png",
+      "frameWidth": 192,
+      "frameHeight": 224,
+      "frames": 8
+    },
+    "boss/eclipse-sovereign/still": {
+      "path": "assets/bosses/eclipse-sovereign-still.png",
+      "frames": 1,
+      "frameWidth": 192,
+      "frameHeight": 224
+    },
+    "environment/waste-sky": {
+      "path": "assets/community/waste-sky.png"
+    },
+    "environment/waste-far": {
+      "path": "assets/community/waste-far.png"
+    },
+    "environment/waste-near": {
+      "path": "assets/community/waste-near.png"
+    },
+    "environment/starry-sky": {
+      "path": "assets/community/starry-sky.png"
+    },
+    "environment/starry-clouds": {
+      "path": "assets/community/starry-clouds.png"
+    },
+    "environment/water": {
+      "path": "assets/community/water.png",
+      "frameWidth": 16,
+      "frameHeight": 16,
+      "frames": 4
+    },
+    "environment/spikes": {
+      "path": "assets/community/spikes.png",
+      "frameWidth": 16,
+      "frameHeight": 16,
+      "frames": 6
+    },
+    "tiles/starry": {
+      "path": "assets/community/tiles-starry.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "tiles/waste": {
+      "path": "assets/community/tiles-waste.png",
+      "frameWidth": 32,
+      "frameHeight": 32,
+      "frames": 8
+    },
+    "environment/starry-tree": {
+      "path": "assets/community/starry-tree.png"
+    },
+    "skill-icon/1": {
+      "path": "assets/community/skills/skill-01.png"
+    },
+    "skill-icon/2": {
+      "path": "assets/community/skills/skill-02.png"
+    },
+    "skill-icon/3": {
+      "path": "assets/community/skills/skill-03.png"
+    },
+    "skill-icon/4": {
+      "path": "assets/community/skills/skill-04.png"
+    },
+    "skill-icon/5": {
+      "path": "assets/community/skills/skill-05.png"
+    },
+    "skill-icon/6": {
+      "path": "assets/community/skills/skill-06.png"
+    },
+    "skill-icon/7": {
+      "path": "assets/community/skills/skill-07.png"
+    },
+    "skill-icon/8": {
+      "path": "assets/community/skills/skill-08.png"
+    },
+    "skill-icon/9": {
+      "path": "assets/community/skills/skill-09.png"
+    },
+    "skill-icon/10": {
+      "path": "assets/community/skills/skill-10.png"
+    },
+    "skill-icon/11": {
+      "path": "assets/community/skills/skill-11.png"
+    },
+    "skill-icon/12": {
+      "path": "assets/community/skills/skill-12.png"
+    },
+    "skill-icon/13": {
+      "path": "assets/community/skills/skill-13.png"
+    },
+    "skill-icon/14": {
+      "path": "assets/community/skills/skill-14.png"
+    },
+    "skill-icon/15": {
+      "path": "assets/community/skills/skill-15.png"
+    },
+    "skill-icon/16": {
+      "path": "assets/community/skills/skill-16.png"
+    },
+    "skill-icon/17": {
+      "path": "assets/community/skills/skill-17.png"
+    },
+    "skill-icon/18": {
+      "path": "assets/community/skills/skill-18.png"
+    },
+    "skill-icon/19": {
+      "path": "assets/community/skills/skill-19.png"
+    },
+    "skill-icon/20": {
+      "path": "assets/community/skills/skill-20.png"
+    },
+    "skill-icon/21": {
+      "path": "assets/community/skills/skill-21.png"
+    },
+    "skill-icon/22": {
+      "path": "assets/community/skills/skill-22.png"
+    },
+    "skill-icon/23": {
+      "path": "assets/community/skills/skill-23.png"
+    },
+    "skill-icon/24": {
+      "path": "assets/community/skills/skill-24.png"
+    },
+    "skill-icon/25": {
+      "path": "assets/community/skills/skill-25.png"
+    },
+    "skill-icon/26": {
+      "path": "assets/community/skills/skill-26.png"
+    },
+    "skill-icon/27": {
+      "path": "assets/community/skills/skill-27.png"
+    },
+    "skill-icon/28": {
+      "path": "assets/community/skills/skill-28.png"
+    },
+    "skill-icon/29": {
+      "path": "assets/community/skills/skill-29.png"
+    },
+    "skill-icon/30": {
+      "path": "assets/community/skills/skill-30.png"
+    },
+    "skill-icon/31": {
+      "path": "assets/community/skills/skill-31.png"
+    },
+    "skill-icon/32": {
+      "path": "assets/community/skills/skill-32.png"
+    },
+    "skill-icon/33": {
+      "path": "assets/community/skills/skill-33.png"
+    },
+    "skill-icon/34": {
+      "path": "assets/community/skills/skill-34.png"
+    },
+    "skill-icon/35": {
+      "path": "assets/community/skills/skill-35.png"
+    },
+    "skill-icon/36": {
+      "path": "assets/community/skills/skill-36.png"
+    },
+    "skill-icon/37": {
+      "path": "assets/community/skills/skill-37.png"
+    },
+    "skill-icon/38": {
+      "path": "assets/community/skills/skill-38.png"
+    },
+    "skill-icon/39": {
+      "path": "assets/community/skills/skill-39.png"
+    },
+    "skill-icon/40": {
+      "path": "assets/community/skills/skill-40.png"
+    },
+    "skill-icon/41": {
+      "path": "assets/community/skills/skill-41.png"
+    },
+    "skill-icon/42": {
+      "path": "assets/community/skills/skill-42.png"
+    },
+    "skill-icon/43": {
+      "path": "assets/community/skills/skill-43.png"
+    },
+    "skill-icon/44": {
+      "path": "assets/community/skills/skill-44.png"
+    },
+    "skill-icon/45": {
+      "path": "assets/community/skills/skill-45.png"
+    },
+    "skill-icon/46": {
+      "path": "assets/community/skills/skill-46.png"
+    },
+    "skill-icon/47": {
+      "path": "assets/community/skills/skill-47.png"
+    },
+    "skill-icon/48": {
+      "path": "assets/community/skills/skill-48.png"
+    },
+    "skill-icon/49": {
+      "path": "assets/community/skills/skill-49.png"
+    },
+    "skill-icon/50": {
+      "path": "assets/community/skills/skill-50.png"
+    },
+    "skill-icon/51": {
+      "path": "assets/community/skills/skill-51.png"
+    },
+    "skill-icon/52": {
+      "path": "assets/community/skills/skill-52.png"
+    },
+    "skill-icon/53": {
+      "path": "assets/community/skills/skill-53.png"
+    },
+    "skill-icon/54": {
+      "path": "assets/community/skills/skill-54.png"
+    },
+    "magic-icon/4": {
+      "path": "assets/community/magic/magic-004.png"
+    },
+    "magic-icon/8": {
+      "path": "assets/community/magic/magic-008.png"
+    },
+    "magic-icon/11": {
+      "path": "assets/community/magic/magic-011.png"
+    },
+    "magic-icon/16": {
+      "path": "assets/community/magic/magic-016.png"
+    },
+    "magic-icon/20": {
+      "path": "assets/community/magic/magic-020.png"
+    },
+    "magic-icon/24": {
+      "path": "assets/community/magic/magic-024.png"
+    },
+    "magic-icon/31": {
+      "path": "assets/community/magic/magic-031.png"
+    },
+    "magic-icon/39": {
+      "path": "assets/community/magic/magic-039.png"
+    },
+    "magic-icon/47": {
+      "path": "assets/community/magic/magic-047.png"
+    },
+    "magic-icon/56": {
+      "path": "assets/community/magic/magic-056.png"
+    },
+    "magic-icon/61": {
+      "path": "assets/community/magic/magic-061.png"
+    },
+    "magic-icon/75": {
+      "path": "assets/community/magic/magic-075.png"
+    },
+    "magic-icon/92": {
+      "path": "assets/community/magic/magic-092.png"
+    },
+    "magic-icon/104": {
+      "path": "assets/community/magic/magic-104.png"
+    },
+    "magic-icon/118": {
+      "path": "assets/community/magic/magic-118.png"
+    },
+    "magic-icon/128": {
+      "path": "assets/community/magic/magic-128.png"
+    },
+    "magic-icon/144": {
+      "path": "assets/community/magic/magic-144.png"
+    },
+    "magic-icon/161": {
+      "path": "assets/community/magic/magic-161.png"
+    },
+    "magic-icon/183": {
+      "path": "assets/community/magic/magic-183.png"
+    },
+    "magic-icon/206": {
+      "path": "assets/community/magic/magic-206.png"
+    },
+    "magic-icon/224": {
+      "path": "assets/community/magic/magic-224.png"
+    },
+    "magic-icon/248": {
+      "path": "assets/community/magic/magic-248.png"
+    },
+    "hero/rayan": {
+      "path": "assets/ascension/hero-rayan.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/rayan/still": {
+      "path": "assets/ascension/hero-rayan-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "hero/mira": {
+      "path": "assets/ascension/hero-mira.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "hero/mira/still": {
+      "path": "assets/ascension/hero-mira-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/wissem/frost": {
+      "path": "assets/ascension/outfits/wissem-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/wissem/frost/still": {
+      "path": "assets/ascension/outfits/wissem-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/wissem/ember": {
+      "path": "assets/ascension/outfits/wissem-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/wissem/ember/still": {
+      "path": "assets/ascension/outfits/wissem-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/kossay/frost": {
+      "path": "assets/ascension/outfits/kossay-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/kossay/frost/still": {
+      "path": "assets/ascension/outfits/kossay-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/kossay/ember": {
+      "path": "assets/ascension/outfits/kossay-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/kossay/ember/still": {
+      "path": "assets/ascension/outfits/kossay-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/yakine/frost": {
+      "path": "assets/ascension/outfits/yakine-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/yakine/frost/still": {
+      "path": "assets/ascension/outfits/yakine-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/yakine/ember": {
+      "path": "assets/ascension/outfits/yakine-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/yakine/ember/still": {
+      "path": "assets/ascension/outfits/yakine-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/taky/frost": {
+      "path": "assets/ascension/outfits/taky-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/taky/frost/still": {
+      "path": "assets/ascension/outfits/taky-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/taky/ember": {
+      "path": "assets/ascension/outfits/taky-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/taky/ember/still": {
+      "path": "assets/ascension/outfits/taky-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/garsi/frost": {
+      "path": "assets/ascension/outfits/garsi-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/garsi/frost/still": {
+      "path": "assets/ascension/outfits/garsi-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/garsi/ember": {
+      "path": "assets/ascension/outfits/garsi-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/garsi/ember/still": {
+      "path": "assets/ascension/outfits/garsi-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/tounsi/frost": {
+      "path": "assets/ascension/outfits/tounsi-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/tounsi/frost/still": {
+      "path": "assets/ascension/outfits/tounsi-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/tounsi/ember": {
+      "path": "assets/ascension/outfits/tounsi-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/tounsi/ember/still": {
+      "path": "assets/ascension/outfits/tounsi-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/youssef/frost": {
+      "path": "assets/ascension/outfits/youssef-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/youssef/frost/still": {
+      "path": "assets/ascension/outfits/youssef-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/youssef/ember": {
+      "path": "assets/ascension/outfits/youssef-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/youssef/ember/still": {
+      "path": "assets/ascension/outfits/youssef-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/loey/frost": {
+      "path": "assets/ascension/outfits/loey-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/loey/frost/still": {
+      "path": "assets/ascension/outfits/loey-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/loey/ember": {
+      "path": "assets/ascension/outfits/loey-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/loey/ember/still": {
+      "path": "assets/ascension/outfits/loey-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/rayan/frost": {
+      "path": "assets/ascension/outfits/rayan-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/rayan/frost/still": {
+      "path": "assets/ascension/outfits/rayan-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/rayan/ember": {
+      "path": "assets/ascension/outfits/rayan-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/rayan/ember/still": {
+      "path": "assets/ascension/outfits/rayan-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/mira/frost": {
+      "path": "assets/ascension/outfits/mira-frost.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/mira/frost/still": {
+      "path": "assets/ascension/outfits/mira-frost-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "outfit/mira/ember": {
+      "path": "assets/ascension/outfits/mira-ember.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 14,
+      "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
+      "weaponLayer": "baked"
+    },
+    "outfit/mira/ember/still": {
+      "path": "assets/ascension/outfits/mira-ember-still.png",
+      "frameWidth": 128,
+      "frameHeight": 160,
+      "frames": 1
+    },
+    "pet/skywolf": {
+      "path": "assets/community/pets/skywolf.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/skywolf/still": {
+      "path": "assets/community/pets/skywolf-still.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "pet/emberguard": {
+      "path": "assets/community/pets/emberguard.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 8,
+      "animation": "loop:0-7"
+    },
+    "pet/emberguard/still": {
+      "path": "assets/community/pets/emberguard-still.png",
+      "frameWidth": 160,
+      "frameHeight": 128,
+      "frames": 1
+    },
+    "weapon/gauntlet": {
+      "path": "assets/weapons/gravity_gauntlet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/dual": {
+      "path": "assets/weapons/twin_fang_dagger.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/staff": {
+      "path": "assets/weapons/orbit_crescent_staff.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/dagger": {
+      "path": "assets/weapons/shadow_knife.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/shield": {
+      "path": "assets/weapons/stonebreaker_hammer.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/sabre": {
+      "path": "assets/weapons/wind_scimitar.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/gadget": {
+      "path": "assets/weapons/clockwork_knuckle.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/bow": {
+      "path": "assets/weapons/sky_bow.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/lance": {
+      "path": "assets/weapons/sun_lance.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "weapon/frost_staff": {
+      "path": "assets/weapons/frost_staff.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frames": 1,
+      "optional": true,
+      "status": "awaiting-user-art"
+    },
+    "branding/logo": {
+      "path": "assets/branding/logo.png",
+      "frameWidth": 640,
+      "frameHeight": 640,
+      "frames": 1
+    }
+  },
+  "audio": {
+    "sfx/click": {
+      "path": "assets/audio/sfx/click.ogg",
+      "volume": 0.9
+    },
+    "sfx/jump": {
+      "path": "assets/audio/sfx/jump.ogg",
+      "volume": 0.9
+    },
+    "sfx/coin": {
+      "path": "assets/audio/sfx/coin.ogg",
+      "volume": 0.7
+    },
+    "sfx/stomp": {
+      "path": "assets/audio/sfx/stomp.ogg",
+      "volume": 0.9
+    },
+    "sfx/armor": {
+      "path": "assets/audio/sfx/armor.ogg",
+      "volume": 0.9
+    },
+    "sfx/break": {
+      "path": "assets/audio/sfx/break.ogg",
+      "volume": 0.9
+    },
+    "sfx/block": {
+      "path": "assets/audio/sfx/block.ogg",
+      "volume": 0.9
+    },
+    "sfx/hurt": {
+      "path": "assets/audio/sfx/hurt.ogg",
+      "volume": 0.9
+    },
+    "sfx/knockout": {
+      "path": "assets/audio/sfx/knockout.ogg",
+      "volume": 0.9
+    },
+    "sfx/shield": {
+      "path": "assets/audio/sfx/shield.ogg",
+      "volume": 0.9
+    },
+    "sfx/gravity": {
+      "path": "assets/audio/sfx/gravity.ogg",
+      "volume": 0.9
+    },
+    "sfx/bomba": {
+      "path": "assets/audio/sfx/bomba.ogg",
+      "volume": 0.9
+    },
+    "sfx/pet-bite": {
+      "path": "assets/audio/sfx/pet-bite.ogg",
+      "volume": 0.9
+    },
+    "sfx/fire-shot": {
+      "path": "assets/audio/sfx/fire-shot.ogg",
+      "volume": 0.9
+    },
+    "sfx/lightning": {
+      "path": "assets/audio/sfx/lightning.ogg",
+      "volume": 0.9
+    },
+    "sfx/power": {
+      "path": "assets/audio/sfx/power.ogg",
+      "volume": 0.9
+    },
+    "sfx/checkpoint": {
+      "path": "assets/audio/sfx/checkpoint.ogg",
+      "volume": 0.9
+    },
+    "sfx/finish": {
+      "path": "assets/audio/sfx/finish.ogg",
+      "volume": 0.9
+    },
+    "sfx/world": {
+      "path": "assets/audio/sfx/world.ogg",
+      "volume": 0.9
+    },
+    "sfx/pet-found": {
+      "path": "assets/audio/sfx/pet-found.ogg",
+      "volume": 0.9
+    },
+    "sfx/skill": {
+      "path": "assets/audio/sfx/skill.ogg",
+      "volume": 0.9
+    },
+    "sfx/breath": {
+      "path": "assets/audio/sfx/breath.ogg",
+      "volume": 0.9
+    },
+    "sfx/flood": {
+      "path": "assets/audio/sfx/flood.ogg",
+      "volume": 0.9
+    },
+    "sfx/prince": {
+      "path": "assets/audio/sfx/prince.ogg",
+      "volume": 0.9
+    },
+    "sfx/chest": {
+      "path": "assets/audio/sfx/chest.ogg",
+      "volume": 0.9
+    },
+    "sfx/rescue": {
+      "path": "assets/audio/sfx/rescue.ogg",
+      "volume": 0.9
+    },
+    "sfx/spring": {
+      "path": "assets/audio/sfx/spring.ogg",
+      "volume": 0.9
+    },
+    "music/frontier": {
+      "path": "assets/audio/music/frontier.ogg",
+      "volume": 0.34,
+      "bpm": 112,
+      "bars": 16,
+      "loop": true,
+      "durationSeconds": 34.285714285714285
+    },
+    "music/moonlight": {
+      "path": "assets/audio/music/moonlight.ogg",
+      "volume": 0.34,
+      "bpm": 92,
+      "bars": 16,
+      "loop": true,
+      "durationSeconds": 41.73913043478261
+    },
+    "music/skyward": {
+      "path": "assets/audio/music/skyward.ogg",
+      "volume": 0.34,
+      "bpm": 124,
+      "bars": 16,
+      "loop": true,
+      "durationSeconds": 30.967741935483872
+    },
+    "music/clockwork": {
+      "path": "assets/audio/music/clockwork.ogg",
+      "volume": 0.34,
+      "bpm": 120,
+      "bars": 16,
+      "loop": true,
+      "durationSeconds": 32.0
+    },
+    "music/starlight": {
+      "path": "assets/audio/music/starlight.ogg",
+      "volume": 0.34,
+      "bpm": 100,
+      "bars": 16,
+      "loop": true,
+      "durationSeconds": 38.4
+    },
+    "sfx/slash": {
+      "path": "assets/audio/sfx/slash.ogg",
+      "volume": 0.65
+    },
+    "sfx/knife": {
+      "path": "assets/audio/sfx/knife.ogg",
+      "volume": 0.65
+    },
+    "sfx/dodge": {
+      "path": "assets/audio/sfx/dodge.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-intro": {
+      "path": "assets/audio/sfx/boss-intro.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-warn": {
+      "path": "assets/audio/sfx/boss-warn.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-strike": {
+      "path": "assets/audio/sfx/boss-strike.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-phase": {
+      "path": "assets/audio/sfx/boss-phase.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-hit": {
+      "path": "assets/audio/sfx/boss-hit.ogg",
+      "volume": 0.65
+    },
+    "sfx/boss-defeat": {
+      "path": "assets/audio/sfx/boss-defeat.ogg",
+      "volume": 0.65
+    },
+    "sfx/sigil": {
+      "path": "assets/audio/sfx/sigil.ogg",
+      "volume": 0.65
+    },
+    "sfx/seal-open": {
+      "path": "assets/audio/sfx/seal-open.ogg",
+      "volume": 0.65
+    },
+    "sfx/seal-wave": {
+      "path": "assets/audio/sfx/seal-wave.ogg",
+      "volume": 0.65
+    },
+    "sfx/summon": {
+      "path": "assets/audio/sfx/summon.ogg",
+      "volume": 0.65
+    },
+    "sfx/pogo": {
+      "path": "assets/audio/sfx/pogo.ogg",
+      "volume": 0.65
+    },
+    "music/boss": {
+      "path": "assets/audio/music/boss.ogg",
+      "volume": 0.55
+    },
+    "music/menu": {
+      "path": "assets/audio/ascension/menu.wav",
+      "volume": 0.3
+    },
+    "music/raid": {
+      "path": "assets/audio/ascension/raid.wav",
+      "volume": 0.3
+    },
+    "sfx/room-join": {
+      "path": "assets/audio/ascension/room-join.wav",
+      "volume": 0.45
+    }
+  }
+}

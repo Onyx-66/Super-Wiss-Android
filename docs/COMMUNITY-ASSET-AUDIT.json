@@ -1,0 +1,652 @@
+[
+  {
+    "key": "environment/waste-sky",
+    "path": "assets/community/waste-sky.png",
+    "sha256": "f51c21509a31e2f5e198152c71ff20c64621568d90e833dfe63ab48bcdb3ca68"
+  },
+  {
+    "key": "environment/waste-far",
+    "path": "assets/community/waste-far.png",
+    "sha256": "a18714764a77e363e230177883f240d75facfdbfd90ec923b2df63d83d6721fe"
+  },
+  {
+    "key": "environment/waste-near",
+    "path": "assets/community/waste-near.png",
+    "sha256": "64486c6f04ec8714ea267ccb13d5fc43cc6c128c80ae8b872f7d871ee0fa20d8"
+  },
+  {
+    "key": "environment/starry-sky",
+    "path": "assets/community/starry-sky.png",
+    "sha256": "ec278ad84a27b420015c77c52463e80615908b4a3942126c0170e27fa6abc367"
+  },
+  {
+    "key": "environment/starry-clouds",
+    "path": "assets/community/starry-clouds.png",
+    "sha256": "7553377b0c34829fa4726cc8c76ecf00bcc023866d35ee6590488321f655fb0f"
+  },
+  {
+    "key": "environment/water",
+    "path": "assets/community/water.png",
+    "sha256": "dd1df0ad344662d88957d1ba403ae9a2c24303c5ea0fe558d33bd485693f887d"
+  },
+  {
+    "key": "environment/spikes",
+    "path": "assets/community/spikes.png",
+    "sha256": "e978354bbd010ac019df90ab7a5a0df0eb9597f8b509a86a3986661a9da65bb6"
+  },
+  {
+    "key": "tiles/starry",
+    "path": "assets/community/tiles-starry.png",
+    "sha256": "5dc6a1e81ba8638641bada9db274c3ada74572d07225bfa41542c15739b94a4b"
+  },
+  {
+    "key": "tiles/waste",
+    "path": "assets/community/tiles-waste.png",
+    "sha256": "da96a8261f2f728c9d6b9f9d420bc21771dfc4cda7d189accf6d03df5bd755b2"
+  },
+  {
+    "key": "environment/starry-tree",
+    "path": "assets/community/starry-tree.png",
+    "sha256": "c700e3efc37a31e4831b0df9b45dc362a65fbe5c90d535cc638f9e6712184cb8"
+  },
+  {
+    "key": "skill-icon/1",
+    "path": "assets/community/skills/skill-01.png",
+    "sha256": "5de8db131f439f35c40e0b6f0dbeaa5ac64115aebade03eb3e89caf7395c21dc"
+  },
+  {
+    "key": "skill-icon/2",
+    "path": "assets/community/skills/skill-02.png",
+    "sha256": "3a2cc5c9a47602efa0652affa40883f2bd0680402a2dbd2ee1eab588b924feff"
+  },
+  {
+    "key": "skill-icon/3",
+    "path": "assets/community/skills/skill-03.png",
+    "sha256": "237a8e1d7449b340bfd558401021dd93c395d870a2011655a8ca2de26720111b"
+  },
+  {
+    "key": "skill-icon/4",
+    "path": "assets/community/skills/skill-04.png",
+    "sha256": "1792f625e94935e568f8b9495ee1009e7e3f1f18d6b43c9000c9d0ef57ac9663"
+  },
+  {
+    "key": "skill-icon/5",
+    "path": "assets/community/skills/skill-05.png",
+    "sha256": "d0327c28441a22c930f760d3fde316cddcefe36f6bcb080853acf3f8e4a5d88f"
+  },
+  {
+    "key": "skill-icon/6",
+    "path": "assets/community/skills/skill-06.png",
+    "sha256": "54404afd35573ee76949926325057eb3edc151eabf913897de275eb41a2d7ea3"
+  },
+  {
+    "key": "skill-icon/7",
+    "path": "assets/community/skills/skill-07.png",
+    "sha256": "9812b37ab8a7c209c85d87b80e6164deb7aa32a02b317506bf23eea509a016ab"
+  },
+  {
+    "key": "skill-icon/8",
+    "path": "assets/community/skills/skill-08.png",
+    "sha256": "964aca8691458092e188c4ceb6621951b757f15f40c2f2bd739f0fb6a667b8eb"
+  },
+  {
+    "key": "skill-icon/9",
+    "path": "assets/community/skills/skill-09.png",
+    "sha256": "cce54c07503a5725a1f96ad29491f58944eb372c876e8ee9807bbede82defc6a"
+  },
+  {
+    "key": "skill-icon/10",
+    "path": "assets/community/skills/skill-10.png",
+    "sha256": "e6361a88a2ca121c042a7376f1056dfdcb84a3ddd09111ce82223e0579be105c"
+  },
+  {
+    "key": "skill-icon/11",
+    "path": "assets/community/skills/skill-11.png",
+    "sha256": "da67be833b55ff514b1736c00ac27709a2d7a283fdc1c9b3670b4013e69e2940"
+  },
+  {
+    "key": "skill-icon/12",
+    "path": "assets/community/skills/skill-12.png",
+    "sha256": "3f254b9203b711f4b14f4d3212ba6b799f0c7850fb603002769cb6b4ae340f1e"
+  },
+  {
+    "key": "skill-icon/13",
+    "path": "assets/community/skills/skill-13.png",
+    "sha256": "296cbee2963aee2ee1a53361ef4df41729ac80594e96f749df6a1c0a51494330"
+  },
+  {
+    "key": "skill-icon/14",
+    "path": "assets/community/skills/skill-14.png",
+    "sha256": "a43ec5954549c21fc4a69c1aa562be4386fe8b23dd9c3919eb7ace92226a811c"
+  },
+  {
+    "key": "skill-icon/15",
+    "path": "assets/community/skills/skill-15.png",
+    "sha256": "52ad9ea93c8682d02165f38906ff5f29e3685bdc6c4e2b0a8ddee21064fca2a1"
+  },
+  {
+    "key": "skill-icon/16",
+    "path": "assets/community/skills/skill-16.png",
+    "sha256": "2f180615773820e7da1f6c1265d540d46267601c1dc4de557d7507465a939e33"
+  },
+  {
+    "key": "skill-icon/17",
+    "path": "assets/community/skills/skill-17.png",
+    "sha256": "5dbc76731b01a6a172a35dc04c2c3e9c30752057b07b78738a55ede75de6d1f1"
+  },
+  {
+    "key": "skill-icon/18",
+    "path": "assets/community/skills/skill-18.png",
+    "sha256": "e9c78e33c4bfd4c0b2f1bb743de2909c7a7128488f01b37552235d4f859ab519"
+  },
+  {
+    "key": "skill-icon/19",
+    "path": "assets/community/skills/skill-19.png",
+    "sha256": "6ccc38e9aa5d8dc251f930ee1b92727c66003a78b3a74df7110df18a3b6ede03"
+  },
+  {
+    "key": "skill-icon/20",
+    "path": "assets/community/skills/skill-20.png",
+    "sha256": "3481e576674f41caadfdb7141ecf9cd1e13454e133eddc7a2a27f40991d4e74a"
+  },
+  {
+    "key": "skill-icon/21",
+    "path": "assets/community/skills/skill-21.png",
+    "sha256": "6ae211921ac7906369757e8a917244ded0e77e4a0072edc90c310c5e6c4e2219"
+  },
+  {
+    "key": "skill-icon/22",
+    "path": "assets/community/skills/skill-22.png",
+    "sha256": "ecc9b3edd058ec65edc70d29fecfabc2c915d726c73d35bdefe935761ef0d8fb"
+  },
+  {
+    "key": "skill-icon/23",
+    "path": "assets/community/skills/skill-23.png",
+    "sha256": "837c50b8a46e2d908feea6cd5a68a3e7ded504531376c46fbfcb8a6391799c14"
+  },
+  {
+    "key": "skill-icon/24",
+    "path": "assets/community/skills/skill-24.png",
+    "sha256": "6fa083735f0462174f5582bcea7379174f35e6fca2cec53e124114d2bebb50a8"
+  },
+  {
+    "key": "skill-icon/25",
+    "path": "assets/community/skills/skill-25.png",
+    "sha256": "d3a1bb60c6228d9cf1a032f691a92618da624a7567344f7df6b32fe16ed06d85"
+  },
+  {
+    "key": "skill-icon/26",
+    "path": "assets/community/skills/skill-26.png",
+    "sha256": "1beade03f0f5bbcc9f8f40d696790c8fb27bcf20209b4e1923b5ac2e252c118c"
+  },
+  {
+    "key": "skill-icon/27",
+    "path": "assets/community/skills/skill-27.png",
+    "sha256": "e5d8fe9e3feb3d5cb5733c4bafb682e5047274baa59146011b2ed8ecea806d33"
+  },
+  {
+    "key": "skill-icon/28",
+    "path": "assets/community/skills/skill-28.png",
+    "sha256": "816c6aded7a05019b94f7506d66e6614d99e7c5659929d8401f227670c65e9e6"
+  },
+  {
+    "key": "skill-icon/29",
+    "path": "assets/community/skills/skill-29.png",
+    "sha256": "7d0b9053750b1cec3a1213d85855f2ac2e185a378c1589d9b2887886be7c704a"
+  },
+  {
+    "key": "skill-icon/30",
+    "path": "assets/community/skills/skill-30.png",
+    "sha256": "691891ed42eb1bd818d8f96ac42a1d34e41beeb225c9a223fca8acb3cfaaa2c0"
+  },
+  {
+    "key": "skill-icon/31",
+    "path": "assets/community/skills/skill-31.png",
+    "sha256": "2f703491a234f2734f14e5c66a10b59fa1532d31e7c5731374ede905bbf69844"
+  },
+  {
+    "key": "skill-icon/32",
+    "path": "assets/community/skills/skill-32.png",
+    "sha256": "707feb321ac16619f92557417289b78c85dc1b6c87eae8f953a2b7e5a9c03e7d"
+  },
+  {
+    "key": "skill-icon/33",
+    "path": "assets/community/skills/skill-33.png",
+    "sha256": "7a136c704f28f8bad70dceb253cc628565a62024a46c79cd65dc9cc0f1df988b"
+  },
+  {
+    "key": "skill-icon/34",
+    "path": "assets/community/skills/skill-34.png",
+    "sha256": "8d6159a193a9a99a3ce5e26ae15972e5a55209cad153c2f8e1eaa14150128ce0"
+  },
+  {
+    "key": "skill-icon/35",
+    "path": "assets/community/skills/skill-35.png",
+    "sha256": "ecb67833372f957ee0c7c873c5bc7a0596d18d99b6d9c27b3bd5aeed89050180"
+  },
+  {
+    "key": "skill-icon/36",
+    "path": "assets/community/skills/skill-36.png",
+    "sha256": "7ed1cdb752ec47a2d1c6b60fab0580143a2f43abbb3538d82e905969e3f88aaa"
+  },
+  {
+    "key": "skill-icon/37",
+    "path": "assets/community/skills/skill-37.png",
+    "sha256": "7956cbfaa8f2bec5699602bd216cc896a469986036055cbd109a427091984ee8"
+  },
+  {
+    "key": "skill-icon/38",
+    "path": "assets/community/skills/skill-38.png",
+    "sha256": "fd664ce4572acdf4d6efae2d612cfd96dbebc957b559397f68d79393a7502022"
+  },
+  {
+    "key": "skill-icon/39",
+    "path": "assets/community/skills/skill-39.png",
+    "sha256": "a60f09ac905583cb9610f0d2a5873237bc5493495eefd51fe0213b455a5b650a"
+  },
+  {
+    "key": "skill-icon/40",
+    "path": "assets/community/skills/skill-40.png",
+    "sha256": "b026b7b5d47cf2adae5ef6a4de107eb286008ec1103686053e8d7dd91fcd2afd"
+  },
+  {
+    "key": "skill-icon/41",
+    "path": "assets/community/skills/skill-41.png",
+    "sha256": "0e6604a6d77ef880ec70c065a142bad8576c854442588f174a448b0c80de3166"
+  },
+  {
+    "key": "skill-icon/42",
+    "path": "assets/community/skills/skill-42.png",
+    "sha256": "05f1f4effbcebc0cc5952168201a7d5ded972a137111fd700a90a4ba240b888c"
+  },
+  {
+    "key": "skill-icon/43",
+    "path": "assets/community/skills/skill-43.png",
+    "sha256": "0d054828007a36348a88c78c0aa17812c5be5b83af2b0ac6106036a93c9acfca"
+  },
+  {
+    "key": "skill-icon/44",
+    "path": "assets/community/skills/skill-44.png",
+    "sha256": "e0d1f849662e080efdd24a59d7e22c450d5eec66376a1ffa855d25ec2b313e74"
+  },
+  {
+    "key": "skill-icon/45",
+    "path": "assets/community/skills/skill-45.png",
+    "sha256": "fffcddeae30badf13e0562c824049802ab44e2d34fd9d36889b52871fa109506"
+  },
+  {
+    "key": "skill-icon/46",
+    "path": "assets/community/skills/skill-46.png",
+    "sha256": "8fa81316889ca05939f4dd5d1ff063c4f878cd46fba081599cd8315e6292fa7d"
+  },
+  {
+    "key": "skill-icon/47",
+    "path": "assets/community/skills/skill-47.png",
+    "sha256": "18cc27e8dcb749bb9266b9f570179d3d2617007b58100200a549b3c65d3d4267"
+  },
+  {
+    "key": "skill-icon/48",
+    "path": "assets/community/skills/skill-48.png",
+    "sha256": "555db0892cb58be848fe4712b73d948027036a218534ccee93a4ccb85980b8e0"
+  },
+  {
+    "key": "skill-icon/49",
+    "path": "assets/community/skills/skill-49.png",
+    "sha256": "d6de757c3d3fa3ba2dcdd124b4e9f3a2be00eadc6a4787b358a004f737fb7313"
+  },
+  {
+    "key": "skill-icon/50",
+    "path": "assets/community/skills/skill-50.png",
+    "sha256": "7593534f6926cd3b541acb1b0bd5dd7fb1f2efea9f8039c1a23823032bca26fe"
+  },
+  {
+    "key": "skill-icon/51",
+    "path": "assets/community/skills/skill-51.png",
+    "sha256": "48f751549dfbf306d1e3872239110f82175b87d7ce48280fa77a91bd000cfc9c"
+  },
+  {
+    "key": "skill-icon/52",
+    "path": "assets/community/skills/skill-52.png",
+    "sha256": "3d417a43b4d7a8a8f77adfb6bb95c32ac3e04435afb6e4b2b0280135ad8593b1"
+  },
+  {
+    "key": "skill-icon/53",
+    "path": "assets/community/skills/skill-53.png",
+    "sha256": "517898bd6b9097270da02b7763c9546312179b10bd39de3362817d9574490816"
+  },
+  {
+    "key": "skill-icon/54",
+    "path": "assets/community/skills/skill-54.png",
+    "sha256": "6131a2211f6b6b22438ee009ae3a0f66606c722008f1911c7e17877701297044"
+  },
+  {
+    "key": "magic-icon/4",
+    "path": "assets/community/magic/magic-004.png",
+    "sha256": "aaadc472b3f264756548c823e6fd63cd657216cb8b49027d26bc38be6f1d6369"
+  },
+  {
+    "key": "magic-icon/8",
+    "path": "assets/community/magic/magic-008.png",
+    "sha256": "f815832f3a2da474d6480850cf0e2d360b1324060ee2ec867584b33adadefd04"
+  },
+  {
+    "key": "magic-icon/11",
+    "path": "assets/community/magic/magic-011.png",
+    "sha256": "033d6d6d5d090bc638ecdf2236957eccdb10e3a8b27cdc4de2d694e35d3b97a5"
+  },
+  {
+    "key": "magic-icon/16",
+    "path": "assets/community/magic/magic-016.png",
+    "sha256": "1dba9d5c815f86924360e75899be56f6767e817e73d3fd20e39032a3b163b1a3"
+  },
+  {
+    "key": "magic-icon/20",
+    "path": "assets/community/magic/magic-020.png",
+    "sha256": "e25826cb28ad4ea2b6a7d835453b5e6fcbfed0ad5bd81685863d9c34700f64d9"
+  },
+  {
+    "key": "magic-icon/24",
+    "path": "assets/community/magic/magic-024.png",
+    "sha256": "d71e541bb398274aa02105ade1fd95be395b4531cc2c9f9c0db6b44f092a22bb"
+  },
+  {
+    "key": "magic-icon/31",
+    "path": "assets/community/magic/magic-031.png",
+    "sha256": "d31ae8a9a71f47e8298149f7db8ab679824728fa068224d1f3b019d53918feef"
+  },
+  {
+    "key": "magic-icon/39",
+    "path": "assets/community/magic/magic-039.png",
+    "sha256": "a2a0e267b8ee78af074d14c344558e577be34a1b6a5978c77b5804831a406125"
+  },
+  {
+    "key": "magic-icon/47",
+    "path": "assets/community/magic/magic-047.png",
+    "sha256": "ded6a7c2b60d392e67ad600db93177e1779b63df2808b92de98570310ba53efd"
+  },
+  {
+    "key": "magic-icon/56",
+    "path": "assets/community/magic/magic-056.png",
+    "sha256": "60345e0089b9cca07a731d2e69828a7a14c52b867b21bf023603f4187aac5b26"
+  },
+  {
+    "key": "magic-icon/61",
+    "path": "assets/community/magic/magic-061.png",
+    "sha256": "98c76b81ece6e4a73131f37c6ffc17351805dbf46364055c3ee4c97db9780bb4"
+  },
+  {
+    "key": "magic-icon/75",
+    "path": "assets/community/magic/magic-075.png",
+    "sha256": "562609c1bd6071b3d4a74154e02bd4362b6d89c04f1137543d0e8402b3e1a51b"
+  },
+  {
+    "key": "magic-icon/92",
+    "path": "assets/community/magic/magic-092.png",
+    "sha256": "d6197766f32fadb15fd21fa688a2e57c527e110f953efbafa0cdadf869ee2e6d"
+  },
+  {
+    "key": "magic-icon/104",
+    "path": "assets/community/magic/magic-104.png",
+    "sha256": "25f9838a4b82a11cf19d525f9bd6cb5b641c2289e6ede8e2da66950c2c255cfd"
+  },
+  {
+    "key": "magic-icon/118",
+    "path": "assets/community/magic/magic-118.png",
+    "sha256": "04e4f1fbe9a952f2239e9ad077a373464938ece64df8124318cb45491f7a7b4e"
+  },
+  {
+    "key": "magic-icon/128",
+    "path": "assets/community/magic/magic-128.png",
+    "sha256": "4bffabcfe433b2cada9d5ccefd856fd28d0b2de73d8d0bf07bc104aa8efe8e53"
+  },
+  {
+    "key": "magic-icon/144",
+    "path": "assets/community/magic/magic-144.png",
+    "sha256": "2405d96576e9b035c7ea198c47ed9cfff8c5d0c44ff25cf07bc74a70996f0b0c"
+  },
+  {
+    "key": "magic-icon/161",
+    "path": "assets/community/magic/magic-161.png",
+    "sha256": "a1506ff18b3c96618c69cb456ae73396cd9a3381d99bf68b32c8e79e47fed5d4"
+  },
+  {
+    "key": "magic-icon/183",
+    "path": "assets/community/magic/magic-183.png",
+    "sha256": "a1037b3c940d2810f03ad9d13410f31ca3f52b4ee6f2b3b9111dad06dfa02d4e"
+  },
+  {
+    "key": "magic-icon/206",
+    "path": "assets/community/magic/magic-206.png",
+    "sha256": "cf9f0f8537f2879d5c6792705ce0a9afa85cc89bb55d37b84cb28bc0eca4f6f6"
+  },
+  {
+    "key": "magic-icon/224",
+    "path": "assets/community/magic/magic-224.png",
+    "sha256": "52c8ade27f3d380cbe3ad6783f945518f106b0b96bc7437da29471bffacf2041"
+  },
+  {
+    "key": "magic-icon/248",
+    "path": "assets/community/magic/magic-248.png",
+    "sha256": "90f26f10b25922ada65e1bbf7e0bd31badbf7595f935935da796cd14d532726b"
+  },
+  {
+    "key": "hero/rayan",
+    "path": "assets/ascension/hero-rayan.png",
+    "sha256": "dfad67abb9f7678ac79561c3c4fe984d1a73bd290d4c96647f3339a20d93e9d8"
+  },
+  {
+    "key": "hero/rayan/still",
+    "path": "assets/ascension/hero-rayan-still.png",
+    "sha256": "cb93a738d4b7a6dc5260a041a90e8ef31a606c26866927fba692c23ebfba2952"
+  },
+  {
+    "key": "hero/mira",
+    "path": "assets/ascension/hero-mira.png",
+    "sha256": "54a119e0da323dbe026fcad0c3477cf293a0f37aff951268b82f827fea897ef7"
+  },
+  {
+    "key": "hero/mira/still",
+    "path": "assets/ascension/hero-mira-still.png",
+    "sha256": "cbdc85087f0713a2d501759ba086384113be9522c1aa7fc577658dcfb42c8b9b"
+  },
+  {
+    "key": "outfit/wissem/frost",
+    "path": "assets/ascension/outfits/wissem-frost.png",
+    "sha256": "9de7f0e719f3ad21af4c261dcc28cd4c8a32e9b3975150afb1a4ba2040935454"
+  },
+  {
+    "key": "outfit/wissem/frost/still",
+    "path": "assets/ascension/outfits/wissem-frost-still.png",
+    "sha256": "1c7109649cb818fd5127fd678534cd652851b12e4908f3d0b790247247daf051"
+  },
+  {
+    "key": "outfit/wissem/ember",
+    "path": "assets/ascension/outfits/wissem-ember.png",
+    "sha256": "cd08fad232e2a19da2bdbf18c6c00671761f13728f674d29c2e59649c512b3da"
+  },
+  {
+    "key": "outfit/wissem/ember/still",
+    "path": "assets/ascension/outfits/wissem-ember-still.png",
+    "sha256": "9520bc5c08dfdd2c3749d357be252645c97b07c9c344388fb69c15e9ac3373bd"
+  },
+  {
+    "key": "outfit/kossay/frost",
+    "path": "assets/ascension/outfits/kossay-frost.png",
+    "sha256": "a303376be5b3775ea7d427121b90d1ba190d747bba34b53262c511cdba12bbd3"
+  },
+  {
+    "key": "outfit/kossay/frost/still",
+    "path": "assets/ascension/outfits/kossay-frost-still.png",
+    "sha256": "c15984f2ebeca81d045599ce366dfc35db686a0e8248cc0cc056be32791d4e65"
+  },
+  {
+    "key": "outfit/kossay/ember",
+    "path": "assets/ascension/outfits/kossay-ember.png",
+    "sha256": "41358c178cc39f2c181881c8962167062996812f234cea63dff1db72ee7c5607"
+  },
+  {
+    "key": "outfit/kossay/ember/still",
+    "path": "assets/ascension/outfits/kossay-ember-still.png",
+    "sha256": "1fc6280abfae13f49f38e488c4e462f2a0ade24f39deb9beef2e3541db60a78e"
+  },
+  {
+    "key": "outfit/yakine/frost",
+    "path": "assets/ascension/outfits/yakine-frost.png",
+    "sha256": "34beaf1c109380a10642bdcf78e4825cf9b9ce25eb2e78b3d4a32b013cc3103b"
+  },
+  {
+    "key": "outfit/yakine/frost/still",
+    "path": "assets/ascension/outfits/yakine-frost-still.png",
+    "sha256": "f625c5e0ca6b96d20d2d8798382fef9dfb4c73dfc2436e36aa4996f82ae82a28"
+  },
+  {
+    "key": "outfit/yakine/ember",
+    "path": "assets/ascension/outfits/yakine-ember.png",
+    "sha256": "d4ced1fc073c71251ddbd2dfedb349d7d7a7e5b0763b2e531ddbf3f82f099561"
+  },
+  {
+    "key": "outfit/yakine/ember/still",
+    "path": "assets/ascension/outfits/yakine-ember-still.png",
+    "sha256": "aeb0120c700bb92d1fc8dce11e18c56e496069acdfaa7f4ffea1f33473d3c20e"
+  },
+  {
+    "key": "outfit/taky/frost",
+    "path": "assets/ascension/outfits/taky-frost.png",
+    "sha256": "72789753e6043cb60bfafd275f2c2192e789a120c88588142752dacf828d6d8a"
+  },
+  {
+    "key": "outfit/taky/frost/still",
+    "path": "assets/ascension/outfits/taky-frost-still.png",
+    "sha256": "160fe8b73180355e461695fdc790970b7706bdeceeec5f945a4234873b41dfce"
+  },
+  {
+    "key": "outfit/taky/ember",
+    "path": "assets/ascension/outfits/taky-ember.png",
+    "sha256": "0f5cd9c971f204b517ee89a1483ec5ed334ddbe4884517cd770ecf38deada333"
+  },
+  {
+    "key": "outfit/taky/ember/still",
+    "path": "assets/ascension/outfits/taky-ember-still.png",
+    "sha256": "b2bdb10c72609199072fff5ed1c25568d1773b20265dd07645a67c04a2ef407c"
+  },
+  {
+    "key": "outfit/garsi/frost",
+    "path": "assets/ascension/outfits/garsi-frost.png",
+    "sha256": "4aca25170b6866f8cc3d07f242028c321d99bc13548ef9c680458d2d5b061982"
+  },
+  {
+    "key": "outfit/garsi/frost/still",
+    "path": "assets/ascension/outfits/garsi-frost-still.png",
+    "sha256": "31a602dd52b758dfb27cd8d9636c7110cecec73185c8991a372762ff37caf574"
+  },
+  {
+    "key": "outfit/garsi/ember",
+    "path": "assets/ascension/outfits/garsi-ember.png",
+    "sha256": "f7200448a031d9c647e0321d93fe0f94daa6c914243f22ff344898a04f8f2213"
+  },
+  {
+    "key": "outfit/garsi/ember/still",
+    "path": "assets/ascension/outfits/garsi-ember-still.png",
+    "sha256": "35ad6c391e585e85ffeb64dcfdc0a51657d4a9ec83955187651194b7e7d61662"
+  },
+  {
+    "key": "outfit/tounsi/frost",
+    "path": "assets/ascension/outfits/tounsi-frost.png",
+    "sha256": "af4b902bc759bc61bb1c3ac7dbda16547148393ec7d490c795b9290d7f74a731"
+  },
+  {
+    "key": "outfit/tounsi/frost/still",
+    "path": "assets/ascension/outfits/tounsi-frost-still.png",
+    "sha256": "ee8bb0a1089837176dfe63d6c8c0031c691382e70a14af68a2453dc24f8b7f74"
+  },
+  {
+    "key": "outfit/tounsi/ember",
+    "path": "assets/ascension/outfits/tounsi-ember.png",
+    "sha256": "58b22cdaaef211e4c309af9d2fd5ad30f9ccf20e0c90fb3885d1e869fe7250c3"
+  },
+  {
+    "key": "outfit/tounsi/ember/still",
+    "path": "assets/ascension/outfits/tounsi-ember-still.png",
+    "sha256": "8d476ce5e8da33214636d3d57126dcace90d121d77f53558fda19295e5ca4ca4"
+  },
+  {
+    "key": "outfit/youssef/frost",
+    "path": "assets/ascension/outfits/youssef-frost.png",
+    "sha256": "1a8486f10e36db71b1ef689e3c9f013d94dfb3207b8d4685e11ae914e44f8f36"
+  },
+  {
+    "key": "outfit/youssef/frost/still",
+    "path": "assets/ascension/outfits/youssef-frost-still.png",
+    "sha256": "515a354df7b27be5c693e3a276b01bd09277a0a70e30375a23091727f9cef330"
+  },
+  {
+    "key": "outfit/youssef/ember",
+    "path": "assets/ascension/outfits/youssef-ember.png",
+    "sha256": "a7655a8bfbb82b66f755d2b4cfde960b774d133f5d3259beaf8d39211af8c04e"
+  },
+  {
+    "key": "outfit/youssef/ember/still",
+    "path": "assets/ascension/outfits/youssef-ember-still.png",
+    "sha256": "a7d4a6d251467b5a6e73884de05266f5d21b75dfe579affbe0ded83ebf2c52f6"
+  },
+  {
+    "key": "outfit/loey/frost",
+    "path": "assets/ascension/outfits/loey-frost.png",
+    "sha256": "79fd3b210d4dde0d1ff7cb0592a56e5f0f068d9eecc3de7d20a4d8f391ae53a2"
+  },
+  {
+    "key": "outfit/loey/frost/still",
+    "path": "assets/ascension/outfits/loey-frost-still.png",
+    "sha256": "1b4a508c86ef6fe190d064335153a5af631544992e396a5ecfda93e2a13afd6f"
+  },
+  {
+    "key": "outfit/loey/ember",
+    "path": "assets/ascension/outfits/loey-ember.png",
+    "sha256": "cb44dd4731add9ae2d068c6bd786bec7247e5c39fced2cb71a11267e0b765a83"
+  },
+  {
+    "key": "outfit/loey/ember/still",
+    "path": "assets/ascension/outfits/loey-ember-still.png",
+    "sha256": "fa2c2216a67bcaf80cc9b465726ad3d3f1ff6474cc770e26b87b64685bc55553"
+  },
+  {
+    "key": "outfit/rayan/frost",
+    "path": "assets/ascension/outfits/rayan-frost.png",
+    "sha256": "192a8b93c08b466f61f164df150e91fca7d7b5eff9aa09471acc7e382b4d71b1"
+  },
+  {
+    "key": "outfit/rayan/frost/still",
+    "path": "assets/ascension/outfits/rayan-frost-still.png",
+    "sha256": "c9a8193808ca8756dbb6377372dd1931921ba800ff70c4cba4be98cbe977930c"
+  },
+  {
+    "key": "outfit/rayan/ember",
+    "path": "assets/ascension/outfits/rayan-ember.png",
+    "sha256": "428b702cdfab9ba05c58200115d41bb0841e3d871e04cd7da66b0d6c5dc86006"
+  },
+  {
+    "key": "outfit/rayan/ember/still",
+    "path": "assets/ascension/outfits/rayan-ember-still.png",
+    "sha256": "c7d93512de1013d1a15f3bfdb74600f8252288e5fd47ba8b524b27ad8fe03836"
+  },
+  {
+    "key": "outfit/mira/frost",
+    "path": "assets/ascension/outfits/mira-frost.png",
+    "sha256": "87af92f15d6fe16c748b229672aa656d10739850640a8a56b11b0330f81fee21"
+  },
+  {
+    "key": "outfit/mira/frost/still",
+    "path": "assets/ascension/outfits/mira-frost-still.png",
+    "sha256": "668bc91973e2e3cdd24dd17849691ad0c9ee594115d536bdb2983fbf6901aa12"
+  },
+  {
+    "key": "outfit/mira/ember",
+    "path": "assets/ascension/outfits/mira-ember.png",
+    "sha256": "9ff19ec6790120a2763ebc9a493bc44ba1d9ffa3b8a7f9bfebdd076158c91774"
+  },
+  {
+    "key": "outfit/mira/ember/still",
+    "path": "assets/ascension/outfits/mira-ember-still.png",
+    "sha256": "a548d2155d2dac6ab5e60528cbba2bf90a91933cd9505c1a67826d940ec782d8"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "wissem",
+    "name": "Wissem",
+    "role": "The gravity pioneer",
+    "color": "#ff756b",
+    "dark": "#8c324d",
+    "skin": "#ddb291",
+    "hair": "#d9484d",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "gravity",
+        "name": "Gravity control",
+        "icon": "feather",
+        "cooldown": 10,
+        "description": "Lift off, then bend gravity for 4 seconds. Hold jump to float farther."
+      },
+      {
+        "id": "bomba",
+        "name": "Bomba",
+        "icon": "burst",
+        "cooldown": 8,
+        "description": "Lob a fused bomb. Its blast breaks bricks and defeats nearby enemies."
+      }
+    ],
+    "passive": "Crowd fury: 3+ nearby enemies accelerate cooldowns and strengthen Bomba.",
+    "asset": "hero/wissem",
+    "backstory": "A cartographer who refused to accept that the sky had an edge. Wissem found a broken gravity compass beneath Sunpetal Valley and now follows the fractures to their source.",
+    "weapon": "Gravity gauntlets",
+    "combatStyle": {
+      "cooldown": 0.34,
+      "reach": 82,
+      "damage": 2
+    },
+    "animationTempo": 1.0
+  },
+  {
+    "id": "kossay",
+    "name": "Kossay",
+    "role": "The twin-fang ranger",
+    "color": "#81c88c",
+    "dark": "#326b59",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "fang",
+        "name": "Twin fang",
+        "icon": "bolt",
+        "cooldown": 7,
+        "description": "Dash safely through enemies with a pair of enchanted blades."
+      },
+      {
+        "id": "snare",
+        "name": "Ranger snare",
+        "icon": "bullseye",
+        "cooldown": 12,
+        "description": "Place a 7-second trap that slows and damages nearby enemies."
+      }
+    ],
+    "passive": "Fast attacks, precise escapes.",
+    "asset": "hero/kossay",
+    "backstory": "A pathfinder from the Moonlit border. Kossay left the royal hunters when they marked an innocent village as prey; his twin blades now protect the people they once threatened.",
+    "weapon": "Twin fangs",
+    "combatStyle": {
+      "cooldown": 0.27,
+      "reach": 68,
+      "damage": 2
+    },
+    "animationTempo": 1.16
+  },
+  {
+    "id": "yakine",
+    "name": "Yakine",
+    "role": "The astral spellcaster",
+    "color": "#95a7ff",
+    "dark": "#493f8f",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "orbit",
+        "name": "Arcane orbit",
+        "icon": "star",
+        "cooldown": 12,
+        "description": "Three orbiting stars defend you and strike nearby enemies for 6 seconds."
+      },
+      {
+        "id": "chrono",
+        "name": "Chrono well",
+        "icon": "hourglass-half",
+        "cooldown": 15,
+        "description": "Slow enemies and hostile projectiles by 75% for 5 seconds."
+      }
+    ],
+    "passive": "Keep moving while the world slows down.",
+    "asset": "hero/yakine",
+    "backstory": "Keeper of an observatory lost between seconds. Yakine bends brief moments of time, searching the floating worlds for the missing constellations.",
+    "weapon": "Orbit crescent",
+    "combatStyle": {
+      "cooldown": 0.38,
+      "reach": 98,
+      "damage": 2
+    },
+    "animationTempo": 0.9
+  },
+  {
+    "id": "taky",
+    "name": "Taky",
+    "role": "The shadow rogue",
+    "color": "#cc879e",
+    "dark": "#502c50",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "shadow",
+        "name": "Shadow step",
+        "icon": "moon",
+        "cooldown": 8,
+        "description": "Blink forward up to 160 pixels through safe space; gain brief protection."
+      },
+      {
+        "id": "blades",
+        "name": "Night blades",
+        "icon": "burst",
+        "cooldown": 10,
+        "description": "Launch five piercing shadow blades in a wide fan."
+      }
+    ],
+    "passive": "Disappear, reposition, strike.",
+    "asset": "hero/taky",
+    "backstory": "A courier nobody remembers seeing. Taky learned to step through shadows to carry a final message across a kingdom swallowed by night.",
+    "weapon": "Shadow knives",
+    "combatStyle": {
+      "cooldown": 0.29,
+      "reach": 76,
+      "damage": 2
+    },
+    "animationTempo": 1.2
+  },
+  {
+    "id": "garsi",
+    "name": "Garsi",
+    "role": "The iron guardian",
+    "color": "#b4c6e4",
+    "dark": "#4d607a",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "bastion",
+        "name": "Iron bastion",
+        "icon": "shield-halved",
+        "cooldown": 13,
+        "description": "Four seconds of protection; enemy projectiles reflect back."
+      },
+      {
+        "id": "quake",
+        "name": "Quake smash",
+        "icon": "hammer",
+        "cooldown": 10,
+        "description": "Crush nearby foes, or slam from the air to trigger a heavy shockwave."
+      }
+    ],
+    "passive": "Armor does not protect you from an unbridged cliff.",
+    "asset": "hero/garsi",
+    "backstory": "The last guardian of a shattered citadel. Garsi rebuilt a suit of armor from its gates and carries the duty of sheltering others into every trial.",
+    "weapon": "Stonebreaker hammer",
+    "combatStyle": {
+      "cooldown": 0.43,
+      "reach": 104,
+      "damage": 3
+    },
+    "animationTempo": 0.8
+  },
+  {
+    "id": "tounsi",
+    "name": "Tounsi",
+    "role": "The desert corsair",
+    "color": "#ffce94",
+    "dark": "#92604b",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "sirocco",
+        "name": "Sirocco spin",
+        "icon": "rotate-right",
+        "cooldown": 10,
+        "description": "Spin for 3 seconds, pulling coins and striking enemies nearby."
+      },
+      {
+        "id": "vault",
+        "name": "Dune vault",
+        "icon": "feather",
+        "cooldown": 8,
+        "description": "Leap high, even in midair, and ride a gentle 3-second glide."
+      }
+    ],
+    "passive": "A dancer above the dunes.",
+    "asset": "hero/tounsi",
+    "backstory": "A sailor of sand and wind, exiled after returning a stolen relic to its rightful village. Tounsi follows the sky currents with a blade and an unfinished map.",
+    "weapon": "Wind scimitar",
+    "combatStyle": {
+      "cooldown": 0.32,
+      "reach": 92,
+      "damage": 2
+    },
+    "animationTempo": 1.12
+  },
+  {
+    "id": "youssef",
+    "name": "Youssef",
+    "role": "The spark inventor",
+    "color": "#69d3f2",
+    "dark": "#365e89",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "turret",
+        "name": "Pocket turret",
+        "icon": "gear",
+        "cooldown": 14,
+        "description": "Deploy an 8-second turret that aims at nearby enemies."
+      },
+      {
+        "id": "overclock",
+        "name": "Overclock",
+        "icon": "bolt",
+        "cooldown": 13,
+        "description": "Run faster and pulse electricity into nearby enemies for 7 seconds."
+      }
+    ],
+    "passive": "Invention is your superpower.",
+    "asset": "hero/youssef",
+    "backstory": "An inventor whose rescue machine accidentally awakened a Sovereign. Youssef enters the ruins to repair what he started, one improbable gadget at a time.",
+    "weapon": "Clockwork knuckles",
+    "combatStyle": {
+      "cooldown": 0.31,
+      "reach": 78,
+      "damage": 2
+    },
+    "animationTempo": 1.06
+  },
+  {
+    "id": "loey",
+    "name": "Loey",
+    "role": "The wind scout",
+    "color": "#b6d778",
+    "dark": "#617741",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "arrows",
+        "name": "Seeker arrows",
+        "icon": "arrow-right",
+        "cooldown": 9,
+        "description": "Fire three arrows that seek nearby enemies."
+      },
+      {
+        "id": "windwalk",
+        "name": "Windwalk",
+        "icon": "feather",
+        "cooldown": 11,
+        "description": "Six seconds of light-footed speed, glide and one extra midair jump."
+      }
+    ],
+    "passive": "Read the wind. Find your route.",
+    "asset": "hero/loey",
+    "backstory": "A scout who can hear the language of the old trees. Loey searches for the seed of the first forest while defending the creatures displaced by the trials.",
+    "weapon": "Sky bow",
+    "combatStyle": {
+      "cooldown": 0.38,
+      "reach": 112,
+      "damage": 2
+    },
+    "animationTempo": 0.92
+  },
+  {
+    "id": "rayan",
+    "name": "Rayan",
+    "role": "The sun-forged lancer",
+    "color": "#efd083",
+    "dark": "#4d607a",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "sunlance",
+        "name": "Sunlance",
+        "icon": "sword",
+        "cooldown": 10,
+        "description": "Hurl a fast piercing lance. Skilled timing staggers a boss."
+      },
+      {
+        "id": "rally",
+        "name": "Dawn Rally",
+        "icon": "shield",
+        "cooldown": 18,
+        "description": "A brief guard restores stamina and prepares the next attack."
+      }
+    ],
+    "passive": "Distinct skills; shared fair movement physics.",
+    "asset": "hero/rayan",
+    "backstory": "Rayan once kept the bridges of Amber Skyway open through a century of storms. His oath is simple: nobody crosses the last bridge alone.",
+    "weapon": "Sun lance",
+    "combatStyle": {
+      "cooldown": 0.4,
+      "reach": 106,
+      "damage": 2
+    },
+    "animationTempo": 0.96
+  },
+  {
+    "id": "mira",
+    "name": "Mira",
+    "role": "The frost archivist",
+    "color": "#8ae2e9",
+    "dark": "#493f8f",
+    "skin": "#ddb291",
+    "hair": "#282332",
+    "style": "quiff",
+    "skills": [
+      {
+        "id": "frostnova",
+        "name": "Frost Nova",
+        "icon": "snowflake",
+        "cooldown": 12,
+        "description": "Freeze nearby monsters and slow the boss without stopping its phases."
+      },
+      {
+        "id": "icevault",
+        "name": "Glacier Step",
+        "icon": "wind",
+        "cooldown": 10,
+        "description": "Leap into a frost veil, leaving a slowing sigil below."
+      }
+    ],
+    "passive": "Distinct skills; shared fair movement physics.",
+    "asset": "hero/mira",
+    "backstory": "Mira reads memories trapped inside Crystal Hollow. She entered the trials to recover the names erased by the Sovereigns, not for a crown.",
+    "weapon": "Frost staff",
+    "combatStyle": {
+      "cooldown": 0.39,
+      "reach": 100,
+      "damage": 2
+    },
+    "animationTempo": 0.86
+  }
+]

@@ -1,0 +1,16 @@
+PASS Android boot reached Home stage
+PASS Android admission rejects incorrect six-digit code (no radio)
+PASS all Android images decoded
+PASS world started
+PASS analog movement moves player
+PASS jump rises
+PASS attack executed
+PASS dodge spends stamina
+PASS knife spends ammunition
+PASS both hero skills execute
+PASS temporary pet summon consumes a use
+PASS four control presets save independently on Android
+PASS boss defeated on Android using ordinary inputs
+PASS no uncaught JS errors
+PASS save survives WebView restart
+PASS native room UI generates six digits

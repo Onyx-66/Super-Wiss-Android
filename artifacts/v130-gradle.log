@@ -1,0 +1,143 @@
+Gradle wrapper SHA-256 verified.
+
+> Task :app:bundleGame
+Bundled 15 maps, 320 assets; Android shell 12477 bytes; browser 18.38 MiB.
+
+> Task :app:preBuild
+> Task :app:preQaBuild
+> Task :app:mergeQaJniLibFolders UP-TO-DATE
+> Task :app:mergeQaNativeLibs NO-SOURCE
+> Task :app:stripQaDebugSymbols NO-SOURCE
+> Task :app:extractQaNativeSymbolTables NO-SOURCE
+> Task :app:mergeQaNativeDebugMetadata NO-SOURCE
+> Task :app:checkQaDuplicateClasses UP-TO-DATE
+> Task :app:javaPreCompileQa UP-TO-DATE
+> Task :app:checkQaAarMetadata UP-TO-DATE
+> Task :app:processQaNavigationResources UP-TO-DATE
+> Task :app:compileQaNavigationResources UP-TO-DATE
+> Task :app:generateQaResValues UP-TO-DATE
+> Task :app:mapQaSourceSetPaths UP-TO-DATE
+> Task :app:generateQaResources UP-TO-DATE
+> Task :app:mergeQaResources UP-TO-DATE
+> Task :app:packageQaResources UP-TO-DATE
+> Task :app:parseQaLocalResources UP-TO-DATE
+> Task :app:createQaCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksQa UP-TO-DATE
+> Task :app:processQaMainManifest UP-TO-DATE
+> Task :app:processQaManifest UP-TO-DATE
+> Task :app:processQaManifestForPackage UP-TO-DATE
+> Task :app:processQaResources UP-TO-DATE
+> Task :app:compileQaJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderQa UP-TO-DATE
+> Task :app:desugarQaFileDependencies UP-TO-DATE
+> Task :app:mergeQaStartupProfile UP-TO-DATE
+> Task :app:mergeExtDexQa UP-TO-DATE
+> Task :app:mergeDexQa UP-TO-DATE
+> Task :app:mergeQaArtProfile UP-TO-DATE
+> Task :app:mergeQaGlobalSynthetics UP-TO-DATE
+> Task :app:compileQaArtProfile UP-TO-DATE
+> Task :app:mergeQaShaders UP-TO-DATE
+> Task :app:compileQaShaders NO-SOURCE
+> Task :app:generateQaAssets UP-TO-DATE
+> Task :app:mergeQaAssets
+> Task :app:extractQaVersionControlInfo UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateQaLintVitalReportModel
+> Task :app:compressQaAssets
+> Task :app:processQaJavaRes NO-SOURCE
+> Task :app:mergeQaJavaResource UP-TO-DATE
+> Task :app:optimizeQaResources UP-TO-DATE
+> Task :app:collectQaDependencies UP-TO-DATE
+> Task :app:sdkQaDependencyData UP-TO-DATE
+> Task :app:validateSigningQa UP-TO-DATE
+> Task :app:writeQaAppMetadata UP-TO-DATE
+> Task :app:writeQaSigningConfigVersions UP-TO-DATE
+> Task :app:processApplicationManifestQaForBundle UP-TO-DATE
+> Task :app:bundleQaResources UP-TO-DATE
+> Task :app:lintVitalAnalyzeQa
+> Task :app:buildQaPreBundle
+> Task :app:lintVitalReportQa SKIPPED
+> Task :app:lintVitalQa SKIPPED
+> Task :app:configureQaDependencies UP-TO-DATE
+> Task :app:parseQaIntegrityConfig UP-TO-DATE
+> Task :app:generateQaLintReportModel
+> Task :app:bundleQaClassesToCompileJar UP-TO-DATE
+> Task :app:preQaUnitTestBuild
+> Task :app:generateQaUnitTestLintModel UP-TO-DATE
+> Task :app:lintAnalyzeQaUnitTest UP-TO-DATE
+> Task :app:preDebugBuild
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug UP-TO-DATE
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:packageQaBundle
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :app:compressDebugAssets
+> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :app:generateDebugLintReportModel
+> Task :app:preDebugUnitTestBuild
+> Task :app:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+> Task :app:packageQa
+> Task :app:createQaApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleQa
+> Task :app:signQaBundle
+> Task :app:produceQaBundleIdeListingFile
+> Task :app:createQaBundleListingFileRedirect UP-TO-DATE
+> Task :app:bundleQa
+> Task :app:lintAnalyzeQa
+> Task :app:lintReportQa UP-TO-DATE
+> Task :app:lintQa
+> Task :app:lintAnalyzeDebug
+> Task :app:lintReportDebug UP-TO-DATE
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/kossa/Desktop/Super-Wiss/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4s
+104 actionable tasks: 19 executed, 85 up-to-date

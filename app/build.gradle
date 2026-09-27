@@ -1,0 +1,84 @@
+plugins { id 'com.android.application' }
+
+def releaseProperties = new Properties()
+def releaseFile = rootProject.file('keystore.properties')
+if (releaseFile.exists()) releaseFile.withInputStream { releaseProperties.load(it) }
+
+android {
+    namespace 'com.superwiss.game.playtest'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.superwiss.game.playtest'
+        minSdk 26
+        targetSdk 36
+        versionCode 44
+        versionName '1.3.1-playtest'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    signingConfigs {
+        // PUBLIC nonproduction certificate. Never publish a production app with it.
+        qa {
+            storeFile rootProject.file('qa/super-wiss-qa.jks')
+            storePassword 'superwiss-testing-only'
+            keyAlias 'superwiss-qa'
+            keyPassword 'superwiss-testing-only'
+            enableV1Signing true
+            enableV2Signing true
+        }
+        if (releaseFile.exists()) {
+            production {
+                storeFile rootProject.file(releaseProperties['storeFile'])
+                storePassword releaseProperties['storePassword']
+                keyAlias releaseProperties['keyAlias']
+                keyPassword releaseProperties['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+        }
+        qa {
+            initWith release
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.qa
+        }
+        release {
+            minifyEnabled false
+            if (releaseFile.exists()) signingConfig signingConfigs.production
+        }
+    }
+    lint { abortOnError true }
+}
+
+def rejectPublicReleaseKey = tasks.register('verifyProductionKey') {
+    doLast {
+        if (!releaseFile.exists()) throw new GradleException('Set your PRIVATE keystore.properties for a production release. QA uses assembleQa, not assembleRelease.')
+        def ks = java.security.KeyStore.getInstance(java.security.KeyStore.getDefaultType())
+        rootProject.file(releaseProperties['storeFile']).withInputStream { ks.load(it, releaseProperties['storePassword'].toCharArray()) }
+        def cert = ks.getCertificate(releaseProperties['keyAlias'])
+        if (cert == null) throw new GradleException('Production signing alias was not found.')
+        def fp = java.security.MessageDigest.getInstance('SHA-256').digest(cert.encoded).encodeHex().toString()
+        if (fp == '0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207') throw new GradleException('The public QA certificate cannot be used for a production release.')
+    }
+}
+tasks.configureEach { task -> if (task.name in ['preReleaseBuild','validateSigningRelease','packageRelease','signReleaseBundle']) task.dependsOn(rejectPublicReleaseKey) }
+// Runtime: Android framework only. The complete offline game is bundled in assets.
+
+// Regenerate APK media and JS from editable sources before every variant build.
+def bundleGame = tasks.register('bundleGame', Exec) {
+    workingDir rootProject.projectDir
+    commandLine 'node', 'scripts/bundle.mjs'
+    inputs.dir rootProject.file('game')
+    inputs.dir rootProject.file('assets')
+    inputs.dir rootProject.file('licenses')
+    inputs.dir rootProject.file('scripts')
+    outputs.dir file('src/main/assets')
+    outputs.dir file('src/debug/assets')
+}
+tasks.named('preBuild').configure { dependsOn bundleGame }

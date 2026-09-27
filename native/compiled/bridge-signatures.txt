@@ -1,0 +1,50 @@
+Compiled from "NativeBridge.java"
+public final class com.superwiss.game.playtest.NativeBridge {
+  com.superwiss.game.playtest.NativeBridge(com.superwiss.game.playtest.MainActivity, com.superwiss.game.playtest.BluetoothLink);
+    descriptor: (Lcom/superwiss/game/playtest/MainActivity;Lcom/superwiss/game/playtest/BluetoothLink;)V
+
+  public java.lang.String capabilities();
+    descriptor: ()Ljava/lang/String;
+
+  public void requestBluetooth();
+    descriptor: ()V
+
+  public void devices();
+    descriptor: ()V
+
+  public void host();
+    descriptor: ()V
+
+  public void join(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void send(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)V
+
+  public void kick(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void stop();
+    descriptor: ()V
+
+  public void openBluetoothSettings();
+    descriptor: ()V
+
+  public void setApiOrigin(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void share(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void copy(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void haptic(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  static com.superwiss.game.playtest.MainActivity access$000(com.superwiss.game.playtest.NativeBridge);
+    descriptor: (Lcom/superwiss/game/playtest/NativeBridge;)Lcom/superwiss/game/playtest/MainActivity;
+
+  static com.superwiss.game.playtest.BluetoothLink access$100(com.superwiss.game.playtest.NativeBridge);
+    descriptor: (Lcom/superwiss/game/playtest/NativeBridge;)Lcom/superwiss/game/playtest/BluetoothLink;
+}

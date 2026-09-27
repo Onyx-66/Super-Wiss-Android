@@ -1,0 +1,7 @@
+**/.git
+**/.env
+**/*.sqlite*
+qa/
+artifacts/
+dist/
+legacy/

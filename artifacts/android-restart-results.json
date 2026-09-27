@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "processRestart": true,
+  "hero": "garsi",
+  "presets": 4,
+  "bossRecord": true,
+  "errors": []
+}

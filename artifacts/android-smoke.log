@@ -1,0 +1,28 @@
+PASS Android boot reached Home stage
+PASS Android admission rejects incorrect six-digit code (no radio)
+PASS all Android images decoded
+PASS world started
+PASS analog movement moves player
+PASS jump rises
+PASS attack executed
+PASS dodge spends stamina
+PASS knife spends ammunition
+PASS both hero skills execute
+PASS temporary pet summon consumes a use
+[Warning] Multiple displays were found, but no display id was specified! Defaulting to the first display found, however this default is not guaranteed to be consistent across captures. A display id should be specified.
+A display ID can be specified with the [-d display-id] option.
+See "dumpsys SurfaceFlinger --display-id" for valid display IDs.
+/sdcard/wiss-gameplay.png: 1 file pulled, 0 skipped. 38.9 MB/s (508507 bytes in 0.012s)
+PASS four control presets save independently on Android
+PASS boss defeated on Android using ordinary inputs
+[Warning] Multiple displays were found, but no display id was specified! Defaulting to the first display found, however this default is not guaranteed to be consistent across captures. A display id should be specified.
+A display ID can be specified with the [-d display-id] option.
+See "dumpsys SurfaceFlinger --display-id" for valid display IDs.
+/sdcard/wiss-boss.png: 1 file pulled, 0 skipped. 28.8 MB/s (563651 bytes in 0.019s)
+PASS no uncaught JS errors
+PASS save survives WebView restart
+PASS native room UI generates six digits
+[Warning] Multiple displays were found, but no display id was specified! Defaulting to the first display found, however this default is not guaranteed to be consistent across captures. A display id should be specified.
+A display ID can be specified with the [-d display-id] option.
+See "dumpsys SurfaceFlinger --display-id" for valid display IDs.
+/sdcard/wiss-room.png: 1 file pulled, 0 skipped. 23.8 MB/s (480330 bytes in 0.019s)

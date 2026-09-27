@@ -1,0 +1,179 @@
+{
+  "checks": [
+    {
+      "name": "Nightfall lobby loads with no runtime error",
+      "pass": true
+    },
+    {
+      "name": "guest has no invented currency, rival records or online account",
+      "pass": true
+    },
+    {
+      "name": "all bundled images decode",
+      "pass": true
+    },
+    {
+      "name": "eight actual hero animation sheets",
+      "pass": true
+    },
+    {
+      "name": "all seven pets have multi-frame animation",
+      "pass": true
+    },
+    {
+      "name": "Boss Hunt exposes all 15 bosses",
+      "pass": true
+    },
+    {
+      "name": "tier selector is persistent next-run setting",
+      "pass": true
+    },
+    {
+      "name": "new onboarding teaches focus, soul and exploration",
+      "pass": true
+    },
+    {
+      "name": "Boss Hunt starts real combat simulation",
+      "pass": true
+    },
+    {
+      "name": "analog is default active",
+      "pass": true
+    },
+    {
+      "name": "boss health and stamina/focus HUD visible",
+      "pass": true
+    },
+    {
+      "name": "seven action buttons have 48px touch targets",
+      "pass": true
+    },
+    {
+      "name": "simultaneous analog and jump touch moves and lifts hero",
+      "pass": true
+    },
+    {
+      "name": "joystick tracks analog deflection",
+      "pass": true
+    },
+    {
+      "name": "joystick release clears movement and captures",
+      "pass": true
+    },
+    {
+      "name": "knife button consumes actual ammunition",
+      "pass": true
+    },
+    {
+      "name": "melee button starts animation and spends stamina",
+      "pass": true
+    },
+    {
+      "name": "dodge starts brief protected motion",
+      "pass": true
+    },
+    {
+      "name": "Gravity uses focus and starts its cooldown",
+      "pass": true
+    },
+    {
+      "name": "global skill lock is active",
+      "pass": true
+    },
+    {
+      "name": "Bomba has independent cooldown and added focus cost",
+      "pass": true
+    },
+    {
+      "name": "summon button spends one charge and 60 soul",
+      "pass": true
+    },
+    {
+      "name": "keyboard knife control is wired",
+      "pass": true
+    },
+    {
+      "name": "solo pause freezes boss time",
+      "pass": true
+    },
+    {
+      "name": "settings switches analog to arrows",
+      "pass": true
+    },
+    {
+      "name": "blood toggle changes renderer preference",
+      "pass": true
+    },
+    {
+      "name": "haptics can be disabled",
+      "pass": true
+    },
+    {
+      "name": "analog and action cluster can be mirrored",
+      "pass": true
+    },
+    {
+      "name": "native lifecycle event pauses solo and clears input",
+      "pass": true
+    },
+    {
+      "name": "guest profile editor offers eight avatars",
+      "pass": true
+    },
+    {
+      "name": "profile name banner and frame saved",
+      "pass": true
+    },
+    {
+      "name": "signup is not faked when backend is unconfigured",
+      "pass": true
+    },
+    {
+      "name": "browser explains native Bluetooth rather than simulating a radio",
+      "pass": true
+    },
+    {
+      "name": "640\u00d7360: all combat buttons inside viewport and at least 48px",
+      "pass": true
+    },
+    {
+      "name": "960\u00d7540: all combat buttons inside viewport and at least 48px",
+      "pass": true
+    },
+    {
+      "name": "1280\u00d7720: all combat buttons inside viewport and at least 48px",
+      "pass": true
+    },
+    {
+      "name": "all 47 bundled music/SFX files decode",
+      "pass": true
+    },
+    {
+      "name": "no runtime exceptions across UI, touch, profile, bosses and map fixtures",
+      "pass": true
+    },
+    {
+      "name": "two browser clients show the same two-player lobby",
+      "pass": true
+    },
+    {
+      "name": "client input crosses bridge and host moves the actual remote player",
+      "pass": true
+    },
+    {
+      "name": "both clients render a real opponent",
+      "pass": true
+    },
+    {
+      "name": "PvP hides unbalanced hero/pet/summon controls",
+      "pass": true
+    },
+    {
+      "name": "no two-client browser exceptions",
+      "pass": true
+    }
+  ],
+  "count": 43,
+  "errors": [],
+  "environment": "Chromium touch emulation; in-memory paired transport; NOT Android/Bluetooth hardware"
+}

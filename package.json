@@ -1,0 +1,21 @@
+{
+  "name": "super-wiss-odyssey",
+  "version": "1.3.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/compile-content.mjs && node --test tests/nightfall.test.mjs tests/nearby.test.mjs tests/ascension.test.mjs tests/accounts.test.mjs tests/world-physics.test.mjs tests/customization.test.mjs tests/upgrade-rules.test.mjs",
+    "build": "node scripts/bundle.mjs",
+    "serve": "node scripts/serve.mjs",
+    "validate": "node scripts/validate-assets.mjs",
+    "map": "node scripts/map-tool.mjs",
+    "test:browser": "node tests/boot-browser.cjs",
+    "accounts": "node --env-file-if-exists=server/.env server/index.mjs",
+    "test:android": "node tests/android-smoke.cjs",
+    "test:android-restart": "node tests/android-restart.cjs",
+    "validate:maps": "node scripts/validate-routes.mjs",
+    "test:ui": "node tests/upgrade-ui.cjs",
+    "test:weapon-ui": "node --test tests/weapon-ui.test.mjs",
+    "validate:weapon-art": "node scripts/validate-assets.mjs --require-weapons"
+  }
+}

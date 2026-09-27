@@ -1,0 +1,89 @@
+Gradle wrapper SHA-256 verified.
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+Checking the license for package Android SDK Build-Tools 35 in C:\Users\kossa\AppData\Local\Android\Sdk\licenses
+License for package Android SDK Build-Tools 35 accepted.
+Preparing "Install Android SDK Build-Tools 35 v.35.0.0".
+"Install Android SDK Build-Tools 35 v.35.0.0" ready.
+Installing Android SDK Build-Tools 35 in C:\Users\kossa\AppData\Local\Android\Sdk\build-tools\35.0.0
+"Install Android SDK Build-Tools 35 v.35.0.0" complete.
+"Install Android SDK Build-Tools 35 v.35.0.0" finished.
+Checking the license for package Android SDK Platform 36 in C:\Users\kossa\AppData\Local\Android\Sdk\licenses
+License for package Android SDK Platform 36 accepted.
+Preparing "Install Android SDK Platform 36 (revision 2)".
+"Install Android SDK Platform 36 (revision 2)" ready.
+Installing Android SDK Platform 36 in C:\Users\kossa\AppData\Local\Android\Sdk\platforms\android-36
+"Install Android SDK Platform 36 (revision 2)" complete.
+"Install Android SDK Platform 36 (revision 2)" finished.
+
+> Task :app:bundleGame
+Bundled 15 maps, 317 assets; Android shell 12194 bytes; browser 16.74 MiB.
+
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:processDebugNavigationResources
+> Task :app:compileDebugNavigationResources
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeExtDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac
+C:\Users\kossa\Desktop\Super-Wiss\app\src\main\java\com\superwiss\game\playtest\MainActivity.java:64: error: unmappable character (0xB7) for encoding UTF-8
+        bootText.setText("SUPER WISS ASCENSION\n\nBoot ? opening local game?");
+                                                       ^
+C:\Users\kossa\Desktop\Super-Wiss\app\src\main\java\com\superwiss\game\playtest\MainActivity.java:64: error: unmappable character (0x85) for encoding UTF-8
+        bootText.setText("SUPER WISS ASCENSION\n\nBoot ? opening local game?");
+                                                                           ^
+
+> Task :app:compressDebugAssets
+
+> Task :app:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/kossa/Desktop/Super-Wiss/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 45s
+35 actionable tasks: 35 executed

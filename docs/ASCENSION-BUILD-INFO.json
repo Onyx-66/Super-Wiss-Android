@@ -1,0 +1,470 @@
+{
+  "version": "1.1.0",
+  "application_id": "com.superwiss.game.playtest",
+  "android_version_code": 41,
+  "android_version_name": "1.1.0-playtest",
+  "label": "Super Wiss Ascension",
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "orientation": "sensorLandscape",
+  "apk_bytes": 12861062,
+  "apk_sha256": "d52e1f2a4207c6b16e56edf51d164acd5e8a165935de253c606ffc4086de7279",
+  "html_sha256": "b6334d78251eda3af5e1ebc6c5d2a0c11e38a80b68c2639085893e37c5010038",
+  "dex_sha256": "e6162bd67c022ce9156522f19568ff3ea4bbf9bdde6bbcdc608d3f473206aeb7",
+  "certificate_sha256": "0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207",
+  "embedded_html_equals_current_dist_and_android_source": true,
+  "dex_equals_current_compiled_host": true,
+  "defined_classes": [
+    "Lcom/superwiss/game/playtest/BackResult;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$1;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$2;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$Listener;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$Peer$1;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$Peer$2;",
+    "Lcom/superwiss/game/playtest/BluetoothLink$Peer;",
+    "Lcom/superwiss/game/playtest/BluetoothLink;",
+    "Lcom/superwiss/game/playtest/MainActivity$1;",
+    "Lcom/superwiss/game/playtest/MainActivity$2;",
+    "Lcom/superwiss/game/playtest/MainActivity;",
+    "Lcom/superwiss/game/playtest/NativeBridge$1;",
+    "Lcom/superwiss/game/playtest/NativeBridge$2;",
+    "Lcom/superwiss/game/playtest/NativeBridge$3;",
+    "Lcom/superwiss/game/playtest/NativeBridge$4;",
+    "Lcom/superwiss/game/playtest/NativeBridge$5;",
+    "Lcom/superwiss/game/playtest/NativeBridge;",
+    "Lcom/superwiss/game/playtest/OfflineClient;",
+    "Lcom/superwiss/game/playtest/SafeInsets;"
+  ],
+  "compile_time_android_stubs_in_dex": false,
+  "test_hooks_or_mock_transport_shipped": false,
+  "transparent_actor_frame_corner_checks": 47,
+  "artwork_alpha_checks": [
+    {
+      "asset": "hero/wissem",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/kossay",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/yakine",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/taky",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/garsi",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/tounsi",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/youssef",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/loey",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/slime",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/beetle",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/bat",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/crab",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/sentry",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/spiker",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/imp",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/ninja",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/wisp",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/maw",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/golem",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/drone",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "enemy/hopper",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/wolf",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/eagle",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/mole",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/fox",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/turtle",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/dragon",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/orca",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/briar-regent",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/moon-reaper",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/auric-colossus",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/tide-tyrant",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/sugar-witch",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/frostbound",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/iron-conductor",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/mycelium-king",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/cinder-maw",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/prism-oracle",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/abyss-leviathan",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/storm-archon",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/scarlet-blade",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/null-engine",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "boss/eclipse-sovereign",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/rayan",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "hero/mira",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/skywolf",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "asset": "pet/emberguard",
+      "alpha_corners": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "native_build_route": "javac/DX/Apktool/AAPT2; custom QA signer; not Android Studio/official SDK",
+  "official_apksigner_run": false,
+  "android_device_or_emulator_run": false,
+  "bluetooth_radio_tested": false
+}

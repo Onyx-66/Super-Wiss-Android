@@ -1,0 +1,1105 @@
+--------- beginning of crash
+09-25 08:21:29.392   572   572 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 572 (android.hardwar), pid 572 (android.hardwar)
+09-25 08:21:29.690   592   592 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:29.690   592   592 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:29.690   592   592 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:29.690   592   592 F DEBUG   : Revision: '0'
+09-25 08:21:29.690   592   592 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:29.690   592   592 F DEBUG   : Timestamp: 2026-09-25 08:21:29.503262700+0000
+09-25 08:21:29.690   592   592 F DEBUG   : Process uptime: 1s
+09-25 08:21:29.690   592   592 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:29.699   592   592 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:29.699   592   592 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:29.699   592   592 F DEBUG   : pid: 572, ppid: 1, tid: 572, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:29.699   592   592 F DEBUG   : uid: 1083
+09-25 08:21:29.699   592   592 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:29.699   592   592 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:29.699   592   592 F DEBUG   : 
+09-25 08:21:29.699   592   592 F DEBUG   :     rax 0000000000000000  rbx 000000000000023c  rcx 000074709ce6706d  rdx 0000000000000006
+09-25 08:21:29.699   592   592 F DEBUG   :     r8  00007ff1b997d3b0  r9  00007ff1b997d3b0  r10 00007ff1b997d170  r11 0000000000000207
+09-25 08:21:29.699   592   592 F DEBUG   :     r12 0000000000000000  r13 00007ff1b997d310  r14 000000000000023c  r15 00007ff1b997d170
+09-25 08:21:29.699   592   592 F DEBUG   :     rdi 000000000000023c  rsi 000000000000023c
+09-25 08:21:29.699   592   592 F DEBUG   :     rbp 00007ff1b997d220  rsp 00007ff1b997d170  rip 000074709ce6706d  err 0000000000000000
+09-25 08:21:29.699   592   592 F DEBUG   : 
+09-25 08:21:29.699   592   592 F DEBUG   : 18 total frames
+09-25 08:21:29.699   592   592 F DEBUG   : backtrace:
+09-25 08:21:29.699   592   592 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:29.699   592   592 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:29.699   592   592 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:29.699   592   592 F DEBUG   : 
+09-25 08:21:29.699   592   592 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:29.699   592   592 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:34.327   720   720 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 720 (android.hardwar), pid 720 (android.hardwar)
+09-25 08:21:34.461   728   728 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:34.462   728   728 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:34.462   728   728 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:34.462   728   728 F DEBUG   : Revision: '0'
+09-25 08:21:34.462   728   728 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:34.462   728   728 F DEBUG   : Timestamp: 2026-09-25 08:21:34.406924600+0000
+09-25 08:21:34.462   728   728 F DEBUG   : Process uptime: 1s
+09-25 08:21:34.462   728   728 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:34.462   728   728 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:34.462   728   728 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:34.462   728   728 F DEBUG   : pid: 720, ppid: 1, tid: 720, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:34.462   728   728 F DEBUG   : uid: 1083
+09-25 08:21:34.462   728   728 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:34.462   728   728 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:34.462   728   728 F DEBUG   : 
+09-25 08:21:34.462   728   728 F DEBUG   :     rax 0000000000000000  rbx 00000000000002d0  rcx 000079163af2f06d  rdx 0000000000000006
+09-25 08:21:34.462   728   728 F DEBUG   :     r8  00007ffdb3b58430  r9  00007ffdb3b58430  r10 00007ffdb3b581f0  r11 0000000000000207
+09-25 08:21:34.462   728   728 F DEBUG   :     r12 0000000000000000  r13 00007ffdb3b58390  r14 00000000000002d0  r15 00007ffdb3b581f0
+09-25 08:21:34.462   728   728 F DEBUG   :     rdi 00000000000002d0  rsi 00000000000002d0
+09-25 08:21:34.462   728   728 F DEBUG   :     rbp 00007ffdb3b582a0  rsp 00007ffdb3b581f0  rip 000079163af2f06d  err 0000000000000000
+09-25 08:21:34.462   728   728 F DEBUG   : 
+09-25 08:21:34.462   728   728 F DEBUG   : 18 total frames
+09-25 08:21:34.462   728   728 F DEBUG   : backtrace:
+09-25 08:21:34.462   728   728 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:34.462   728   728 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:34.462   728   728 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:34.462   728   728 F DEBUG   : 
+09-25 08:21:34.462   728   728 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:34.462   728   728 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:39.340   823   823 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 823 (android.hardwar), pid 823 (android.hardwar)
+09-25 08:21:39.455   831   831 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:39.455   831   831 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:39.455   831   831 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:39.455   831   831 F DEBUG   : Revision: '0'
+09-25 08:21:39.455   831   831 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:39.455   831   831 F DEBUG   : Timestamp: 2026-09-25 08:21:39.407040200+0000
+09-25 08:21:39.455   831   831 F DEBUG   : Process uptime: 1s
+09-25 08:21:39.455   831   831 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:39.456   831   831 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:39.456   831   831 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:39.456   831   831 F DEBUG   : pid: 823, ppid: 1, tid: 823, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:39.456   831   831 F DEBUG   : uid: 1083
+09-25 08:21:39.456   831   831 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:39.456   831   831 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:39.456   831   831 F DEBUG   : 
+09-25 08:21:39.456   831   831 F DEBUG   :     rax 0000000000000000  rbx 0000000000000337  rcx 0000701822aa306d  rdx 0000000000000006
+09-25 08:21:39.456   831   831 F DEBUG   :     r8  00007ffab148d0c0  r9  00007ffab148d0c0  r10 00007ffab148ce80  r11 0000000000000207
+09-25 08:21:39.456   831   831 F DEBUG   :     r12 0000000000000000  r13 00007ffab148d020  r14 0000000000000337  r15 00007ffab148ce80
+09-25 08:21:39.456   831   831 F DEBUG   :     rdi 0000000000000337  rsi 0000000000000337
+09-25 08:21:39.456   831   831 F DEBUG   :     rbp 00007ffab148cf30  rsp 00007ffab148ce80  rip 0000701822aa306d  err 0000000000000000
+09-25 08:21:39.456   831   831 F DEBUG   : 
+09-25 08:21:39.456   831   831 F DEBUG   : 18 total frames
+09-25 08:21:39.456   831   831 F DEBUG   : backtrace:
+09-25 08:21:39.456   831   831 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:39.456   831   831 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:39.456   831   831 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:39.456   831   831 F DEBUG   : 
+09-25 08:21:39.456   831   831 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:39.456   831   831 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:44.342   925   925 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 925 (android.hardwar), pid 925 (android.hardwar)
+09-25 08:21:44.525   933   933 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:44.525   933   933 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:44.525   933   933 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:44.525   933   933 F DEBUG   : Revision: '0'
+09-25 08:21:44.525   933   933 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:44.525   933   933 F DEBUG   : Timestamp: 2026-09-25 08:21:44.423836900+0000
+09-25 08:21:44.525   933   933 F DEBUG   : Process uptime: 1s
+09-25 08:21:44.525   933   933 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:44.526   933   933 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:44.526   933   933 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:44.526   933   933 F DEBUG   : pid: 925, ppid: 1, tid: 925, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:44.526   933   933 F DEBUG   : uid: 1083
+09-25 08:21:44.526   933   933 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:44.526   933   933 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:44.526   933   933 F DEBUG   : 
+09-25 08:21:44.526   933   933 F DEBUG   :     rax 0000000000000000  rbx 000000000000039d  rcx 0000746c16ae306d  rdx 0000000000000006
+09-25 08:21:44.526   933   933 F DEBUG   :     r8  00007ff3c0d97120  r9  00007ff3c0d97120  r10 00007ff3c0d96ee0  r11 0000000000000207
+09-25 08:21:44.526   933   933 F DEBUG   :     r12 0000000000000000  r13 00007ff3c0d97080  r14 000000000000039d  r15 00007ff3c0d96ee0
+09-25 08:21:44.526   933   933 F DEBUG   :     rdi 000000000000039d  rsi 000000000000039d
+09-25 08:21:44.526   933   933 F DEBUG   :     rbp 00007ff3c0d96f90  rsp 00007ff3c0d96ee0  rip 0000746c16ae306d  err 0000000000000000
+09-25 08:21:44.526   933   933 F DEBUG   : 
+09-25 08:21:44.526   933   933 F DEBUG   : 18 total frames
+09-25 08:21:44.526   933   933 F DEBUG   : backtrace:
+09-25 08:21:44.526   933   933 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:44.526   933   933 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:44.526   933   933 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:44.526   933   933 F DEBUG   : 
+09-25 08:21:44.526   933   933 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:44.526   933   933 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:49.384  1055  1055 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1055 (android.hardwar), pid 1055 (android.hardwar)
+09-25 08:21:49.662  1066  1066 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:49.662  1066  1066 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:49.662  1066  1066 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:49.662  1066  1066 F DEBUG   : Revision: '0'
+09-25 08:21:49.662  1066  1066 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:49.662  1066  1066 F DEBUG   : Timestamp: 2026-09-25 08:21:49.476521100+0000
+09-25 08:21:49.662  1066  1066 F DEBUG   : Process uptime: 1s
+09-25 08:21:49.662  1066  1066 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:49.668  1066  1066 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:49.668  1066  1066 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:49.668  1066  1066 F DEBUG   : pid: 1055, ppid: 1, tid: 1055, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:49.668  1066  1066 F DEBUG   : uid: 1083
+09-25 08:21:49.668  1066  1066 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:49.668  1066  1066 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:49.668  1066  1066 F DEBUG   : 
+09-25 08:21:49.668  1066  1066 F DEBUG   :     rax 0000000000000000  rbx 000000000000041f  rcx 00007f6600f1b06d  rdx 0000000000000006
+09-25 08:21:49.668  1066  1066 F DEBUG   :     r8  00007ff8df8e31d0  r9  00007ff8df8e31d0  r10 00007ff8df8e2f90  r11 0000000000000207
+09-25 08:21:49.668  1066  1066 F DEBUG   :     r12 0000000000000000  r13 00007ff8df8e3130  r14 000000000000041f  r15 00007ff8df8e2f90
+09-25 08:21:49.668  1066  1066 F DEBUG   :     rdi 000000000000041f  rsi 000000000000041f
+09-25 08:21:49.668  1066  1066 F DEBUG   :     rbp 00007ff8df8e3040  rsp 00007ff8df8e2f90  rip 00007f6600f1b06d  err 0000000000000000
+09-25 08:21:49.668  1066  1066 F DEBUG   : 
+09-25 08:21:49.668  1066  1066 F DEBUG   : 18 total frames
+09-25 08:21:49.668  1066  1066 F DEBUG   : backtrace:
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:49.668  1066  1066 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:49.668  1066  1066 F DEBUG   : 
+09-25 08:21:49.668  1066  1066 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:49.668  1066  1066 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:54.434  1327  1327 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1327 (android.hardwar), pid 1327 (android.hardwar)
+09-25 08:21:54.740  1335  1335 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:54.741  1335  1335 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:54.741  1335  1335 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:54.741  1335  1335 F DEBUG   : Revision: '0'
+09-25 08:21:54.741  1335  1335 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:54.741  1335  1335 F DEBUG   : Timestamp: 2026-09-25 08:21:54.520832200+0000
+09-25 08:21:54.741  1335  1335 F DEBUG   : Process uptime: 1s
+09-25 08:21:54.741  1335  1335 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:54.742  1335  1335 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:54.742  1335  1335 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:54.742  1335  1335 F DEBUG   : pid: 1327, ppid: 1, tid: 1327, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:54.742  1335  1335 F DEBUG   : uid: 1083
+09-25 08:21:54.742  1335  1335 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:54.742  1335  1335 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:54.742  1335  1335 F DEBUG   : 
+09-25 08:21:54.742  1335  1335 F DEBUG   :     rax 0000000000000000  rbx 000000000000052f  rcx 00007a776711f06d  rdx 0000000000000006
+09-25 08:21:54.742  1335  1335 F DEBUG   :     r8  00007ff48b654270  r9  00007ff48b654270  r10 00007ff48b654030  r11 0000000000000207
+09-25 08:21:54.742  1335  1335 F DEBUG   :     r12 0000000000000000  r13 00007ff48b6541d0  r14 000000000000052f  r15 00007ff48b654030
+09-25 08:21:54.742  1335  1335 F DEBUG   :     rdi 000000000000052f  rsi 000000000000052f
+09-25 08:21:54.742  1335  1335 F DEBUG   :     rbp 00007ff48b6540e0  rsp 00007ff48b654030  rip 00007a776711f06d  err 0000000000000000
+09-25 08:21:54.742  1335  1335 F DEBUG   : 
+09-25 08:21:54.742  1335  1335 F DEBUG   : 18 total frames
+09-25 08:21:54.742  1335  1335 F DEBUG   : backtrace:
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:54.742  1335  1335 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:54.742  1335  1335 F DEBUG   : 
+09-25 08:21:54.742  1335  1335 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:54.742  1335  1335 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:21:59.488  1515  1515 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1515 (android.hardwar), pid 1515 (android.hardwar)
+09-25 08:21:59.790  1540  1540 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:21:59.790  1540  1540 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:21:59.790  1540  1540 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:21:59.790  1540  1540 F DEBUG   : Revision: '0'
+09-25 08:21:59.790  1540  1540 F DEBUG   : ABI: 'x86_64'
+09-25 08:21:59.790  1540  1540 F DEBUG   : Timestamp: 2026-09-25 08:21:59.647426800+0000
+09-25 08:21:59.790  1540  1540 F DEBUG   : Process uptime: 1s
+09-25 08:21:59.790  1540  1540 F DEBUG   : Page size: 16384 bytes
+09-25 08:21:59.790  1540  1540 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:21:59.790  1540  1540 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:21:59.790  1540  1540 F DEBUG   : pid: 1515, ppid: 1, tid: 1515, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:21:59.790  1540  1540 F DEBUG   : uid: 1083
+09-25 08:21:59.790  1540  1540 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:21:59.790  1540  1540 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:21:59.790  1540  1540 F DEBUG   : 
+09-25 08:21:59.790  1540  1540 F DEBUG   :     rax 0000000000000000  rbx 00000000000005eb  rcx 00007d61f0b3306d  rdx 0000000000000006
+09-25 08:21:59.790  1540  1540 F DEBUG   :     r8  00007ff86076cbe0  r9  00007ff86076cbe0  r10 00007ff86076c9a0  r11 0000000000000207
+09-25 08:21:59.790  1540  1540 F DEBUG   :     r12 0000000000000000  r13 00007ff86076cb40  r14 00000000000005eb  r15 00007ff86076c9a0
+09-25 08:21:59.790  1540  1540 F DEBUG   :     rdi 00000000000005eb  rsi 00000000000005eb
+09-25 08:21:59.790  1540  1540 F DEBUG   :     rbp 00007ff86076ca50  rsp 00007ff86076c9a0  rip 00007d61f0b3306d  err 0000000000000000
+09-25 08:21:59.790  1540  1540 F DEBUG   : 
+09-25 08:21:59.790  1540  1540 F DEBUG   : 18 total frames
+09-25 08:21:59.790  1540  1540 F DEBUG   : backtrace:
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:21:59.790  1540  1540 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:21:59.790  1540  1540 F DEBUG   : 
+09-25 08:21:59.790  1540  1540 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:21:59.790  1540  1540 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:04.645  1810  1810 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1810 (android.hardwar), pid 1810 (android.hardwar)
+09-25 08:22:05.285  1823  1823 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:05.285  1823  1823 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:05.285  1823  1823 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:05.285  1823  1823 F DEBUG   : Revision: '0'
+09-25 08:22:05.285  1823  1823 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:05.285  1823  1823 F DEBUG   : Timestamp: 2026-09-25 08:22:04.847514900+0000
+09-25 08:22:05.285  1823  1823 F DEBUG   : Process uptime: 1s
+09-25 08:22:05.285  1823  1823 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:05.286  1823  1823 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:05.286  1823  1823 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:05.286  1823  1823 F DEBUG   : pid: 1810, ppid: 1, tid: 1810, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:05.286  1823  1823 F DEBUG   : uid: 1083
+09-25 08:22:05.286  1823  1823 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:05.286  1823  1823 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:05.286  1823  1823 F DEBUG   : 
+09-25 08:22:05.286  1823  1823 F DEBUG   :     rax 0000000000000000  rbx 0000000000000712  rcx 00007706430b706d  rdx 0000000000000006
+09-25 08:22:05.286  1823  1823 F DEBUG   :     r8  00007ff3a1c86fb0  r9  00007ff3a1c86fb0  r10 00007ff3a1c86d70  r11 0000000000000207
+09-25 08:22:05.286  1823  1823 F DEBUG   :     r12 0000000000000000  r13 00007ff3a1c86f10  r14 0000000000000712  r15 00007ff3a1c86d70
+09-25 08:22:05.286  1823  1823 F DEBUG   :     rdi 0000000000000712  rsi 0000000000000712
+09-25 08:22:05.286  1823  1823 F DEBUG   :     rbp 00007ff3a1c86e20  rsp 00007ff3a1c86d70  rip 00007706430b706d  err 0000000000000000
+09-25 08:22:05.286  1823  1823 F DEBUG   : 
+09-25 08:22:05.286  1823  1823 F DEBUG   : 18 total frames
+09-25 08:22:05.286  1823  1823 F DEBUG   : backtrace:
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:05.286  1823  1823 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:05.286  1823  1823 F DEBUG   : 
+09-25 08:22:05.286  1823  1823 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:05.286  1823  1823 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:10.048  2023  2023 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2023 (android.hardwar), pid 2023 (android.hardwar)
+09-25 08:22:10.285  2057  2057 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:10.285  2057  2057 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:10.285  2057  2057 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:10.285  2057  2057 F DEBUG   : Revision: '0'
+09-25 08:22:10.285  2057  2057 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:10.285  2057  2057 F DEBUG   : Timestamp: 2026-09-25 08:22:10.160100700+0000
+09-25 08:22:10.285  2057  2057 F DEBUG   : Process uptime: 2s
+09-25 08:22:10.285  2057  2057 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:10.286  2057  2057 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:10.286  2057  2057 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:10.286  2057  2057 F DEBUG   : pid: 2023, ppid: 1, tid: 2023, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:10.286  2057  2057 F DEBUG   : uid: 1083
+09-25 08:22:10.286  2057  2057 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:10.286  2057  2057 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:10.286  2057  2057 F DEBUG   : 
+09-25 08:22:10.286  2057  2057 F DEBUG   :     rax 0000000000000000  rbx 00000000000007e7  rcx 0000712e25e7b06d  rdx 0000000000000006
+09-25 08:22:10.286  2057  2057 F DEBUG   :     r8  00007fff8091daf0  r9  00007fff8091daf0  r10 00007fff8091d8b0  r11 0000000000000207
+09-25 08:22:10.286  2057  2057 F DEBUG   :     r12 0000000000000000  r13 00007fff8091da50  r14 00000000000007e7  r15 00007fff8091d8b0
+09-25 08:22:10.286  2057  2057 F DEBUG   :     rdi 00000000000007e7  rsi 00000000000007e7
+09-25 08:22:10.286  2057  2057 F DEBUG   :     rbp 00007fff8091d960  rsp 00007fff8091d8b0  rip 0000712e25e7b06d  err 0000000000000000
+09-25 08:22:10.286  2057  2057 F DEBUG   : 
+09-25 08:22:10.286  2057  2057 F DEBUG   : 18 total frames
+09-25 08:22:10.286  2057  2057 F DEBUG   : backtrace:
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:10.286  2057  2057 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:10.286  2057  2057 F DEBUG   : 
+09-25 08:22:10.286  2057  2057 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:10.286  2057  2057 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:14.824  2250  2250 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2250 (android.hardwar), pid 2250 (android.hardwar)
+09-25 08:22:15.137  2265  2265 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:15.137  2265  2265 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:15.137  2265  2265 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:15.137  2265  2265 F DEBUG   : Revision: '0'
+09-25 08:22:15.137  2265  2265 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:15.137  2265  2265 F DEBUG   : Timestamp: 2026-09-25 08:22:14.993007200+0000
+09-25 08:22:15.137  2265  2265 F DEBUG   : Process uptime: 1s
+09-25 08:22:15.137  2265  2265 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:15.137  2265  2265 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:15.137  2265  2265 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:15.137  2265  2265 F DEBUG   : pid: 2250, ppid: 1, tid: 2250, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:15.137  2265  2265 F DEBUG   : uid: 1083
+09-25 08:22:15.137  2265  2265 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:15.137  2265  2265 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:15.137  2265  2265 F DEBUG   : 
+09-25 08:22:15.137  2265  2265 F DEBUG   :     rax 0000000000000000  rbx 00000000000008ca  rcx 0000787b4d46f06d  rdx 0000000000000006
+09-25 08:22:15.137  2265  2265 F DEBUG   :     r8  00007ffa15190ab0  r9  00007ffa15190ab0  r10 00007ffa15190870  r11 0000000000000207
+09-25 08:22:15.137  2265  2265 F DEBUG   :     r12 0000000000000000  r13 00007ffa15190a10  r14 00000000000008ca  r15 00007ffa15190870
+09-25 08:22:15.137  2265  2265 F DEBUG   :     rdi 00000000000008ca  rsi 00000000000008ca
+09-25 08:22:15.137  2265  2265 F DEBUG   :     rbp 00007ffa15190920  rsp 00007ffa15190870  rip 0000787b4d46f06d  err 0000000000000000
+09-25 08:22:15.137  2265  2265 F DEBUG   : 
+09-25 08:22:15.137  2265  2265 F DEBUG   : 18 total frames
+09-25 08:22:15.137  2265  2265 F DEBUG   : backtrace:
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.137  2265  2265 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:15.138  2265  2265 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:15.138  2265  2265 F DEBUG   : 
+09-25 08:22:15.138  2265  2265 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:15.138  2265  2265 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:20.014  2483  2483 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2483 (android.hardwar), pid 2483 (android.hardwar)
+09-25 08:22:20.699  2494  2494 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:20.699  2494  2494 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:20.699  2494  2494 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:20.699  2494  2494 F DEBUG   : Revision: '0'
+09-25 08:22:20.699  2494  2494 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:20.699  2494  2494 F DEBUG   : Timestamp: 2026-09-25 08:22:20.155125100+0000
+09-25 08:22:20.699  2494  2494 F DEBUG   : Process uptime: 2s
+09-25 08:22:20.699  2494  2494 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:20.701  2494  2494 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:20.701  2494  2494 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:20.701  2494  2494 F DEBUG   : pid: 2483, ppid: 1, tid: 2483, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:20.701  2494  2494 F DEBUG   : uid: 1083
+09-25 08:22:20.701  2494  2494 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:20.701  2494  2494 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:20.701  2494  2494 F DEBUG   : 
+09-25 08:22:20.701  2494  2494 F DEBUG   :     rax 0000000000000000  rbx 00000000000009b3  rcx 00007e44e833706d  rdx 0000000000000006
+09-25 08:22:20.701  2494  2494 F DEBUG   :     r8  00007ff94b41cc80  r9  00007ff94b41cc80  r10 00007ff94b41ca40  r11 0000000000000207
+09-25 08:22:20.701  2494  2494 F DEBUG   :     r12 0000000000000000  r13 00007ff94b41cbe0  r14 00000000000009b3  r15 00007ff94b41ca40
+09-25 08:22:20.701  2494  2494 F DEBUG   :     rdi 00000000000009b3  rsi 00000000000009b3
+09-25 08:22:20.701  2494  2494 F DEBUG   :     rbp 00007ff94b41caf0  rsp 00007ff94b41ca40  rip 00007e44e833706d  err 0000000000000000
+09-25 08:22:20.701  2494  2494 F DEBUG   : 
+09-25 08:22:20.701  2494  2494 F DEBUG   : 18 total frames
+09-25 08:22:20.701  2494  2494 F DEBUG   : backtrace:
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:20.701  2494  2494 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:20.701  2494  2494 F DEBUG   : 
+09-25 08:22:20.701  2494  2494 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:20.701  2494  2494 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:24.918  2712  2712 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2712 (android.hardwar), pid 2712 (android.hardwar)
+09-25 08:22:25.156  2728  2728 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:25.156  2728  2728 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:25.156  2728  2728 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:25.156  2728  2728 F DEBUG   : Revision: '0'
+09-25 08:22:25.156  2728  2728 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:25.156  2728  2728 F DEBUG   : Timestamp: 2026-09-25 08:22:25.000850800+0000
+09-25 08:22:25.156  2728  2728 F DEBUG   : Process uptime: 1s
+09-25 08:22:25.156  2728  2728 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:25.158  2728  2728 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:25.158  2728  2728 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:25.158  2728  2728 F DEBUG   : pid: 2712, ppid: 1, tid: 2712, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:25.158  2728  2728 F DEBUG   : uid: 1083
+09-25 08:22:25.158  2728  2728 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:25.158  2728  2728 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:25.158  2728  2728 F DEBUG   : 
+09-25 08:22:25.158  2728  2728 F DEBUG   :     rax 0000000000000000  rbx 0000000000000a98  rcx 000074cf3d27b06d  rdx 0000000000000006
+09-25 08:22:25.158  2728  2728 F DEBUG   :     r8  00007ff44e2e13e0  r9  00007ff44e2e13e0  r10 00007ff44e2e11a0  r11 0000000000000207
+09-25 08:22:25.158  2728  2728 F DEBUG   :     r12 0000000000000000  r13 00007ff44e2e1340  r14 0000000000000a98  r15 00007ff44e2e11a0
+09-25 08:22:25.158  2728  2728 F DEBUG   :     rdi 0000000000000a98  rsi 0000000000000a98
+09-25 08:22:25.158  2728  2728 F DEBUG   :     rbp 00007ff44e2e1250  rsp 00007ff44e2e11a0  rip 000074cf3d27b06d  err 0000000000000000
+09-25 08:22:25.158  2728  2728 F DEBUG   : 
+09-25 08:22:25.158  2728  2728 F DEBUG   : 18 total frames
+09-25 08:22:25.158  2728  2728 F DEBUG   : backtrace:
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:25.158  2728  2728 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:25.158  2728  2728 F DEBUG   : 
+09-25 08:22:25.158  2728  2728 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:25.158  2728  2728 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:29.842  2914  2914 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 2914 (android.hardwar), pid 2914 (android.hardwar)
+09-25 08:22:30.126  2925  2925 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:30.126  2925  2925 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:30.126  2925  2925 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:30.126  2925  2925 F DEBUG   : Revision: '0'
+09-25 08:22:30.126  2925  2925 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:30.126  2925  2925 F DEBUG   : Timestamp: 2026-09-25 08:22:29.898662700+0000
+09-25 08:22:30.126  2925  2925 F DEBUG   : Process uptime: 1s
+09-25 08:22:30.126  2925  2925 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:30.127  2925  2925 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:30.127  2925  2925 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:30.127  2925  2925 F DEBUG   : pid: 2914, ppid: 1, tid: 2914, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:30.127  2925  2925 F DEBUG   : uid: 1083
+09-25 08:22:30.127  2925  2925 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:30.127  2925  2925 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:30.127  2925  2925 F DEBUG   : 
+09-25 08:22:30.127  2925  2925 F DEBUG   :     rax 0000000000000000  rbx 0000000000000b62  rcx 00007d8279e6706d  rdx 0000000000000006
+09-25 08:22:30.127  2925  2925 F DEBUG   :     r8  00007ffa33aafeb0  r9  00007ffa33aafeb0  r10 00007ffa33aafc70  r11 0000000000000207
+09-25 08:22:30.127  2925  2925 F DEBUG   :     r12 0000000000000000  r13 00007ffa33aafe10  r14 0000000000000b62  r15 00007ffa33aafc70
+09-25 08:22:30.127  2925  2925 F DEBUG   :     rdi 0000000000000b62  rsi 0000000000000b62
+09-25 08:22:30.127  2925  2925 F DEBUG   :     rbp 00007ffa33aafd20  rsp 00007ffa33aafc70  rip 00007d8279e6706d  err 0000000000000000
+09-25 08:22:30.127  2925  2925 F DEBUG   : 
+09-25 08:22:30.127  2925  2925 F DEBUG   : 18 total frames
+09-25 08:22:30.127  2925  2925 F DEBUG   : backtrace:
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:30.127  2925  2925 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:30.127  2925  2925 F DEBUG   : 
+09-25 08:22:30.127  2925  2925 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:30.127  2925  2925 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:34.854  3117  3117 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3117 (android.hardwar), pid 3117 (android.hardwar)
+09-25 08:22:35.120  3126  3126 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:35.120  3126  3126 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:35.120  3126  3126 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:35.120  3126  3126 F DEBUG   : Revision: '0'
+09-25 08:22:35.120  3126  3126 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:35.120  3126  3126 F DEBUG   : Timestamp: 2026-09-25 08:22:34.912147200+0000
+09-25 08:22:35.120  3126  3126 F DEBUG   : Process uptime: 1s
+09-25 08:22:35.120  3126  3126 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:35.120  3126  3126 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:35.120  3126  3126 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:35.120  3126  3126 F DEBUG   : pid: 3117, ppid: 1, tid: 3117, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:35.120  3126  3126 F DEBUG   : uid: 1083
+09-25 08:22:35.120  3126  3126 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:35.120  3126  3126 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:35.120  3126  3126 F DEBUG   : 
+09-25 08:22:35.120  3126  3126 F DEBUG   :     rax 0000000000000000  rbx 0000000000000c2d  rcx 000070e5bde8b06d  rdx 0000000000000006
+09-25 08:22:35.120  3126  3126 F DEBUG   :     r8  00007ffd4d0b4580  r9  00007ffd4d0b4580  r10 00007ffd4d0b4340  r11 0000000000000207
+09-25 08:22:35.120  3126  3126 F DEBUG   :     r12 0000000000000000  r13 00007ffd4d0b44e0  r14 0000000000000c2d  r15 00007ffd4d0b4340
+09-25 08:22:35.120  3126  3126 F DEBUG   :     rdi 0000000000000c2d  rsi 0000000000000c2d
+09-25 08:22:35.120  3126  3126 F DEBUG   :     rbp 00007ffd4d0b43f0  rsp 00007ffd4d0b4340  rip 000070e5bde8b06d  err 0000000000000000
+09-25 08:22:35.120  3126  3126 F DEBUG   : 
+09-25 08:22:35.120  3126  3126 F DEBUG   : 18 total frames
+09-25 08:22:35.120  3126  3126 F DEBUG   : backtrace:
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:35.120  3126  3126 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:35.120  3126  3126 F DEBUG   : 
+09-25 08:22:35.120  3126  3126 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:35.120  3126  3126 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:39.966  3345  3345 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3345 (android.hardwar), pid 3345 (android.hardwar)
+09-25 08:22:40.236  3364  3364 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:40.236  3364  3364 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:40.236  3364  3364 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:40.236  3364  3364 F DEBUG   : Revision: '0'
+09-25 08:22:40.236  3364  3364 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:40.236  3364  3364 F DEBUG   : Timestamp: 2026-09-25 08:22:40.164005900+0000
+09-25 08:22:40.236  3364  3364 F DEBUG   : Process uptime: 2s
+09-25 08:22:40.236  3364  3364 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:40.236  3364  3364 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:40.236  3364  3364 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:40.236  3364  3364 F DEBUG   : pid: 3345, ppid: 1, tid: 3345, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:40.236  3364  3364 F DEBUG   : uid: 1083
+09-25 08:22:40.236  3364  3364 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:40.236  3364  3364 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:40.236  3364  3364 F DEBUG   : 
+09-25 08:22:40.236  3364  3364 F DEBUG   :     rax 0000000000000000  rbx 0000000000000d11  rcx 00007edb95caf06d  rdx 0000000000000006
+09-25 08:22:40.236  3364  3364 F DEBUG   :     r8  00007ffa29740780  r9  00007ffa29740780  r10 00007ffa29740540  r11 0000000000000207
+09-25 08:22:40.236  3364  3364 F DEBUG   :     r12 0000000000000000  r13 00007ffa297406e0  r14 0000000000000d11  r15 00007ffa29740540
+09-25 08:22:40.236  3364  3364 F DEBUG   :     rdi 0000000000000d11  rsi 0000000000000d11
+09-25 08:22:40.236  3364  3364 F DEBUG   :     rbp 00007ffa297405f0  rsp 00007ffa29740540  rip 00007edb95caf06d  err 0000000000000000
+09-25 08:22:40.236  3364  3364 F DEBUG   : 
+09-25 08:22:40.236  3364  3364 F DEBUG   : 18 total frames
+09-25 08:22:40.236  3364  3364 F DEBUG   : backtrace:
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:40.236  3364  3364 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:40.236  3364  3364 F DEBUG   : 
+09-25 08:22:40.236  3364  3364 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:40.236  3364  3364 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:44.916  3649  3649 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3649 (android.hardwar), pid 3649 (android.hardwar)
+09-25 08:22:45.127  3659  3659 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:45.127  3659  3659 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:45.127  3659  3659 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:45.127  3659  3659 F DEBUG   : Revision: '0'
+09-25 08:22:45.127  3659  3659 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:45.127  3659  3659 F DEBUG   : Timestamp: 2026-09-25 08:22:44.990415900+0000
+09-25 08:22:45.127  3659  3659 F DEBUG   : Process uptime: 1s
+09-25 08:22:45.127  3659  3659 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:45.128  3659  3659 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:45.128  3659  3659 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:45.128  3659  3659 F DEBUG   : pid: 3649, ppid: 1, tid: 3649, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:45.128  3659  3659 F DEBUG   : uid: 1083
+09-25 08:22:45.128  3659  3659 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:45.128  3659  3659 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:45.128  3659  3659 F DEBUG   : 
+09-25 08:22:45.128  3659  3659 F DEBUG   :     rax 0000000000000000  rbx 0000000000000e41  rcx 00007e55fd05b06d  rdx 0000000000000006
+09-25 08:22:45.128  3659  3659 F DEBUG   :     r8  00007ff8c1dec1d0  r9  00007ff8c1dec1d0  r10 00007ff8c1debf90  r11 0000000000000207
+09-25 08:22:45.128  3659  3659 F DEBUG   :     r12 0000000000000000  r13 00007ff8c1dec130  r14 0000000000000e41  r15 00007ff8c1debf90
+09-25 08:22:45.128  3659  3659 F DEBUG   :     rdi 0000000000000e41  rsi 0000000000000e41
+09-25 08:22:45.128  3659  3659 F DEBUG   :     rbp 00007ff8c1dec040  rsp 00007ff8c1debf90  rip 00007e55fd05b06d  err 0000000000000000
+09-25 08:22:45.128  3659  3659 F DEBUG   : 
+09-25 08:22:45.128  3659  3659 F DEBUG   : 18 total frames
+09-25 08:22:45.128  3659  3659 F DEBUG   : backtrace:
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:45.128  3659  3659 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:45.128  3659  3659 F DEBUG   : 
+09-25 08:22:45.128  3659  3659 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:45.128  3659  3659 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:49.917  3812  3812 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3812 (android.hardwar), pid 3812 (android.hardwar)
+09-25 08:22:50.080  3820  3820 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:50.080  3820  3820 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:50.080  3820  3820 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:50.080  3820  3820 F DEBUG   : Revision: '0'
+09-25 08:22:50.080  3820  3820 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:50.080  3820  3820 F DEBUG   : Timestamp: 2026-09-25 08:22:49.957757300+0000
+09-25 08:22:50.080  3820  3820 F DEBUG   : Process uptime: 1s
+09-25 08:22:50.080  3820  3820 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:50.081  3820  3820 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:50.081  3820  3820 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:50.081  3820  3820 F DEBUG   : pid: 3812, ppid: 1, tid: 3812, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:50.081  3820  3820 F DEBUG   : uid: 1083
+09-25 08:22:50.081  3820  3820 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:50.081  3820  3820 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:50.081  3820  3820 F DEBUG   : 
+09-25 08:22:50.081  3820  3820 F DEBUG   :     rax 0000000000000000  rbx 0000000000000ee4  rcx 000074475f11f06d  rdx 0000000000000006
+09-25 08:22:50.081  3820  3820 F DEBUG   :     r8  00007fffb3ec03a0  r9  00007fffb3ec03a0  r10 00007fffb3ec0160  r11 0000000000000207
+09-25 08:22:50.081  3820  3820 F DEBUG   :     r12 0000000000000000  r13 00007fffb3ec0300  r14 0000000000000ee4  r15 00007fffb3ec0160
+09-25 08:22:50.081  3820  3820 F DEBUG   :     rdi 0000000000000ee4  rsi 0000000000000ee4
+09-25 08:22:50.081  3820  3820 F DEBUG   :     rbp 00007fffb3ec0210  rsp 00007fffb3ec0160  rip 000074475f11f06d  err 0000000000000000
+09-25 08:22:50.081  3820  3820 F DEBUG   : 
+09-25 08:22:50.081  3820  3820 F DEBUG   : 18 total frames
+09-25 08:22:50.081  3820  3820 F DEBUG   : backtrace:
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:50.081  3820  3820 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:50.081  3820  3820 F DEBUG   : 
+09-25 08:22:50.081  3820  3820 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:50.081  3820  3820 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:22:54.899  4033  4033 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4033 (android.hardwar), pid 4033 (android.hardwar)
+09-25 08:22:55.039  4042  4042 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:22:55.040  4042  4042 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:22:55.040  4042  4042 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:22:55.040  4042  4042 F DEBUG   : Revision: '0'
+09-25 08:22:55.040  4042  4042 F DEBUG   : ABI: 'x86_64'
+09-25 08:22:55.040  4042  4042 F DEBUG   : Timestamp: 2026-09-25 08:22:54.932593300+0000
+09-25 08:22:55.040  4042  4042 F DEBUG   : Process uptime: 1s
+09-25 08:22:55.040  4042  4042 F DEBUG   : Page size: 16384 bytes
+09-25 08:22:55.040  4042  4042 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:22:55.040  4042  4042 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:22:55.040  4042  4042 F DEBUG   : pid: 4033, ppid: 1, tid: 4033, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:22:55.040  4042  4042 F DEBUG   : uid: 1083
+09-25 08:22:55.040  4042  4042 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:22:55.040  4042  4042 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:22:55.040  4042  4042 F DEBUG   : 
+09-25 08:22:55.040  4042  4042 F DEBUG   :     rax 0000000000000000  rbx 0000000000000fc1  rcx 000074464988f06d  rdx 0000000000000006
+09-25 08:22:55.040  4042  4042 F DEBUG   :     r8  00007ff27d1b26a0  r9  00007ff27d1b26a0  r10 00007ff27d1b2460  r11 0000000000000207
+09-25 08:22:55.040  4042  4042 F DEBUG   :     r12 0000000000000000  r13 00007ff27d1b2600  r14 0000000000000fc1  r15 00007ff27d1b2460
+09-25 08:22:55.040  4042  4042 F DEBUG   :     rdi 0000000000000fc1  rsi 0000000000000fc1
+09-25 08:22:55.040  4042  4042 F DEBUG   :     rbp 00007ff27d1b2510  rsp 00007ff27d1b2460  rip 000074464988f06d  err 0000000000000000
+09-25 08:22:55.040  4042  4042 F DEBUG   : 
+09-25 08:22:55.040  4042  4042 F DEBUG   : 18 total frames
+09-25 08:22:55.040  4042  4042 F DEBUG   : backtrace:
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:22:55.040  4042  4042 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:22:55.040  4042  4042 F DEBUG   : 
+09-25 08:22:55.040  4042  4042 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:22:55.040  4042  4042 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:23:00.164  4222  4222 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4222 (android.hardwar), pid 4222 (android.hardwar)
+09-25 08:23:00.295  4246  4246 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:23:00.295  4246  4246 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:23:00.295  4246  4246 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:23:00.295  4246  4246 F DEBUG   : Revision: '0'
+09-25 08:23:00.295  4246  4246 F DEBUG   : ABI: 'x86_64'
+09-25 08:23:00.295  4246  4246 F DEBUG   : Timestamp: 2026-09-25 08:23:00.215605600+0000
+09-25 08:23:00.295  4246  4246 F DEBUG   : Process uptime: 2s
+09-25 08:23:00.295  4246  4246 F DEBUG   : Page size: 16384 bytes
+09-25 08:23:00.295  4246  4246 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:23:00.295  4246  4246 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:23:00.295  4246  4246 F DEBUG   : pid: 4222, ppid: 1, tid: 4222, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:23:00.295  4246  4246 F DEBUG   : uid: 1083
+09-25 08:23:00.295  4246  4246 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:23:00.295  4246  4246 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:23:00.295  4246  4246 F DEBUG   : 
+09-25 08:23:00.295  4246  4246 F DEBUG   :     rax 0000000000000000  rbx 000000000000107e  rcx 00007081610ef06d  rdx 0000000000000006
+09-25 08:23:00.295  4246  4246 F DEBUG   :     r8  00007ff16d011750  r9  00007ff16d011750  r10 00007ff16d011510  r11 0000000000000207
+09-25 08:23:00.295  4246  4246 F DEBUG   :     r12 0000000000000000  r13 00007ff16d0116b0  r14 000000000000107e  r15 00007ff16d011510
+09-25 08:23:00.295  4246  4246 F DEBUG   :     rdi 000000000000107e  rsi 000000000000107e
+09-25 08:23:00.295  4246  4246 F DEBUG   :     rbp 00007ff16d0115c0  rsp 00007ff16d011510  rip 00007081610ef06d  err 0000000000000000
+09-25 08:23:00.295  4246  4246 F DEBUG   : 
+09-25 08:23:00.295  4246  4246 F DEBUG   : 18 total frames
+09-25 08:23:00.295  4246  4246 F DEBUG   : backtrace:
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:00.295  4246  4246 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:00.295  4246  4246 F DEBUG   : 
+09-25 08:23:00.295  4246  4246 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:23:00.295  4246  4246 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: FATAL EXCEPTION: main
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: Process: com.superwiss.game.playtest, PID: 4155
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: java.lang.OutOfMemoryError: Failed to allocate a 23698112 byte allocation with 7565168 free bytes and 7387KB until OOM, target footprint 201326592, growth limit 201326592
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromChars(StringFactory.java:125)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromBytes(StringFactory.java:110)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromBytes(StringFactory.java:80)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.util.Base64.encodeToString(Base64.java:459)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at org.chromium.android_webview.AwContents.s(chromium-SystemWebViewGoogle64.aab-stable-782700509:95)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.webview.chromium.WebViewChromium.e(chromium-SystemWebViewGoogle64.aab-stable-782700509:21)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.webview.chromium.WebViewChromium.loadDataWithBaseURL(chromium-SystemWebViewGoogle64.aab-stable-782700509:42)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.webkit.WebView.loadDataWithBaseURL(WebView.java:887)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.superwiss.game.playtest.MainActivity.onCreate(MainActivity.java:67)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:9356)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:9334)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1566)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4763)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4978)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2942)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:126)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:285)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:390)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9884)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:906)
+09-25 08:23:04.353  4346  4346 F crashpad: -----BEGIN CRASHPAD MINIDUMP-----
+09-25 08:23:04.372  4346  4346 F crashpad: -----BEGIN CRASHPAD MINIDUMP-----
+09-25 08:23:04.372  4346  4346 F crashpad: )iyJL'_B3u.xf,wJQ0U)|z+;6'VY}Mk.386EWi3f![&/.*icV:3OQqDvwJQ{z5)Cn({mptU]ee-x@usl2u1rs4<l*blwRJiVFjzHQr3Le4<W6uxs$vQK;gLx@#;`qUbA!!U#I,I3f6GirW;!gd|oI$MWO!-7("M[[L/#;~:#GL6!5%m'Y#Qq#!\$oXj6M=1*'t"!"Zl695mgtI)Z!!-s$qtZImf-qI=1J7$8b7x*sa%$HE"!,%Y=w=%C7cH9A@@Ztgq#3&qA}'?Nm7%7%]0828G<e+5)]MgLm}=O|^E#'GByfb:m4GSjlECB/47z#+R&8hq/g(k)=yoyjb!B$]YjT*5K)-#&_y.MHmDqrio(A/K5oM]xPWNbrA.pGO08hck.u#o7u+Q&Yj_@V(}yIMq}68tI]/[&@xa}S9.'#NSQ$hXMht',;tSyM7t7CboADmrxQ5l6M-Qj(h|zB+C(g(IyxACbVbtI]NSJTJ8lL*IyN,{+ir_0;J,&oMo!RbVHUHTH
+09-25 08:23:04.372  4346  4346 F crashpad: +4?`Cq6K+&J$|7>XdohSa5fi>egI>pNWR|e#}C(e{!1)!!%Ib7H(_#$!Tc4k}wxXZAdK>+'$Qx%7sL4G{>lE2IIE)-!uV@L?fx&H^d(8`Z)MS&S9/h[&Xg>3O&"yk.(fM7u#Iz[&DO_ho-qQOca?7T]iP0FkYUfc,)Erg=RY_n&@`i9pV5Qyhv>_`9WL-^$RDusM{pPWc^9m7zm(#pP]IE)6Mxe[W)"^K!^;a-WJ&qDb$FW_C3aH_R~7?&mo/R+<'-OH`MC3`hF$MVPhOd=\Y,f,Lr&D}o4zg%/t<Qeow-?n0[bLigx9:60!2)y3174sq,W?]yK@eU7<e|m593?@iY0q)S<bZeO,x"}Gl9wo++?@jYDSx8g:O;_G3EZL4;9t$^]L~2!x|6ysBE_GK[w+*ZWh|i@xaBta`v#Y~DFT;6T4Cp2G[L@3saVZWrE'bCJ:il=g}o<I^A7.%qzKgBd=b1+SYK}@mgH%>Q0p6n#$8naN7Ve,h6q9~PC#qMjwQ.$8
+09-25 08:23:04.372  4346  4346 F crashpad: _wGeWp:#Crz9w/o+OXEgLWChYX+xWe-k~%+rNR=uO.5KfW(-Ys]$H\m/Odc[XLAwpR?ad"yQDtzK:>qut._GO[x+rJ*;%xR"A!>it+$Y*^f0VK[E#Y&H-!2iUw8U1w>AC{WM?-6W)7=OCh7==(&wrPdnn8_-Lrj&GdcMq:2Po;Z8e033cr\Qm5xmsz#-LWdR+g`MGa~9)85!ph3v>7?f12ljP%9m.|YKqBL&(9+)$YH{7V0"cR^LYK5.u+s)"mT-V=|@UJX}"Y,;0xUq[_GI2XxW2eYQ'!SrjRWMN#YY8t^R?JF:e0W!Y]%Sy3'F/8"-,GhR9.\84AiR)vX#C^Uh2~5v5X^+rRo)N"O@0wr3hy+A$SnOm>iZCpf9l6o2QLWUYKs;2NWM09ilH[Y}&93mL/`rD{yN~:}V(I=O$93m78FP4-^~;O/Zqp8m[LaE1w<,Lr.2]<[o@ywwd3_P(91<u9@aSh-mtZj62xKDYKlZ]A#Sg6jvPtbrZLs)T6i=s+{R
+09-25 08:23:04.372  4346  4346 F crashpad: g649Ptt+Eb[E)AXPWw8>}v?n?Z-xf"=YUht/MVLFrPL@:xgnqpj6XLdhauZk<,lwqP*a,gB+bw*F}htgcAY9r$g47snJ0=(Rqad#X*/ScNA)2<.t`nG'[fv-|$)<2g5(:^&sD>6am9?.jDy;i:~`FZHSeoe/^/<PF!cmsWm^z*GC}QvLLWnrv7K]w,f~-fHR+cf<-f%QQ@w.P#^.OSO~M3`/a['Lid<<!k(]q8161=@dP*^O/jAOu^TuUD\s[>zKYr\;5JyI4l"}g]nM6J~O/?-Aymt(PU*B38-I?98I-l9hl&<(^D^u{||)~_8Jz=*W*BG839x:Yi,8}k]=_:o0w(AbsrB:_q^ZP}h\vH4^-F_SNwN7}TY@|\+C3lWRPP?vhf`EL.DLE2hm|@y0_Wpw\YT$;+7,=Y2(EL^eL]FBA0_f22:YfsF^?nltTu&_Dbh^l6fk9mj^*u51'N-s>OA8uAP0XPO-E]39~'O$|)IRq\e-(?;Xv_<,D.lPSsK`QARs
+09-25 08:23:04.372  4346  4346 F crashpad: qSE7\?(qXSb<VoYwy:.|EKuBnRGY57:+A/uLuRY/xSJZuQvo$:>35L~.ZZq4cmy>Z5xGJ@nNy__ezD=+H<gdv2Q5>cO'O-#a.x[5T11n'@M.TSOs1cecLe`ZQgG@%.'NY/\2M8UzcPpT[`dGUNf$DDSeNNy;?-0=xZ"eFL{i5R.:GCvFDZm{qt<=<g/RWeN>05f<n5pniS\;uV0d>({w|h`YH2|<nXBpAWx({$_sUE|R<[M:(J;q1[KtCprnHi3:"k'j)d4=s1;Jz'3E!+\v59![{6yV}293HD%1VQ_i}Z4=3<I^ER_nr=W0RsUEVLIs/B1!e!,%r6mWfbXbDO1I3B+b.0q%@,[&"NDB/8$8}zq87KcbE#-!C!U,9p-Hc.9#UypAWZL'UHeP7|^N1YY+9!Y!D!4MS&D"LF{.m%$!&8]QH/HR@)1K*KOOlQy%mLaK$sdP<U,qv+d|eqB=Rg5xosfTu1yXcu[M/<4:6dpVy'du<eYQ/no<2QHUa[xgpv;i
+09-25 08:23:04.372  4346  4346 F crashpad: "jI/\Ve;z0GsEp'jUF[R@[3w+`!WR^y=mh+0DD8p%=HUuv:>BWD~hj(B&S_}gQu}{bK@E~_5/sL~"+"`'BK+uWYOyS5Cyx"g|txS+b3Y4;*K$(wS!m3Y4;*KDtRpOw:0*.vn67w3wEQh`5XX7[QgaW+wd/6TOek,\2^uT[sVziAC:1dQuE<:jR77OX3XfI[D!DeS.2UHCp}ls0w(Ab6Jm\pYAJ!>c9=@Ws9zr,fECNC]wGqF2/~8;`{~#[k8*K4pHK0Ya2BGS[U6vF`,;|,29n_|f.pA78Ez8.;,Qx3:\,y_yg0Le@o0yUY?$H3baN**25M|"-hv97W~F9!mW0ka=g+*K]!"y/lrX&K\u/NvWi1Nu=8W72Xyc[k8`hg\%r434^QMO&AOj5xt;,GC=6ElK*eF;`/NGlWPq.+L(Tpn.+VmZzPJ)>tl)jEHwlBI?ii=)/i6h;3;dW\5b(\2Ge*gSF:<9D{t#-B0+)>JSgj:u5MtBwz0^(?-*.-e.'A8,5Ol
+09-25 08:23:04.372  4346  4346 F crashpad: 4-hp6Y{]o'cw#=::#Wypd-k<GG+1nf^F-2Sg'CYw_;~On)02%L:S~@^CGrX:R)F.`YTu"Za2'KDoj9<tZ4ahLo][Y?YvBivtn(4^]cMW$d_&p8^2t]Ujp+Qi]RVAuVR&_7{bs-p+u]AWD.`Yxg0LqfZ#m]rlG,Kt4dFW=ATo2PB'+s1XcKg.-aksk5TP6MIE@\r6Rw4[CW*9qWi70{[eO2>StGKv9QzoRQ'IKNp(x?W1^OF5)lFg=${)/qod#.?i+:/L?[kz&rG7$1$m/IH[xqy,.\pMuX$+4gFg=$9)F]PNAh;5&Sy+cREOEQSA38\^I^q$~ipTSxOhz":tn'b0k;3;zrRzEU5vT>u12w=i01C4=v5PjqfaYwgBpvOd0gq4gAIAC2f<H6p=M*5T'Vg_D34<JXU<FE5*9m#q<m9qdA,q<m&qFbM%gT?#[.ww^\t[KpRn}rH;^`dGUNf$4^"Zwa(8A>lw"[k=dZB(OwBS,>~@AF-u"P>u(${su2?KJY{]
+09-25 08:23:04.372  4346  4346 F crashpad: ,Z%r43\28Sq2:4UFke,tu2C_zJQ\OaU|]2K+bJAj.&OOK0PS#HNcM%hG6bVepw)otnWsWkJQ3_Pg3ycG25kWCR*)\^"*F$@>/P:8Bo<(vo#44JH%|TpY?n}tnuu]},<WL/9b2e]#Y.h5xf:Y@=_GMZW`_@91.w=YYAnV;Wi2hmd<2fAM_R@(u5(9O88IK'2MR`;^4#?K0UC(PzDcQjwX+5WMdvA]c+~i:oClbN`vq]Y6c[$e"I2J9rrV`vjADA"vuHnwpVR2JHwyQ65emRPEvub-r(P`0m|G+gC<jQna4[~Fy20cg~KOg<APW.PSE7._FG4"|-$JoJ?-U60ENcbOf_dOfDz_-O"5%copQg{$xnV/;wwvN,F9|TW?7t816?ri.^tI3pSUa2'dJz@v,\jfhcH0H;3Nv#"DKB{}3Rzo=RmhT6r0w(-xRse]$:!/~8r[EvvnbiQggJi^Z2qnJS&P?YtVt621VZz^Rg9^~_|ie1wV.x)Hg9rUDa0ZkkDJlk#V
+09-25 08:23:04.372  4346  4346 F crashpad: x\M3d.WD*T3K!%mI?tLh,e>\<DM58^znU+hYj<hv8+ZOd(\?20@s00MUcw8'Xj[0rtF5lk++}kpmFKn@4Y'Jv'BhR;UB;xo,ZNF/){+_c`)XD9F.`YTu*^m)/.8JepsDf6VT0.`YIH)"R}~O?YtVB_W9;oktRza2xXg)E)^CTRZPzoV3f>LI}(G5GgiV9`LqT]nnA`A//c#V6q=;9UG~mCFEdkmpW:\e:{T5cRKN.cGapfISFo$`}G|fkiCSYJaHgg{$xnV/Yv80U@PvBeZt,wwRPP?ld=Kq"^1`!tSit|ch2pZ~DD(:"_":Ult5NK}pXE5wMK2[GT3w{8]t3lb3"w]F}wN\/+-GUr'.jwafO5.bBvTR1gtO\(i^CH<bnmP1HeBFnK%OE+/pBqG&V\PG0YZ2:t(@9*cif\9E2Fq^*xWsn3@:AT)K0?\:S[\5r0?b^s![_H#m_ORjoP@7>A/=QgIHW/H0":pSs78}k6*IT/%t5e2v@b'o4.0PTGve2vaD
+09-25 08:23:04.372  4346  4346 F crashpad: nDMM"+qe+LP#-%i2o<YdQ7'bM#FQQ1E~+Lp(j0]md@(A:`80_;v3Cs^2+xp@56T2{a3.adTDQ{S5E6gB`/#+(vJ=Vl|fVqe,{s+Rn\cpLJJ\{oT1Ci6bT=qo^f!tV*Js]`_@;bGs=i|Sqw-,*DO`^HLR:*ZoWg|Ixb[5*d0A,x?Sf`]N{S=Vn:Jwzd~?YnnZ0~vLnwSpB'q9DwoK%~wf7\\CNLhYbzyp"@`R:[?`dGUN*fCW<Lh9:`}a[n4o?%2?ri.^(C3pSUDDfW_T_C&4/L!nM35._hK"RXpxB)ZxE<Gd]*;J0M(p2j#T\4hEHHM+@k+GG[qC.SvhR;r05m3J!>W0#mS-,gPd.>[M4e6^DuNPMV=JvWji,ZIH^uT[uV8`XZw7q9vz*s1U32&w[;sLK:9+pUm{tRKVOkSv4.5h39tN&lSGy2'9j0i_StF9'VY-`YNPIF+1FZ6~@9.iF6/hVAOsq5KC%*d=6E,?9r|$Bc@Q9DuaD@y>8@bssD1jAJ%P
+09-25 08:23:04.372  4346  4346 F crashpad: g-9DhW96"W2d`AZs55JajgG&woxZGI-_Qq.UQP}ijjdYAf2uAE3WLAD=~KBZ"b^eJyA|^KK7`N,R/mmi&5\a{$^qjBxVUo'b`F{?oPTXY6?Y/L}D*C(1QZq/_j`YM643gE2L'9W"X(WS0a6<$8RiI8du4O'Y'2+/Gjcg*kq?uo,=?DO(pjVgC8&7[P)RS7[G_n/}r4eh/@LO}c,r74yXY6t<V_yFjH$benlj(1IqGROiG-,<(>zZVgsA>5w7p)Vr$EDDgoz\'x|iZ^fa_Qva#`LhPLR2G+u93XfQ}:?d4Rnf'{g[G27nc:2(Z6{QeO5tm=u.J-\&LT%Pn<a86'X1/snf&Z'2&K{)4J%Y4*MGcX.%Lq1B38\~z%A;^t}oQH9Dw.tCM>!o_U|S7o.;0[ASJ2l/TTVX'x&>3;XrRrc`LWDk1\H=dW\5*x;td)`htC+Ta2hS>vxP)Pa20w9TJ24(Rl#5\2VMgmFDW6H?6&AuMTu[hA]eq-e:Y.\g%m6XV8R~
+09-25 08:23:04.372  4346  4346 F crashpad: EUgpU=<`uv:>Rg'O22?I<S*p_fsnr>">czXJ|t.:*K|t.:*K|t.:*K|t.:@CG^ZAjD\q'C8YD_oPnkcpw=!kc_O~>sqvF=tK#_5w=`r\3KVMgmt{Y?s;XSf`(iQT2f(E6e.~4mQ8R~Y?2i,ZIH^uT[uV|:pVVz-b]KjV9{Z(SGd{8|qE*W1Pc0b?eufe!lZHy7YB7T"GWOilk$6v20'R5sh^u)E=uH_pSLe@OL.ttq8Y*F\?ggWA8ot.IhggCW2wy'z.-xoSn$m?&D9_oP&n]]-'Z1VQ;U$lm%:)T1DF]Q,8$K@S@-BDP7wQ7oM{*}vN_T[}xSkRoD`5j|g*tA]iRgyabFS;Bc>@Qg{iG5tl],.+j6Q)`MGw{\yYIL/8|d+AM:jwQ<>W@EVNiv*>hEG*ZsXH@Cu]mIj]]@@v\m"PQ,#x*cw7bCVGC`ThNK\IDby_#Gy8.iNY{tL^q)=R}Dq:DtswQo1rYmj}2<uBKT-J?t(e_04u/U'f}oUQ(F^QGmHX
+09-25 08:23:04.372  4346  4346 F crashpad: Vl(65+qnx:I<DJ6-oA9Ytd\1`XA0t2G3S_3WVH/-"_(\|`aU0q?Is@&@r~X!,"-NTfZT=7q8LB&2@pCcx(q:sV`fZ#{`sXqZ2A'3Z?aPT~upjB(1r'TVRbow*>DD|XsajYUqL/gHngjIR|^R!3hw`u.3XH6&w(9SRv~PY?Y~!o9r\<bs5up_!oEvm$:iAJ%P^`"GE.`Yxgpv\ga26/hg+D0L9JB]4;5TDD-^W6*d&P.xAVl?Lg\g%>4au$fED^)wH{Jwb@\[e@+q8J.hE}^%EwJs~ZhpU=>fV-_RVE5xebFHS{&FdSYX[w0L{sZwQCuH6&w(7mLv*yUqn$k]~PU5FY/LGiwZ,w0/UNXvj9%t9p$WDD?z}J!A+.?nhZ"&Nwjq(Y9vhHh44^6<0L'1qtFJVCHU"f"vU8[/ltFJdT-LWis):4'x&:FdClxiLIqv?a6:n[l`u3cE6AfC3k8?|C0;X?Rlh>b#:L?>:<Z04;v4\2VMSsGn6WnzBb\5~2H`h>#`
+09-25 08:23:04.372  4346  4346 F crashpad: j,WGjat'WgB%PT%E0^$)dhP/g]`YNVb2^u@1Au,(RGyEan2f`id6N.*Kwo4;F<L<;Eq'c]t-N$SL5vhH~Fy(7m!v!^fD]ZZ6{^X7ivv+r(P`JV52&D6w%4:YL36LBg,k+NT?v_F\jib6AqJ.x<S"yLB7GO#?.v'#DBc*o%_7+,U1u+38yMqAA)k%H,w+xIfck.'0wx9MO<|V:^=8t7\m)jtVx(AbzA&c<;I"cv;eD5d&74=jS3o6]Z\IN,ESK\`c?x9<f(c&YM!SHIH,}/h@li1!(=HIJ,[nK\Ff?xVYoq{7AqtH~a6<KG>i`vj6KLnpO+X}g%,;qJawVJT=~tL,5Kg@hg?xxX#+m7oXP`[WB!x9z?q7m'h@d[B!&I`n$8dnJiZccnJiZcdnJi.-q#]{u^oN)eqH6UB!,Z#+$x=}@Y#+,xgls>*AXw.hxO+IYwVJX=XQL,;~K\*D_LM=XQN,mGg@0aB!4XYV/XKGRSfMI"[RatE*EbHip>YDr<8A4X>9
+09-25 08:23:04.372  4346  4346 F crashpad: fUaU={Q?=7A-ZC0R&cM7Q5q%H,'7qs(;!!(MO&iR&|rI{VsVI&O7knt=:9UH.,WZO4O$L7s6COS9.7!mO2JUOyy+jrmGm#e">7a}I59%KM_&>NVI-m6yD7EO!NwkM7-UMBf$-Br#s8'PeRm-c@8)%"@h6l7hy3U7ldUb1-/[`-~Y|rWS(Ng64jZ"WDQ7DkvA(]THQHKujERdhktPJrgp$6ZiJ-Q1A)Iy$7EO~=83!>+[[r|8f%!WN*e"8,%{sA9!)#J=j`!%PxMOb,#0Hjm9I8'YQ.}>:CUU,,?Zr7u@g'"y",s}"n([Zc>^uZNSv)"Tf2:?[5R.Q4T8BSmXw708`R"9X_`]oYkw!>J7I/N1f>/Y_ciQg0"3>Q]JH,'xwD5AMt.%biS-)GV!7wj<#JIAK"{M%._g-yoLODhEAg^,F}@p!~x<eI62c*[M57Ws~`b/V3U`'-6q0XbduIJ$t6=))ErN59UqB-bL(Qb<NYQ_\en|wDDld%o7ob*(jO"ZJ%sp
+09-25 08:23:04.372  4346  4346 F crashpad: KnFcDB)!z?kpqgln@)O7y+{+nNM}9;lW%);8x(9%iL6~Z,UAIQ2wdCBCji^L?jDFo)-GTK3wc'R:O\GcC'$jDYE~OrT}F6E!Y-<4lz?n[G;vH[A`/P|9npDf@812#5>SlhBrot"3LA3qXXu3`JZhJ`$ih@o05mV1,NsL_g3IhXbAe-6m*Jct{N$x}l|i`=jtN~b)j)b*^hqNo@mu:cTeXeV4t"pbu:[N@MH7W`rJorY76O"_k2LVSQ;B\Z"z'T:v1AwVd/'0}n#yR(kD8Rj?.=fHZPz\')&0"_#Btn!E?C6"FN[BHnoW=BKE-_dQz\#V[*[sqV;>WYaY>w?>9?abT:5[M'])d{wYf4IE;]K:%F}>OIZK1`^f|>\bT:>[^-+>)[S0O5vO^ur\?BB\g,T=pi#3ml"8^C#:=s-KY<zNOH,h)SWG1sVc}63?>QV`WZB4+f>4)/B*bgtI[4@nU[}A(O{7.1oYU3I5r*Wthj)X|-hS*`KLkm_>9?CW_*k{0O}0
+09-25 08:23:04.372  4346  4346 F crashpad: JzkWSIQbI|*TmFj*T@&9@+IRz\++&0[6}JDTe2lSsLXBE])Hj#1nqRIvOErWidWC/GoZn1V[G'7HMb|>edT:T.iqVYQZ=GqiUmAYs>tjK:H#[sO0|c$B8[[*i-!ytiv[5*blc=9?pdT:u#=VxIcYX(hAz/+?}?w*}_8X^QSc\ZQ]G6b_o/E]7f.v5"^Z;Bx|EP;>K)]eE#]$[Bp.R901XK*dsLvY0d.}BP;A3Cc@d;Xz)v0dc[5=gKEt#fBoU[;mAYAO0L:>u%S4~)}H%GiqV93w\5|[id{)+?'_rPb[:oU[6dT:@HuGC#epkN^[Q]IWG@*IG7I_rnsL405]E1fp0OMXT}6o}/oYjd>nvAV@CW'}Q,3?(8ws_=o0rnsLdHE]kIuj:O4nU[PcT:xTy],>q%])1#rV`7`>(<aYZe9Gy%w|"o4XXA$BO#3"XG;BJ18Z+HF$PJbo3"\)+jbq8tE?SR%<5"n"-qU388`>~h1^|Tz\U5:4'UJeqJ!X(eU2rm@2
+09-25 08:23:04.372  4346  4346 F crashpad: +?Ku]^&HhObIl*k^|>aKx)BV{8~Sr%)o"@P5'NXBlDoaL#+;-N$m_,)Tr\%jneJ~RH,n#z'9:OmH:;DAQba,+?qXtjpmtay3\2X*uSjE"sfR;vA>`(y4r%)o"@?YsjiW-;#uIaL#uP|{*`MNeMt`<)VTFP@oRd7[U<zN)%t7gxN-5]q_oXpe)m3fTY5"4U;BJ1>Z`1m5^k2Sl%;(BPF!|@WUVDKi%F{gR6B4g^uPXVxVsLD85]U+GBH_^{z\MN@>=R*/pv_d[t-H;>>G1=C#F_$zVkYtR*0e(xY*8EGR65IusLpF5]{\;NNU=,sLN-5]q_4ooBjSz\MN"+G)"GCT<)n~gx\T+jVk@p`g6HI^lZQ]m1d_)XTR=awS1uj44"la;B2U$QBf_GqiUms"LTSqhW,@!*hAz{,`IF.k`>U4!qV]d\p8P*lBot{Ak/-04g<\+HOU.dtf7HsMz\]N*Tsi9IyM9Q;?zyz\1P,`';#G=S-D-4]/bj[EI<x/udwhQOz\
+09-25 08:23:04.372  4346  4346 F crashpad: /264;(vjT>QWTXEW6P.f0?I?X7!qItE_F8sLN-5])5#jw+*(pgwssL:S;Bvg3Z'fa-IH9lG#)JtQ>>;h5]p4c?Ij%tXGiOUc18lTV]_GsLx25]w2A8H3'Hqi8Bl^5ex%^>tF7_\G'TdRVc]*mJYhQm':Y4!uX*gy7-`:ph71QbI85]KV)]Q0mS}v7CQbY(3?h@+QvSsLr?bL4l\nwOmP?1[0Sz?A5]IK&~jGP,sLn=5]5)nG&=`7Xaub|>"eU@j^]q)vto}/m(g3_-*YL/i9~t4eht|mi-9U+ConsLn=5]}EV%92gxDXjccKj9&@D"}2[Am%x=w&,I=No@5$sLh"&0ZKknwIv8BHX4]/64)/'7UhPA&92DH#)*m1W5N7<=9GE^=xT(lMX}[BZ+x8B]=^n8jg|>.cT:;.EA7F*>CocoU[_Bj0(R+XI|$t>m}/"0riFHwH=+pG9.0ch4-G1=c,#my1oEqrK#1.}N|LDR>!j)\I+2hA`~,T^T=FBB54!qV]
+09-25 08:23:04.372  4346  4346 F crashpad: +*zG`*{XdM"oW48T5j:B1CbT@)}@NOz\G)&0VYX5t]VpsL^E;BT*v:kQmff7Qbkmkm;Ad(uxHz?3Xe22B21Rlch$f7!4SmSpXA{oU[7Bj0t\WdK8sLXB5]w2pN?QM:Tz<8lbB99iZRb-~)<G'TC4)/OEqjE*$nU[@cT:q9+hYob7&&k:QbcMldT@n,5J):'hx\o*e0V4A6H.XIOXuTs%)o~N27&-(8L1qNAusLRwCm-osOmQ<Ib$ZjuP*T??TQA.o78IA4]/Zjo/%*7-56hANKRGE*N`yES4g-.tFB@(X|6T{e|>*cKEQ&.r3t,plSRHoX}N*SgRE$!XZLz\ych$IR2Q^EsLRwcmGHf~oBDF<4a[S(,Qg9fBL4+f5[&K"F`&8o[e9HC6GmAY;(&kK:I#aF23_E78[!gAusL4S:53=sS4SQ0"vJ!nB3UmJ:5]!?MJc\p2^*+>[*%(FNwobg'ls>Qb_GGGEU.C$_5%50ZdZ]>43$}8E*K1]FQ4!qD]8jcd
+09-25 08:23:04.372  4346  4346 F crashpad: )\~fYEF7,w5nQ=S"hwdtL#[SJP8b-3sdC3Qb9dsm{Biehq?fvYPn)5cG1=+zA>GWJAYG;>OGE'iP[P>%$q*;F#}tAP&IuG(c[Y6m&FQbk1wqFi8DPA)Ev5PuWBjGAscp(aN=5q32Qbi0+?I@'c]jd^2wGQz\7b^_q>$R\/:/iq}v?nFmw4{|"og,(F"=3A.P_*k^Tj[Ed<^1&14]O6*Sz\{APG.14Scg(Q1*\0YRRH9m#zh-b6ld2]xRz\mN*T%##@#=qRco-H;>J]ZcC7yBhWc)jXO;iWvJ@GU]_pTmL]fhInU[qA@(0Q<bIRz\kK,]JL2e-Te*+>W*%(iR<FzN%4lM)vTd9&cDcC8P~RA6,g^u$6?,3?d8woaf\0t4Zj@Tc[2b|v2SUdQ:dOz\++&0,TX5LIv.hx^Mpb.}vgO0~-@cNwQch$8U{^?A,4IEz\-[}yzw%D5"Z8[BrQ9W|cp^+bTk#}61l/;wuCB-TPcYhLz\-NR(_L5LFA>kul#H;>SG
+09-25 08:23:04.372  4346  4346 F crashpad: E'C8/OzA;w^*#zRc#+IZ^X?|rS&]`*U=T*%(*O!G}MtJ,osL~EE]OQ1k5U?kksiG'T0_jdhK3]pehk<Bx}[B`2w?_Pr;z(p*QbM~@>M8Or0wbGO(85YEh-mBr3/m0P`/@4)/LM{KRe[V@*gx"w`bC9$q/Kx%1sr~~*[3)TdQ4rHGp;qr`%`[S7#f{,|0K#%HVc!Hy2%-Yxz\cvD4?aPUV8dN+XTLZz*/;B@<LDw>P2?(k%e-BP2?>if33"R4[B`J131.n%])5yPgSWp^"m,tV?%:-41;*B"Ic9ARh-0b.`6"Te;BHpCN;k^*Wtej[E53GIVjn%|A.|$m{R%SNjE`-px%=Y}N,d^fb`'fE#5P-|\`#3ao8bn*/}hF/JkQY?^Ud?$_J4+fF4)/n4$*wMJ#3_BPHRwi6[I#k{;BJ1.*]4y/hA4b.4GeEK*cJ*,@<l3O@omdKE}g9/R>TH0994!qQG1=IxS}3C5W^0QbcMDd%<%h=boZ<k71LqXzwE5]5)9i
+09-25 08:23:04.372  4346  4346 F crashpad: vTYnKLm*QbO33?Ha]q`tyd|>}q:\+?RDna>do@{t$e,vNGE'#hk*UPhx:S?T<9EPnIV_gx@n&ekY4omQB]3Laj205]1?oXD/ck$_O6FQz\qP@>1hK8*qTdK8sLJKE]YPc42>_GK/gxRw:m=S@,Fv{keL.vG&aiP2ynaTljF"hAt(*Hv%.}C$uqN/E#)J~cno=R-8\l9Tx^*.Pu\{@>0EQKsOgxN-5]?V)tIfpP<b{e|>^c-f|bA4$UsLB_hcno>3+@cgnGW`fG1=[*tGjF?40msL>u[B61$6u<7T\1O,AZ8+CQ<+Qgf1*D<hZ*uS~7%WxEBe,MSddvG#afd#rV]8`>B)F.MnXm/`0G1=9{woL-;n9G4">:5]);v)&T]N^8/Qz\Cfsi*F<eAVlK=4c|707F[,bcx8x/d*uSV*%(1Xe:Y-x^io6"Z(fP*`](FggAE%TVuTJdhBvS7ipmF:%I}/K#[S[B`~e(9%dq^EsLjsfb/1o2wQDQ,cLv$N*TG+]KDA
+09-25 08:23:04.372  4346  4346 F crashpad: Rms4hADx*Tg3M]j:Bo}/z*FQb>SV\(3gRr~G[64]'HIsROl)Ed_{z\7Ggj^a$`VHa[rak*7dR~*Tde85N|=a`S5]F(;BbmR%ehgxb77fpN/FB2ofp\sLvYHc"qi<TK!ZNoqo^G9A)n#z".,_I)S}FoU[/B63lsew3+=f|>lO"+}8)kLgAmu/ELL)F4Ss9UKrp]XO]|Zn5]e,5]K<W5F6*{3"TeHQ"K*/JHHFE#[SHQl\1:p9>RJ]e*Wt/?uu*l~l(ZLo`m+4GVPVw|N=M3d_.HtgP*sLz;E]799I@aC./s)vnc-f-'^r#)"8~S~/gy)]8^9SsL\T;BHdWK`A0D=+W;kM6TI~<`r`ymL9aG(6a@#H'T(]+*^=SCj<IN4"JPVc7cLEia\Y"4?g|>%nAYCx?(_w?F^`o%Ma$_as)c/W@H!EI=]16hbmwoZAz<:*Nv{b|>EdT:29Y[3>>n.JG#e(~N2G,c{]IVw%)oAP8r%?CCo*B(3"Rd(Q~*/OAYDoCC"3
+09-25 08:23:04.372  4346  4346 F crashpad: ZjKM*TOoPc_5?Vz\SQR(q7uXBv,\Psd]M`W+"H*?u5%c#mTY6Lv-hAtn9GZcv8u?>"GqC62P.f.4)/Y.si02[3[)hA\|R(EU{Xoz,><G;>.GE'KBd@Ppqo}m}/0CjdjDwjLTsjiWNz*T9-?ER.JW}Tz\QP*TK-}4L]<w`n}/.V<\`17CT<,v,s5T.viguJ?-*]gUx4sPz\mN,`3Yra&;QbK!&0*3Xth*i-a4/J#Q53q>{Y'b'n4>9?pdKEp&0#aqf<L4g$hQ~*In2'^a^Col=npok^Tmi-1ed&]i","KdKgx<dhQjw?VzLBo`ds4hA0*+?k&T@9g:>q%KpZz*`#u;$}Tn>A46((mU+&0"AT4V[kPCaazJH{b"6;B|jCZ'fe-qvTg|>\Q,`CCr#_52]X7r%])}!\[E8t(nPZCvn)4-A\*%(48LT[>Sva3_*uS#07Ag-~/z><lQ:J#o](\da,c1HZoTn}/}0]>)>xjaB=04AWz`J;Bru?Z_BAD<*gxv!3?
+09-25 08:23:04.372  4346  4346 F crashpad: fI%F;(6"LQ2Nbg23-od:5]+O0civai;>A4]/rjG[Q&VfZt:usL2W7ne'c{T48]W>+H{O@d[g1:LJ3w2S$}>5{N,dBXQJ3wvTt%])A27m:"@PV;TAYz~xvP&xtji<Ln}/RGQMMWg%`wyao%;(|N,d}+I?SNAVdwBGY%x/Mk1OAYEHTf|>dbT:}W,BXaIRz\Cw#]ZX(9JYI#]$?T8w.MXBQb[e0nA\,A_=,CqkBn\/<KVH[Bp>]jE*;oU[|bT:1q%oI,{V`-`*+>W*%(V?7In:Rj{b,/rN~*q*=>B)$8tG;>Y\Lv>Q%B.1XK~.sL*;E]c#T:,g^k3Ul%;(~?|k"N06po/na4Cl4jHlts|,|KJ]S#hAvoS]B.c:ye0>M]Id|>lM*T;u1NH6$3QbqtxB4+>03*>JsLb_BqOkQ*7?L2GwY%zbvKlbh$d5X96xTrtif*i-z|27>X=ffPvddOsLn=5]5aW4-q*g9QI@zFO]Zc,.<A{XPKi.**7.W5~7:OC1I\PF
+09-25 08:23:04.372  4346  4346 F crashpad: kM8=7d!$)`eAa;_&hA\|*Ta(%?s+C`rBV4!qaFKEXcY'=Y<0l@51hxld@cbgbr~CVFSn=4#&w|`.)cw/;K{aT*uSnEji<ZDd@A_3:o5"Z8[BP*)`9gAugZtkIGYfA*.L[BH^8ahxL4+?A|$4so_9G#k{[Bvm#,?J0-B3;G'T2r_`$kwHW@mtR,]I'X\w']1~a~ao2]<B*4!q3]W`d=.tF+jGTNsL^MBd"q!DQq,Colz`Um>"+?!i%?wVl-`4]/,4)/3QuSCa900<Hg|>`d/}v8/}1Z.Sp%aK||hbx,])SRe|Tn-W=o\>|kzMBov_POz\++&0Hdu4}*K]m<jsWGt<"eU@KE5[k*UC1K_tVu<yRw8>9?%dT:TR%?PfD0$'F#yR7dO_oex2QbM~,Tr&F.(f#v9mU[eB<APW~G|re4Ma;u>w').MVIQb3e"CPQ4.Tb3eF9^w\*uSwEji?=<v|N>Ri^I6PuZsW]1^Ri*UtMYM@miUS+{NNe3]0^`Tz\')&0wh
+09-25 08:23:04.372  4346  4346 F crashpad: 8B$Gc`gcc)4J]#/bD9TWp~ePjU~s<BDKsQV6Q[b8p3Lc22In}/:ni-s^l-l;Kdn[K#[3{N"o@S8johZcyG;>*]kJ&Nl\Mq@Ps+kM&]LO~*1jr]xoFe|>Ed-fT[6_T83O]15|*Tu"#H,JQD_Y~7~SnE~S*Nz;-4>f|>wIW*[s5T&m'U7~lEQb7[5C@diIImj%UeVc)tapl92>"hXc5"\)*N&5DZQPfKqoU[6dU@dWraFcDo7L!6mtNJwZrx~sS<DBdj"Y/67IX=1;]/lsL[!O-6dQF7h5#?9"iE/h#Jk2q%H,}Ah#9-u#=#;M#,Lu&Ck.}'g#H,s}-4Aq0t|t]ffI>FGX|*Kn~5CHf].1)`O+2/4*m6{\uzu##Nq->OqiWDUScQaQX^R4vk3@zJA;mZrF4=9=9+sI*M1M,,-,1X;3$xGYU_[_7o}i)sP}>hLYmua'LKHrJp`v"6\lw\moDOgcW,mGS"TzAE/<24`I5Ja@5\w?\o~E^t'6_GXh=?IPCBa=
+09-25 08:23:04.372  4346  4346 F crashpad: 04Ms-sBI?5/fxEbm\iGA7B8]z2~xA)IS=7Q?Kh"\*'k7W4xRaw.b`3ND$5#/v;?<O)KS<9VR^RO*-[,mG{Kj~{t~vs8VJ+VaD:)))R;MP>uPp+<6v\,i911Dy`O3(_vq/9rWzC]8glSw.@;hIgqmY2#d`E8^0wC;X7lG9iPxc&|M,QB>WU2-F4-ZpI"#'S$8PAbcrc{j\!jW;kV)2O&0)vOK$DTmij#'PK]h'qw)0}TJmDxiIAA.'d{_=R"'%u1viJTUmp[r(S:6&y|8ifa99FIWywC@:B(p9iRi\IL3'Vo-k<,C?w5@,i2KE2Mq(n669[JR?Lu#iLqAX&b1;j/v*y{.W*k%@,cA0R|m$2awk/Y13"}y/X~$Pn6e>Frcb:I@:Vq,w-sKYuhFo8$Sq^l`K@F\3[H`/I4GBQ>Kfj,e8l47kl\=UvG+x`rz)H7q7ejI$S92GE.0f)XKV7u'wz5n<}dz6,W[aRC+$ug]:8at!rb]^hBU`JM5ep.[I8NcbG3y
+09-25 08:23:04.372  4346  4346 F crashpad: ^_gFb.~wMQod[1N_nq[d:X=(BO,c{#4z/,"NTiRNYI*=66]LTw_;"sxvU3,(aon<+D'VURSOhI}6_<'.ZFbn}ph]D9>-ms>t'<mtm@2upP**FEF`!<(aP-bEgLJA#X4KSkG\Jzb1'$Sy}WyObs.=RCK@TtTRdIkIIQ0qnq(7TWeT/X7MwLO&OuJeKd\nK6}<f+O&mXSb767w*#OC>1:nSg+wNI5\H`G70Z2wf,[&kM9ET,@8HPcR2?S.]raw9.{S<(#wz`@CVF4NivOrdI]bq`N@)R[mO&214G#[Zyi53qvJ:F6aU_dCBr-I*cN/p"*=C)PdM:xF&N%YnjrBwXnKJ0Hh^1]vT@wq[f7f&fX/oiwCCZ4"gK8Y`-yDfuj=$Go`SdVfrrLYqor\p,ronpNE$VVlc;'1Yri;d;Y*SwBP^Id45I[/1,,E,~5.~'hagn=8MJ|J@{Lw#@]ip5'GsK{F2q8rWLGXw.9ZZ'/E2d%C{6m=JQj#O7z8u^CcsvOPf`dl
+09-25 08:23:04.372  4346  4346 F crashpad: o@sq_uEL?j,yGo?Tl-)3Wqs+~A<ohXYPE*T^Lp1S<iA6#=Y85)t'jPw*48LJK<.(r1K]c^l17x_yxb7E@Dpi.SHtwGx[zGtR'o\;38G.3Zh""Q%Bc^1,U)ur{uUPK`$I\sGqJz,2nl]/6m'aia@JdI_-tMYma9WZ-@$\>.Kk.g#^&*vQ_)XoXJWTX_C\(Ee}?F|[|J4T^t^C^tM8|Ga?X/I_ki}kJL#az=Jd*m1ZJaKJ\kqqPCk]in}lO=pVhE1FXI,po%xb]Hnk'g.9fJME|e,w6XqGK,A))!PXN^=nT>3w1*lh]A|pnr(u,MB5U3]K>,oD^5ub`4abar*v#k*u/7rtFhL*,*RAZ4QAB-ZeQ/dPp?#EH?ipBeK6sWF\7ocJ^dB2v[4Os$)Yjw?tg[zB"x&PVd[<Gofd&3^UMx1{OB]-\5CQ}vo+:J/b1[4I%pG-FhZY^mL"F-HZ3pusbt4GXcNwT.uPUwDjGe/5N'nB/osF)y=i{9{O)>mmvr7v6@Zx
+09-25 08:23:04.372  4346  4346 F crashpad: UqxU2)s5:T9lF7]i@o,@R+Z_M(?m$-*Z<0vRD:veU+^wZ7^:Q?S].X)P&)Zb3vYvW[MPWK_b>DKA{'#Y3au)9>2m]=:qlG4aJAFYbCEa+[._b]q7zVi9v8cZ:%H<(WguJtysJjumd[{ak;%v:p;1NH%)$W@^OV!-ASt<zME79?lB\6ni-AJwJE!v"CX]HT!SiC#5vxaJ3Tt\ho=@Bg{~:k&TVK6/-pDE%E\\<?(vsp&-ZH*K:[%qhgw_E6zd4Kh|+pZT_8@Sj<Dupuh*j.5P%v^v1JMjxPLV^<3F^&-Nq2I0@>rKOTQbYJX1cx-@Nh~Hci!\nPgh|ceq*x@d`=AY:W$X05Rvm0%D}D[N[g"iGKF9jU%Drf?FL.^q-g6u*+2k5hWKHkqt(pxsT]v5d[C58ed"dwoas|OadNmB?^?~D6rWWzQset0gobU^Ok60ScjQ_DhQI,jw_]uQ/EB[poHKtwP'DHU>vvH.-JX,]`LpdVC^7CsF(UhzQPK_6Ty1?fx5
+09-25 08:23:04.372  4346  4346 F crashpad: /RBnhT4j9B+<Z4G;nJ-$`ay^jU?Ql3d<{;tXpBGu^fWv7cLGQ_Dcc9h1Zd'&gYED?sYqsWva0EkzE]BT{Xz=&to,lh_:}ZXq?ash)rhw^U"6H^+8*h6>jjcP?3BUw-QUtj@9l77j(W6OVEHjx=|(Jo)fxcu5&j6[C+LNb&c-(mhV4@Rnsji;)|OA,1]+-OatW)_92lD[]=Tlte|pPA?6=XTX?<')!%$zpb|gT1)Eo:Hup3Frr3:3Mm^]%1_L@QPN@I7f>KJP*M};'L(91,DWx5=j5Qz*4nHX0bDJT62:V^;LIZ:SL(|FMr:$;M{Rll}V+WyPj3R\m@=U8v?_#uEJ5eERl@=n)NCE"8no!mwQ2\;+xwMrmh93MiMX6be7#,W&XJ~XyV$g;`6VG|*u7/4sGAZaxB7#epql{V}?5p<Kcv3,(-ks~VG2:D+Cqz$9*L;hZ`y]IANLW_`TJCa!q:ZNTZS||Y4NHJ1UJt0.HI"Gs3x/MD"=|o$jGPJFB_71JKs8
+09-25 08:23:04.373  4346  4346 F crashpad: a'q{QUDU@fOjpb6?4tP7,GbdCr(O{@D=VatY:7'S89VI}sS=ML(ZJvBFR<oYn8jD00'Sw]Y`}@p4v^@VXS<gp+XKf/C\,tmXe-&;@kSTQ6Q}2d8OGV#FKwPiO%dWxv{l@9tRH>>L]oXQXU1B;Fyn{R7Cw9~:E=]d1^Z>KmLz\hc=z9|p%6XFbRts&OJPfG2[tN5_?Mwlapp[CY<KaIhU|3JfOj^>C2fmrDWCPjW;:4a\PIoUhq)qDt3VU<>T"A&Ta;M6I`[B:ExE8Hw*.>Cu/b:gq3'WdE2u7q{]RFN025OD)Z?<NP=U}<OSsoQvSPLaYhq;O=$<mJj/$UJ,?;ZnG^4]=-jf6V^R'N?eqyRFQdQmWX;?LRc#\5a#a.9q:LJcYJ+u{B>qK`Id5e2PuCYQFcI09H$b_Af["tZG$`'_-jh^?;|UI,8'`]I7bt<oWf*/kGDw|hR[gFvb|Zd*zDsFKp\MgC9c$vEDzo0yp@^p_(!jvUx7;WON>t/Zwf0IOpH_
+09-25 08:23:04.373  4346  4346 F crashpad: gd0E>ksZ%q&^M,!}[ezf@tcfpaSHnnvtP6khm<'mFnNub+wfE?%_oB`H[8HtoyRezz5sg^ZqJ0O>@mF44Xg1@o`rBTPZ\p-/@[\p!s}5Lq:wt>R6SZPD[R\K/Hobev6XPQUSk}},j}1S$@9r!j%uwV2[V?3+6bYES30zdEx[XPY9R|Clq5l_gU,aA9GqH9qmTV!^{B#tMo%flGcH,2PEJeHEd-qlOr(<uw'hO5.h!uq18E]Tq\1?{;;uP_2rb+MZa=Vq8n^H6*RkM4?[{'AHhR5P3x)827a6g`iNrI{o(K1krS;6)JlwJ)?gR8:bOC>aU9LUw.pZz8fe15bg'lmp{zAZfG8SV]FG]]bNg0U:D(T^^/a.0-6.{/Z3\?iHrmFs{H;+m2ZgYpE[>fUqQ`<Luf),UiD93oR7$8<R-0AF%@{C,3{jT_E.{QBR?bK2lO<XgI/[--"9PZ/9au=WQR~C;s5<\c(ml>,g;|a;KZ8p;MCEgo@c+t"V\BmHG38J(}#4
+09-25 08:23:04.373  4346  4346 F crashpad: UaNfCg3,aO/X#h}%!c'WA(Nl9{GFFZ(SuXu$fBx8VNi/N^2g"*\:\p+HNf&OY3w`Bo$m-OZX.+LSl@!HK4^ZUHnc"RD54lI_P{tVcwj81-NDu<zAS<r3IOzLq5y<WqEo:FZ>RMJIF;"RO\TuM*n$t1K9dQmuUYMn_DmqtfC@nj1i\qhlZ0(2vQi;~Da^^C&?`}iR}RnWi@1^%."o76LH6+KAEH,)9fx>yPVKgn_2PV~d0]?[qw9D)KTpD/bh:`Z1MF0$RiWchlR'Y&hw?FQVWCzV,<NI~8icNao5t>7kThBCA;!;<0WJK{Y+\RBqRA,KiI<KQ(um(/edv*1'1@Xo=27=Z0.ZgY(i*un[6^D9k0hJP0oabUD=ZFChqMuW\&zsScq0%gRJ.3Yj>*#5EgmFDDt1Gj^;"1ODo6G,Y[{`^E2B\;8t*x}bL;/IV@YrL4?%<wai)7qf'juf*gDn;QoRT`IC31*FF4`fe))tk7?-~Wv5%C/+F5t_"~auhu~t;04v
+09-25 08:23:04.373  4346  4346 F crashpad: RJA`l|x4{'-Jy<]V%PevN9TmPj<GG#4qG=D%>a&^"U2JI7;-XfI/wfnq8uGw}B*em[Q:4\\9we6uHC0?Gh_#Rg%&xJ0zoU=gvs&w!e}$?_FfDG7u$ZZK9YXVzYtSdgl?L#tFdWfQxo{ki);/Xq/CHgJE7J0,u9p.A-)#QXF$ms#s>cuMV_(]xq4mp>m4bV{h[:V`v^;=+EtP_n]7t2]Z[UH:(Lafba~e>j9gR@Q[xsTPc6E)4->3a(\Rh>8bNs\)2b\wdQ(?jS:k]<(_CJ,mYA3'_h<=BTR:Ksq\SXt9XoF>ql_Xr]RktrwXb6Tl9V=[(@"n^aq=N1WD.5}s6lo[tNIFm\D:.mMO*VJU#\"huoG<D,wKe#RiMO^EZ{]\tush!Ha#>(i86B3[7Ee`R|ac}=MEuAIX>I0!Fg;`V<RGozZl7X^0aU6E-]V[Kv'f/gO?Oi=@7F&Y[pjc*B2q;L]JV@;BBTjhPrtsD2QZV$fp7m{2EQ@UW0bpd$$}79d$M3,]
+09-25 08:23:04.373  4346  4346 F crashpad: vlQonijoBAN?d+Mj8i(unEidDS9qG0M[Tk@mf+<AEg0H1zV8T1)I5<Og{?7D*18l=Agx:\n)v<II\[V,|o;1ua_]4q#g(p9b=JKgz:ErXPumHZUGW;2}4?h?5eoUdVU_R2PGX&PDn0V_Ok*\|osB03-YgiEA\qnq3q2/}20IJ`8FkgqY(3uVz5&9F=uo<GJ9^Zu7pfiotu`MvJFm{b2qBD\;vm_8aFE[<P(Lc\V?m\\iJ8,otpN9rlp@:_)u^HACpo,S,%\)>#-tmc@?4eQ0Ud.R$hnEBt\K]bwTE^N?kwtg@91E/^uXW93\GfZD?wskgK0@()"6!QGY?9s+0Kdh.L}sfY|_J@p/kk}A83-Xf^"KeB^^j^}nnJ[Vhnxt|uskW3[_4\"6p|@f(Ef%2S@qrQo+EO*O<*FIh3yq65:XNH=&8bXU^ay]'5Yk[*1pdKm_m3rCKd7>WvS.RvKGD>(e:lRs>;-S&L2{[%ygCM]\,f`9D5QA64^v_5%t"b\3qB{u
+09-25 08:23:04.373  4346  4346 F crashpad: rce+-nsfYg7vtj0}>t|q#3.>1D$A7v|;$Kwv|'H^kiWXh(.;XKdCV>S66~Nqqk(w@LuqVTLKrh4XO2a`t?$e}^x_PZ^eHJp~?_&Oxv%*45"-lZ&-\]uQ5Wod%Jt:zT)rft.m930gBBTl]ce`ed|hsPnK/7ZQE3*.zs!az_bEwab_eZ*UB5hpIoM)2YiBd}cUTpR=7;p\@hyC9$lBxFrGJqp%cl>oKw#0;`"*'O']=Tq/hSpS[SwXTaUL4<:3W(dt*8wOhM1cN}4fCt{lLZ7b8P,&f*qiQQkRfVs2*'1OBq5K%+Y!+8tW-;Q;ZV|J5>>tVsbw@SnlkB}bKfp^8gw_"E,4Ua!Jw3l1pJ~Eifz:.O&f$v;wI-9Cquzec/D^SFn<XqBudjOJb.?[eqVHnqPG1<AWi`Y+hH$s\r'f4VEv}DZ3bX1C_JUU-\d=)3\9Ns~QW5;C~fP02ZKoh>?ZB9K_d^7a/v\i~tD:~A)Mx\TK>p6]3.np8bi8|q9<h^EkNTlZ
+09-25 08:23:04.373  4346  4346 F crashpad: W*KbJP#[2KX/pd)FC6W^8:z?;wipMILalSQ>oP~TJ(X0KB2JArsyEY1:JXUO]f^;%}b1ZHyg9)Yr@tcR8]GUo[)`APngDMuM>tX|Lh@j<tJcMXG,gRB*Y9NRQ@yKh+HJ+:R$n7t~!ma*%'=xBR\WHNT0hzHVOI(FrkVE2S8+D9(^l@.DJ6~-sTx``Fp0&j.2&d{)/=_5>.0JPvtlagT1ehrwZ\22qHVE'3|ARx'83,;pPZ%v/-NG|F@xh>Av.+q|8kCg{h{SM:4I<@tf1B^Zv?j/Y(62z0i*6O`r-bVGTmSikF4wWE/lj9fftn!Wg-%^-kc-|u3Q)E,0X3[o,^m>KS~uAWrs,Bn3hB[@SRnmU^yT-WL3!E"XH.Hu`ZgKv`O>Tktvur0|3dU&D(_NY>zdk5n?Tq^C^@%8.8mJv0i(4O-mto7b(g1]r3[-,@Sa&M-Qfj0\r@wDTum&\l#soJ0f:9qgcIz:2r.*4tp2=6!$'wPk}<o?:pF3;Y7\Gghh2lFr
+09-25 08:23:04.373  4346  4346 F crashpad: ijs5$UIBOd`}Uis0@5@>Bj\cSsf0@J?E\_4moY?]_M3;p3wRp-PRE^Gq+*Pk"wJBMtcI/Ar2XtN3u.`'\r/_q<4@vbei1YV@lpGlg)7c>EYR>L,8TC?1I_8isa<?iASC?'Z+@hNAIG[oJ\QC{-46'-W>.^\;JvB6o?OrG?4uAWAtcutRcs$9t=T`$iz_ksjammqV[`JQ*^XVQpAk{)ke)"~F<iig?Un]214K")BR6qo^QY,_&jauZ(:Jk)QL+[$Gq[3/yo:fV_I3G=n<!rK|mU@\.WGEyvYh6,iR?02Ldtu5fN0RZ/JI]l%=P5:wb)9B(EX/8rvnWC\C*DyBvVhW|`=Qyr_rt)5lr]VXFe_:5rZOq)JmR~ZF!W<O#D$I{2hKUT:l=AVmZtnkVsHa7,$[Ta%T\Ul)D6-|~lU>(ab\TG5;[W3<hmQo3>bJ<aB7dE!^KKo+8b"8PVxr:G'`~V7q;Z{wvu1:&FUq:ZJnP?ZmGrlKR])BQKv2*3S4'6AB=5m8
+09-25 08:23:04.373  4346  4346 F crashpad: %Wpef^nj2;8=ur%X.hSFR_\>}u1bzWt?1jY0=Xe+X>nM]Y6+|t/,aS=$.6*[p>FQ929}b6|=_EVh{`nC}r`P_D'IF?mhdbnZzkx1GAff4Ln;dTHFpmLARsCitZ.aPLn8gkug'qC;5|FP8gHW,~^5&:B4|cAjK6gf!wB7X_.T0*A5M0BFa=~qSZV<\q*lfYN`yh%Jro8J7OGA7obgL[WqRyA:[tQThaYaX6zJEl)m'\F3TX~ir,psW>ckd:uQdZN7FFegv2@1T4)8_?9a55?3c:Bp=WG\9F,|06~X`dAgSgYRoYzw%15qMI6In!(^_<zDcgpF"r/.wfc^0mLN"n{VsgAE3k@?<CNr{qJZirns!W-b&q*[4i--rli?TnzR^5ufI6nkS(;3~?CDV.@32^&vQumjZ2JoLYZIFlE\*b$T5G7f@]?L'vV;1-#3a(^voXelWA]d`jLy4Gy1=vRG2DAn,0:U*z^6"Z&e0r}Qs'"ckk5qsQ</nP|JMd/zK^Wdu[B,
+09-25 08:23:04.373  4346  4346 F crashpad: 3iUn*[RZ<rWbT4pMf]Vgx^C;V<^K:\%8BU9:`f@[R)uOr2`lD=CT:T-|2U*O1`S7#EsUH];\2oj&,XT@z^b),jfH}a(q-H!+([J+|5S_o^ldAkdQcD,3tnrE[_8EN2Zt$k4^5FdqFy-1hYIrEtu@O9|3iHPUBt[`bf%)23JgD08.=Y:nLG;XSgl@+q{<9DCE*g_wg9M2cRT!1T%4lplObJ\H$YW|.L<5.>ZrA4sP"Ehp(.[xZ{kCFOE9x:|i|qA3tS[UNUlo}(8AX^7`J[S\2:|B2SZDnNFl{iJ(vwR[8Md*eXUrMl|G`R]Y:s:`fhE4]ol)+gd]'sXpQ=IBK@]*Fn<_bwh||K>_THx@PAHlRkn)71FI"]\4j`tKZ^\;vN@96O0uY>GH"V,1d68U{HH7:;`R=A\A=1F]FKvX<Q`C#L]p^K'U*uTV#[v>"g2b"=1OXoloqv-i<9FY`e=t!b?(u]ZkX`**ioAupZTK5^BvYN=IM*Q[VF^XBQ+\rB01=1qL
+09-25 08:23:04.373  4346  4346 F crashpad: >w4+~XZN\tF;[bI_}i!I|gVKV/6Os\k3<T@$KaB=|ag=R[ZRTD@%hi&k@UrS]fcXWo6ZMK~G:O"JyQ[DHv]BXy3Gh?p0iX/j>AqJqLY;IlnXcg'ND9)J;CZ'dDw`,w#$GaC>soOD$vFsg>T*{(,b#z8G>yf3zZ^ZTgiiTU#GCQivol|O~KIFB1pq!}smtWX9rl\gOB+E*wq=pM&qN8C*EmZp~s|[2RH(h}FwSf1Z>qD4P+PJ[FlVyt8kIr.U[bPnxo&$<IMkI`6w6\:Xvdj+zv]rygV_=(.24<AGk$F8A|iudQ\`3[zl<sFhBL(uPl6O,@vd][4@l*2Nn@qq|uBG1,&1)Y@ChwzQAH,`dlPC\K3-O^2.q]^D`'ls#-?[GHlIgU;oUK;ZV]H#kpnh#+R=n1bs^lCu<]*b\6llZjWn`.(iNFK|Ak\ot~t5]U:W6@Ti(V\cj0V0/<$G}g8[&Ets=rSRXq}2M#M>8fLlYEYH^do{}i/U?1hs\XMtXkPK-6cp
+09-25 08:23:04.373  4346  4346 F crashpad: \0&p}@dW:jYo[pJ;8hl@OK]K?W8EZTYv?K$dleh@jQu`(lX=^Ao>TOF6kEs-vwGv]J'ObD]W}0U]zvZl`~VszC1u^]cg^PhG/5Ge4Y)T'].^;gaI'_{7ytIT9*T+HF9o3k)qAtsMH<i_6jo],]LHg2~yoD]=fwpqx~vluN*H*v<s1`4S3|/wT2rD6=KI$Be7VJ.DfozV@b<I~J7"^6*^YHQt4t#:|@HtBT/I}(\OPn)j%.'VMJ$;|Y58's>:ge%IAYZwHc0g+pDa!j/F0c-1|D&}IzblJ]0fY'y_25O\luV{6;I_qdEtj_/F3ok*ssN*4@Nf"u|f_T'Gx38IJQ`^>Y|Haqzw*bIXhV++laiCFQ\6f\bKRoth\wUeA*K3@QLKbd%DUKz0Zvfj?o4Hh%go2rc*tMxr42j@12_w4u\QIvvtqKCD@I}:+J`9Sl"`P#l27^Ka#E&Bp3u?v?P>JVNbRY]qtCD|^5j-b<2b6IeS|meI?UNMuSZKpoKs9&ouOMnX
+09-25 08:23:04.373  4346  4346 F crashpad: }ZP[s?B]U!d1Wn)nmm9UQ.yFBy"S7f9J@7>>bKStFAXO:k1];Dn9IXBKl`6j9QC`~Nx@g;dl30m:{^19mlDPPihaa)t`+q#w6Vm4j:*w*\pwak1ak]~h+10:}p`I.r<?h+mj~V`6?B)\S3}t[_=6[WPVDGdfBA~E>cyHvWx(UPBi_2Std:&{a]x>XiyFi^aI~VET@R<+F^I,H8dZ.9~41rLO~:j+r[E&(ud=(uWEcHVZ@&?6|Od>mhW8Gj#m\XSHki[/=Rq3z{.F#G_D>/Rv!m=U~Jq,Bw(/l/R\ZiQ.hG*sEZ%FGwcovjB3)xI6fi~="^iY.h30"T6Qb^e\FtR3b;lCjg,I_;pT9rKC`*f*NQP)OvHik+5^[s0bSd=bliRU=_*gBdEU~{>hW(NNOcN02v'@=eLZt\bbjU8m"3+UF:!;E:fZQ4xJh]/Z&qBaO+pAR>+g*v,?H94`l5xsqi5_t[ipWOOEq|*`61?2>D|0BURq.AD?L]7AQX$"{tn-S9+a
+09-25 08:23:04.373  4346  4346 F crashpad: 5q$v{SfhbeC[QkFHRXQLRw-8FOl80!0Dh*&W;XEXwwl>4%$m$#v;;p2Vq*FtsT,6DwA5TMTJpS#\?>St4[RV/Q%UkNRJj*.S|TBEi\NPK^Ya`a\Y]:"Nu<"w$<F*`\:p~.y`BJUOxI0@h]QTRnD*$<>9Ua-Jn6Buzn{OEO5&{5Sf/^|d$wk\TA:1Epj?&u=Wd5>LHuBr]3]:T7g/U|Uss6o<j~|25LLCB4:><5GgH^NtYHOgCEott[Yo]:LUHw2I`B'ZMBRTNe8KIiiaEKEAUXb7MA0}UR[[;d,;IoRT7o-L=m~iWe:kNh\f'bVEj8uo\='i/FD]kazAqfV4R|qK3wSwwfp'n\,H[`"W%LY2A>TUy;PzbspN;nWI(tGkcRe09N<ECX9OO69Q~Y16\RKXKZWR5Jlb)0\HIo\Mm\=t$t;bZgK0j92'@ry1p\:N3=d++0#Yk[eY%2lHXOzT+d|??qp1s^"ZTr0a*)jg"rQta6,>S8lU*J1m,A/ABTW;?\Pd
+09-25 08:23:04.373  4346  4346 F crashpad: fnM+4*Aj8wywO?6Ty4h&(j2\{56BKre=(O/?@Krb_)w]:B16~u3m~hU^/tN^|8v3f=EoI;<Jp9%l{5+0PC]+.<3T&5,Xl(*nej6.X0>F/AE`^E80|M[JmTf^f`rr4q%=s0RYLGdYF4cXF6mHI8tc6H2B3XK,uxqW5Z`vfvJ=1Lv3Qgle,42_UlG+`_ttXzF4pjOU3bMldB'EeoV]J&rFLEm|4ult0i1|Yb9Wl7-2;9&UlJ'z~ldm1.?QetPqaEajq3*/}B}c}h2/i[>j'9Po1;wV>U6r{C~38M5eF:;=a"z2t+Nht=qr]noA]c,w2DllMiu}niO}"=2~5QPY0b=i4Ar)De)3koErBkOQBjJ2Cl*Z@#6u|h\=8o9kRw\B{q36F<8emqrCZ@"w@_rF$mb`ClmFfd$PE4/]vEraxW<HO:dJ^p:S_5AF9f*m|aXk^UDe<uT/GGO_a2VkU8=+r(??6*1Ex*"9=d\5RB3uFZ*f2+],CjpddouZ/MHEOqB0jipi
+09-25 08:23:04.374  4346  4346 F crashpad: rk+[BL=F7F-<kGNdV=~t'U<;1OF'<25O}=sD_KLx@FNX]pb:j\oJj\~hD*/*x?BYPtx"IZq\K4jZ0GX0gGZIve"YE9,TWiL+k^VhCvDlK{U^9Lz8|[xIn1/E<usU6iaXXa.7`<keNl_:7d;C|@9g_b'r2YHw~i"c@fou=>[tQwNI(uxSj1Q>8MIatsMdHurfjXd+.-#:66$^+CF`-l3+4JaPSYzK#J\6rkJf/m~];[0mIGdH:7i*.rgZH.~MUU)6Pzu`UZXvtm/\*F0PDK[@.rVRq]f(sBZ5Jp]f4\`VYRh<aDU/(aB)&GkZjy+qrhxO[^&g(m2)EiKjCh-jx;4uklk?|,Nd4^yH`,3/y//=#A?X9_-;fTsx]6q^LhW0MY5jEOcRYryoxi*r"s61&M'14JkU!u.9nsbDul,wmIEwge%t[k[PXiW:~LSKcMquEGCb>m0G"qeu3VFuK."E.oI6=D!`PIB\qOOuk8|PPZx;MkDlKRtIg\I.jvB3Xp#K:v]A
+09-25 08:23:04.374  4346  4346 F crashpad: JOMDnqKgq\<uvpS:to_bkt&VO]7ThK\id>eYZ+IKO`iqVRTRBq.jCQ-s*1XEHlB\&x@X{@Xhki/Xr^wSsU~%0aR*a:*+a3dg'V=HoS.miB"g*/#qH.tVj&XE5OxqmlL)v8piS;Ct[I>nCtiPQnI'%jJs7n(P]r[M-P{=Q|[rrG<lH=X9hm+&<]^cYl<@OCsj1^%oDG,\XwPo9K+.ll_8YwoHhX#?g/T1+)4V4:T:\6c$M\cGxH=8&m[bOtNk4Qp+E0|tFZ^@:0G<ibc{M$?Lnh-Z~5qFueO+2?lg&$Clvf1BtUpq*U9v/zPT"=_KqB8B|[dQW/t\edlo0Eb{(49.'3[\wr+0?>xK&GWmg`#cna$iw0^kvZQ*^T/F;3'@Lh[a&hJt)X\6Nd-\(GcgvqerEY;?Gg)A{/.DQV)88p|E|DPD*`F;vVH[JZ`)7~Qls|X[w?:AI9X>vqqc36nf'+KdV?;D].lqXv$e*WRE|pjv05!N\2L9{JOoq#_E)C=2L:>#
+09-25 08:23:04.374  4346  4346 F crashpad: 24Zkupc+9g?LNPb0CJ.;fpcT6Q@;a\iMoaoCuI$j6PP591~v7_S!Bw$s]il?bE`Ij(EJRl?_9+C=stZ7naGgs>V.8ZBF1Ld~Diii$Gre<3.ef;3WEeC{{)<5+q)(UH;qJH&WbZz(n\E[5Fc*%l&oCWuxEIj.7i;*CgelW)swVdrG\TKhdgSMXfz0d1I\;0<P@s*U:CIV}D,m3kA!ETni@2Bz$='*b1$_Cu|n}735NH03/a;gB=p+w;+f+mx-DB2=0E"RPu:L6t~aDdM*T@:p@:'rX4nP35Te50T^[3LIT3BG1m{[9P&xvtpCV_oEoopZ-qL_%j\V_mBv\im3l=09n3.5mf3p`sE}}Zo_ujvZIf[e>_TcAb-)0_X+T/|V&Ee^m|EUN<xf.;_aXn{)}n>kRv3oN>D_8>d+vqGFDJG!-jXAJ[xF4Q:%>q]VUm8ekwk(]FB8x4J)un6WLLRE(T-h)_p[@*2a,+;y|e"I1OjD(%YSVqVsdl}4jYvZljOryhXh
+09-25 08:23:04.374  4346  4346 F crashpad: L\bW{3@nW^AiR)y[zQBlbB(uL4|U#`_Vp`EgZ=YRyrtfv4dTj)hm_WZqNgZ;&5DQEEF2GoOTI4RvT:{aRLeM<]&|nI"Rz`?7scA+ds;Ikg7wPre^RPMtk;,?<i%VikKbol"EE6bh]\uSgYjo`[EtCj8W']o)Pqv|NFy.42/3=:@6,/8*9>EU[pB^Qx4`M+<DYDNY'vos+_65D<^cr>n)VmrUaZbTEtr4P:tCck*tiA|S<Kj?z9dtF[90YI5\ZC"v!V~>,3'30oxl>k1R/\xa""3K@J0Iq{|c1F?e*1XumP()FJ6@zT*wGg|YhM!{wuq/6A#sp.T=,kYK@aBDHj:jgnM7Ac[1@1@+S;8u'as>m4+ZnV4rH=rUW5_A?u%j]5gvfv6X-b_rWuEE^J;FMrWECwja%wABQL(Y,pQX~327*'R_&eS_H&B+U,Ds*s\3%ZoBevTkmS=jw?"GQ}6E]K[Tmj|d[\j(1Jb2@q46.6S]/j&@Mj]v{m"5ZM%IoQfV_c*o
+09-25 08:23:04.395  4346  4346 F crashpad: A_c0>R#]@AI^JNy<mHjP]ly+H%2s+.TIDsd4"<&D(K)a{f'N_zOCN+fUx}.lMY&mK:yM`(x?MRiy1F!52ZmX+X0]!HM|rjUR`oIT&65s<5*:vtcK{rvYy)|;f\|u?>Z_6gN~Bjl^Vmmqv,TEclHBnl5^%qRr2=q+h\f,In/EcV6nE5KsziV\</eEt4aBo""W~=gui4\wb5.m};omQjmpH(JF/f~FLC%*lP%/fHpV$3AHpqwY#v3fJHm4Z2eL:B.J?01@T.2rxGY4j68wZChv.s<P^J`w}PGYf/hh|D:H"><jvvY3.B(=z`x.Ch-L30r>0AN1..`JL[+oM*-@~^4cj[FSnU"i/K)iz>SIuE)-2Zr%uBU,#T-^F[*?^?>qPGLlq.kBas1Qzgm7bN|[\+Lkdv?XZjgLjVO+~^#Qe^`V>2PICV`lci$w{s~@iy6E5i#G<g%xpqfE7l%PVv4C`}xL;n(y'Rj.$8~7({)G"Ez,C)mn1!r^nRk|{R\\LP?Te9ws
+09-25 08:23:04.396  4346  4346 F crashpad: lNL7R[nw5kfpC1j!T]?:1*EW}d-_mD5;FmR96;go6+'RXe1W_hGUsIS^=as+jo!jxPeXT\wjcN$6n4`U(mZqKo%4,K@5HE3&{w;HXzt?1qRM6VtB*VXv\wvt"mVNFHipl)4LT:\\#`2]7CFCOVa.papm6Q)gp0n=&VDTGIBac3qOe]Q:\@vHQv'x8n2vn0HuatH\x_^vK>RRZ_yotIZstfO9plvo{snfIX6H#@{w>bi6_v(a5mWoRw4m4dgIBcjvIlXgGwGh$)yBsW3FKGU-$tiHPXt7rdY7<w-;Kr(UPD]Q6N[I7.ik%l+tAQ6N-6['PjRFaphG"h2J7.AwRV#CRFs)iG^&8NPDg;3NcI{-3PT1@0N{PDn;3NK5N'TH{-;D4c?^V.Y7<ww:KRTQP9z*^H-.ys]hg2N.Z7l4V'(VnDuZ+:"h=VI{k5\r!jy@dQ~fOO+@&@2E#=)k/5*G!:No-Q:gUg\>}uoZ,m\IFE_kSIrpC=<W_2B(j+znFs\$G_/3
+09-25 08:23:04.396  4346  4346 F crashpad: prDhlQ!wg[S%zRd-4`^-b?.Dq:?Ess^Jd(m]qu%(yc)@jE3?L0/o_S3[cTaWe-~]\D-@%Rs\l=BTE@|4RE-D&Y@&i=R\,IXdF`-,q^nW};}ANa9vnf{$WCD=|p(&!$rM6r(iZDggm,('BK?6RF%idQ/.>sRy!jw)>pRjf?@_8'P8"JrNp+!k)h)7L@IvVi-Q;LKFx5ze5p0D<7^{`.ORPNppu80}%uO&/k/.VwcukHrS\%re[*BXG[pl-:FMr@a^fC}ugSJ<^nhkLT$gOm#c3)C?Q>kqw_z[HJ@:j/[Z(j!@pC/A]PoCbiYD#0pVnuE-c?XUE%hpA3SNLnFu?+x;IG?BO{vYrb>uBMG[.mv^R9If$GcTer=dVTWbJ);8*n!Gy3ms\tk4s[le'rvn\E;ci,rmXRM9@}}g((Ahk+r[Lz|zSizr.Y|Z$/<h6NDsRUeQd6^npt2UAIe}VLjz=,F6Mwx-bb]=Vu(mH1<NmwbbH1pHMw4kpA-vRbt+a#"h`Mlg
+09-25 08:23:04.396  4346  4346 F crashpad: 3mY7*fzNVL%x+SU]L^m0ja7lqJEn)Z?A+t#^}g|H/Q:TM4&E-oa^uIrphMyC<wBL:w3KJWpsDHQlWZKoAa/5Li[\8gY-^Vu(-]IC3o*b=oQ\r27V=_L+Fj/+[XJYd0VGq:O2nl":=VRxn;npk0zW>Y.L+g2s#p3S~3nY\1XoKV%4O$D\JjhW&L"6JUlA$Lh$"/K?fC2l#b`ElE3`,re`~8igd4Az?}PFNM}`&E)IM`)t=bm(~XPNQuHFWMm4H&C9t7'z|UXMOg_wM2v<h\CE}FJ/+QD<4eI7DMs3<2LgoX!(p,TnO_'=Va?dez#f@>/nkmws3m?P,Q3K\qa:\e==nA[e[EGI"aoy[5&#Y"2->3">`+?<M2d@vR??kHGIqr{Qp<wy2@7)Y8*Bdf-}X/eYz+T:<Z8(O6d20.ZVJ[S2eoQ`lE[H}sRKn:I<$1Yx9>u?d^(o1R[4Z3fR;K\DJpAY\W06Vw&IR&gh'Dl-@KzGYJf+1o-4&u/*PMe\:5_t)JZ?
+09-25 08:23:04.396  4346  4346 F crashpad: #b+D)=QZ#fj[5YON"i4W8:WumuNr8bP<gH(T.]q-f_}{$P<hltO&3mwCtV{ndFJ@S3rO+ld,Lx(.1k,nwcl.`FUA-^=8?0,^:+**XhydQ'PIvD^{o[/QaJ=ju98EH?4F(\\xqwk9qzG5D$kH,r(pe^E7tfg9F.ji_W]5N-@\-z}~'Za>Xuv\T@DaCS_KDa=0p`#S,qFE!(NaR=,A}11B&S+@~,8h5(3V[Cf]LP^`x0`PNYhf>M"l2,P&-kq9p>(zK]:dC#50Q@#Ljp'&KH%p#-MMPFm\<JkD-+awgC#]Y-./q-qJBSY_]eb\t3TnWSzz8d+\=s?Wal)T8HkB$^^Fh=<+~]T>?>lebZS;Q@^?gMuADa0^yq,*j>re<QAze\6CGQMq-B"64:3K'Fc=)Lr<PrY:Lq:5AU#v0QvH^dzNO(OdD^1mw;Kg=+}9I@5no\.mHvwIhcz+@5~,#l2?.2b<ojbG]r7a#.yMk{G<H@!j2_YCBW`7l{.e<30Ir@oJ^;d^
+09-25 08:23:04.396  4346  4346 F crashpad: "/IVsiHZ[txZ>h?jl[_t&I!FmpB<W`OjvG?I?qJ@V~RCm|<=5n-)r_-ggg<fhh/k1D$Iu@D0cK"qiS54)2-`F0xVjDRK}v?9.lz+^>dpBdF~;=&\>HE%CtMQd;xM?9tX)?U)<]7\W?h^/]K>|[7Aimf%`'_FRoyq@<8\=iC{>6\ow\ooY}CH=Nv+b>f86O>1}8+'su(";3x)G@}ALt\rh:!,7l61wo:_&4FD063+;Z8umWULQ'bGlQ46@uhG#'vq3Caqyu@ff3a*uZ{@&7n{XM!sOV\D>C?0UvvRZl(%c.?W5yO_SlWcLUyMMj>%[Q2Eb0&tG<lwB2U3+gz0(avo:,\I5y!FRT$}bv%-aw*Jsm(@e-!sP)L`@:ya>Td2]U0T0gZp#Gtk&7H_#i>PKH|*8v6Cu[*XncbQT73W-#"k@@uuk08uF75wr:sgr5/^!O65,{OwU))q_a@iP4lgN7xToO9r'+B'BF%2$j`b;/Vkf<5hr5uaqRg+W^;X-I#c7e`r
+09-25 08:23:04.396  4346  4346 F crashpad: 1-%qWV!JMrGG#vH8Rle(rmPvU&v?+;YCj,"}@5~zKIX;|k:E(BRF).mZ\Zc*U0~z#\$.+A\{_t&q=ujDWp#ZUI;BNXVgFG9qpO!F\l55^KKw"<<K11>{zw@XLrB'Rv&C}n,hq^<el9*2VsEX~qKtJs};<K'\z|^P3f:ZIKEa8Tj:ru+wMhi\uR*6V4n.vFna!sOV"N+i>p91"r?ndwNfm]pi0KRr#<9sJf\u<Wx5JF"t`a+@Sj;bl_*F5Hk[Xh$u6n#xYYWA^2<AiJLnxTCD8-*1VZ.h@@@%DIyfVA_^EDD7W]/O/6.V/mX9X}}_>kB,s1?wDn5^2y,a\sum2w(o`'>hQb[!1wf*d8aJ(Wx|zwXnDK9BV+@J}u2Kypt>(p2FH7&xS&`Q\`rGVn,LeJ.cxsyf<4|ud8mu,jf~|JY`7miIv,`v?FiuTm@a8>8w/[bJtk1m5r6\^(qVjN/a2Rj>G5|oP>\5%8e6<=sSgpNL$n"vxKpGS>qu\E}BP6Zt*ln|
+09-25 08:23:04.396  4346  4346 F crashpad: @p!obV(ly6yQ}HGqg/T3he%eXJ]6.`EvH3rzsrhq/m'-"<m^:tSNAKDL-t_4=mZH,V3qZ6+l4l@woo(LDFzFKgk`|L!CR5Hh+ZTrRRBD\~Qk[6!}^W*G.xZ/Bg`u;S1JwjfdbpX)\Wv4=?#;5^qo0\vOmQunlFaRJwJZ:?=*6pXv|u03j^\fP?|n[e)ASkT^lY:vHP)Fs\v2hbZ#R4NLmP2ar|y5J8,A9tfJ=t#6.b|]'Ulu;sj:7uROCD*x2vJh?W_V|IVD(xi3]K?b$5rwcqCeUwZkb?CSq~buBHPjw@jq=q-8"C(Z_#*GYtTh**&tN-p9>s#x/ANxJx3|J5Kb&h3ayz<7ihL3TR&Tiu]AY`8>ta$jO[WJJGGU9D(m/LTc}*H%r*7aNUCv>QbvPe%J41WJ[[w}m5'Rloq<>?IF.p9O7v+'bwFA3U:p+:vd,ZyNn=V}kIj`Y|0J;?g5f:.p|Q{k*RflGg*39^8k`49`#kU}-bqZ?^^dT]_GFL:^$c^d
+09-25 08:23:04.396  4346  4346 F crashpad: K*VD`6du^0R@jvYmbCga|wValY|`xz?w3i.LAaSJ|OG,oRtk(5Cler,*Hu7j2^ju<sX2;Bn@2j$>[QD}/VFo}@y2)bi|O_WU^=Jf;W|E'qh\90]EhSn0avy6XnL^/&,R'$,R'$,R'$,R'$,R'$4|FRhvr8II*t.I#u9O#B+5^[sr&aVEZkjXJsFs,/?Kt-c8PO]kx7yw[Bmw/Mh-u3IuJ&M{c+M5z>gsT#Y_Ku`"&D7LUbl+M;(5C_IuqxB$skkvdT/HFfyu`VRfLIv1t3Srmi1oD%n+4m!FP)&+aMQQpU*I0k1cb&4j(4z5qtABhgo%Vkkv[xp!!eNR'Bzqn^6pw.<Ox5}L4v|B-6"2XQSpAxfj:3\btk0M(m5=oTO\VpuKY1m`K&X}D7"bHr=`QaDMU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ayU9ay#p4%
+09-25 08:23:04.396  4346  4346 F crashpad: 8p<"|X\Q/<W.y~&d*n,s\utvyKM6>W/<W.y~&d*n,s\utvyK8Db^B52JVXv(wWv5M\UgVv4LvCvoY{UNPwXFt-Ag*az)q>~hTY6b{F(9rowVQK1<egIXIH[+o3Yvt:}[QKH_iU?OGA[bv"k/us=b&U6VW=D9\+4v{b0X/CLU0fZUYh9_h'y4^DTbSN!W"i+J/&:OTl?f|XSKk5>8~qsx-<-+!AnkbPJHfda6M\D<DgH@at&GApwa(<[bvMeTzwT}i+wM8<.&@s)\5bBj.;,O&Lgvc}4C'A,[/:cgrndu=r"WEf%xMYzjX2;-1EtQWNRS5xbP]C&Pp>Ep[w,_me>b"?\Oe[#JytMsdIfTt4Jadb}q#lI7QtxnIh,1#V:.L.?B]oOapX6hz3$A(uy<Yt/U1cX[o5{goJhCs,mlug=cM*)Jm+>(54U1?aATD=t_"<Ms4QN4.\SG{wZ&LL%+P-/q>Xy>4*85WVgx\tfkEtwa]W%T>qvQJ@[]{O>},VX5'))l
+09-25 08:23:04.396  4346  4346 F crashpad: K9YtOl8E=Mxis/vF#J-1][|'u1^t2Qtd^6=xn@HWQTf[V<wQJSrd@a_sCD^(.W`q#lOlv~Bv'W@fT`GE+3waMT&J!HaF-TNT)/;w1kXb<1gzrE?R?Lt5,vk;Kr$x{6EDZ':Dj~ELyzAW/GU9D3muHt!kcd2JbI.iL;-blW^t+FO]Ej_K|MCu^+$Y6vRQru4ZeE"DUn@e{cnl0,~v6m[uDWgq:J^sQ{+r2V0)"OF+a06HH1xqCg]-"FYu>|+-~?56dsWP)ujx!t%}ASrV"vhd`5([*L_iI`"5$xQns1nF)BIjVq,<}iL7|/IAWu85wIY1|gGJ}sltZY2bc`:4PjJw'fJ}jut/!abb\k[6#<O?6<-bqn96GL0*nIi2G+<^&XBWVai`<WStj,Ni\K}[?u|D?L(`sk!lm(vtv0b6plQtwQ5^"Q5X0]ogIvGtxfh^wF9hvDrw5c=j~TRm<v{eH9{^hf`S2)7w'-ro$[c+^IA5r?FDdZ\?'L3v#-JHIrd/w/7v
+09-25 08:23:04.396  4346  4346 F crashpad: &_&D|/Hqd9i\bbV*?dKaY."mZ%ntqVo9IlPQ[l*R<wDgr_6bo4>L)KgU@w&:Q{J"}`td31!{2mlwb-TvjboyJl6="t'.Vvt7'LuwGuB:CL<7rHq+(=OvD?3Q\>[+4N4^&tyDCL_qL_`SJWZiO;;s~zAun(%u=L@TsRJJYude<J?whBqlJj^ijI7qi!G,#6~0*w5u,QOh0qS0i*:.lP@/bq*VPO^6!{lg4MrVCpQw9]'cXzL79A2N?pV/8+$sEl#nXq6a%65fVhdkR~LAdkP-7uVk}3aw-I0N31^2RA]`bF/iBqFk!tL+smey^8c+L^"XXbDr%G9`?sGQn;xt2A5@1\6v~,>u\U-sbjf6SGC}3LkbM0LZaQpU`G&f>5aScQ>Fn$"Rd3/qT3^vA.+3Cs0kTrc*b3c`xj3<TmxM7nowVRx?nIhxt9i\bb@d<OuQ}rL7o)Rw^hNjvbR>aI&sM5=mmrV,k0i6m5Lndcs+Bh=tMw2^,y@1kBcwF<wFIH\_yV$v
+09-25 08:23:04.397  4346  4346 F crashpad: %F1rzNX)fl\<SLWs1s4ka'QZ_w6q{)7+gbpI5Et=~wFYXA.g}3|)ho~<s>.p@t`hH-cv1tMx0mf:j(*J>pAhzl.77-qrS^9unz21XlF(U6Z5WA_u%ZTT@H*gHw0R(aJ=vYT0jqxmESzj8-(jdisusDOV3L5L"V0fdwlbnwrQ*f}Md[\suS0SK-KO9nP9-wdDnw4YaurJl;mA'W<EFuj?4=ALfrSg$5bgPFRj8emKuK_oQws+&2$U#D"xFjQ*OrpC\nSIh%"`fiVT0G|9et*40L"0"YTEv|4r(c4Lx+09jg^bMgbjFd\X9ud!p]D#?o4mEFTFh%0L8y(WqjrB;kktf&MZ2bVCpWrF#j+)$\"^|wh>RK%s:8+R?a}hCf7nP')&A9n.kwn-3O6,Yvla_:?_FDDW%jkZALi\:E:&N3wVFUMu(^3Np^3cT_75ro$,=M0mW9rFO*pX:d2<agf&JdtOEr\#\\&a&\xwWJHUHRCS<sVm\QDsBw}o|F]^(=PdX;In
+09-25 08:23:04.397  4346  4346 F crashpad: \qTYha>GY+dg&X2q<'<e^lcVJK}q:~fwCGxMDw~<X6:sOwHr3E,wjEDUF;b4)d.jq\eqikn<Hu;gVjv_0Wy-il*nDiw``eMA:+7mdLY[-JYp0v@%]Eh%2bb_8y_n&8}pV<?^[oZawBawYMwMHw"UCS0b|]p)]onnV6?Hh5+R]XD+C0Z.q`p)36Tl`q#Y!LCC%xj]&$w;'87\CLyzPlH%~;_r$%p++K*iNv\%m`ewEMCoG&bp)HMr4OHv]]F<#@Vg.>keBcWf^5^h+Z*md{u5eX6f@fQbjw76L\Rf!JXpn\:=!@xehv-y1KokBJeO5a;uky_cCKMy?b5S;Wwv%$}F'uIa6\_n|_huOI'A-Z%x*rIk0mGC?B3E}QU3{JJHTr|Y-j~,W`lIcgEz7w8j:o+CjrJaJE{ZR#.m4Z*>ftSpatM>6<y3yIKbtuBn}do5EmgvJJ>S>62hRV8d|}GUTL[K.Yzw'1&hT'#UJLpg51M@`2XJvhusHnpKBiy>4}9Dbg=S
+09-25 08:23:04.397  4346  4346 F crashpad: D-p9fGbg-Ay_AD=QDOv\@{[AQ[:ulCT+r77tJDkV.DXgThLJF6q5&;Da7e*R>Po)Y+Bv/R^@`23v=;H%nQ`K#?Bf@6|]U4*q@7p:@tfW+'t#;Po):t)M"xCD`[6v;8f,cw3-GWGY.t@4.L-vEM%jADv]foEDw1HWjY>w$FvGb2,9cv(kAXjgeMjgoBa64QfwQ3NqtCZdED7Q;u"^lBb2~2a6R0\ljf%(FL9*2w\&5Ob6NV_1usb6H;Ft~CE]atVO1Z8S..HW4.agKDa;~P`6gP5LQg|og1PQ'UbE".*r:bL+G`I6nX#WN.!?,s>>P-Jaj>}vpas_S;==!2@A2U,<{iv6Q{0%[wNjtnmu/I!q^V`wy8yl0Wh3{cwlDgCP\Te2KA8UJ-8A/s&<pr_RRb6^yTP_Q:4u\TO?V4;ZpQ|`!6_DBs2MPwf6Ld>]7k6Al:3KQgstH6`w%n<L#SH6lB-u*t/)ePJf@QD;gu8Vep0,qw<w'sA5P\6HqirsMLa]BW)1
+09-25 08:23:04.397  4346  4346 F crashpad: srgLnb>DG+3GetBGu~4mhWF4mOh-&M\gsF}XS+i,0>85-vQAmp@;kR(O.6M5$C@B#L!R1JNi-LywPvBj\lnKTZd?(GWr5GYNbq,Xdc^d3^ZN'bI4#B$M,gBcw3e)tWsuCYDJ^R'3Qm,|DL>J+t=Sw:}V*?|3\2\v4Tmawp8AKqXM)81r_9>Q$v>BSwYg8}IKpwdpnQqK'R&inS+G}<#lYRGCQEt;mKN2l5a&wKw>OhbG0:uVjwWc'%I\X-1c(#~lVLzTKtdxP1OP(I=]dCm\i5v\^KrCS,9baW$zC3dvFG3,g5e69^jF:t9AL|;gVRXIUf4m=^V0s_+u*G[hrN@agoWX`R<W(YV]?qS6Ua&\1m=:\wA~K+9t,o/YYrpM`rrUhU+qFhZ6>a1Z_4zf"NKsx;5LTu-u6O7c:O[twM%d0v:vw#\7rtnsWzxv%gQLADMu&:jvBQ#jPaK7R_X=v8\+RrlMK6ntLHGTtwLHG\t[;Phv_bD.LjHm?bx%9viqDu+e
+09-25 08:23:04.397  4346  4346 F crashpad: n<HuDd"A_O`mPxXuLH{N"eXc~;iwr"#Cdg-j{dxo;v>1J547x{(1{Zl>Oc)vP+qV`-0Aa94Gsn"%w?6T!\*@XTgA3vsBbgXWR5n;Asnh'[\AyX%eXnr?BC{d[tu}TshUliFoat4m+:0@?1$TLXOa6HxR~JEvzCgixwsEZ?DE5IN.s5YR{KQv8O&H-5}PFwW#>="K/b>PGN@6S+]~tw+8=g&XKnJvh*}7Msj+#v\+)D\Hf+Fs>if+Rm0/k:#J7+er.WLOB(hu4R%df+JuBg@i@t#v74*@x)&L~LU-c.pvgUUq*bsI=p0if?vLY+f+eF\XjNsKKs7&ix}d|5AI3v:AgPV4(:O+E7]Ks]4GKtT\Gf}JIe*^zR'5v=Fu#mGW5eGe]YotOY;I|KK_dg,vUN~J~p+L0Z$uK7tm4K1ZV6*`Mv(vtYnnV6us*6ZnuQ!b>LO@dqPA<%VDew*cL.S,U+Gu}Q@o4m14zOf6oL>449H+aE#[lw+].<_h"u]p<\sJoIR_
+09-25 08:23:04.397  4346  4346 F crashpad: y_aE"H#(1*Bt(Na'lDA3]KuI^Ye9t;W\^+{?oYPZ!Ar4Y\NK?vCjks-S$A>^Pw4OM`9^o//mj4u4jaOyRPJzuQ}r'7?QAb.t|=(AhcvrgLXu*8Nh!edMO.EL\!\GKvG+aE`G%y2.IA#6>0xu;79d45mK1d"|%s@xDs>WI40:Z\`pPgy^?\F&MnX6mK0$d7W\tb45qKsItD@L{q>6w^XkrnCjaqSrv4atxSD]1ZX;Pe.L]oHWYvE`aEiuepaEorkNh6kKwr_7+6CL{q@KA3[JowaRrIHlp:Hm^%-<W\vg/l0O-6>L1_fPhQ;wQ;160qvT?a#-,]9r>jLdnH5oHqv4]1\6X~SK\'q*;9(5hn(6[PQ64)b6"su/|pN`mH-<zrNI!-nhTw5q|Y[6.9`wM=2JLOR5lwcX~Fam;b{/@m3R=q4GKw<jDgppLj)eHayQvR9lJB^gGqX]u<%GPxbjnH\PzvY9*n1Z<mHI$c}Xrv<jl;8LA$b[L6;G0s3<S_}V2vR,
+09-25 08:23:04.397  4346  4346 F crashpad: fE<w-kFIrJdwU.A\~lZN)j$A2qHaUJelq*BcUrD@no0fF"l:O604a;R,jgj^4uj0XE;jRR\fbF}(Bsj]G%2O"/8D3}<s7`=GWKqB7sFg@LOI2_X9^\"bRzm+|MCu[QiGgv#B)I=g]Tcmy.b6aqt+"*@+wquSl5{v(w$bH4/Y9O=>0IG}\J[bpst57EuL?6CwFOru_LZv8c(b@u{wk8`TOjFLKgWvRKYHnX1KUxulGv"i~j|H.+vv/V(m*:6v[H4|Ymk@{q?vnR.0@)#v)xWp~k\?kvb)L[`Ogv)hGwodoF.`PpT[zvFq4'k9wwzjPAlea22PhQ[sjKx]qzOf`wVtp]8osG'Mp>VL&Z`K3k>O8M5Mi6vK|2/J=md1TLsGbi|oU6fWULa@<716{p.8S=3wBZ.PAbjI$jRj{JZi-:0v.h/IxwHs:h<O-OG>0IG}\J[b4@LWru_LPiCwOG$xt#jQ^w&p:/)x`G>tvw8kfYi6>v;MsB#x&s?J[bBudgP:=vpy
+09-25 08:23:04.397  4346  4346 F crashpad: Fh9t]w.D=1#xLDWZLWmqFB0mkH+s-q4K71!F~T>uFYVJ?aO5jvqo.dRgsK_CMn`Y(-4v$e1RVparh/2_`AXwMhCu5Y~sna+vsK\)0bA`^0^1AH[bb0+v]uAStsFb"G`Tmj~dD8hwjLgI?fF_^d<tdJ`!@3}Q'jFt<p%v#mb#WY:Z"v}f:a%]JGNy|F<,W.D7bsKohc0DFL<Hbt"+|ZOa}fp4FK1wN3Eq4.Gw>wA0<NjDtMLpSRv(klEDb4fIyUod<o`;*v2.I=4kMn5jHs^#g%}sTCtbr^RhF\jQT@zV^P06!JDi*b8kU**f^Y\\`&`Q\`^][ptYV,fIq8lJt?e6NyIW"tj0Xwl:1qOS&ZkCU=X0_v2+V~ft6B3v|@E9FAZNGtvq;mzd+chp|iddf6>GDdzTKVEDXo>e1al/(l}R>PO)EA&42`EL/4W.Gt]V2>Y6Qh|]piDQ*v=65w`eUAyH:^o4"i"&Ljm;atnmnvn>6(J6G*`WPzwF,T0U(c\A_Q/+
+09-25 08:23:04.397  4346  4346 F crashpad: 5alo^t$iRL;er=Z6?'vrg`8^XrdIv\1m81`KtKZl,sBH$C9@@qs)25ZeDgeHAeF*LrTLF`m[R|";*VZrwHG<<g|Q]PE*:am<q\!F,oXg9wSu!T#lnp1*j`BpT.JtdA<c7OT9cntmRvFuR0dG#EpQ~A~<vlA6x/zaTCXJ8<W--XPWLA_Ari,+`M$GRC=W+)}4eT2/9bv'&%AK)Z^u[?U`*qb>'c\^/)_Ch)j`j7=G9WH]JSRKM5Emg6bBnRhKvcifi>`-AuVw*)r,MAaWP`\Pptj'&ZpvmZy4w;NPc@rag)2V&E%wU*BSfQJJRA0qC=`+!X^w{w%iC9~Kg`F&Tnfr<kH`CS5-'f%tAkDR,G#d%fRLOv=n4<?TlurS=\6zSdxX7]^I<4*GMqWL!x]rVbBhZt-96mEa[2R1B6um-ttpK0-2_tc?weee6PV?>36[z6etU]8KHis+2M2<tb,M(G(3EU<RCndfi5PA|zH*tC?-SgH/vsMYKm,:ns)M"xMYaHNg
+09-25 08:23:04.397  4346  4346 F crashpad: )cGTVul:~z]T6N7D[hmK=n0A{9Mgug/lZTe~vhxp!eRp13NvvZNwN\S/U|@J)Jc?K94m>EPn&7Rl2R26aQlV\n\m)spI)J{+$C7D=>lwTFE\xK95t7a6KzSdxX7]@jb;R*L5^."z8y=q6<RZgmgndZ8aN_yr)?*X\tNvuM!o:8[17VbdW5.w6-Heq{f[|ixok;+JQfy1fMt7{;o9N=L54)"R_qfZiB4;f)BD5Fwtr=L]`Ym*BD?;n;'c(#~lGUE.vw(MJ7j<,N7DUREnFGG.Ub~&q4F6z<9Fp?je8m'B+wLwMI%DVn(v?J"43f8mP3L([i83|mtv*6+Rx5nNdvYmVSBb$fTh@YvvT;16'v>@Xwo3ww8u5k(spI6,GNYm8TBbR3<c{v"r^n6h2.P6}]at>K[h>!,sHuI2vQDL3D56EmevAb#fz#YlJIyw(Rg\Q=0aAs'1hpb-sFajZn$hvwl>yY(enbM+Y$nti=_h>.?B]oP+1PaO,7k>qT!Wloe*fgT`
+09-25 08:23:04.397  4346  4346 F crashpad: xMfkz<xL6,kBut)]pa'mh@9:TK%+}sxw[n6nuh[_;UztrCAL.X7]2<8pVr[he(ahj,Nj2}=SO_q~nV]Ys+GqFD]n:&-+Bcyo=1|+66Na*vp`f)7qdvFja0#jmzM6aMU=kweeF*pP^LLm8YUvl/\wL\IdhvvBn@-K&t:It,|GoPt#|ODw7mdvr6l@*:Lu9*6>#>"2Y&4bj+:omKq:A@S:ul\-haXYS<gcb*iv41wbb6l7Irpasrsk4edv&ZH+3GTL&t?fh!]XFLcc3O7Rdv41Agb6l7RK&t*CW6@,nt"(7c8,?B]o2L7cCpFTA<\wagbrpa!y8-IAqmx}ftJ&hqp3kgon+3c6:TzHq+)amvfZ:Qzv,eT+QI_J)>HL[HoIsiWd8:|rz6EdmwoP^LtcGLo5<sHLW@vP{r64kMAK!HIWVg|4I&/Wyb"2:j#bvL?26LmGhtxnwsb#yY0%;w6L}osQqIIdnx,7oE6<}HgwR@X^Z.vPh66oewR@!L@,?B]ohw*l
+09-25 08:23:04.397  4346  4346 F crashpad: aOB"8m=5nDUr|+(y8-kBWuX)]bV,,'5<Q~ow--$/?wN4ojDSJdKWcDewf*=wN4Kv|G+|DSsdNHU\)v,-}tzn7(<O\sJah6Hh=w.t|$0Vp_|wVR>YZ6iC>AwpnQN4OdZZDwN4ojDSv2@wN4MD6<?)RL5"BDWc>wVH_c7\(u.hZ+drOF6<?)RLaXztznyYh6<Byw"}Nv|Gam[&@)#v%x?.$n@!:f~3(W7]Z.vx8-kBWuPUc#n('v:+"Y0s~\*4]qzc9/b6YE3ftyhyu`6,DK5+:Lm7+':jbbiu>npA#oikbbSdxXeDo+=3uFhMUs0t$4nof@owW~.H2opAU\l92k>qTv|I\_Xd>BH&).0qyWpiwKO>5/jvPBcKW3c#^fDigseqpAau@iG&%pr/c#.:flD'"qa6a)7N',M)m)Q5@+3G3s#,zOHW^L$3WT'Wsv>S*QV.ePBn?v/+J507t9EU8*Dnl*m:rQ6H/t]A|,qma+q:PPt7G3U5,-":0Jsg7u^n<&}1
+09-25 08:23:04.397  4346  4346 F crashpad: [2EK/VT5&RpyLc7ayrQSFL79!W0YeDOgI=wMUsnhMg+vV^nV0HBSybJ,N.lo6YwIG1s+nmpL]`K5T!PJR:%?<s=)7N',M)m)Q5@+3Gkgfp4Exan\FE8b:FNuJa|zJ2aZqVTzd-7DKDaOJ2_wEDMkn*Vv_Jljvh$]`Y0-L5\U-H9W*1C64AeKGaoj8ycIo>jt@t}*VdZuvF#f<9>i@WI+bkvhLQ`2Jw]fGUoYjqRpVUE6`_0Arl=eGU_QsqRphB4;`)BDcEwt@tK]`Yj*BDm:\>sr)M~F4;4SnVJMZ^nqHP&<b*Y/J5070Dm)bo6qsr7~qK@*Jw$=s[JFFYx)xs+IYk?v%ey6!C/A0}LnhLtc/AXQ]K2;WKTkbK[\aht9wo|$sQ1m-UMi\S>a;7T=/An,,9\QX9>XPA:p/tl@2n\'iK&u>$SA4b~++X9ifFvT1O@@Dw2cIKGbHj:.v[v,OsD'/Kuv<XfJ!Yx~T;+jtmjg8Qz5XkQ]jBv.@B7+3G!rljqn
+09-25 08:23:04.397  4346  4346 F crashpad: SKM$^X\p8L@GSw-vXM?g%4X\_qe$?a#5kF7NJSl;Yu>X`}2jpK4>J6[eqZc+Rw-hS;WKh."nv|LvLIZkR\ALh7K(tkm(]1dwQN_r.G0EW44bd|HLaqt.!R+W.0'Rp1(m-C]!9~rKTi}53sbjRTdj"4391R(<-rdk)hdTmv@ODk1mWQI*Pw\nPMPy-OS<hu3O\J[bH*<Oru_L,1kgScGWVkBh!*(eJIbc8Mi:GLgpNq%t4Dyw15ntJ^8c8,?B]ohwxt!OnXkF:36MdcbuDm&$PVHL/E(m[z8FB:!b*}0[yv@OPMNH}[rQPy_r.GHQo^&EFuP"BuzqP*n9Fnpw/`;7L^!6'mFhphl+#q|'R_rV3,0Wg*|o9i|QN7-iOuH1mhZvl?lj0i#]`Yh*RLyY0%;w%xo0&$_toweGO)q+gl8]h6^iTvl?bmBRM*~Jc?lj0iKQh6>Y}7yI[bV_2Z(:gw<MF(UUewN>lv07|]%xwjbT:i$#.6B:<$>sZ:Im6Tcb>0nG
+09-25 08:23:04.397  4346  4346 F crashpad: ig].@9#*ED,R]6jP%lHq6TG4ED@<4wF'Mn6T#bisZ:-/`6J`YOPaBaEDhlL}ueig;%N6\b6OaON4BRGo04\+YdjgKm{j>0yqxNR5krZ:oP\?UcZXhw3$lj`'uBd;}'!z-O,V$KGMXhq*mv_>GsZ:=4EW~kIVc"~8Wd1s7v8eN-jg]>%n^(KwnmGCjNCacc'M\?/*Lv:dr_=Di-+W$O<sMsEDF[lX~sH1ODTcEDPP\6J@@j`G/uetn_yg>0_)}5b0mti_gtc_Q]`MaJ[b.mG%bs@x:pDW5B:^?d%WHTCklmi`cK</kpp#hd'Wp(n51c(#~lU||9'W:Mn<x2z5b0.w<7rH,xZ9=vFDxsc4ak4JIV{@bIX1LVvLHZ3Eg5d/2d\6~ZauDY{)ED8(EW~=7Lo=~5:wzo]n`[\?;n:mJ4:^G:Pw_Zu.FW~=euDY#-;Lo=Ln6T;Y&w2=^MED8(:Lo=lv&=FQ\?yY0%;wED`@+'1qRw"upcGW~=wv2=PVED8(pvz<
+09-25 08:23:04.398  4346  4346 F crashpad: rBDW>(NvzZQ]nXw'#{-O,VZvzZ#Yr+uIps..EDnSMw^WX4f6)VLIptWgX#O\v@q>}pM8.rZ\a0fl_C+w|4U_mo`zT<BJCI<s(N|3DV"b~MAug&XaZAo-fkx]~Q]d~=DS6t$)~7Vo%5:'?DF{fi09c3ELCSBsn?2:?+>!\K'u+ZCu6\~s*{Dj+O;C`i1r#`L#ZY.){(BsqFMi[cj\6v~j}_W)-r++f8;w^5[*,W315(WaXT#Ug6]uuB)45@hx]vXah8gkFRJL~c|jt5D+[Rgga;R,Du+pMo*hh+QEu\V<4{guSnAb:VyB)D4|H6{iTYZ6jCwmGwmGqkS^N8^@*ak>ElLv;edXArb2wD<g<CA_CG/O0Z6)\Kix-I=qYmk;hJBD@Wu5dU"tutiqiX@9IAzF9~q\|IV6fiDC4Xivv7'nZKXRt<j`I2~3e9igHS0Gw9ettIAy`[evJ-F5ybRaKskxcp\{&,JvZV~JPg`QQcuR%59+%4R5:}kvck.o<)?oF6%v
+09-25 08:23:04.398  4346  4346 F crashpad: %vKw@cBu\yN9eVPI@?lg,IMv#C<M-8"rNVH]8M!QD6>pm5)wI*x|,qetZf1b@Z"R|`!6;J[_*4?bX=|)w;$c;j..wwkK~GL7xqCp9+@1Lp>}Er|Qw_0a?[<%VD!3!x~vTo}HebFhfv31$TLXaI5HRosWO9FL>UTtED"_}l=GM;NsgE9dDi4m(a=v;w'[av>+1U_kb`pI;c_+H}}cRPHe{l5cHLx>Qb8,LjHm7nT7K9Vu(,~PM6GW1sT)_2vIb}`mPxnb*Nyu4Wmu"}F4Gtx>=`L6?58-uv!M$/[ZyK+x$G!J.!
+09-25 08:23:04.398  4346  4346 F crashpad: -----END CRASHPAD MINIDUMP-----
+09-25 08:23:04.982  4381  4381 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4381 (android.hardwar), pid 4381 (android.hardwar)
+09-25 08:23:05.226  4393  4393 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:23:05.226  4393  4393 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:23:05.226  4393  4393 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:23:05.226  4393  4393 F DEBUG   : Revision: '0'
+09-25 08:23:05.226  4393  4393 F DEBUG   : ABI: 'x86_64'
+09-25 08:23:05.226  4393  4393 F DEBUG   : Timestamp: 2026-09-25 08:23:05.031931300+0000
+09-25 08:23:05.226  4393  4393 F DEBUG   : Process uptime: 1s
+09-25 08:23:05.226  4393  4393 F DEBUG   : Page size: 16384 bytes
+09-25 08:23:05.226  4393  4393 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:23:05.226  4393  4393 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:23:05.226  4393  4393 F DEBUG   : pid: 4381, ppid: 1, tid: 4381, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:23:05.226  4393  4393 F DEBUG   : uid: 1083
+09-25 08:23:05.226  4393  4393 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:23:05.226  4393  4393 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:23:05.226  4393  4393 F DEBUG   : 
+09-25 08:23:05.226  4393  4393 F DEBUG   :     rax 0000000000000000  rbx 000000000000111d  rcx 00007a377f0f706d  rdx 0000000000000006
+09-25 08:23:05.226  4393  4393 F DEBUG   :     r8  00007ff18c9c1c50  r9  00007ff18c9c1c50  r10 00007ff18c9c1a10  r11 0000000000000207
+09-25 08:23:05.226  4393  4393 F DEBUG   :     r12 0000000000000000  r13 00007ff18c9c1bb0  r14 000000000000111d  r15 00007ff18c9c1a10
+09-25 08:23:05.226  4393  4393 F DEBUG   :     rdi 000000000000111d  rsi 000000000000111d
+09-25 08:23:05.226  4393  4393 F DEBUG   :     rbp 00007ff18c9c1ac0  rsp 00007ff18c9c1a10  rip 00007a377f0f706d  err 0000000000000000
+09-25 08:23:05.226  4393  4393 F DEBUG   : 
+09-25 08:23:05.226  4393  4393 F DEBUG   : 18 total frames
+09-25 08:23:05.226  4393  4393 F DEBUG   : backtrace:
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:05.226  4393  4393 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:05.226  4393  4393 F DEBUG   : 
+09-25 08:23:05.226  4393  4393 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:23:05.226  4393  4393 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:23:09.950  4572  4572 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4572 (android.hardwar), pid 4572 (android.hardwar)
+09-25 08:23:10.058  4590  4590 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:23:10.059  4590  4590 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:23:10.059  4590  4590 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:23:10.059  4590  4590 F DEBUG   : Revision: '0'
+09-25 08:23:10.059  4590  4590 F DEBUG   : ABI: 'x86_64'
+09-25 08:23:10.059  4590  4590 F DEBUG   : Timestamp: 2026-09-25 08:23:09.980057000+0000
+09-25 08:23:10.059  4590  4590 F DEBUG   : Process uptime: 1s
+09-25 08:23:10.059  4590  4590 F DEBUG   : Page size: 16384 bytes
+09-25 08:23:10.059  4590  4590 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:23:10.059  4590  4590 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:23:10.059  4590  4590 F DEBUG   : pid: 4572, ppid: 1, tid: 4572, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:23:10.059  4590  4590 F DEBUG   : uid: 1083
+09-25 08:23:10.059  4590  4590 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:23:10.059  4590  4590 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:23:10.059  4590  4590 F DEBUG   : 
+09-25 08:23:10.059  4590  4590 F DEBUG   :     rax 0000000000000000  rbx 00000000000011dc  rcx 00007845c74b706d  rdx 0000000000000006
+09-25 08:23:10.059  4590  4590 F DEBUG   :     r8  00007ff325758680  r9  00007ff325758680  r10 00007ff325758440  r11 0000000000000207
+09-25 08:23:10.059  4590  4590 F DEBUG   :     r12 0000000000000000  r13 00007ff3257585e0  r14 00000000000011dc  r15 00007ff325758440
+09-25 08:23:10.059  4590  4590 F DEBUG   :     rdi 00000000000011dc  rsi 00000000000011dc
+09-25 08:23:10.059  4590  4590 F DEBUG   :     rbp 00007ff3257584f0  rsp 00007ff325758440  rip 00007845c74b706d  err 0000000000000000
+09-25 08:23:10.059  4590  4590 F DEBUG   : 
+09-25 08:23:10.059  4590  4590 F DEBUG   : 18 total frames
+09-25 08:23:10.059  4590  4590 F DEBUG   : backtrace:
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:10.059  4590  4590 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:10.059  4590  4590 F DEBUG   : 
+09-25 08:23:10.059  4590  4590 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:23:10.059  4590  4590 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb
+09-25 08:23:14.959  4748  4748 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4748 (android.hardwar), pid 4748 (android.hardwar)
+09-25 08:23:15.199  4756  4756 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-25 08:23:15.199  4756  4756 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260828.004.A7/16296984:userdebug/dev-keys'
+09-25 08:23:15.199  4756  4756 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+09-25 08:23:15.199  4756  4756 F DEBUG   : Revision: '0'
+09-25 08:23:15.199  4756  4756 F DEBUG   : ABI: 'x86_64'
+09-25 08:23:15.199  4756  4756 F DEBUG   : Timestamp: 2026-09-25 08:23:14.990290800+0000
+09-25 08:23:15.199  4756  4756 F DEBUG   : Process uptime: 1s
+09-25 08:23:15.199  4756  4756 F DEBUG   : Page size: 16384 bytes
+09-25 08:23:15.199  4756  4756 F DEBUG   : Executable: /vendor/bin/hw/android.hardware.uwb-service
+09-25 08:23:15.199  4756  4756 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.uwb-service /dev/uwb0
+09-25 08:23:15.199  4756  4756 F DEBUG   : pid: 4748, ppid: 1, tid: 4748, name: android.hardwar  >>> /vendor/bin/hw/android.hardware.uwb-service <<<
+09-25 08:23:15.199  4756  4756 F DEBUG   : uid: 1083
+09-25 08:23:15.199  4756  4756 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+09-25 08:23:15.199  4756  4756 F DEBUG   : Abort message: 'failed to open the serial device: Os { code: 6, kind: Uncategorized, message: "No such device or address" }'
+09-25 08:23:15.199  4756  4756 F DEBUG   : 
+09-25 08:23:15.199  4756  4756 F DEBUG   :     rax 0000000000000000  rbx 000000000000128c  rcx 00007718800e306d  rdx 0000000000000006
+09-25 08:23:15.199  4756  4756 F DEBUG   :     r8  00007ffaed8f09c0  r9  00007ffaed8f09c0  r10 00007ffaed8f0780  r11 0000000000000207
+09-25 08:23:15.199  4756  4756 F DEBUG   :     r12 0000000000000000  r13 00007ffaed8f0920  r14 000000000000128c  r15 00007ffaed8f0780
+09-25 08:23:15.199  4756  4756 F DEBUG   :     rdi 000000000000128c  rsi 000000000000128c
+09-25 08:23:15.199  4756  4756 F DEBUG   :     rbp 00007ffaed8f0830  rsp 00007ffaed8f0780  rip 00007718800e306d  err 0000000000000000
+09-25 08:23:15.199  4756  4756 F DEBUG   : 
+09-25 08:23:15.199  4756  4756 F DEBUG   : 18 total frames
+09-25 08:23:15.199  4756  4756 F DEBUG   : backtrace:
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #00 pc 000000000005b06d  /apex/com.android.runtime/lib64/bionic/libc.so (abort+189) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #01 pc 000000000003ed09  /vendor/bin/hw/android.hardware.uwb-service (std::sys::pal::unix::abort_internal+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #02 pc 000000000003c488  /vendor/bin/hw/android.hardware.uwb-service (std::process::abort+8) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #03 pc 0000000000038e89  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_abort+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #04 pc 000000000002d262  /vendor/bin/hw/android.hardware.uwb-service (__rustc::__rust_start_panic+18) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #05 pc 0000000000038e79  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_panic+9) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #06 pc 000000000003c72f  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_with_hook+260) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #07 pc 0000000000038516  /vendor/bin/hw/android.hardware.uwb-service (std::panicking::panic_handler::{closure#0}+70) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #08 pc 0000000000038eab  /vendor/bin/hw/android.hardware.uwb-service (__rustc::rust_begin_unwind+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #09 pc 00000000000253db  /vendor/bin/hw/android.hardware.uwb-service (core::panicking::panic_fmt+43) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #10 pc 0000000000025261  /vendor/bin/hw/android.hardware.uwb-service (core::result::unwrap_failed+81) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #11 pc 00000000000641af  /vendor/bin/hw/android.hardware.uwb-service (<uwb_default_hal::uwb_chip::UwbChip>::new::{closure#0}+7999) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #12 pc 000000000006865a  /vendor/bin/hw/android.hardware.uwb-service (<core::iter::adapters::map::Map<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>, <uwb_default_hal::uwb::Uwb>::from_chips<core::iter::adapters::map::Map<core::iter::adapters::enumerate::Enumerate<core::iter::adapters::skip::Skip<std::env::Args>>, uwb_default_hal::main::{closure#1}>>::{closure#0}> as core::iter::traits::iterator::Iterator>::next+3434) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #13 pc 0000000000065c77  /vendor/bin/hw/android.hardware.uwb-service (uwb_default_hal::main+791) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #14 pc 00000000000619fb  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start::<core::result::Result<(), anyhow::Error>>::{closure#0}+27) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #15 pc 000000000003bce6  /vendor/bin/hw/android.hardware.uwb-service (std::rt::lang_start_internal+534) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #16 pc 000000000006b193  /vendor/bin/hw/android.hardware.uwb-service (main+51) (BuildId: b8f3093f355d6b415637c050fb6e8cf4)
+09-25 08:23:15.199  4756  4756 F DEBUG   :       #17 pc 00000000000c3c10  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+112) (BuildId: 6a12fb8c62f84cd3689f4044ef042df1)
+09-25 08:23:15.199  4756  4756 F DEBUG   : 
+09-25 08:23:15.199  4756  4756 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+09-25 08:23:15.199  4756  4756 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb

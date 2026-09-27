@@ -1,0 +1,71 @@
+{
+  "description": "Ordinary movement/jump/attack/knife/dodge/skill/summon inputs, no health edits or boss mutation. Not human balance or full campaign.",
+  "results": [
+    {
+      "world": 1,
+      "hero": "garsi",
+      "difficulty": "veteran",
+      "pet": null,
+      "complete": true,
+      "seconds": 25.499999999999833,
+      "hits": 3,
+      "bossHP": 0,
+      "playerHP": 2
+    },
+    {
+      "world": 1,
+      "hero": "mira",
+      "difficulty": "veteran",
+      "pet": null,
+      "complete": false,
+      "seconds": 23.48333333333328,
+      "hits": 5,
+      "bossHP": 8,
+      "playerHP": 0
+    },
+    {
+      "world": 1,
+      "hero": "rayan",
+      "difficulty": "veteran",
+      "pet": null,
+      "complete": false,
+      "seconds": 17.583333333333616,
+      "hits": 5,
+      "bossHP": 15,
+      "playerHP": 0
+    },
+    {
+      "world": 2,
+      "hero": "garsi",
+      "difficulty": "veteran",
+      "pet": "fox",
+      "complete": false,
+      "seconds": 25.383333333333173,
+      "hits": 5,
+      "bossHP": 16,
+      "playerHP": 0
+    },
+    {
+      "world": 2,
+      "hero": "taky",
+      "difficulty": "veteran",
+      "pet": null,
+      "complete": false,
+      "seconds": 25.766666666666485,
+      "hits": 5,
+      "bossHP": 16,
+      "playerHP": 0
+    },
+    {
+      "world": 3,
+      "hero": "kossay",
+      "difficulty": "veteran",
+      "pet": "wolf",
+      "complete": false,
+      "seconds": 20.466666666666786,
+      "hits": 5,
+      "bossHP": 43,
+      "playerHP": 0
+    }
+  ]
+}

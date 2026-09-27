@@ -1,0 +1,46 @@
+Loading test game
+Waiting for assets
+PASS Nightfall lobby loads with no runtime error
+PASS guest has no invented currency, rival records or online account
+PASS all bundled images decode
+PASS eight actual hero animation sheets
+PASS all seven pets have multi-frame animation
+PASS Boss Hunt exposes all 15 bosses
+PASS tier selector is persistent next-run setting
+PASS new onboarding teaches focus, soul and exploration
+PASS Boss Hunt starts real combat simulation
+PASS analog is default active
+PASS boss health and stamina/focus HUD visible
+PASS seven action buttons have 48px touch targets
+PASS simultaneous analog and jump touch moves and lifts hero
+PASS joystick tracks analog deflection
+PASS joystick release clears movement and captures
+PASS knife button consumes actual ammunition
+PASS melee button starts animation and spends stamina
+PASS dodge starts brief protected motion
+PASS Gravity uses focus and starts its cooldown
+PASS global skill lock is active
+PASS Bomba has independent cooldown and added focus cost
+PASS summon button spends one charge and 60 soul
+PASS keyboard knife control is wired
+PASS solo pause freezes boss time
+PASS settings switches analog to arrows
+PASS blood toggle changes renderer preference
+PASS haptics can be disabled
+PASS analog and action cluster can be mirrored
+PASS native lifecycle event pauses solo and clears input
+PASS guest profile editor offers eight avatars
+PASS profile name banner and frame saved
+PASS signup is not faked when backend is unconfigured
+PASS browser explains native Bluetooth rather than simulating a radio
+PASS 640×360: all combat buttons inside viewport and at least 48px
+PASS 960×540: all combat buttons inside viewport and at least 48px
+PASS 1280×720: all combat buttons inside viewport and at least 48px
+PASS all 47 bundled music/SFX files decode
+PASS no runtime exceptions across UI, touch, profile, bosses and map fixtures
+PASS two browser clients show the same two-player lobby
+PASS client input crosses bridge and host moves the actual remote player
+PASS both clients render a real opponent
+PASS PvP hides unbalanced hero/pet/summon controls
+PASS no two-client browser exceptions
+PASS 43 Chromium checks

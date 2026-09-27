@@ -1,0 +1,351 @@
+{
+  "checks": [
+    {
+      "name": "actual loading screen waits for all 270 image assets",
+      "pass": true
+    },
+    {
+      "name": "fresh guest starts without fabricated gold or ranks",
+      "pass": true
+    },
+    {
+      "name": "all 270 registered images decoded",
+      "pass": true
+    },
+    {
+      "name": "community backgrounds and animated water registered",
+      "pass": true
+    },
+    {
+      "name": "home hero label has no black or translucent panel",
+      "pass": true
+    },
+    {
+      "name": "ten hero cards selectable",
+      "pass": true
+    },
+    {
+      "name": "rayan has visible lore and two skills",
+      "pass": true
+    },
+    {
+      "name": "mira has visible lore and two skills",
+      "pass": true
+    },
+    {
+      "name": "nine pet cards include both fusions",
+      "pass": true
+    },
+    {
+      "name": "dragon panel explicitly exposes 10s time limit, soul and calls",
+      "pass": true
+    },
+    {
+      "name": "orca abilities end with its 12s summon",
+      "pass": true
+    },
+    {
+      "name": "three outfit color variants shown",
+      "pass": true
+    },
+    {
+      "name": "paid outfit disabled with no currency",
+      "pass": true
+    },
+    {
+      "name": "free frost palette equips without spending",
+      "pass": true
+    },
+    {
+      "name": "outfit purchase costs exactly 800 once",
+      "pass": true
+    },
+    {
+      "name": "owned outfit re-equip is free",
+      "pass": true
+    },
+    {
+      "name": "twenty native skills have library entries",
+      "pass": true
+    },
+    {
+      "name": "borrowed skill book costs 350",
+      "pass": true
+    },
+    {
+      "name": "borrowed skill equips in second slot",
+      "pass": true
+    },
+    {
+      "name": "three skill recipes and two pet recipes present",
+      "pass": true
+    },
+    {
+      "name": "pet fusion preserves both rescued parents",
+      "pass": true
+    },
+    {
+      "name": "fixed skill fusion unlocks for declared price",
+      "pass": true
+    },
+    {
+      "name": "control studio has four independent saved slots",
+      "pass": true
+    },
+    {
+      "name": "drag modifies edit buffer not live save",
+      "pass": true
+    },
+    {
+      "name": "covered pause button can be positioned with explicit X/Y",
+      "pass": true
+    },
+    {
+      "name": "preset 1 persists position size and opacity",
+      "pass": true
+    },
+    {
+      "name": "preset 2 saved independently",
+      "pass": true
+    },
+    {
+      "name": "preset 3 saved independently",
+      "pass": true
+    },
+    {
+      "name": "preset 4 saved independently",
+      "pass": true
+    },
+    {
+      "name": "cancel discards buffered control edits",
+      "pass": true
+    },
+    {
+      "name": "all fifteen bosses still available",
+      "pass": true
+    },
+    {
+      "name": "actual boss simulation and stagger bar active",
+      "pass": true
+    },
+    {
+      "name": "provided skill art actually appears on both gameplay buttons",
+      "pass": true
+    },
+    {
+      "name": "analog active and arrows hidden by default",
+      "pass": true
+    },
+    {
+      "name": "real simultaneous analog and jump touch moves and lifts",
+      "pass": true
+    },
+    {
+      "name": "stick reads proportional deflection",
+      "pass": true
+    },
+    {
+      "name": "touch release clears movement captures",
+      "pass": true
+    },
+    {
+      "name": "knife touch spends ammunition",
+      "pass": true
+    },
+    {
+      "name": "strike spends stamina and starts actual swing",
+      "pass": true
+    },
+    {
+      "name": "dodge button starts recharge",
+      "pass": true
+    },
+    {
+      "name": "Gravity focus cost and cooldown applied",
+      "pass": true
+    },
+    {
+      "name": "Bomba independent cooldown and focus cost applied",
+      "pass": true
+    },
+    {
+      "name": "one tap applies next saved control preset",
+      "pass": true
+    },
+    {
+      "name": "keyboard shortcut applies fourth control preset",
+      "pass": true
+    },
+    {
+      "name": "pause freezes actual boss clock",
+      "pass": true
+    },
+    {
+      "name": "settings switches analog to arrows",
+      "pass": true
+    },
+    {
+      "name": "global mirrored setting moves stick to right",
+      "pass": true
+    },
+    {
+      "name": "native pause adapter releases input and pauses solo",
+      "pass": true
+    },
+    {
+      "name": "equipped wolf starts dormant",
+      "pass": true
+    },
+    {
+      "name": "call button spends one pet call and starts 12 second timer",
+      "pass": true
+    },
+    {
+      "name": "repeat summon press cannot consume another call",
+      "pass": true
+    },
+    {
+      "name": "pet expires in game simulation and cannot be immediately recalled",
+      "pass": true
+    },
+    {
+      "name": "dragon manual active starts only within its call window",
+      "pass": true
+    },
+    {
+      "name": "dragon scales and bonus end on summon expiry",
+      "pass": true
+    },
+    {
+      "name": "ranking categories and tiebreaks visibly explained",
+      "pass": true
+    },
+    {
+      "name": "endless records rank by score and disable world filter",
+      "pass": true
+    },
+    {
+      "name": "camera lab uses real practice run with reward exclusion",
+      "pass": true
+    },
+    {
+      "name": "640x360: action and pet buttons all in bounds and at least 44px",
+      "pass": true
+    },
+    {
+      "name": "640x360: main home actions available above navigation",
+      "pass": true
+    },
+    {
+      "name": "844x390: action and pet buttons all in bounds and at least 44px",
+      "pass": true
+    },
+    {
+      "name": "844x390: main home actions available above navigation",
+      "pass": true
+    },
+    {
+      "name": "960x540: action and pet buttons all in bounds and at least 44px",
+      "pass": true
+    },
+    {
+      "name": "960x540: main home actions available above navigation",
+      "pass": true
+    },
+    {
+      "name": "1280x720: action and pet buttons all in bounds and at least 44px",
+      "pass": true
+    },
+    {
+      "name": "1280x720: main home actions available above navigation",
+      "pass": true
+    },
+    {
+      "name": "all 47 existing audio cues and music files decode",
+      "pass": true
+    },
+    {
+      "name": "profile offers ten roster avatars",
+      "pass": true
+    },
+    {
+      "name": "no fake login when server unconfigured",
+      "pass": true
+    },
+    {
+      "name": "browser explicitly separates native Bluetooth",
+      "pass": true
+    },
+    {
+      "name": "no runtime errors through menus, inputs, summons, audio, camera",
+      "pass": true
+    },
+    {
+      "name": "native lobby generates exactly six digits",
+      "pass": true
+    },
+    {
+      "name": "host cannot start without second admitted player",
+      "pass": true
+    },
+    {
+      "name": "copy code button calls native bridge with exact code",
+      "pass": true
+    },
+    {
+      "name": "code-admitted clients see same room and two-player roster",
+      "pass": true
+    },
+    {
+      "name": "guest ready enables host raid start",
+      "pass": true
+    },
+    {
+      "name": "two-client raid starts same scaled boss HP",
+      "pass": true
+    },
+    {
+      "name": "both raid clients see teammate and hero abilities",
+      "pass": true
+    },
+    {
+      "name": "raid without an equipped pet never exposes an empty portrait",
+      "pass": true
+    },
+    {
+      "name": "visible raid image elements all have decoded artwork",
+      "pass": true
+    },
+    {
+      "name": "guest movement reaches authoritative host simulation",
+      "pass": true
+    },
+    {
+      "name": "downed teammate enables revive control on guest",
+      "pass": true
+    },
+    {
+      "name": "three-second held revive restores ally and spends shared pool",
+      "pass": true
+    },
+    {
+      "name": "both clients show shared team clear rather than rival rankings",
+      "pass": true
+    },
+    {
+      "name": "FFA rematch disables pets and hero abilities for equal-stat rules",
+      "pass": true
+    },
+    {
+      "name": "no two-browser multiplayer runtime exceptions",
+      "pass": true
+    },
+    {
+      "name": "unmodified production HTML boots with no private test API",
+      "pass": true
+    }
+  ],
+  "count": 86,
+  "errors": [],
+  "environment": "Chromium, mobile emulation; in-memory storage and paired transport in test copies only. NOT Android or Bluetooth radio tests."
+}

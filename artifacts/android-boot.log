@@ -1,0 +1,309 @@
+--------- beginning of crash
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: FATAL EXCEPTION: main
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: Process: com.superwiss.game.playtest, PID: 4155
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: java.lang.OutOfMemoryError: Failed to allocate a 23698112 byte allocation with 7565168 free bytes and 7387KB until OOM, target footprint 201326592, growth limit 201326592
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromChars(StringFactory.java:125)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromBytes(StringFactory.java:110)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.StringFactory.newStringFromBytes(StringFactory.java:80)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.util.Base64.encodeToString(Base64.java:459)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at org.chromium.android_webview.AwContents.s(chromium-SystemWebViewGoogle64.aab-stable-782700509:95)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.webview.chromium.WebViewChromium.e(chromium-SystemWebViewGoogle64.aab-stable-782700509:21)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.webview.chromium.WebViewChromium.loadDataWithBaseURL(chromium-SystemWebViewGoogle64.aab-stable-782700509:42)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.webkit.WebView.loadDataWithBaseURL(WebView.java:887)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.superwiss.game.playtest.MainActivity.onCreate(MainActivity.java:67)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:9356)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:9334)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1566)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4763)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4978)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2942)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:126)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:285)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:390)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9884)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-25 08:23:04.000  4155  4155 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:906)
+--------- beginning of main
+09-25 08:33:26.649 10936 10936 I SuperWissBoot: Boot
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load config
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets · 1 / 270
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets · 2 / 270
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets · 3 / 270
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets · 4 / 270
+09-25 08:33:26.651 10936 10936 I SuperWissBoot: Load assets · 5 / 270
+09-25 08:33:26.660 10936 10936 I SuperWissBoot: Load assets · 6 / 270
+09-25 08:33:26.660 10936 10936 I SuperWissBoot: Load assets · 7 / 270
+09-25 08:33:26.662 10936 10936 I SuperWissBoot: Load assets · 8 / 270
+09-25 08:33:26.670 10936 10936 I SuperWissBoot: Load assets · 9 / 270
+09-25 08:33:26.781 10936 10936 I SuperWissBoot: Load assets · 10 / 270
+09-25 08:33:26.782 10936 10936 I SuperWissBoot: Load assets · 11 / 270
+09-25 08:33:26.783 10936 10936 I SuperWissBoot: Load assets · 12 / 270
+09-25 08:33:26.785 10936 10936 I SuperWissBoot: Load assets · 13 / 270
+09-25 08:33:26.800 10936 10936 I SuperWissBoot: Load assets · 14 / 270
+09-25 08:33:26.808 10936 10936 I SuperWissBoot: Load assets · 15 / 270
+09-25 08:33:26.816 10936 10936 I SuperWissBoot: Load assets · 16 / 270
+09-25 08:33:27.025 10936 10936 I SuperWissBoot: Load assets · 17 / 270
+09-25 08:33:27.031 10936 10936 I SuperWissBoot: Load assets · 18 / 270
+09-25 08:33:27.036 10936 10936 I SuperWissBoot: Load assets · 19 / 270
+09-25 08:33:27.043 10936 10936 I SuperWissBoot: Load assets · 20 / 270
+09-25 08:33:27.046 10936 10936 I SuperWissBoot: Load assets · 21 / 270
+09-25 08:33:27.099 10936 10936 I SuperWissBoot: Load assets · 22 / 270
+09-25 08:33:31.626 10936 10936 I SuperWissBoot: Load assets · 23 / 270
+09-25 08:33:31.626 10936 10936 I SuperWissBoot: Load assets · 24 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 25 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 26 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 27 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 28 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 29 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 30 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 31 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 32 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 33 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 34 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 35 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 36 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 37 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 38 / 270
+09-25 08:33:31.692 10936 10936 I SuperWissBoot: Load assets · 39 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 40 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 41 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 42 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 43 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 44 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 45 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 46 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 47 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 48 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 49 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 50 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 51 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 52 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 53 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 54 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 55 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 56 / 270
+09-25 08:33:31.693 10936 10936 I SuperWissBoot: Load assets · 57 / 270
+09-25 08:33:31.694 10936 10936 I SuperWissBoot: Load assets · 58 / 270
+09-25 08:33:31.699 10936 10936 I SuperWissBoot: Load assets · 59 / 270
+09-25 08:33:31.699 10936 10936 I SuperWissBoot: Load assets · 60 / 270
+09-25 08:33:31.700 10936 10936 I SuperWissBoot: Load assets · 61 / 270
+09-25 08:33:31.700 10936 10936 I SuperWissBoot: Load assets · 62 / 270
+09-25 08:33:31.700 10936 10936 I SuperWissBoot: Load assets · 63 / 270
+09-25 08:33:31.700 10936 10936 I SuperWissBoot: Load assets · 64 / 270
+09-25 08:33:31.700 10936 10936 I SuperWissBoot: Load assets · 65 / 270
+09-25 08:33:31.701 10936 10936 I SuperWissBoot: Load assets · 66 / 270
+09-25 08:33:31.701 10936 10936 I SuperWissBoot: Load assets · 67 / 270
+09-25 08:33:31.701 10936 10936 I SuperWissBoot: Load assets · 68 / 270
+09-25 08:33:31.702 10936 10936 I SuperWissBoot: Load assets · 69 / 270
+09-25 08:33:31.702 10936 10936 I SuperWissBoot: Load assets · 70 / 270
+09-25 08:33:31.702 10936 10936 I SuperWissBoot: Load assets · 71 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 72 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 73 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 74 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 75 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 76 / 270
+09-25 08:33:31.703 10936 10936 I SuperWissBoot: Load assets · 77 / 270
+09-25 08:33:31.704 10936 10936 I SuperWissBoot: Load assets · 78 / 270
+09-25 08:33:31.704 10936 10936 I SuperWissBoot: Load assets · 79 / 270
+09-25 08:33:31.704 10936 10936 I SuperWissBoot: Load assets · 80 / 270
+09-25 08:33:31.704 10936 10936 I SuperWissBoot: Load assets · 81 / 270
+09-25 08:33:31.704 10936 10936 I SuperWissBoot: Load assets · 82 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 83 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 84 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 85 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 86 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 87 / 270
+09-25 08:33:31.705 10936 10936 I SuperWissBoot: Load assets · 88 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 89 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 90 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 91 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 92 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 93 / 270
+09-25 08:33:31.706 10936 10936 I SuperWissBoot: Load assets · 94 / 270
+09-25 08:33:31.707 10936 10936 I SuperWissBoot: Load assets · 95 / 270
+09-25 08:33:31.707 10936 10936 I SuperWissBoot: Load assets · 96 / 270
+09-25 08:33:31.707 10936 10936 I SuperWissBoot: Load assets · 97 / 270
+09-25 08:33:31.707 10936 10936 I SuperWissBoot: Load assets · 98 / 270
+09-25 08:33:31.707 10936 10936 I SuperWissBoot: Load assets · 99 / 270
+09-25 08:33:31.708 10936 10936 I SuperWissBoot: Load assets · 100 / 270
+09-25 08:33:31.708 10936 10936 I SuperWissBoot: Load assets · 101 / 270
+09-25 08:33:31.708 10936 10936 I SuperWissBoot: Load assets · 102 / 270
+09-25 08:33:31.708 10936 10936 I SuperWissBoot: Load assets · 103 / 270
+09-25 08:33:31.708 10936 10936 I SuperWissBoot: Load assets · 104 / 270
+09-25 08:33:31.709 10936 10936 I SuperWissBoot: Load assets · 105 / 270
+09-25 08:33:31.709 10936 10936 I SuperWissBoot: Load assets · 106 / 270
+09-25 08:33:31.709 10936 10936 I SuperWissBoot: Load assets · 107 / 270
+09-25 08:33:31.709 10936 10936 I SuperWissBoot: Load assets · 108 / 270
+09-25 08:33:31.709 10936 10936 I SuperWissBoot: Load assets · 109 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 110 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 111 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 112 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 113 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 114 / 270
+09-25 08:33:31.710 10936 10936 I SuperWissBoot: Load assets · 115 / 270
+09-25 08:33:31.711 10936 10936 I SuperWissBoot: Load assets · 116 / 270
+09-25 08:33:31.711 10936 10936 I SuperWissBoot: Load assets · 117 / 270
+09-25 08:33:31.711 10936 10936 I SuperWissBoot: Load assets · 118 / 270
+09-25 08:33:31.718 10936 10936 I SuperWissBoot: Load assets · 119 / 270
+09-25 08:33:31.718 10936 10936 I SuperWissBoot: Load assets · 120 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 121 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 122 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 123 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 124 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 125 / 270
+09-25 08:33:31.719 10936 10936 I SuperWissBoot: Load assets · 126 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 127 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 128 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 129 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 130 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 131 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 132 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 133 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 134 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 135 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 136 / 270
+09-25 08:33:31.720 10936 10936 I SuperWissBoot: Load assets · 137 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 138 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 139 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 140 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 141 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 142 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 143 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 144 / 270
+09-25 08:33:31.721 10936 10936 I SuperWissBoot: Load assets · 145 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 146 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 147 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 148 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 149 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 150 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 151 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 152 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 153 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 154 / 270
+09-25 08:33:31.722 10936 10936 I SuperWissBoot: Load assets · 155 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 156 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 157 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 158 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 159 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 160 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 161 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 162 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 163 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 164 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 165 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 166 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 167 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 168 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 169 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 170 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 171 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 172 / 270
+09-25 08:33:31.730 10936 10936 I SuperWissBoot: Load assets · 173 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 174 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 175 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 176 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 177 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 178 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 179 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 180 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 181 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 182 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 183 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 184 / 270
+09-25 08:33:31.731 10936 10936 I SuperWissBoot: Load assets · 185 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 186 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 187 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 188 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 189 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 190 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 191 / 270
+09-25 08:33:31.739 10936 10936 I SuperWissBoot: Load assets · 192 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 193 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 194 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 195 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 196 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 197 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 198 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 199 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 200 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 201 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 202 / 270
+09-25 08:33:31.740 10936 10936 I SuperWissBoot: Load assets · 203 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 204 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 205 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 206 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 207 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 208 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 209 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 210 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 211 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 212 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 213 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 214 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 215 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 216 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 217 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 218 / 270
+09-25 08:33:31.741 10936 10936 I SuperWissBoot: Load assets · 219 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 220 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 221 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 222 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 223 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 224 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 225 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 226 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 227 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 228 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 229 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 230 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 231 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 232 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 233 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 234 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 235 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 236 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 237 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 238 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 239 / 270
+09-25 08:33:31.742 10936 10936 I SuperWissBoot: Load assets · 240 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 241 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 242 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 243 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 244 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 245 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 246 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 247 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 248 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 249 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 250 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 251 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 252 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 253 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 254 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 255 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 256 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 257 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 258 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 259 / 270
+09-25 08:33:31.743 10936 10936 I SuperWissBoot: Load assets · 260 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 261 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 262 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 263 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 264 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 265 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 266 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 267 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 268 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 269 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Load assets · 270 / 270
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Initialize save
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Initialize audio
+09-25 08:33:31.744 10936 10936 I SuperWissBoot: Initialize game
+09-25 08:33:31.761 10936 10936 I SuperWissBoot: Home screen

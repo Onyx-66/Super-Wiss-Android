@@ -1,0 +1,40 @@
+Bundled 15 maps, 317 assets; 16.73 MiB offline HTML. Android assets synchronized.
+I: Using Apktool v3.0.3-22-57690eee-SNAPSHOT on Super-Wiss-Playtest.apk with 4 threads
+I: Smaling smali folder into classes.dex...
+I: Building resources with aapt2...
+I: Building apk file...
+I: Importing assets...
+I: Built apk into: /tmp/tmp.cdNwpF0v4t/resources.apk
+Importing keystore qa/super-wiss-qa.jks to /tmp/tmp.cdNwpF0v4t/qa.p12...
+Signed QA APK: artifacts/Super-Wiss-Ascension-1.1.0.apk; 12861062 bytes; SHA256 d52e1f2a4207c6b16e56edf51d164acd5e8a165935de253c606ffc4086de7279
+{
+  "v2_signature": "valid RSA-SHA256",
+  "content_digest": "valid",
+  "certificate_sha256": "0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207",
+  "central_directory": 12860060,
+  "signing_block_offset": 12858008,
+  "file": "Super-Wiss-Ascension-1.1.0.apk",
+  "bytes": 12861062,
+  "sha256": "d52e1f2a4207c6b16e56edf51d164acd5e8a165935de253c606ffc4086de7279",
+  "zip_crc": "valid",
+  "v1_entry_digests": "valid; X-Android-APK-Signed: 2 present",
+  "dex_checksums": "valid",
+  "aligned_stored_entries": [
+    "resources.arsc"
+  ],
+  "tamper_rejections": [
+    "classes.dex",
+    "assets/game.html",
+    "resources.arsc"
+  ]
+}
+
+jar verified.
+
+Warning: 
+This jar contains entries whose certificate chain is invalid. Reason: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+This jar contains entries whose signer certificate is self-signed.
+This jar contains signatures that do not include a timestamp. Without a timestamp, users may not be able to validate this jar after any of the signer certificates expire (as early as 2036-09-21).
+POSIX file permission and/or symlink attributes detected. These attributes are ignored when signing and are not protected by the signature.
+
+Re-run with the -verbose and -certs options for more details.

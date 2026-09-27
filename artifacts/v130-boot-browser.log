@@ -1,0 +1,18 @@
+PASS streamed bundle reaches ready without JS errors
+PASS home is visible
+PASS eight accessory slots appear
+PASS individual accessory saves
+PASS guilds remain a placeholder
+PASS empty raid history has no fake players
+PASS four independently saved preset sizes
+PASS all controls mirror within each preset
+PASS one-tap preset A
+PASS one-tap preset B
+PASS one-tap preset C
+PASS one-tap preset D
+PASS stable origin survives reload
+PASS syntax failure exposes recovery
+PASS retry recovers after startup fault
+PASS missing image produces named asset error
+PASS safe mode tolerates missing artwork
+PASS safe mode keeps stored data

@@ -1,45 +1,41 @@
-# Super Wiss — Android
+# Super Wiss Ascension — v1.3.1 source candidate
 
-**Current public baseline: v1.0.0**
+Weapon sprite integration, portrait/roster fixes and supplied-logo integration, based on the uploaded v1.3.0 source.
 
-This private repository contains the current Super Wiss Android source snapshot. The
-earlier “2.0 / 3.0 / 4.0” labels used during prototype development were internal iteration
-names, so public semantic versioning starts cleanly at **v1.0.0**.
+**No new APK or AAB was compiled in this delivery.** Gradle distribution download failed with `UnknownHostException: services.gradle.org`; this environment also lacks Android SDK/ADB. Old `artifacts/` reports/screenshots belong to previous builds. They do not validate these changes.
 
-## Restore the complete source
+**Final weapon PNGs are pending.** The reference image was not extracted as art. Existing weapon-bearing hero sheets remain visible without procedural sticks; external weapons require the final PNGs plus weapon-free body/outfit sheets marked `weaponLayer: "separate"`. See [weapon handoff](assets/weapons/README.md).
 
-The connected GitHub integration accepts Git/text objects rather than a direct local
-binary working-tree push, so the complete v1.0.0 snapshot is committed as a verified
-split source pack.
+## Source changes
+- Remove both procedural weapon drawings, including cosmetic rods.
+- Manifest/cache/sprite weapon pipeline keyed by actual COMBAT_PROFILES.weapon; per-frame grip sockets; shared attack-phase body/weapon motion.
+- Explicit Rayan lance and Mira frost-staff/ice profiles. Loey label corrected to Sky bow. Preserve normalized PvP behavior.
+- New solo results revision 4 avoids comparing changed combat directly with stored revision 3 results; existing save key/schema/origin unchanged.
+- Identity card uses saved profile avatar, not equipped hero. Names/XP unchanged.
+- Distinct still portraits with no combat overlays; bounded responsive roster and intentional scroll reset on re-entry.
+- Supplied logo on Home/web loading/native fallback; supplied W derivative in adaptive/themed launcher.
+- Optional pending-art support is limited to weapon entries. Missing required media still fails validation/normal boot.
 
-```sh
-git clone https://github.com/Onyx-66/Super-Wiss-Android.git
-cd Super-Wiss-Android
-python3 scripts/restore-v1-source.py
-cd Super-Wiss-GitHub-v1
-npm run bootstrap
+## Read first
+- [Pre-edit investigation and full original drawHeroWeapon](docs/reviews/1.3.1/INVESTIGATION.md)
+- [Weapon PNG contract / enable real sprites](assets/weapons/README.md)
+- [Current tests and native build blocker](docs/reviews/1.3.1/TEST-REPORT.md)
+- [Quality follow-ups / unavailable private skills](docs/reviews/1.3.1/QUALITY-FOLLOWUPS.md)
+- [Building](BUILDING.md)
+
+## Build
+
+```powershell
 npm run validate
+npm run build
 npm test
+npm run test:weapon-ui
+npm run validate:maps
+.\gradlew.bat :app:assembleDebug :app:assembleQa :app:bundleQa :app:lintDebug :app:lintQa
 ```
 
-The restore script validates the archive SHA-256 before extracting.
+`npm run validate:weapon-art` intentionally fails until all ten final weapon PNGs are present. The included public QA certificate is only for local tests, never production.
 
-## Current gameplay
+Working game code: `game/`; metadata: `game/*.json`; source art: `assets/`; Android host: `app/src/main/java/`. Gradle preBuild regenerates the small shell and separate APK media; do not reintroduce giant HTML through native loadDataWithBaseURL. The standalone browser preview may embed media, but Android never loads that file.
 
-- 15 extended worlds with multi-stage seal chambers
-- 15 three-phase boss encounters and Boss Hunt
-- melee combos, pogo attacks, knives, dodge/stamina, focus-limited skills and summons
-- 8 heroes and 7 collectible pets
-- analog controls
-- local Bluetooth-party implementation for 2–4 players
-- optional account/profile/friends backend
-- Android Studio host plus fallback packaging source
-
-## Versioning
-
-- current baseline → **v1.0.0**
-- bugfix → v1.0.1
-- backward-compatible feature update → v1.1.0
-- breaking generation → v2.0.0
-
-See `VERSIONING.md` and `source-packs/v1.0.0/README.md`.
+The requested Agent Skills could not be retrieved. This patch does not claim to implement or certify those unavailable standards.

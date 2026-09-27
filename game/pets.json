@@ -1,0 +1,162 @@
+[
+  {
+    "id": "wolf",
+    "name": "Fang Wolf",
+    "rarity": "super",
+    "unlockWorld": 0,
+    "fraction": 0.07,
+    "description": "Summon for 12 seconds. Bites a nearby target every 1.8 seconds; then returns to the shrine.",
+    "passive": "Auto attack",
+    "skills": [],
+    "summonDuration": 12,
+    "summonCooldown": 60,
+    "summonCost": 35,
+    "summonCharges": 3
+  },
+  {
+    "id": "eagle",
+    "name": "Sky Eagle",
+    "rarity": "super",
+    "unlockWorld": 2,
+    "fraction": 0.25,
+    "description": "Summon for 18 seconds. Scout enemies, gaps and treasure, with increased coin reach.",
+    "passive": "Scout vision + coin reach",
+    "skills": [],
+    "summonDuration": 18,
+    "summonCooldown": 55,
+    "summonCost": 25,
+    "summonCharges": 3
+  },
+  {
+    "id": "mole",
+    "name": "Mole Digger",
+    "rarity": "super",
+    "unlockWorld": 4,
+    "fraction": 0.36,
+    "description": "Summon for 12 seconds. Finds buried rewards through forward progress, not waiting.",
+    "passive": "Buried treasure",
+    "skills": [],
+    "summonDuration": 12,
+    "summonCooldown": 70,
+    "summonCost": 30,
+    "summonCharges": 3
+  },
+  {
+    "id": "fox",
+    "name": "Ember Fox",
+    "rarity": "super",
+    "unlockWorld": 6,
+    "fraction": 0.43,
+    "description": "Summon for 10 seconds. Limited fire support and distance-driven supplies.",
+    "passive": "Fire support + supplies",
+    "skills": [],
+    "summonDuration": 10,
+    "summonCooldown": 75,
+    "summonCost": 40,
+    "summonCharges": 3
+  },
+  {
+    "id": "turtle",
+    "name": "Stone Turtle",
+    "rarity": "super",
+    "unlockWorld": 8,
+    "fraction": 0.51,
+    "description": "Summon for 14 seconds. One guard against a hit; no protection against falling.",
+    "passive": "One guard per summon",
+    "skills": [],
+    "summonDuration": 14,
+    "summonCooldown": 75,
+    "summonCost": 35,
+    "summonCharges": 3
+  },
+  {
+    "id": "dragon",
+    "name": "Astra Dragon",
+    "rarity": "super rare",
+    "unlockWorld": 11,
+    "fraction": 0.84,
+    "description": "One 10-second ultimate per attempt. Up to 15 contact kills while active; bosses resist instant defeat.",
+    "passive": "Dragon Scales \u2022 15 enemies",
+    "skills": [
+      {
+        "id": "breath",
+        "name": "Dragon Breath",
+        "icon": "fire",
+        "cooldown": 90,
+        "duration": 10,
+        "description": "For 10 seconds, every enemy kill gives exactly 3\u00d7 its otherwise-awarded points. Coins and distance are not multiplied."
+      }
+    ],
+    "summonDuration": 10,
+    "summonCooldown": 180,
+    "summonCost": 80,
+    "summonCharges": 1
+  },
+  {
+    "id": "orca",
+    "name": "Orca Prince",
+    "rarity": "super rare",
+    "unlockWorld": 14,
+    "fraction": 0.84,
+    "description": "One 12-second ultimate per attempt. Choose a brief clearing flood or water support over gaps.",
+    "passive": "Master of the tides",
+    "skills": [
+      {
+        "id": "flood",
+        "name": "Flood",
+        "icon": "water",
+        "cooldown": 100,
+        "duration": 12,
+        "description": "Clear all existing enemies in this map. For 12 seconds, sweep away newly encountered enemies and hostile projectiles, including across endless transitions."
+      },
+      {
+        "id": "prince",
+        "name": "Orca Prince",
+        "icon": "crown",
+        "cooldown": 100,
+        "duration": 12,
+        "description": "For 12 seconds, water supports you across every cliff. Activating while falling lifts you onto the water. Spikes and enemies remain dangerous unless separately protected."
+      }
+    ],
+    "summonDuration": 12,
+    "summonCooldown": 180,
+    "summonCost": 80,
+    "summonCharges": 1
+  },
+  {
+    "id": "skywolf",
+    "name": "Sky Wolf",
+    "rarity": "fusion",
+    "unlockWorld": 0,
+    "fraction": 0.5,
+    "recipe": [
+      "wolf",
+      "eagle"
+    ],
+    "description": "A forged companion. Bites nearby enemies and scouts while flying.",
+    "passive": "Bite + scout",
+    "skills": [],
+    "summonDuration": 8,
+    "summonCooldown": 90,
+    "summonCost": 45,
+    "summonCharges": 2
+  },
+  {
+    "id": "emberguard",
+    "name": "Emberguard",
+    "rarity": "fusion",
+    "unlockWorld": 0,
+    "fraction": 0.5,
+    "recipe": [
+      "fox",
+      "turtle"
+    ],
+    "description": "A forged companion. Fire support and one protective guard.",
+    "passive": "Fire + guard",
+    "skills": [],
+    "summonDuration": 9,
+    "summonCooldown": 90,
+    "summonCost": 50,
+    "summonCharges": 2
+  }
+]

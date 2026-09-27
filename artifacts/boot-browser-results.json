@@ -1,0 +1,25 @@
+{
+  "results": [
+    "streamed bundle reaches ready without JS errors",
+    "home is visible",
+    "eight accessory slots appear",
+    "individual accessory saves",
+    "guilds remain a placeholder",
+    "empty raid history has no fake players",
+    "four independently saved preset sizes",
+    "all controls mirror within each preset",
+    "one-tap preset A",
+    "one-tap preset B",
+    "one-tap preset C",
+    "one-tap preset D",
+    "stable origin survives reload",
+    "syntax failure exposes recovery",
+    "retry recovers after startup fault",
+    "missing image produces named asset error",
+    "safe mode tolerates missing artwork",
+    "safe mode keeps stored data"
+  ],
+  "expectedSyntaxErrors": [
+    "SyntaxError: Unexpected token ';'"
+  ]
+}

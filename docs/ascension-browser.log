@@ -1,0 +1,87 @@
+PASS actual loading screen waits for all 270 image assets
+PASS fresh guest starts without fabricated gold or ranks
+PASS all 270 registered images decoded
+PASS community backgrounds and animated water registered
+PASS home hero label has no black or translucent panel
+PASS ten hero cards selectable
+PASS rayan has visible lore and two skills
+PASS mira has visible lore and two skills
+PASS nine pet cards include both fusions
+PASS dragon panel explicitly exposes 10s time limit, soul and calls
+PASS orca abilities end with its 12s summon
+PASS three outfit color variants shown
+PASS paid outfit disabled with no currency
+PASS free frost palette equips without spending
+PASS outfit purchase costs exactly 800 once
+PASS owned outfit re-equip is free
+PASS twenty native skills have library entries
+PASS borrowed skill book costs 350
+PASS borrowed skill equips in second slot
+PASS three skill recipes and two pet recipes present
+PASS pet fusion preserves both rescued parents
+PASS fixed skill fusion unlocks for declared price
+PASS control studio has four independent saved slots
+PASS drag modifies edit buffer not live save
+PASS covered pause button can be positioned with explicit X/Y
+PASS preset 1 persists position size and opacity
+PASS preset 2 saved independently
+PASS preset 3 saved independently
+PASS preset 4 saved independently
+PASS cancel discards buffered control edits
+PASS all fifteen bosses still available
+PASS actual boss simulation and stagger bar active
+PASS provided skill art actually appears on both gameplay buttons
+PASS analog active and arrows hidden by default
+PASS real simultaneous analog and jump touch moves and lifts
+PASS stick reads proportional deflection
+PASS touch release clears movement captures
+PASS knife touch spends ammunition
+PASS strike spends stamina and starts actual swing
+PASS dodge button starts recharge
+PASS Gravity focus cost and cooldown applied
+PASS Bomba independent cooldown and focus cost applied
+PASS one tap applies next saved control preset
+PASS keyboard shortcut applies fourth control preset
+PASS pause freezes actual boss clock
+PASS settings switches analog to arrows
+PASS global mirrored setting moves stick to right
+PASS native pause adapter releases input and pauses solo
+PASS equipped wolf starts dormant
+PASS call button spends one pet call and starts 12 second timer
+PASS repeat summon press cannot consume another call
+PASS pet expires in game simulation and cannot be immediately recalled
+PASS dragon manual active starts only within its call window
+PASS dragon scales and bonus end on summon expiry
+PASS ranking categories and tiebreaks visibly explained
+PASS endless records rank by score and disable world filter
+PASS camera lab uses real practice run with reward exclusion
+PASS 640x360: action and pet buttons all in bounds and at least 44px
+PASS 640x360: main home actions available above navigation
+PASS 844x390: action and pet buttons all in bounds and at least 44px
+PASS 844x390: main home actions available above navigation
+PASS 960x540: action and pet buttons all in bounds and at least 44px
+PASS 960x540: main home actions available above navigation
+PASS 1280x720: action and pet buttons all in bounds and at least 44px
+PASS 1280x720: main home actions available above navigation
+PASS all 47 existing audio cues and music files decode
+PASS profile offers ten roster avatars
+PASS no fake login when server unconfigured
+PASS browser explicitly separates native Bluetooth
+PASS no runtime errors through menus, inputs, summons, audio, camera
+PASS native lobby generates exactly six digits
+PASS host cannot start without second admitted player
+PASS copy code button calls native bridge with exact code
+PASS code-admitted clients see same room and two-player roster
+PASS guest ready enables host raid start
+PASS two-client raid starts same scaled boss HP
+PASS both raid clients see teammate and hero abilities
+PASS raid without an equipped pet never exposes an empty portrait
+PASS visible raid image elements all have decoded artwork
+PASS guest movement reaches authoritative host simulation
+PASS downed teammate enables revive control on guest
+PASS three-second held revive restores ally and spends shared pool
+PASS both clients show shared team clear rather than rival rankings
+PASS FFA rematch disables pets and hero abilities for equal-stat rules
+PASS no two-browser multiplayer runtime exceptions
+PASS unmodified production HTML boots with no private test API
+PASS 86 Chromium checks

@@ -1,0 +1,21 @@
+{
+  "v2_signature": "valid RSA-SHA256",
+  "content_digest": "valid",
+  "certificate_sha256": "0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207",
+  "central_directory": 12860060,
+  "signing_block_offset": 12858008,
+  "file": "Super-Wiss-Ascension-1.1.0.apk",
+  "bytes": 12861062,
+  "sha256": "d52e1f2a4207c6b16e56edf51d164acd5e8a165935de253c606ffc4086de7279",
+  "zip_crc": "valid",
+  "v1_entry_digests": "valid; X-Android-APK-Signed: 2 present",
+  "dex_checksums": "valid",
+  "aligned_stored_entries": [
+    "resources.arsc"
+  ],
+  "tamper_rejections": [
+    "classes.dex",
+    "assets/game.html",
+    "resources.arsc"
+  ]
+}

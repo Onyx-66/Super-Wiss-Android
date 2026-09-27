@@ -1,0 +1,89 @@
+{
+  "title": "Super Wiss Odyssey 3.0 \u2014 Companion Chronicles",
+  "build_date": "2026-09-24",
+  "scope": "offline QA; no online services",
+  "apk": {
+    "v2_signature": "valid RSA-SHA256",
+    "content_digest": "valid",
+    "certificate_sha256": "0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207",
+    "central_directory": 3184532,
+    "signing_block_offset": 3182480,
+    "file": "Super-Wiss-Odyssey-3.0.apk",
+    "bytes": 3185462,
+    "sha256": "a4f3f9fdeb793a0272c4bf4ebfe93c42c1fd1b32d4e25824beff80e402aca226",
+    "zip_crc": "valid",
+    "v1_entry_digests": "valid; X-Android-APK-Signed: 2 present",
+    "dex_checksums": "valid",
+    "aligned_stored_entries": [
+      "resources.arsc"
+    ],
+    "tamper_rejections": [
+      "classes.dex",
+      "assets/game.html",
+      "resources.arsc"
+    ]
+  },
+  "package": {
+    "application_id": "com.superwiss.game.playtest",
+    "version_code": 30,
+    "version_name": "3.0.0-playtest",
+    "min_sdk": 26,
+    "target_sdk": 36,
+    "orientation": "sensorLandscape",
+    "android_permissions": [],
+    "native_libraries": [],
+    "same_certificate_as_v2": true
+  },
+  "build_route": {
+    "executed": "Apktool/AAPT2/smali plus public QA signing",
+    "tool_version": "v3.0.3-22-57690eee-SNAPSHOT",
+    "artifact": 10662729818,
+    "source_commit": "57690eee61e394e1987c09981bd36ff171e73d8d",
+    "android_studio_gradle": "included source; NOT executed",
+    "official_apksigner": "NOT executed",
+    "android_device_or_emulator": "NOT executed",
+    "aab": "NOT generated"
+  },
+  "verification": {
+    "core_passed": 124,
+    "browser_passed": 67,
+    "authoring_passed": 7,
+    "campaign_worlds_completed_by_ordinary_input_pilots": 15,
+    "zip_crc": true,
+    "v1_jarsigner": true,
+    "independent_v2_verifier": true,
+    "decoded_apk": true,
+    "decoded_game_matches_dist_and_android_assets": true,
+    "v2_certificate_matches": true,
+    "external_network_in_browser_tests": false,
+    "test_observation_api_in_production": false
+  },
+  "content": {
+    "maps": 15,
+    "map_length_multiplier_vs_v2": 5,
+    "map_columns_range": [
+      860,
+      1420
+    ],
+    "heroes": 8,
+    "active_hero_skills": 16,
+    "pets": 7,
+    "super_rare_pets": 2,
+    "enemy_types": 13,
+    "powerups": 14,
+    "registered_images": 78,
+    "sfx_files": 27,
+    "music_loops": 5,
+    "art_animation": "single-pose character/enemy/pet art plus procedural motion; renderer supports multi-frame replacements"
+  },
+  "bundle_sha256": "5e863d4e79502a2f351ce52c01ffe3264f3866ea39415ecc4f0f69e2bf3aebd0",
+  "limitations": [
+    "No native Android installation/update/runtime tests",
+    "No real WebView persistence test",
+    "No physical-device performance, audio, touch or gamepad test",
+    "No Gradle/Android Studio Java compilation",
+    "No Play Console submission/review",
+    "Offline only; previous online backend not upgraded",
+    "No production signing identity"
+  ]
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "key": "hero/wissem",
+    "frames": 14,
+    "transparentPixels": 160012,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/kossay",
+    "frames": 14,
+    "transparentPixels": 198174,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/yakine",
+    "frames": 14,
+    "transparentPixels": 128768,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/taky",
+    "frames": 14,
+    "transparentPixels": 181646,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/garsi",
+    "frames": 14,
+    "transparentPixels": 144996,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/tounsi",
+    "frames": 14,
+    "transparentPixels": 174662,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/youssef",
+    "frames": 14,
+    "transparentPixels": 169439,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "hero/loey",
+    "frames": 14,
+    "transparentPixels": 197557,
+    "totalPixels": 286720,
+    "uniqueFrames": 10
+  },
+  {
+    "key": "enemy/slime",
+    "frames": 8,
+    "transparentPixels": 76837,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/beetle",
+    "frames": 8,
+    "transparentPixels": 57551,
+    "totalPixels": 100352,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "enemy/bat",
+    "frames": 8,
+    "transparentPixels": 74001,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/crab",
+    "frames": 8,
+    "transparentPixels": 67671,
+    "totalPixels": 100352,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "enemy/sentry",
+    "frames": 8,
+    "transparentPixels": 46924,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/spiker",
+    "frames": 8,
+    "transparentPixels": 56506,
+    "totalPixels": 100352,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "enemy/imp",
+    "frames": 8,
+    "transparentPixels": 50998,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/ninja",
+    "frames": 8,
+    "transparentPixels": 68394,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/wisp",
+    "frames": 8,
+    "transparentPixels": 48481,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/maw",
+    "frames": 8,
+    "transparentPixels": 60026,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/golem",
+    "frames": 8,
+    "transparentPixels": 33964,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/drone",
+    "frames": 8,
+    "transparentPixels": 72533,
+    "totalPixels": 100352,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "enemy/hopper",
+    "frames": 8,
+    "transparentPixels": 74060,
+    "totalPixels": 100352,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "pet/wolf",
+    "frames": 8,
+    "transparentPixels": 134686,
+    "totalPixels": 163840,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "pet/eagle",
+    "frames": 8,
+    "transparentPixels": 131206,
+    "totalPixels": 163840,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "pet/mole",
+    "frames": 8,
+    "transparentPixels": 139453,
+    "totalPixels": 163840,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "pet/fox",
+    "frames": 8,
+    "transparentPixels": 126815,
+    "totalPixels": 163840,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "pet/turtle",
+    "frames": 8,
+    "transparentPixels": 123723,
+    "totalPixels": 163840,
+    "uniqueFrames": 8
+  },
+  {
+    "key": "pet/dragon",
+    "frames": 8,
+    "transparentPixels": 105207,
+    "totalPixels": 163840,
+    "uniqueFrames": 5
+  },
+  {
+    "key": "pet/orca",
+    "frames": 8,
+    "transparentPixels": 112276,
+    "totalPixels": 163840,
+    "uniqueFrames": 5
+  }
+]

@@ -1,0 +1,10 @@
+gravity_gauntlet.png
+twin_fang_dagger.png
+orbit_crescent_staff.png
+shadow_knife.png
+stonebreaker_hammer.png
+wind_scimitar.png
+clockwork_knuckle.png
+sky_bow.png
+sun_lance.png
+frost_staff.png

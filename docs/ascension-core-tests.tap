@@ -1,0 +1,930 @@
+
+> super-wiss-odyssey@1.1.0 test
+> node scripts/compile-content.mjs && node --test tests/nightfall.test.mjs tests/nearby.test.mjs tests/ascension.test.mjs tests/accounts.test.mjs
+
+Content compiled.
+TAP version 13
+# (node:5312) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: account service: real HTTP, SQLite, password hashing, friends and lifecycle
+    # Subtest: health and explicit CORS allowlist
+    ok 1 - health and explicit CORS allowlist
+      ---
+      duration_ms: 58.226703
+      type: 'test'
+      ...
+    # Subtest: signup requires long password and rules acceptance
+    ok 2 - signup requires long password and rules acceptance
+      ---
+      duration_ms: 17.577836
+      type: 'test'
+      ...
+    # Subtest: two real accounts and one-time recovery codes
+    ok 3 - two real accounts and one-time recovery codes
+      ---
+      duration_ms: 337.831307
+      type: 'test'
+      ...
+    # Subtest: database never stores plaintext password, bearer token or recovery code
+    ok 4 - database never stores plaintext password, bearer token or recovery code
+      ---
+      duration_ms: 0.780304
+      type: 'test'
+      ...
+    # Subtest: wrong-password response and duplicate username
+    ok 5 - wrong-password response and duplicate username
+      ---
+      duration_ms: 150.183398
+      type: 'test'
+      ...
+    # Subtest: real login rotates opaque bearer session and returns no password hash
+    ok 6 - real login rotates opaque bearer session and returns no password hash
+      ---
+      duration_ms: 233.232823
+      type: 'test'
+      ...
+    # Subtest: profile has safe built-in cosmetics and strips markup
+    ok 7 - profile has safe built-in cosmetics and strips markup
+      ---
+      duration_ms: 5.635816
+      type: 'test'
+      ...
+    # Subtest: friends only connect after recipient consent
+    ok 8 - friends only connect after recipient consent
+      ---
+      duration_ms: 25.728593
+      type: 'test'
+      ...
+    # Subtest: a report is persisted for operator review, not fabricated moderation
+    ok 9 - a report is persisted for operator review, not fabricated moderation
+      ---
+      duration_ms: 4.978608
+      type: 'test'
+      ...
+    # Subtest: blocking removes friendship and forbids renewed requests
+    ok 10 - blocking removes friendship and forbids renewed requests
+      ---
+      duration_ms: 12.167322
+      type: 'test'
+      ...
+    # Subtest: logout invalidates token immediately
+    ok 11 - logout invalidates token immediately
+      ---
+      duration_ms: 5.569835
+      type: 'test'
+      ...
+    # Subtest: recovery rotates recovery code and invalidates previous sessions
+    ok 12 - recovery rotates recovery code and invalidates previous sessions
+      ---
+      duration_ms: 150.260465
+      type: 'test'
+      ...
+    # Subtest: delete requires reauthentication, cascades records and anonymizes safety report
+    ok 13 - delete requires reauthentication, cascades records and anonymizes safety report
+      ---
+      duration_ms: 213.168722
+      type: 'test'
+      ...
+    # Subtest: public deletion page exists with working endpoint form
+    ok 14 - public deletion page exists with working endpoint form
+      ---
+      duration_ms: 2.394175
+      type: 'test'
+      ...
+    # Subtest: untrusted JSON and oversized payload rejected
+    ok 15 - untrusted JSON and oversized payload rejected
+      ---
+      duration_ms: 8.730879
+      type: 'test'
+      ...
+    1..15
+ok 1 - account service: real HTTP, SQLite, password hashing, friends and lifecycle
+  ---
+  duration_ms: 1266.943826
+  type: 'test'
+  ...
+# Subtest: HTTPS origin validation rejects paths, credentials, queries and cleartext
+ok 2 - HTTPS origin validation rejects paths, credentials, queries and cleartext
+  ---
+  duration_ms: 0.539096
+  type: 'test'
+  ...
+# Subtest: rate limiter returns 429 after bounded failed-login attempts
+ok 3 - rate limiter returns 429 after bounded failed-login attempts
+  ---
+  duration_ms: 1072.638296
+  type: 'test'
+  ...
+# Subtest: account client sanitizes server-controlled profile markup and rejects injected identity fields
+ok 4 - account client sanitizes server-controlled profile markup and rejects injected identity fields
+  ---
+  duration_ms: 0.928328
+  type: 'test'
+  ...
+# Subtest: public version 1.1.0, ten heroes, seven pets plus two fusion results
+ok 5 - public version 1.1.0, ten heroes, seven pets plus two fusion results
+  ---
+  duration_ms: 2.04521
+  type: 'test'
+  ...
+# Subtest: fifteen extended worlds use supplied tiled environments, no fake extra map count
+ok 6 - fifteen extended worlds use supplied tiled environments, no fake extra map count
+  ---
+  duration_ms: 25.799291
+  type: 'test'
+  ...
+# Subtest: license attribution exists; unidentified icon directory not bundled
+ok 7 - license attribution exists; unidentified icon directory not bundled
+  ---
+  duration_ms: 0.864357
+  type: 'test'
+  ...
+# Subtest: Fang Wolf: inactive, resource cost, charge budget, true expiry
+ok 8 - Fang Wolf: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 64.406398
+  type: 'test'
+  ...
+# Subtest: Sky Eagle: inactive, resource cost, charge budget, true expiry
+ok 9 - Sky Eagle: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 89.943409
+  type: 'test'
+  ...
+# Subtest: Mole Digger: inactive, resource cost, charge budget, true expiry
+ok 10 - Mole Digger: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 21.982868
+  type: 'test'
+  ...
+# Subtest: Ember Fox: inactive, resource cost, charge budget, true expiry
+ok 11 - Ember Fox: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 13.167006
+  type: 'test'
+  ...
+# Subtest: Stone Turtle: inactive, resource cost, charge budget, true expiry
+ok 12 - Stone Turtle: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 20.243651
+  type: 'test'
+  ...
+# Subtest: Astra Dragon: inactive, resource cost, charge budget, true expiry
+ok 13 - Astra Dragon: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 21.902216
+  type: 'test'
+  ...
+# Subtest: Orca Prince: inactive, resource cost, charge budget, true expiry
+ok 14 - Orca Prince: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 22.365899
+  type: 'test'
+  ...
+# Subtest: Sky Wolf: inactive, resource cost, charge budget, true expiry
+ok 15 - Sky Wolf: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 15.301884
+  type: 'test'
+  ...
+# Subtest: Emberguard: inactive, resource cost, charge budget, true expiry
+ok 16 - Emberguard: inactive, resource cost, charge budget, true expiry
+  ---
+  duration_ms: 7.223744
+  type: 'test'
+  ...
+# Subtest: low soul, exhausted calls, PvP, death and cooldown deny summons without spending
+ok 17 - low soul, exhausted calls, PvP, death and cooldown deny summons without spending
+  ---
+  duration_ms: 5.267944
+  type: 'test'
+  ...
+# Subtest: inactive wolf never attacks; active wolf deals damage and stops after expiry
+ok 18 - inactive wolf never attacks; active wolf deals damage and stops after expiry
+  ---
+  duration_ms: 10.261413
+  type: 'test'
+  ...
+# Subtest: turtle provides exactly one guard during each limited summon
+ok 19 - turtle provides exactly one guard during each limited summon
+  ---
+  duration_ms: 1.513801
+  type: 'test'
+  ...
+# Subtest: dragon abilities require summon and cannot outlive its ten-second window
+ok 20 - dragon abilities require summon and cannot outlive its ten-second window
+  ---
+  duration_ms: 112.211834
+  type: 'test'
+  ...
+# Subtest: Orca clears ordinary enemies but not bosses; water support expires with summon
+ok 21 - Orca clears ordinary enemies but not bosses; water support expires with summon
+  ---
+  duration_ms: 80.9412
+  type: 'test'
+  ...
+# Subtest: endless world changes preserve summon lifetime, spent calls and cooldown
+ok 22 - endless world changes preserve summon lifetime, spent calls and cooldown
+  ---
+  duration_ms: 9.141171
+  type: 'test'
+  ...
+# Subtest: wall contact enables slide then wall jump away from the wall
+ok 23 - wall contact enables slide then wall jump away from the wall
+  ---
+  duration_ms: 2.88195
+  type: 'test'
+  ...
+# Subtest: boss stagger creates a recovery window and does not stunlock
+ok 24 - boss stagger creates a recovery window and does not stunlock
+  ---
+  duration_ms: 1.497614
+  type: 'test'
+  ...
+# Subtest: four independent presets and bounded geometry at phone and tablet sizes
+ok 25 - four independent presets and bounded geometry at phone and tablet sizes
+  ---
+  duration_ms: 1.581961
+  type: 'test'
+  ...
+# Subtest: control sanitizer rejects nonfinite values and clamps offscreen positions
+ok 26 - control sanitizer rejects nonfinite values and clamps offscreen positions
+  ---
+  duration_ms: 0.543096
+  type: 'test'
+  ...
+# Subtest: v4 save import keeps earned gold, heroes, pets and adds controls/loadouts
+ok 27 - v4 save import keeps earned gold, heroes, pets and adds controls/loadouts
+  ---
+  duration_ms: 18.96095
+  type: 'test'
+  ...
+# Subtest: four edited presets survive actual save serialization and reload
+ok 28 - four edited presets survive actual save serialization and reload
+  ---
+  duration_ms: 1.428697
+  type: 'test'
+  ...
+# Subtest: starter/frost are free; outfit purchase spends once and cannot overdraw
+ok 29 - starter/frost are free; outfit purchase spends once and cannot overdraw
+  ---
+  duration_ms: 0.423781
+  type: 'test'
+  ...
+# Subtest: skill books have a fixed cost; equip prevents duplicate skills and unknown IDs
+ok 30 - skill books have a fixed cost; equip prevents duplicate skills and unknown IDs
+  ---
+  duration_ms: 3.207574
+  type: 'test'
+  ...
+# Subtest: Gravity Storm: deterministic unlock, fixed focus budget and cooldown
+ok 31 - Gravity Storm: deterministic unlock, fixed focus budget and cooldown
+  ---
+  duration_ms: 1.888233
+  type: 'test'
+  ...
+# Subtest: Thunder Fang: deterministic unlock, fixed focus budget and cooldown
+ok 32 - Thunder Fang: deterministic unlock, fixed focus budget and cooldown
+  ---
+  duration_ms: 1.273485
+  type: 'test'
+  ...
+# Subtest: Eclipse Bloom: deterministic unlock, fixed focus budget and cooldown
+ok 33 - Eclipse Bloom: deterministic unlock, fixed focus budget and cooldown
+  ---
+  duration_ms: 1.276217
+  type: 'test'
+  ...
+# Subtest: pet fusion requires both rescued parents and keeps them intact
+ok 34 - pet fusion requires both rescued parents and keeps them intact
+  ---
+  duration_ms: 3.182485
+  type: 'test'
+  ...
+# Subtest: ranking records are idempotent and split open vs standard; practice never ranks
+ok 35 - ranking records are idempotent and split open vs standard; practice never ranks
+  ---
+  duration_ms: 3.286317
+  type: 'test'
+  ...
+# Subtest: rank order is explicit: time then hits then score; endless highest score
+ok 36 - rank order is explicit: time then hits then score; endless highest score
+  ---
+  duration_ms: 0.200212
+  type: 'test'
+  ...
+# Subtest: stored ranking markup and arbitrary assets are sanitized
+ok 37 - stored ranking markup and arbitrary assets are sanitized
+  ---
+  duration_ms: 0.913602
+  type: 'test'
+  ...
+# Subtest: camera experiment practice cannot award coins, skill mastery, or records
+ok 38 - camera experiment practice cannot award coins, skill mastery, or records
+  ---
+  duration_ms: 1.325472
+  type: 'test'
+  ...
+# Subtest: six-digit codes preserve leading zeros and reject malformed input
+ok 39 - six-digit codes preserve leading zeros and reject malformed input
+  ---
+  duration_ms: 6.863314
+  type: 'test'
+  ...
+# Subtest: wrong-code connection cannot receive roster, send ready, or start gameplay
+ok 40 - wrong-code connection cannot receive roster, send ready, or start gameplay
+  ---
+  duration_ms: 2.303408
+  type: 'test'
+  ...
+# Subtest: three incorrect code attempts disconnect the unadmitted peer
+ok 41 - three incorrect code attempts disconnect the unadmitted peer
+  ---
+  duration_ms: 0.380763
+  type: 'test'
+  ...
+# Subtest: two clients admit by code, require ready, then receive real shared raid snapshots
+ok 42 - two clients admit by code, require ready, then receive real shared raid snapshots
+  ---
+  duration_ms: 34.555519
+  type: 'test'
+  ...
+# Subtest: 2-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+ok 43 - 2-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+  ---
+  duration_ms: 8.260176
+  type: 'test'
+  ...
+# Subtest: 3-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+ok 44 - 3-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+  ---
+  duration_ms: 5.474928
+  type: 'test'
+  ...
+# Subtest: 4-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+ok 45 - 4-player shared raid: scaled boss, bounded snapshot, correct avatars and pets
+  ---
+  duration_ms: 5.532761
+  type: 'test'
+  ...
+# Subtest: shared raid AI advances once per tick, not once per player
+ok 46 - shared raid AI advances once per tick, not once per player
+  ---
+  duration_ms: 16.316056
+  type: 'test'
+  ...
+# Subtest: hold-to-revive consumes one shared revive after three seconds
+ok 47 - hold-to-revive consumes one shared revive after three seconds
+  ---
+  duration_ms: 11.912481
+  type: 'test'
+  ...
+# Subtest: released revive input resets progress instead of reviving at a distance
+ok 48 - released revive input resets progress instead of reviving at a distance
+  ---
+  duration_ms: 2.468812
+  type: 'test'
+  ...
+# Subtest: team wipe and shared victory produce team results, never an invented player winner
+ok 49 - team wipe and shared victory produce team results, never an invented player winner
+  ---
+  duration_ms: 4.020225
+  type: 'test'
+  ...
+# Subtest: malformed snapshot members and null profiles are safely rejected/sanitized
+ok 50 - malformed snapshot members and null profiles are safely rejected/sanitized
+  ---
+  duration_ms: 2.731746
+  type: 'test'
+  ...
+# Subtest: native protocol, room clipboard and 64KiB framing are in the compiled-host sources
+ok 51 - native protocol, room clipboard and 64KiB framing are in the compiled-host sources
+  ---
+  duration_ms: 0.466606
+  type: 'test'
+  ...
+# Subtest: remote result UI rejects nonnumeric revive and damage fields
+ok 52 - remote result UI rejects nonnumeric revive and damage fields
+  ---
+  duration_ms: 3.47134
+  type: 'test'
+  ...
+# Subtest: 2v2 requires exactly four players
+ok 53 - 2v2 requires exactly four players
+  ---
+  duration_ms: 14.178916
+  type: 'test'
+  ...
+# Subtest: duplicate or injected player identifiers rejected
+ok 54 - duplicate or injected player identifiers rejected
+  ---
+  duration_ms: 0.510948
+  type: 'test'
+  ...
+# Subtest: input sanitizer rejects positions, scores and unbounded directions
+ok 55 - input sanitizer rejects positions, scores and unbounded directions
+  ---
+  duration_ms: 0.469381
+  type: 'test'
+  ...
+# Subtest: host rejects duplicate, stale and implausible input sequence
+ok 56 - host rejects duplicate, stale and implausible input sequence
+  ---
+  duration_ms: 3.862634
+  type: 'test'
+  ...
+# Subtest: countdown freezes movement; stale held input releases
+ok 57 - countdown freezes movement; stale held input releases
+  ---
+  duration_ms: 16.515382
+  type: 'test'
+  ...
+# Subtest: FFA uses host-owned melee hits and credits a knockout once
+ok 58 - FFA uses host-owned melee hits and credits a knockout once
+  ---
+  duration_ms: 23.312583
+  type: 'test'
+  ...
+# Subtest: 2v2 never damages a teammate
+ok 59 - 2v2 never damages a teammate
+  ---
+  duration_ms: 18.668159
+  type: 'test'
+  ...
+# Subtest: knives can hit opponents and spent ammunition is limited
+ok 60 - knives can hit opponents and spent ammunition is limited
+  ---
+  duration_ms: 8.732968
+  type: 'test'
+  ...
+# Subtest: three-minute score match resolves a real tie
+ok 61 - three-minute score match resolves a real tie
+  ---
+  duration_ms: 8.185607
+  type: 'test'
+  ...
+# Subtest: solo together has independent boss health on each client
+ok 62 - solo together has independent boss health on each client
+  ---
+  duration_ms: 6.266755
+  type: 'test'
+  ...
+# Subtest: snapshot produces renderer-ready actual peers and rejects unknown recipients
+ok 63 - snapshot produces renderer-ready actual peers and rejects unknown recipients
+  ---
+  duration_ms: 7.927323
+  type: 'test'
+  ...
+# Subtest: four independent session instances handshake, ready, start and synchronize
+ok 64 - four independent session instances handshake, ready, start and synchronize
+  ---
+  duration_ms: 73.42013
+  type: 'test'
+  ...
+# Subtest: malformed messages, unknown transport peers and wrong protocol rejected
+ok 65 - malformed messages, unknown transport peers and wrong protocol rejected
+  ---
+  duration_ms: 0.505998
+  type: 'test'
+  ...
+# Subtest: disconnect cancels competitive play instead of inventing a winner
+ok 66 - disconnect cancels competitive play instead of inventing a winner
+  ---
+  duration_ms: 2.465937
+  type: 'test'
+  ...
+# Subtest: rematch rotates session ID and rejects old input packets
+ok 67 - rematch rotates session ID and rejects old input packets
+  ---
+  duration_ms: 3.73437
+  type: 'test'
+  ...
+# Subtest: malformed remote snapshots cannot allocate excessive hearts or smuggle profile markup
+ok 68 - malformed remote snapshots cannot allocate excessive hearts or smuggle profile markup
+  ---
+  duration_ms: 1.587778
+  type: 'test'
+  ...
+# Subtest: World 1: long route, 3 vertical seal chambers, final arena and boss
+ok 69 - World 1: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 17.8612
+  type: 'test'
+  ...
+# Subtest: World 2: long route, 3 vertical seal chambers, final arena and boss
+ok 70 - World 2: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.423869
+  type: 'test'
+  ...
+# Subtest: World 3: long route, 3 vertical seal chambers, final arena and boss
+ok 71 - World 3: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 7.747251
+  type: 'test'
+  ...
+# Subtest: World 4: long route, 3 vertical seal chambers, final arena and boss
+ok 72 - World 4: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.137247
+  type: 'test'
+  ...
+# Subtest: World 5: long route, 3 vertical seal chambers, final arena and boss
+ok 73 - World 5: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 7.035275
+  type: 'test'
+  ...
+# Subtest: World 6: long route, 3 vertical seal chambers, final arena and boss
+ok 74 - World 6: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 1.670621
+  type: 'test'
+  ...
+# Subtest: World 7: long route, 3 vertical seal chambers, final arena and boss
+ok 75 - World 7: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 5.817935
+  type: 'test'
+  ...
+# Subtest: World 8: long route, 3 vertical seal chambers, final arena and boss
+ok 76 - World 8: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 17.044839
+  type: 'test'
+  ...
+# Subtest: World 9: long route, 3 vertical seal chambers, final arena and boss
+ok 77 - World 9: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.708397
+  type: 'test'
+  ...
+# Subtest: World 10: long route, 3 vertical seal chambers, final arena and boss
+ok 78 - World 10: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.006313
+  type: 'test'
+  ...
+# Subtest: World 11: long route, 3 vertical seal chambers, final arena and boss
+ok 79 - World 11: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.072765
+  type: 'test'
+  ...
+# Subtest: World 12: long route, 3 vertical seal chambers, final arena and boss
+ok 80 - World 12: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.074331
+  type: 'test'
+  ...
+# Subtest: World 13: long route, 3 vertical seal chambers, final arena and boss
+ok 81 - World 13: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 3.737637
+  type: 'test'
+  ...
+# Subtest: World 14: long route, 3 vertical seal chambers, final arena and boss
+ok 82 - World 14: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.138815
+  type: 'test'
+  ...
+# Subtest: World 15: long route, 3 vertical seal chambers, final arena and boss
+ok 83 - World 15: long route, 3 vertical seal chambers, final arena and boss
+  ---
+  duration_ms: 2.707094
+  type: 'test'
+  ...
+# Subtest: Wissem: skill 1 costs focus and cannot spam
+ok 84 - Wissem: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.872028
+  type: 'test'
+  ...
+# Subtest: Wissem: skill 2 costs focus and cannot spam
+ok 85 - Wissem: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 2.876158
+  type: 'test'
+  ...
+# Subtest: Kossay: skill 1 costs focus and cannot spam
+ok 86 - Kossay: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.156266
+  type: 'test'
+  ...
+# Subtest: Kossay: skill 2 costs focus and cannot spam
+ok 87 - Kossay: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.210034
+  type: 'test'
+  ...
+# Subtest: Yakine: skill 1 costs focus and cannot spam
+ok 88 - Yakine: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.820558
+  type: 'test'
+  ...
+# Subtest: Yakine: skill 2 costs focus and cannot spam
+ok 89 - Yakine: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.513785
+  type: 'test'
+  ...
+# Subtest: Taky: skill 1 costs focus and cannot spam
+ok 90 - Taky: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 2.047959
+  type: 'test'
+  ...
+# Subtest: Taky: skill 2 costs focus and cannot spam
+ok 91 - Taky: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.367177
+  type: 'test'
+  ...
+# Subtest: Garsi: skill 1 costs focus and cannot spam
+ok 92 - Garsi: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.464204
+  type: 'test'
+  ...
+# Subtest: Garsi: skill 2 costs focus and cannot spam
+ok 93 - Garsi: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.981252
+  type: 'test'
+  ...
+# Subtest: Tounsi: skill 1 costs focus and cannot spam
+ok 94 - Tounsi: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 0.944262
+  type: 'test'
+  ...
+# Subtest: Tounsi: skill 2 costs focus and cannot spam
+ok 95 - Tounsi: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.479678
+  type: 'test'
+  ...
+# Subtest: Youssef: skill 1 costs focus and cannot spam
+ok 96 - Youssef: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.078697
+  type: 'test'
+  ...
+# Subtest: Youssef: skill 2 costs focus and cannot spam
+ok 97 - Youssef: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 0.941426
+  type: 'test'
+  ...
+# Subtest: Loey: skill 1 costs focus and cannot spam
+ok 98 - Loey: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 4.736971
+  type: 'test'
+  ...
+# Subtest: Loey: skill 2 costs focus and cannot spam
+ok 99 - Loey: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.530371
+  type: 'test'
+  ...
+# Subtest: Rayan: skill 1 costs focus and cannot spam
+ok 100 - Rayan: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.955724
+  type: 'test'
+  ...
+# Subtest: Rayan: skill 2 costs focus and cannot spam
+ok 101 - Rayan: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.407468
+  type: 'test'
+  ...
+# Subtest: Mira: skill 1 costs focus and cannot spam
+ok 102 - Mira: skill 1 costs focus and cannot spam
+  ---
+  duration_ms: 1.578979
+  type: 'test'
+  ...
+# Subtest: Mira: skill 2 costs focus and cannot spam
+ok 103 - Mira: skill 2 costs focus and cannot spam
+  ---
+  duration_ms: 1.264763
+  type: 'test'
+  ...
+# Subtest: analog is dead-zoned, proportional, bounded, rejects NaN
+ok 104 - analog is dead-zoned, proportional, bounded, rejects NaN
+  ---
+  duration_ms: 0.491512
+  type: 'test'
+  ...
+# Subtest: analog provides slower walking than full deflection
+ok 105 - analog provides slower walking than full deflection
+  ---
+  duration_ms: 26.915816
+  type: 'test'
+  ...
+# Subtest: Nightmare is default; Inferno has one attempt and shorter telegraphs
+ok 106 - Nightmare is default; Inferno has one attempt and shorter telegraphs
+  ---
+  duration_ms: 2.071297
+  type: 'test'
+  ...
+# Subtest: knife ammunition has a hard cap on throws and cannot go negative
+ok 107 - knife ammunition has a hard cap on throws and cannot go negative
+  ---
+  duration_ms: 1.63783
+  type: 'test'
+  ...
+# Subtest: dodge costs 25 stamina, blocks damage then expires
+ok 108 - dodge costs 25 stamina, blocks damage then expires
+  ---
+  duration_ms: 2.923459
+  type: 'test'
+  ...
+# Subtest: melee has directional hitboxes, chain and hit-once budget
+ok 109 - melee has directional hitboxes, chain and hit-once budget
+  ---
+  duration_ms: 4.874673
+  type: 'test'
+  ...
+# Subtest: summons require soul, have only two charges, and expire after 18s
+ok 110 - summons require soul, have only two charges, and expire after 18s
+  ---
+  duration_ms: 234.466036
+  type: 'test'
+  ...
+# Subtest: warden summon attacks in the live simulation
+ok 111 - warden summon attacks in the live simulation
+  ---
+  duration_ms: 30.478614
+  type: 'test'
+  ...
+# Subtest: ravens summon attacks in the live simulation
+ok 112 - ravens summon attacks in the live simulation
+  ---
+  duration_ms: 12.480731
+  type: 'test'
+  ...
+# Subtest: sentinel summon attacks in the live simulation
+ok 113 - sentinel summon attacks in the live simulation
+  ---
+  duration_ms: 11.791626
+  type: 'test'
+  ...
+# Subtest: pet ultimates spend soul only inside an active limited summon
+ok 114 - pet ultimates spend soul only inside an active limited summon
+  ---
+  duration_ms: 2.106602
+  type: 'test'
+  ...
+# Subtest: Dragon Scales and Orca Flood cannot erase a boss
+ok 115 - Dragon Scales and Orca Flood cannot erase a boss
+  ---
+  duration_ms: 2.059346
+  type: 'test'
+  ...
+# Subtest: boss damage is capped and phase thresholds cannot be skipped
+ok 116 - boss damage is capped and phase thresholds cannot be skipped
+  ---
+  duration_ms: 1.244623
+  type: 'test'
+  ...
+# Subtest: Boss 1: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 117 - Boss 1: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 9.771022
+  type: 'test'
+  ...
+# Subtest: Boss 2: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 118 - Boss 2: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.139032
+  type: 'test'
+  ...
+# Subtest: Boss 3: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 119 - Boss 3: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 11.134564
+  type: 'test'
+  ...
+# Subtest: Boss 4: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 120 - Boss 4: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 6.074624
+  type: 'test'
+  ...
+# Subtest: Boss 5: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 121 - Boss 5: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 6.491943
+  type: 'test'
+  ...
+# Subtest: Boss 6: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 122 - Boss 6: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 3.942546
+  type: 'test'
+  ...
+# Subtest: Boss 7: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 123 - Boss 7: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 7.386477
+  type: 'test'
+  ...
+# Subtest: Boss 8: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 124 - Boss 8: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 3.983466
+  type: 'test'
+  ...
+# Subtest: Boss 9: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 125 - Boss 9: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 3.723388
+  type: 'test'
+  ...
+# Subtest: Boss 10: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 126 - Boss 10: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 4.785789
+  type: 'test'
+  ...
+# Subtest: Boss 11: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 127 - Boss 11: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.098943
+  type: 'test'
+  ...
+# Subtest: Boss 12: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 128 - Boss 12: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 5.861776
+  type: 'test'
+  ...
+# Subtest: Boss 13: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 129 - Boss 13: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 2.805522
+  type: 'test'
+  ...
+# Subtest: Boss 14: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 130 - Boss 14: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 3.192088
+  type: 'test'
+  ...
+# Subtest: Boss 15: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+ok 131 - Boss 15: intro, telegraph, hazards, 3 phases, victory (isolated damage fixture)
+  ---
+  duration_ms: 2.645686
+  type: 'test'
+  ...
+# Subtest: active arena keeps player inside and gates reject blink bypass
+ok 132 - active arena keeps player inside and gates reject blink bypass
+  ---
+  duration_ms: 1.709935
+  type: 'test'
+  ...
+# Subtest: seal requires actual fragment collection AND defeating its wardens
+ok 133 - seal requires actual fragment collection AND defeating its wardens
+  ---
+  duration_ms: 13.590532
+  type: 'test'
+  ...
+# Subtest: Endless preserves spent charges and rare timers; new boss and seals reset
+ok 134 - Endless preserves spent charges and rare timers; new boss and seals reset
+  ---
+  duration_ms: 2.065506
+  type: 'test'
+  ...
+# Subtest: v3 migration preserves owned pets/access, resets new boss medals and records
+ok 135 - v3 migration preserves owned pets/access, resets new boss medals and records
+  ---
+  duration_ms: 3.764636
+  type: 'test'
+  ...
+# Subtest: boss records are split by tier and pet; practice/local grant no currency
+ok 136 - boss records are split by tier and pet; practice/local grant no currency
+  ---
+  duration_ms: 2.306062
+  type: 'test'
+  ...
+# Subtest: profile sanitization strips markup and forbids arbitrary asset identifiers
+ok 137 - profile sanitization strips markup and forbids arbitrary asset identifiers
+  ---
+  duration_ms: 0.680665
+  type: 'test'
+  ...
+1..137
+# tests 152
+# suites 0
+# pass 152
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2576.103002

@@ -1,0 +1,18 @@
+{
+  "passed": 9,
+  "checks": [
+    "11 Android XML files parse (not AAPT/Gradle compilation)",
+    "assets/branding/logo.png valid RGBA (640, 640)",
+    "app/src/main/res/drawable-nodpi/brand_logo.png valid RGBA (384, 384)",
+    "app/src/main/res/drawable-nodpi/ic_wiss.png valid RGBA (432, 432)",
+    "app/src/main/res/drawable-nodpi/ic_wiss_mono.png valid RGBA (432, 432)",
+    "Foreground W alpha (>8) within 66dp safe circle at 4x: max radius 123.7px <=132px",
+    "Android shell <50KB, no embedded image data",
+    "QA/main JavaScript contains no test hook",
+    "271 actual source images copied byte-for-byte into Android asset output"
+  ],
+  "nativeCompile": false,
+  "nativeInstall": false,
+  "apk": null,
+  "aab": null
+}

@@ -1,0 +1,5 @@
+
+> super-wiss-odyssey@1.3.1 build
+> node scripts/bundle.mjs
+
+Bundled 15 maps, 321 present assets + 10 pending weapons; Android shell 12532 bytes; browser 19.95 MiB.

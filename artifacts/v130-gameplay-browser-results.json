@@ -1,0 +1,13 @@
+{
+  "results": [
+    "keyboard crouch changes collision height",
+    "standing restores collision height",
+    "active skills have no visible caption",
+    "first discovery safely pauses simulation",
+    "discovery persists once per save",
+    "repeat pickup does not interrupt",
+    "no runtime exceptions"
+  ],
+  "errors": [],
+  "fixture": "Two healing pickups spawned at player solely to test tutorial UI; no world completion claimed"
+}

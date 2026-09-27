@@ -1,0 +1,40 @@
+Keystore type: JKS
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: superwiss-qa
+Creation date: Sep 24, 2026
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Super Wiss QA ONLY, OU=Nonproduction, O=Super Wiss, C=TN
+Issuer: CN=Super Wiss QA ONLY, OU=Nonproduction, O=Super Wiss, C=TN
+Serial number: e4b9dd611d7eb688
+Valid from: Thu Sep 24 03:04:22 UTC 2026 until: Sun Sep 21 03:04:22 UTC 2036
+Certificate fingerprints:
+	 SHA1: 75:09:0E:F4:70:55:1C:1F:7D:64:22:4B:9F:F3:85:A2:01:8A:2F:03
+	 SHA256: 0C:96:2E:42:8F:1D:DA:DE:5D:38:E8:83:FD:A8:76:DC:FB:0F:29:04:D8:24:64:58:0F:61:7A:3E:79:0A:82:07
+Signature algorithm name: SHA384withRSA
+Subject Public Key Algorithm: 3072-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: BA 0A 0B 5C D0 94 88 B2   2F 55 A7 4E 8C EC 45 3C  ...\..../U.N..E<
+0010: 6A 09 12 3B                                        j..;
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore /mnt/data/Super-Wiss-Android/qa/super-wiss-qa.jks -destkeystore /mnt/data/Super-Wiss-Android/qa/super-wiss-qa.jks -deststoretype pkcs12".
