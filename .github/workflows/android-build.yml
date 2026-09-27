@@ -1,0 +1,129 @@
+name: Super Wiss Android - Debug and QA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['v*']
+    paths:
+      - 'game/**'
+      - 'assets/**'
+      - 'app/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '*.gradle'
+      - 'gradle/**'
+      - 'gradlew*'
+      - 'package.json'
+      - 'VERSION'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out this exact version
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set up Node.js 22
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Set up JDK 17
+        uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up compatible Android command-line tools
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407
+        with:
+          cmdline-tools-version: '12266719'
+          packages: 'platform-tools platforms;android-36 build-tools;35.0.0'
+      - name: Configure SDK and validate wrapper
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/sw-ci/logs" "$RUNNER_TEMP/sw-ci/packages"
+          : "${ANDROID_HOME:?Android SDK not configured}"
+          test -s "$ANDROID_HOME/platforms/android-36/android.jar"
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          chmod +x gradlew
+          sh scripts/prepare-gradle.sh 2>&1 | tee "$RUNNER_TEMP/sw-ci/logs/wrapper.log"
+          if [[ -f package-lock.json ]]; then npm ci; else
+            node --input-type=module -e 'import fs from "node:fs";const p=JSON.parse(fs.readFileSync("package.json"));if(Object.keys({...p.dependencies,...p.devDependencies,...p.optionalDependencies}).length)throw Error("Commit package-lock.json before adding dependencies");'
+          fi
+      - name: Validate source and build fresh web assets
+        run: |
+          set -euo pipefail
+          logs="$RUNNER_TEMP/sw-ci/logs"
+          npm run validate:weapon-art 2>&1 | tee "$logs/assets.log"
+          npm test 2>&1 | tee "$logs/tests.log"
+          npm run validate:maps 2>&1 | tee "$logs/maps.log"
+          rm -rf app/src/main/assets app/src/debug/assets
+          npm run build 2>&1 | tee "$logs/bundle.log"
+      - name: Compile debug APK, QA APK, QA AAB and run lint
+        run: |
+          set -euo pipefail
+          ./gradlew --no-daemon --console=plain --stacktrace \
+            clean :app:assembleDebug :app:assembleQa :app:bundleQa \
+            :app:lintDebug :app:lintQa \
+            2>&1 | tee "$RUNNER_TEMP/sw-ci/logs/gradle.log"
+      - name: Verify signatures and collect fresh outputs
+        run: |
+          set -euo pipefail
+          logs="$RUNNER_TEMP/sw-ci/logs"
+          packages="$RUNNER_TEMP/sw-ci/packages"
+          debug=app/build/outputs/apk/debug/app-debug.apk
+          qa=app/build/outputs/apk/qa/app-qa.apk
+          aab=app/build/outputs/bundle/qa/app-qa.aab
+          for file in "$debug" "$qa" "$aab"; do test -s "$file"; done
+          signer="$ANDROID_HOME/build-tools/35.0.0/apksigner"
+          "$signer" verify --verbose --print-certs "$debug" | tee "$logs/debug-signature.log"
+          "$signer" verify --verbose --print-certs "$qa" | tee "$logs/qa-signature.log"
+          grep -Fiq 'Signer #1 certificate SHA-256 digest: 0c962e428f1ddade5d38e883fda876dcfb0f2904d82464580f617a3e790a8207' "$logs/qa-signature.log"
+          jarsigner -J-Duser.language=en -J-Duser.country=US -verify "$aab" | tee "$logs/aab-signature.log"
+          grep -Fq 'jar verified.' "$logs/aab-signature.log"
+          keytool -J-Duser.language=en -printcert -jarfile "$aab" > "$logs/aab-certificate.log"
+          grep -Fq '0C:96:2E:42:8F:1D:DA:DE:5D:38:E8:83:FD:A8:76:DC:FB:0F:29:04:D8:24:64:58:0F:61:7A:3E:79:0A:82:07' "$logs/aab-certificate.log"
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$qa" > "$logs/qa-package.log"
+          grep -Fq "package: name='com.superwiss.game.playtest'" "$logs/qa-package.log"
+          cp "$debug" "$qa" "$aab" "$packages/"
+          {
+            printf 'Repository: %s\nCommit: %s\nRun: %s\n' "$GITHUB_REPOSITORY" "$GITHUB_SHA" "$GITHUB_RUN_ID"
+            printf 'Source version: '; cat VERSION
+            printf 'Built at: '; date -u '+%Y-%m-%dT%H:%M:%SZ'
+            echo 'QA key is PUBLIC and NONPRODUCTION. No production release was built.'
+            echo 'Compilation/signature/lint checks do not replace emulator or physical-device QA.'
+          } > "$packages/BUILD-INFO.txt"
+          (cd "$packages" && sha256sum app-debug.apk app-qa.apk app-qa.aab > SHA256SUMS.txt)
+          echo 'Download Super-Wiss-Android from this run. APKs are installable; the QA AAB is not directly installable and is not a production release.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload compiled packages
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Super-Wiss-Android-${{ github.run_number }}
+          path: ${{ runner.temp }}/sw-ci/packages/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Collect Android reports
+        if: ${{ always() }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/sw-ci/logs"
+          if [[ -d app/build/reports ]]; then cp -R app/build/reports "$RUNNER_TEMP/sw-ci/logs/android-reports"; fi
+      - name: Upload current-run evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Super-Wiss-build-evidence-${{ github.run_number }}
+          path: ${{ runner.temp }}/sw-ci/logs/
+          if-no-files-found: warn
+          retention-days: 14
