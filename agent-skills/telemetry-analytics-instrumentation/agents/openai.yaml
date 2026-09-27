@@ -1,0 +1,14 @@
+interface:
+  display_name: telemetry analytics instrumentation
+  short_description: Which events to track for funnel analysis, retention measurement,
+    and purchase-conversion diagnosis. Use when adding analytics instrumentation to
+    any new feature, especially onboarding, shop, or level-progression systems.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

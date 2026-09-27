@@ -38,4 +38,16 @@ npm run validate:maps
 
 Working game code: `game/`; metadata: `game/*.json`; source art: `assets/`; Android host: `app/src/main/java/`. Gradle preBuild regenerates the small shell and separate APK media; do not reintroduce giant HTML through native loadDataWithBaseURL. The standalone browser preview may embed media, but Android never loads that file.
 
-The requested Agent Skills could not be retrieved. This patch does not claim to implement or certify those unavailable standards.
+The requested Agent Skills were unavailable when this patch was implemented. Subsequently supplied packs are now stored in `agent-skills/`, and ten target mockups in `design/references/ui/`. Their inclusion does not certify compliance or implement the mockup layouts.
+
+## Repository use
+
+This snapshot contains ordinary project files at the root. No split-pack restore or bootstrap is required. Open `settings.gradle` in Android Studio. Older v1.0.0 source packs, where present, are historical and are not current build input.
+
+### Browser runtime previews
+
+These are browser renders, not Android device-test evidence.
+
+![Home](docs/reviews/1.3.1/home-after-1600.png)
+
+![Heroes](docs/reviews/1.3.1/heroes-after-960.png)

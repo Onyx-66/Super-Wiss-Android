@@ -1,0 +1,14 @@
+interface:
+  display_name: monetization shop design
+  short_description: Standards for designing an in-game shop, currency system, and
+    monetization structure that maximizes real-money revenue while staying fair and
+    avoiding predatory design flags. Use for any shop screen, currency, or IAP feature.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

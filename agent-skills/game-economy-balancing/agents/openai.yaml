@@ -1,0 +1,14 @@
+interface:
+  display_name: game economy balancing
+  short_description: Currency source/sink balancing, inflation control, and free-vs-paid
+    progression math. Use for any change to currency earn rates, prices, or new economy
+    features (new currency, new sink, new source).
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

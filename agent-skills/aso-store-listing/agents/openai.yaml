@@ -1,0 +1,14 @@
+interface:
+  display_name: aso store listing
+  short_description: 'App Store Optimization: icon, screenshots, description, and
+    keyword strategy for the Google Play Store listing. Use when preparing a store
+    listing, updating screenshots, or choosing an app name/icon.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

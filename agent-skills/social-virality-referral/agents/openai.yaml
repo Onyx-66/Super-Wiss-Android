@@ -1,0 +1,14 @@
+interface:
+  display_name: social virality referral
+  short_description: Share mechanics, referral rewards, and leaderboard design that
+    drive free/organic player acquisition. Use for any friend-invite feature, leaderboard,
+    or shareable-moment system.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

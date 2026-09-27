@@ -1,0 +1,15 @@
+interface:
+  display_name: pixel art page layout system
+  short_description: 'Complete pixel-art UI page-layout system: global shell (header,
+    currency, nav), border/panel component, color palette, typography, and per-page-type
+    layout rules, reverse-engineered from a reference fantasy-adventure game. Use
+    for building any new screen/page in any 2D pixel-art game to maintain visual consistency.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

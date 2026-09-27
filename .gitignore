@@ -22,3 +22,19 @@ data/
 .tools/
 artifacts/*-stdout.log
 artifacts/*-stderr.log
+
+# Private/local files. The QA test key is intentionally public.
+*.jks
+*.keystore
+*.pfx
+!qa/super-wiss-qa.jks
+.env.*
+!.env.example
+!server/.env.example
+**/credentials.json
+**/service-account*.json
+*.db
+dist/
+app/src/main/assets/
+.DS_Store
+Thumbs.db

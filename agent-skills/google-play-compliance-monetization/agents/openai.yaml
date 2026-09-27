@@ -1,0 +1,15 @@
+interface:
+  display_name: google play compliance monetization
+  short_description: Current Google Play Developer Policy requirements specifically
+    affecting monetized games with shops, currencies, or randomized items. Use before
+    submitting any build, and before implementing loot boxes, ads, or any purchase
+    flow.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

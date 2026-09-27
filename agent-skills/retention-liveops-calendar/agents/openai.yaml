@@ -1,0 +1,13 @@
+interface:
+  display_name: retention liveops calendar
+  short_description: Daily reward design, event cadence, and push-notification/re-engagement
+    strategy. Use for any daily login system, timed event, or notification feature.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

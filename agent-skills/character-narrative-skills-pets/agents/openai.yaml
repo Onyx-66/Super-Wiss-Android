@@ -1,0 +1,14 @@
+interface:
+  display_name: character narrative skills pets
+  short_description: Standards for character backstory writing, skill/ability design,
+    and companion/pet pairing systems that drive both narrative investment and monetization.
+    Use for any new playable character, skill tree, or pet/companion system.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

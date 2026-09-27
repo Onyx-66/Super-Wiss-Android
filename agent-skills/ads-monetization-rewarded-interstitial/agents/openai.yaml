@@ -1,0 +1,14 @@
+interface:
+  display_name: ads monetization rewarded interstitial
+  short_description: Standards for integrating rewarded video and interstitial ads
+    without hurting retention, and how ad monetization interacts with Google Play's
+    Ad Network Certification policy. Use for any ad placement or ad-network integration.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

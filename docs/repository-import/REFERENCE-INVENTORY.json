@@ -1,0 +1,400 @@
+{
+  "archive_sha256": "0d955c88c296542c6770ec642bfbd994761ec91e84b111b990207c5051e2f696",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 546,
+      "sha256": "252217d39db2067435305ffa4bdf7216af5c9208d0de45f3e15220f33d6937d3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3509,
+      "sha256": "4dcaa865e36fad761ba037e372e7d777349fc870557e2b658d7f9958e29df699"
+    },
+    {
+      "path": "VERSIONING.md",
+      "bytes": 361,
+      "sha256": "5916baf30d912aeec73d4103a85bcaa529703c9c3123a9111a7819d33930a527"
+    },
+    {
+      "path": "agent-skills/README.md",
+      "bytes": 264,
+      "sha256": "0b97c59613c5b49c60de186fe16b71917617a877f494bcc65092ac79ab55cf9e"
+    },
+    {
+      "path": "agent-skills/action-combat-movement-feel/SKILL.md",
+      "bytes": 3979,
+      "sha256": "9f6a4de029425078b549889486591b4983aaaec9c681c7b8a8454186c3d16b5e"
+    },
+    {
+      "path": "agent-skills/action-combat-movement-feel/agents/openai.yaml",
+      "bytes": 442,
+      "sha256": "8f37b2f954ad9832959693df30023e02ea40672182210721dcc20531a50af4b6"
+    },
+    {
+      "path": "agent-skills/action-combat-movement-feel/assets/icon.svg",
+      "bytes": 1738,
+      "sha256": "8936b24f674a1250d999e2c2b5901374fb4240426f32bd1ae340c352a90d617d"
+    },
+    {
+      "path": "agent-skills/ads-monetization-rewarded-interstitial/SKILL.md",
+      "bytes": 4142,
+      "sha256": "c5bdfee571e612d7640fbad1040e05587a2945b335d026a70793a2e9cd67e331"
+    },
+    {
+      "path": "agent-skills/ads-monetization-rewarded-interstitial/agents/openai.yaml",
+      "bytes": 476,
+      "sha256": "c92bf5cd2b150a4f38a32e6f3e0c1bc0d35b1dbd69d558c6eddd7678316f96f3"
+    },
+    {
+      "path": "agent-skills/ads-monetization-rewarded-interstitial/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "agent-skills/aso-store-listing/SKILL.md",
+      "bytes": 3938,
+      "sha256": "0c6139a85224625819b75afc077c87882cac4a64be74e5f74350b21c0c227915"
+    },
+    {
+      "path": "agent-skills/aso-store-listing/agents/openai.yaml",
+      "bytes": 430,
+      "sha256": "c3e745ebde552de30a3a1b4fa9aa65bd7eae9911d426a515ecc0d46fa17a7321"
+    },
+    {
+      "path": "agent-skills/aso-store-listing/assets/icon.svg",
+      "bytes": 1210,
+      "sha256": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee"
+    },
+    {
+      "path": "agent-skills/audio-sfx-vo-emotes/SKILL.md",
+      "bytes": 4174,
+      "sha256": "4d5da0ca9700230266fe63465cb9cd0527aa4e6baabd8c8ced870babbae8c67f"
+    },
+    {
+      "path": "agent-skills/audio-sfx-vo-emotes/agents/openai.yaml",
+      "bytes": 419,
+      "sha256": "4ee8212dd12a582a74f2a5c7572e28ebbe2311a6d294116f7ef0f991591b0e11"
+    },
+    {
+      "path": "agent-skills/audio-sfx-vo-emotes/assets/icon.svg",
+      "bytes": 2094,
+      "sha256": "d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6"
+    },
+    {
+      "path": "agent-skills/character-narrative-skills-pets/SKILL.md",
+      "bytes": 4366,
+      "sha256": "c8fe8873fb54767f4130c99d3ee70860dd028565a56659c9ab0290ad259b219a"
+    },
+    {
+      "path": "agent-skills/character-narrative-skills-pets/agents/openai.yaml",
+      "bytes": 469,
+      "sha256": "409447f5903203009cb60376f045065aeeb0446c1bf72530309208198fce6564"
+    },
+    {
+      "path": "agent-skills/character-narrative-skills-pets/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "agent-skills/game-economy-balancing/SKILL.md",
+      "bytes": 3891,
+      "sha256": "56ab308677e014b60fb3355fc7a7f53516623c33d7d6cae125c7ed2b135b791a"
+    },
+    {
+      "path": "agent-skills/game-economy-balancing/agents/openai.yaml",
+      "bytes": 432,
+      "sha256": "9b82c8e725ca7b071074a13f3df7da2a5b04aaa4c363c0e8011a2779089223d8"
+    },
+    {
+      "path": "agent-skills/game-economy-balancing/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "agent-skills/google-play-compliance-monetization/SKILL.md",
+      "bytes": 6074,
+      "sha256": "655b3ab63a68cff0237351412d69fdd641c3c07853e103886022104decaddb7e"
+    },
+    {
+      "path": "agent-skills/google-play-compliance-monetization/agents/openai.yaml",
+      "bytes": 480,
+      "sha256": "2859f842b5725520651b310b14d0d1b643dcee8d332100d907b5618c123889ac"
+    },
+    {
+      "path": "agent-skills/google-play-compliance-monetization/assets/icon.svg",
+      "bytes": 786,
+      "sha256": "72343cc4b66256ae7de8474c7cad14e711ad84a94c473732a44f96a56124c42d"
+    },
+    {
+      "path": "agent-skills/hollow-knight-combat-2d/SKILL.md",
+      "bytes": 2319,
+      "sha256": "4d3ca018660f3487deab4055c39389c686877ced4464e79cb5753a53043a4473"
+    },
+    {
+      "path": "agent-skills/hollow-knight-combat-2d/agents/openai.yaml",
+      "bytes": 445,
+      "sha256": "4d19b897c814dffe876126e381395366344c93fbc9e215a130a4bae72635f505"
+    },
+    {
+      "path": "agent-skills/hollow-knight-combat-2d/assets/icon.svg",
+      "bytes": 1738,
+      "sha256": "8936b24f674a1250d999e2c2b5901374fb4240426f32bd1ae340c352a90d617d"
+    },
+    {
+      "path": "agent-skills/mobile-pixel-art-ui-ux/SKILL.md",
+      "bytes": 3509,
+      "sha256": "74079701dcffd87ae28c9bd2037d89e9ac0dc8a40073fe05cd1d253927e21596"
+    },
+    {
+      "path": "agent-skills/mobile-pixel-art-ui-ux/agents/openai.yaml",
+      "bytes": 439,
+      "sha256": "be077b615b39ba5fc1fa9c7211368b0235cd4208a13e8249f45e57c137c529c4"
+    },
+    {
+      "path": "agent-skills/mobile-pixel-art-ui-ux/assets/icon.svg",
+      "bytes": 2922,
+      "sha256": "fbb6c7314886573cd56c3f86884a65afe3b5f4ce4bf1ee6baeeeb1fa50aea7a4"
+    },
+    {
+      "path": "agent-skills/monetization-shop-design/SKILL.md",
+      "bytes": 4809,
+      "sha256": "9a841d254a2b91fbcde37533654d7691b3aebb928967bc4a79b2e318e526788e"
+    },
+    {
+      "path": "agent-skills/monetization-shop-design/agents/openai.yaml",
+      "bytes": 461,
+      "sha256": "356c09a93df6cf4de101022e0d2146cb056ffc90a6f3a14aac4a109979776e11"
+    },
+    {
+      "path": "agent-skills/monetization-shop-design/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "agent-skills/pixel-art-page-layout-system/SKILL.md",
+      "bytes": 19392,
+      "sha256": "5bc680454fe05cd3a87da7f93d5a9db7ef1c9c096adcc9ba9aaf8a894fbc085d"
+    },
+    {
+      "path": "agent-skills/pixel-art-page-layout-system/agents/openai.yaml",
+      "bytes": 562,
+      "sha256": "666190490422c54c77c2527aaaadae04d4bd54324ff5cc2745538130c26402ae"
+    },
+    {
+      "path": "agent-skills/pixel-art-page-layout-system/assets/icon.svg",
+      "bytes": 2182,
+      "sha256": "51a6923974188748638a424aa59b42b6afad2d910f910a1d43bb13ee10f3ce26"
+    },
+    {
+      "path": "agent-skills/player-onboarding-ftue/SKILL.md",
+      "bytes": 3927,
+      "sha256": "a3719c40f7bc0f68e7896b35d6b64c4cc7f272b2aa799d8d753b1abc16795dc1"
+    },
+    {
+      "path": "agent-skills/player-onboarding-ftue/agents/openai.yaml",
+      "bytes": 417,
+      "sha256": "bfad8ba5f2c3e3a18a201fb97a78f4ec8cb8aae1f71b0bf4471c07801109f284"
+    },
+    {
+      "path": "agent-skills/player-onboarding-ftue/assets/icon.svg",
+      "bytes": 667,
+      "sha256": "9be88f8dd4c5e658961515c71389eafd45142ffa68bcae58e8dcff57d178ed91"
+    },
+    {
+      "path": "agent-skills/retention-liveops-calendar/SKILL.md",
+      "bytes": 3744,
+      "sha256": "64643008ab521e4cbf9df91d40e52e870c6b0aa1e32f97a540ded43176d07cf0"
+    },
+    {
+      "path": "agent-skills/retention-liveops-calendar/agents/openai.yaml",
+      "bytes": 385,
+      "sha256": "c5bf079e5fd84cf1f0f87b50323de6ff66ceeddc99496d7f6ed751106df4347e"
+    },
+    {
+      "path": "agent-skills/retention-liveops-calendar/assets/icon.svg",
+      "bytes": 667,
+      "sha256": "9be88f8dd4c5e658961515c71389eafd45142ffa68bcae58e8dcff57d178ed91"
+    },
+    {
+      "path": "agent-skills/social-virality-referral/SKILL.md",
+      "bytes": 3554,
+      "sha256": "d963b6a29cda64b6b29255617ec4bd98864e7243276de1ef35c5f08c8ed9cb09"
+    },
+    {
+      "path": "agent-skills/social-virality-referral/agents/openai.yaml",
+      "bytes": 413,
+      "sha256": "6dd84ad27fe4f5597ebedcf1d5fbefcf26c0b60d2fdb3c824cdd86f90867b8d4"
+    },
+    {
+      "path": "agent-skills/social-virality-referral/assets/icon.svg",
+      "bytes": 667,
+      "sha256": "9be88f8dd4c5e658961515c71389eafd45142ffa68bcae58e8dcff57d178ed91"
+    },
+    {
+      "path": "agent-skills/source-archives/action-combat-movement-feel.zip",
+      "bytes": 3592,
+      "sha256": "828e690bee397c397fcc1b4619c9b60d06cec058f236aa6f1c67ec256301a223"
+    },
+    {
+      "path": "agent-skills/source-archives/ads-monetization-rewarded-interstitial.zip",
+      "bytes": 3163,
+      "sha256": "fa31bb2db57f54d5c174c4e2f8fc6e2e7b3ae12bc02618bea3a058e1e0ddc6fd"
+    },
+    {
+      "path": "agent-skills/source-archives/aso-store-listing.zip",
+      "bytes": 3121,
+      "sha256": "b085e9cd0383b81fbc7c5cc0f3b98ea1d8f040f92fa832df1d9ba7672567a613"
+    },
+    {
+      "path": "agent-skills/source-archives/audio-sfx-vo-emotes.zip",
+      "bytes": 3707,
+      "sha256": "df7e50adab8a283e09358b5b040e4805988ae4176b166c7ebe31cda54580d4f2"
+    },
+    {
+      "path": "agent-skills/source-archives/character-narrative-skills-pets.zip",
+      "bytes": 3201,
+      "sha256": "d314b790f936a93bdc5ebc59fb096687f0d079559e0d039b8a6ff4eb92f48558"
+    },
+    {
+      "path": "agent-skills/source-archives/game-economy-balancing.zip",
+      "bytes": 2914,
+      "sha256": "dbeb45e073fcc84f5f8cf9405eb736ce771d20bac86f87ad62dbfe58beef345a"
+    },
+    {
+      "path": "agent-skills/source-archives/google-play-compliance-monetization.zip",
+      "bytes": 4092,
+      "sha256": "142d54cce5e0ebc5a1948d4dbb763e4258d699c0f7383de71db5e7bb1ffe01ee"
+    },
+    {
+      "path": "agent-skills/source-archives/hollow-knight-combat-2d.zip",
+      "bytes": 2767,
+      "sha256": "a7fa6cbf34c46398b63ed7c5dc7b2fcc04fff25d5d544762ee79b8d0e5837fb2"
+    },
+    {
+      "path": "agent-skills/source-archives/mobile-pixel-art-ui-ux.zip",
+      "bytes": 3711,
+      "sha256": "3a521e3a5594bf829b3c6e613ba2e05f0b74935789ef738c623f86c70f22e862"
+    },
+    {
+      "path": "agent-skills/source-archives/monetization-shop-design.zip",
+      "bytes": 3396,
+      "sha256": "d80414a94f8424d0e9aa370222c178092d0f2747f646ae406c448bf696d6eee6"
+    },
+    {
+      "path": "agent-skills/source-archives/pixel-art-page-layout-system.zip",
+      "bytes": 9956,
+      "sha256": "39790a0031f3f1c7f9b3c895cc81367fa6574992a5deb2372d4ccd5f95aa5316"
+    },
+    {
+      "path": "agent-skills/source-archives/player-onboarding-ftue.zip",
+      "bytes": 3005,
+      "sha256": "ca55180bae118570c70cbe46c2c4035aa897d40cbf73c0b923072d13e19f97fb"
+    },
+    {
+      "path": "agent-skills/source-archives/retention-liveops-calendar.zip",
+      "bytes": 2954,
+      "sha256": "943d5c8cc47909720614a6c7f69f7d2a8003a119d7f4ed7a607f77c068831e7a"
+    },
+    {
+      "path": "agent-skills/source-archives/social-virality-referral.zip",
+      "bytes": 2839,
+      "sha256": "3f4ce642d0f99f4a3e1685647fad454d1ca1e1c09d8ce8797ae69e26dda29081"
+    },
+    {
+      "path": "agent-skills/source-archives/telemetry-analytics-instrumentation.zip",
+      "bytes": 2955,
+      "sha256": "dd2ba71c3a7b87fd73529ded8858f39c00a0d068715f014f9d3b8b7ec155fc17"
+    },
+    {
+      "path": "agent-skills/source-archives/world-level-generation.zip",
+      "bytes": 2972,
+      "sha256": "fbaba5553097b20ed054a49757a62dc1711999c432aacdf40ec4481b9e679906"
+    },
+    {
+      "path": "agent-skills/telemetry-analytics-instrumentation/SKILL.md",
+      "bytes": 3788,
+      "sha256": "ea9dcfcac8606c351c6b405d71caec1a1f4c78d332284663bf073347a9c1276b"
+    },
+    {
+      "path": "agent-skills/telemetry-analytics-instrumentation/agents/openai.yaml",
+      "bytes": 468,
+      "sha256": "244a8d23c2cffa2044ee83150451fec097f6c15ff986577698a6e377421d87a2"
+    },
+    {
+      "path": "agent-skills/telemetry-analytics-instrumentation/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "agent-skills/world-level-generation/SKILL.md",
+      "bytes": 4076,
+      "sha256": "e66119b67cca3a22df1da800629a435b338a07b9f1ade3e94818b1bfb84b59ad"
+    },
+    {
+      "path": "agent-skills/world-level-generation/agents/openai.yaml",
+      "bytes": 440,
+      "sha256": "302975e90a1d474e8e5dfa0033fda4293ac68b7a80eb6756c44a21366154ce24"
+    },
+    {
+      "path": "agent-skills/world-level-generation/assets/icon.svg",
+      "bytes": 420,
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "design/references/ui/README.md",
+      "bytes": 178,
+      "sha256": "19ab56dfaec1ac0f05727c080ae77f64377240f91cd25058b0de61d662c838c5"
+    },
+    {
+      "path": "design/references/ui/sw_boss_hunt_mode.png",
+      "bytes": 2303853,
+      "sha256": "f8e721309ee3f2c23f8dfd072de23be8f3ff81c61f998ed19445393b98639e29"
+    },
+    {
+      "path": "design/references/ui/sw_heroes_page.png",
+      "bytes": 2308784,
+      "sha256": "e5d34a676da1034e8dc6a87224f8fe41c1e04bf028e47568315952c3522cae1d"
+    },
+    {
+      "path": "design/references/ui/sw_home_page.png",
+      "bytes": 2182848,
+      "sha256": "81429e58fe555fca8a07efb599d6c4d6c4f47920932d0b86addd21ddddb4db0f"
+    },
+    {
+      "path": "design/references/ui/sw_missions_page.png",
+      "bytes": 1951442,
+      "sha256": "b8a8a094cbd0613272f32aae7033f265bde910a46223de460751912fdb6c7c49"
+    },
+    {
+      "path": "design/references/ui/sw_pets_page.png",
+      "bytes": 2148116,
+      "sha256": "0e12fb3fcd1ba2a8c9306c8fc2fcd66ccfe6b35517786ecea6be13d5eda0193b"
+    },
+    {
+      "path": "design/references/ui/sw_profile_page.png",
+      "bytes": 2017799,
+      "sha256": "7ec38b47207715037959e3a5beedc314168a7eb8e2df54c0b3c04978332e5b1b"
+    },
+    {
+      "path": "design/references/ui/sw_records_page.png",
+      "bytes": 2022869,
+      "sha256": "57ed360b2bda83ba59761340713e6a7cdd79f7a5261ffffee382653bed1399f2"
+    },
+    {
+      "path": "design/references/ui/sw_settings_page.png",
+      "bytes": 1810172,
+      "sha256": "846485f4dd553cb35629a76c106a68bf6ade0a163fbbf7ca24375a6486753e59"
+    },
+    {
+      "path": "design/references/ui/sw_shop_page.png",
+      "bytes": 2201326,
+      "sha256": "e89dca3213fb097589bf8fa82224fba0e6de2c110342df1671e0023956c5ca7b"
+    },
+    {
+      "path": "design/references/ui/sw_worlds_page.png",
+      "bytes": 2142451,
+      "sha256": "6108c29bffdbe4b0c046ed2f743bcd9dc67a8c207e561e6c9e15e4602a147e4e"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+interface:
+  display_name: world level generation
+  short_description: Principles for level/world design and generation that maximize
+    replayability and pacing, for both hand-authored and procedural 2D level systems.
+    Use for new worlds, difficulty curves, or map-building tools.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+interface:
+  display_name: player onboarding ftue
+  short_description: 'First-time-user-experience design: tutorial pacing, time-to-first-fun,
+    and early-session retention. Use for any new player''''s first session, tutorial
+    sequence, or onboarding flow.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

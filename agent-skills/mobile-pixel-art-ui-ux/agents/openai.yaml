@@ -1,0 +1,14 @@
+interface:
+  display_name: mobile pixel art ui ux
+  short_description: Mobile pixel-art UI/UX standards calibrated against top-tier
+    reference games (Dead Cells, Brawlhalla, Vampire Survivors, Stardew Valley mobile).
+    Use for any menu, HUD, shop screen, or touch control layout.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

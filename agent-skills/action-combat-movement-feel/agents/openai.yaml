@@ -1,0 +1,14 @@
+interface:
+  display_name: action combat movement feel
+  short_description: Genre-agnostic standards for 2D action-platformer movement and
+    combat feel, calibrated against Hollow Knight, Celeste, Dead Cells, and Katana
+    Zero. Use for any jump/dash/attack tuning across any project.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

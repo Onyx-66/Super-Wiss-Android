@@ -1,0 +1,14 @@
+interface:
+  display_name: hollow knight combat 2d
+  short_description: 'Design and implement responsive 2D melee combat for an Android
+    pixel-art platformer, in the style of Hollow Knight: precise hit/hurtboxes, attack
+    recovery frames, parry/pogo mechanics, and enemy telegraphing.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

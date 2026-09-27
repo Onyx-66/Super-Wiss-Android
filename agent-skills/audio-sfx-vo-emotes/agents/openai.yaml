@@ -1,0 +1,14 @@
+interface:
+  display_name: audio sfx vo emotes
+  short_description: Standards for sound effects, adaptive music, voice-over delivery,
+    and social emote systems in a 2D mobile action game. Use for any new SFX, VO line,
+    music layer, or emote/reaction feature.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
