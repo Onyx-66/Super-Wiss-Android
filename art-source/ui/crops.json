@@ -1,0 +1,1094 @@
+[
+  {
+    "key": "ui/icons/coin",
+    "path": "assets/ui/icons/coin.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      34,
+      75,
+      120,
+      164
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "4bafa662c317be6714beb48f15607f932d32fc4d5e09bb32c5a4527197cb1f7f"
+  },
+  {
+    "key": "ui/icons/star",
+    "path": "assets/ui/icons/star.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      125,
+      72,
+      221,
+      167
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "d93142fa01358a4c0f9128b94cd5e51538b9b8a62e266c5d2b4252ffe364ff4a"
+  },
+  {
+    "key": "ui/icons/plus",
+    "path": "assets/ui/icons/plus.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      239,
+      83,
+      322,
+      165
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "9217dd1808e5cb57e5628dd12eac5dc5c9794c9ae2395889be486e2d071bc149"
+  },
+  {
+    "key": "ui/icons/friends",
+    "path": "assets/ui/icons/friends.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      340,
+      79,
+      433,
+      161
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "9b94684d0cd2c8204e78c6059e2d4a3d4f6a2870d1dd0680855c5a9d3237343f"
+  },
+  {
+    "key": "ui/icons/settings",
+    "path": "assets/ui/icons/settings.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      448,
+      73,
+      545,
+      171
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "a76419c08796d5a1e422f28cd2ccd19684ece3706a79a2dca9f5fc7fd2de0e42"
+  },
+  {
+    "key": "ui/icons/close",
+    "path": "assets/ui/icons/close.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      564,
+      80,
+      648,
+      164
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "51af1a948e0151cbf7215e990d134093971de780d30c709a67b702a0da2f840b"
+  },
+  {
+    "key": "ui/icons/edit",
+    "path": "assets/ui/icons/edit.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      671,
+      79,
+      757,
+      164
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "9045c72ac629f36d95225862e86df767abee52e7ca4570b3da407c24b59236ee"
+  },
+  {
+    "key": "ui/icons/help",
+    "path": "assets/ui/icons/help.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      778,
+      78,
+      863,
+      163
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "04c9705a9457c7d47e26605a18ec3e51e82cf7d292ec7f11e97d104e9daea941"
+  },
+  {
+    "key": "ui/icons/info",
+    "path": "assets/ui/icons/info.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      887,
+      78,
+      972,
+      163
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "6e259a437c98481aa4b217e7c8f414f7549a8d9a64d2f165bb4e01975fd75b4d"
+  },
+  {
+    "key": "ui/icons/check",
+    "path": "assets/ui/icons/check.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      988,
+      78,
+      1096,
+      165
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "eb4cde1e41ffb10ff13b604c666891eb02ce2582d7b2d2a9e2d8998a6673efe0"
+  },
+  {
+    "key": "ui/icons/lock",
+    "path": "assets/ui/icons/lock.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1222,
+      67,
+      1300,
+      162
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "f107ead34f5debed1cd4a9c84ed455cce3f8923d8bde65646cdc8a301a1db440"
+  },
+  {
+    "key": "ui/icons/online",
+    "path": "assets/ui/icons/online.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1332,
+      83,
+      1408,
+      159
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "67ebfd2857a8b2d0a9012eb9cee1c592e5a32d40311c12cc2b1242326cd294fc"
+  },
+  {
+    "key": "ui/icons/clock",
+    "path": "assets/ui/icons/clock.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      29,
+      206,
+      120,
+      297
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "50efb8edef4f60a4800018fedc369124d756a0757783cbb663db2ec2f8a10a36"
+  },
+  {
+    "key": "ui/icons/daily",
+    "path": "assets/ui/icons/daily.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      139,
+      207,
+      218,
+      294
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "549428dbea811813cb6c1dd67c4bd62f30fda73ae2397839116e1ff16bb32268"
+  },
+  {
+    "key": "ui/icons/home",
+    "path": "assets/ui/icons/home.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      239,
+      205,
+      326,
+      290
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "05fac636a84c57a4ecbbe37c5f5d1b38aefa8388dfe9c6be114ff4060e3f6b94"
+  },
+  {
+    "key": "ui/icons/worlds",
+    "path": "assets/ui/icons/worlds.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      343,
+      200,
+      442,
+      301
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "758bc8a533dc95300a02fc2084eefe6938326d2fc41c66dc04eead2e75a1c3fe"
+  },
+  {
+    "key": "ui/icons/heroes",
+    "path": "assets/ui/icons/heroes.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      462,
+      198,
+      556,
+      297
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "8af71c5ce8e77565fc05b683bca934822a3d87c1194175201c563dac18e7aa5a"
+  },
+  {
+    "key": "ui/icons/pets",
+    "path": "assets/ui/icons/pets.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      577,
+      203,
+      678,
+      292
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "59c8d06005e70befa94f907cebfb7ab635c45f1ee405a81684683bbb85c50c96"
+  },
+  {
+    "key": "ui/icons/shop",
+    "path": "assets/ui/icons/shop.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      698,
+      209,
+      800,
+      296
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "ee7f131eb3d8ab317a7fa68287e36f0bf2f8a71526456c6a6a599df89b843685"
+  },
+  {
+    "key": "ui/icons/missions",
+    "path": "assets/ui/icons/missions.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      822,
+      206,
+      906,
+      298
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "8afcf03679880a57648615db3eeddf1554ee333ac1d3a9bfd8a17a8c558a11cf"
+  },
+  {
+    "key": "ui/icons/records",
+    "path": "assets/ui/icons/records.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      936,
+      208,
+      1026,
+      294
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "0beabdd8ad3b496b32f8ee380a27f74e75f39fcabe2cc4e90fef2b18cfca4294"
+  },
+  {
+    "key": "ui/icons/profile",
+    "path": "assets/ui/icons/profile.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1061,
+      201,
+      1153,
+      295
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5a6331457275a30cd753861a331f7819d53526bd3ae72755cddc2ac7e702a216"
+  },
+  {
+    "key": "ui/icons/swords",
+    "path": "assets/ui/icons/swords.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1181,
+      197,
+      1289,
+      306
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "a16dc2d8416754026636795cc07085e26eda7b928a66c23d6805816cb71f8768"
+  },
+  {
+    "key": "ui/icons/boss",
+    "path": "assets/ui/icons/boss.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1314,
+      187,
+      1416,
+      309
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "16ba7290fa189674f7189c0f7a961cb8da6f663e0c64f8398759a3ee847bc4c7"
+  },
+  {
+    "key": "ui/icons/compass",
+    "path": "assets/ui/icons/compass.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      23,
+      333,
+      135,
+      450
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "c6618a31aa4b6c5db039560727495ed6922bd6c8d15b744b2eeddeef789ba07a"
+  },
+  {
+    "key": "ui/icons/map",
+    "path": "assets/ui/icons/map.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      146,
+      329,
+      264,
+      439
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "3a2fe05e3463b3a04e633de7fc6903fc2f26355e6bae472ab18cc28ba9baff13"
+  },
+  {
+    "key": "ui/icons/gamepad",
+    "path": "assets/ui/icons/gamepad.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      280,
+      348,
+      380,
+      425
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "605d402200f2e30ab98ec1800b3a41a6b5ba6e904a180b2828ec8efdd6e49f61"
+  },
+  {
+    "key": "ui/icons/controls",
+    "path": "assets/ui/icons/controls.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      396,
+      347,
+      477,
+      428
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "f3ca879ae4c204b835dbfe24985f2b2e20eb9390518d10b1ed064d299fc31ecb"
+  },
+  {
+    "key": "ui/icons/flag",
+    "path": "assets/ui/icons/flag.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      594,
+      325,
+      702,
+      452
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "a6048c6c9506782057f01bd414a5b2b94632668f031894b521f72f8199251c43"
+  },
+  {
+    "key": "ui/icons/skull",
+    "path": "assets/ui/icons/skull.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      932,
+      336,
+      1015,
+      427
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "2d0bbb7bd172d07ef2f3055ad4c6dbb5f33615e77f56bc5dc2e8d9bc73a0cf90"
+  },
+  {
+    "key": "ui/icons/touch",
+    "path": "assets/ui/icons/touch.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1039,
+      329,
+      1152,
+      447
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "f2e0c23fc516fe3fc49ac71c4a0fa20f32e95cb8afa9ac3f0cf5236babf3f4d8"
+  },
+  {
+    "key": "ui/icons/volume",
+    "path": "assets/ui/icons/volume.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1183,
+      346,
+      1293,
+      435
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "9a1ed44b2c79cd9713848fa17bd8bdf5ba1e5bf9cfb14c3dea003c54fd4515d8"
+  },
+  {
+    "key": "ui/icons/music",
+    "path": "assets/ui/icons/music.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1326,
+      346,
+      1405,
+      437
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5dbc65c5866d97550e3a024b36d059062bcd3d3732fd756d395f6bd2afd56050"
+  },
+  {
+    "key": "ui/icons/speed",
+    "path": "assets/ui/icons/speed.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      25,
+      475,
+      119,
+      570
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "a3a60efd22862eb66802148d56a08ee0d977268f32803bfebde202eee367bb0c"
+  },
+  {
+    "key": "ui/icons/palette",
+    "path": "assets/ui/icons/palette.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      147,
+      473,
+      255,
+      571
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5c801c4cd5eceb791164d29dd5973a3f14291b574ad4ad6e3437aa3b01a942cb"
+  },
+  {
+    "key": "ui/icons/power",
+    "path": "assets/ui/icons/power.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      281,
+      469,
+      362,
+      573
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5605de7a84710cf02c51a5226258cdb484390ee3481c63566c29d412a81ec72a"
+  },
+  {
+    "key": "ui/icons/sword",
+    "path": "assets/ui/icons/sword.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      388,
+      472,
+      479,
+      566
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "d255f66a07133fec3a7c5270bb8ccca63e7f394c11fdfba2aee9832e8a4349f7"
+  },
+  {
+    "key": "ui/icons/gold-star",
+    "path": "assets/ui/icons/gold-star.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      504,
+      472,
+      593,
+      560
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "e4208ce94f530816094d9ab59b912b646e0f7557b568e7412ba1206ccb2ea0d9"
+  },
+  {
+    "key": "ui/icons/magic",
+    "path": "assets/ui/icons/magic.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      612,
+      475,
+      700,
+      568
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5a43e2469e964f4e0386664136457beac2f7839c9ee47fe814013c1b9034d73b"
+  },
+  {
+    "key": "ui/icons/stamina",
+    "path": "assets/ui/icons/stamina.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      717,
+      469,
+      797,
+      567
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "72178a68b6d53e7e3c8f36a1b29cddfc9a0a3971bc4d6e82946b0131516fd640"
+  },
+  {
+    "key": "ui/icons/bow",
+    "path": "assets/ui/icons/bow.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      821,
+      471,
+      917,
+      569
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "b538f6a788b1b439796ecb4cd4dd7f7da97b7ac41fed44f69c33969b554fb5dc"
+  },
+  {
+    "key": "ui/icons/sun",
+    "path": "assets/ui/icons/sun.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      937,
+      468,
+      1037,
+      572
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "a69bd52f2c9d1ce6aa597a200cb306b61c561c77f52bb71b530a9e4a347bacaf"
+  },
+  {
+    "key": "ui/icons/frost",
+    "path": "assets/ui/icons/frost.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1063,
+      467,
+      1155,
+      572
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "9aa02726d4dd415116f035e517d75f1cfb909a46569a95fa70486a4babddb9e6"
+  },
+  {
+    "key": "ui/icons/wind",
+    "path": "assets/ui/icons/wind.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1300,
+      467,
+      1416,
+      568
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "285a5bdf325ef0cd7d2b5367cb2c77094f79917fdb6c6a4dd2243889d8a56757"
+  },
+  {
+    "key": "ui/icons/crown",
+    "path": "assets/ui/icons/crown.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      31,
+      604,
+      134,
+      694
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "c4ffb73c0ace7304b6a2f5b243c0db912102f3c7e44fa5f0adbb16536b72d4d1"
+  },
+  {
+    "key": "ui/icons/earned-star",
+    "path": "assets/ui/icons/earned-star.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      898,
+      607,
+      991,
+      698
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "b2d4241cfc07e41c64c39145057b6c5f5f88d723bf158712ce4089def984b4d6"
+  },
+  {
+    "key": "ui/icons/empty-star",
+    "path": "assets/ui/icons/empty-star.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1012,
+      609,
+      1104,
+      697
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "2268c2a7c7194e49d3b59a5804800df28c4119fe540e5883b2428b8340f9c829"
+  },
+  {
+    "key": "ui/icons/medal-gold",
+    "path": "assets/ui/icons/medal-gold.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      26,
+      744,
+      136,
+      855
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "96d8d663da6fa001f999ead8c6a7d32a353c77b7c40992577ab6a38788e4dd37"
+  },
+  {
+    "key": "ui/icons/medal-silver",
+    "path": "assets/ui/icons/medal-silver.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      143,
+      744,
+      254,
+      856
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "449b2dfea300df80023efc0eebcc44daa9cd3fa33de7cc6cfa83cb5edf72d01b"
+  },
+  {
+    "key": "ui/icons/medal-bronze",
+    "path": "assets/ui/icons/medal-bronze.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      264,
+      744,
+      379,
+      856
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "912b080a15a40c5ee471fb6dbeb12ebfc000d3abc0f6f912b0c74708996aec19"
+  },
+  {
+    "key": "ui/icons/trophy",
+    "path": "assets/ui/icons/trophy.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      580,
+      756,
+      684,
+      862
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "ca9e0e00fd9eea19d8330c1b60e06e81a54966d2a00fd6f282a0a49c561899e6"
+  },
+  {
+    "key": "ui/icons/quest-coins",
+    "path": "assets/ui/icons/quest-coins.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      689,
+      738,
+      828,
+      875
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "87f05d0c9958ea6a9e217e431f63312514d43bb0371f7acc7ca12852156af5f6"
+  },
+  {
+    "key": "ui/icons/quest-power",
+    "path": "assets/ui/icons/quest-power.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      834,
+      739,
+      973,
+      877
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "d17ff8f9a7f9e3f74738adb5813313eb82cc21b796e76c7f76dd1427f096e4e3"
+  },
+  {
+    "key": "ui/icons/quest-potion",
+    "path": "assets/ui/icons/quest-potion.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1010,
+      739,
+      1096,
+      877
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5a6498438b614c7985b4c4a72198ee3eeaf3edecd26e765ef4904a058d2c5bea"
+  },
+  {
+    "key": "ui/icons/quest-shrine",
+    "path": "assets/ui/icons/quest-shrine.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1124,
+      729,
+      1253,
+      881
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "cfcdb3c30cbac9f8f0b4eca82ab6f91e5ae252f1148885b5502c70ae6a90a332"
+  },
+  {
+    "key": "ui/icons/quest-monster",
+    "path": "assets/ui/icons/quest-monster.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      1267,
+      739,
+      1409,
+      878
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "468e9e28e70da4d1ccbead6fcd62531982ae4707106d5ba6bd5eb891919e9ae5"
+  },
+  {
+    "key": "ui/icons/left",
+    "path": "assets/ui/icons/left.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      36,
+      921,
+      100,
+      1015
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "94bec736520bcfb95e5b6077de671b133a027a4fa03a909092a0597e9977ee67"
+  },
+  {
+    "key": "ui/icons/right",
+    "path": "assets/ui/icons/right.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      139,
+      921,
+      203,
+      1015
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "dca547afc7eb4af631dbe9152ade395bf25311e8753da3cdba20e5178673d364"
+  },
+  {
+    "key": "ui/icons/crouch",
+    "path": "assets/ui/icons/crouch.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      225,
+      948,
+      304,
+      1003
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "f67f02f409207d014faf6a38505e8b876308ca305f410271e5a50c5b77616ddd"
+  },
+  {
+    "key": "ui/icons/diamond",
+    "path": "assets/ui/icons/diamond.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "crop": [
+      331,
+      927,
+      416,
+      1012
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "83960834a8354998e859ff1c6ecb3582f4a9a81cd207a193d967e9c2f658eef8"
+  },
+  {
+    "key": "ui/frames/currency",
+    "path": "assets/ui/frames/currency.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      1173,
+      29,
+      1419,
+      102
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "c879373ca20f78ce7fff187449b700188bc35d7fb755b48de44847f21aba0a48"
+  },
+  {
+    "key": "ui/frames/tab",
+    "path": "assets/ui/frames/tab.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      748,
+      131,
+      885,
+      204
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "1cbff2a023d44d8eb2c4d7c5a3ce1a8ee06570be375b22b92816fac1eb1dee61"
+  },
+  {
+    "key": "ui/frames/tab-selected",
+    "path": "assets/ui/frames/tab-selected.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      607,
+      132,
+      745,
+      204
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "00e01fe73ced78f08bade668f78f6b88fd71ec46f150ab7e4584658bf2717a89"
+  },
+  {
+    "key": "ui/frames/button",
+    "path": "assets/ui/frames/button.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      859,
+      226,
+      1041,
+      292
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5acc2b60e40eeb73f167a7006fa20e931c10a2b6dd079ffb6dff289b0f8f1c47"
+  },
+  {
+    "key": "ui/frames/button-gold",
+    "path": "assets/ui/frames/button-gold.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      1082,
+      227,
+      1282,
+      295
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "34b8e83a4546b84804a5d9366eb155890b5cea000443fefd9655212ba08d4079"
+  },
+  {
+    "key": "ui/frames/hero-card",
+    "path": "assets/ui/frames/hero-card.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      27,
+      308,
+      175,
+      523
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "8655e11efd974e5357267b28a6cf499b3fda4261231c763b91480e31ea023b2b"
+  },
+  {
+    "key": "ui/frames/hero-selected",
+    "path": "assets/ui/frames/hero-selected.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      186,
+      308,
+      332,
+      522
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "41a005b35ffadde97fc7f4e7d1bd00af70986c2dbcb76b50a474105a44a4fca7"
+  },
+  {
+    "key": "ui/frames/hero-locked",
+    "path": "assets/ui/frames/hero-locked.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      344,
+      309,
+      491,
+      522
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "15f5ad3d1d7ad2d92ddc133d2af316f03a3ccd6aecf2b11b9e9bc7123cbc3a39"
+  },
+  {
+    "key": "ui/frames/hero-purple",
+    "path": "assets/ui/frames/hero-purple.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      658,
+      309,
+      795,
+      523
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "0713fc050e2acb7cfab9a68e5c86985348ba414087e7580eefe82228a05f1c3a"
+  },
+  {
+    "key": "ui/frames/quest",
+    "path": "assets/ui/frames/quest.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      491,
+      544,
+      710,
+      650
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "4ba3c57ec541c2ca5ebb6b70e75512d39bbfdbb04a95830fe1d1ecaafdb29de3"
+  },
+  {
+    "key": "ui/frames/price",
+    "path": "assets/ui/frames/price.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      794,
+      663,
+      932,
+      721
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "966594897afc048a558fb784f7167e2abfd739c2abbbad7bc27373559fc58768"
+  },
+  {
+    "key": "ui/frames/nav",
+    "path": "assets/ui/frames/nav.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      27,
+      739,
+      682,
+      791
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "2fffc13c71ac44708afff6ce576085201e3446e2da569f887d2a857229048288"
+  },
+  {
+    "key": "ui/frames/setting-row",
+    "path": "assets/ui/frames/setting-row.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      28,
+      800,
+      373,
+      870
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "ebe637552ac09132236d68930ae594a4f13b782e642d85a69ce60be55746da06"
+  },
+  {
+    "key": "ui/frames/button-large",
+    "path": "assets/ui/frames/button-large.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      712,
+      886,
+      1029,
+      964
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "6efbf331889c589ee49c6dfeec736c70e3af80b7f16bfb6206de432e916d95a5"
+  },
+  {
+    "key": "ui/frames/toggle-on",
+    "path": "assets/ui/frames/toggle-on.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      1182,
+      883,
+      1285,
+      938
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "5614c9de4017113b717fe6edd4bdc8b0fe12f8caf8c668d7c8e7feb4eec77eef"
+  },
+  {
+    "key": "ui/frames/toggle-off",
+    "path": "assets/ui/frames/toggle-off.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      1312,
+      883,
+      1416,
+      938
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "0fe6bc7e4d31c5393f387aca07a4b4c030811a6dace6bba25d6c4789a0b6c022"
+  },
+  {
+    "key": "ui/frames/progress-empty",
+    "path": "assets/ui/frames/progress-empty.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      28,
+      981,
+      324,
+      1013
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "b7ff49eecfada1ada6665c4598c8416785abe90ac309011765aa7a9ac4e215f7"
+  },
+  {
+    "key": "ui/frames/progress-full",
+    "path": "assets/ui/frames/progress-full.png",
+    "source": "art-source/ui/Assets_placeholders.png",
+    "crop": [
+      341,
+      982,
+      561,
+      1012
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "26fb1de96ad8b84f7ee0a89768eaf57848c5074067e8ebf9fc64fceec1b5a642"
+  },
+  {
+    "key": "ui/frames/panel",
+    "path": "assets/ui/frames/panel.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      370,
+      402,
+      810,
+      629
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "eb0989593a028583e2ec2e25a306a0bf62913cccad7f97de60425f63d51cc231"
+  },
+  {
+    "key": "ui/frames/profile",
+    "path": "assets/ui/frames/profile.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      27,
+      647,
+      476,
+      882
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "b2df4fc5fa718a4760d6454056c3b67bc0bbc24928915464b2b4659849121252"
+  },
+  {
+    "key": "ui/frames/identity",
+    "path": "assets/ui/frames/identity.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      823,
+      421,
+      1179,
+      528
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "86394263e733bae0b68841393e62b30c8a0825c856cc560f34b187da68a84f43"
+  },
+  {
+    "key": "ui/frames/portrait",
+    "path": "assets/ui/frames/portrait.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      84,
+      129,
+      247,
+      336
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "8a03b4517ac7ca8b253780f3b42f12047affb72c647dfbda03714004cebd91d3"
+  },
+  {
+    "key": "ui/frames/portrait-selected",
+    "path": "assets/ui/frames/portrait-selected.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      270,
+      123,
+      452,
+      342
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "51c9662bfb50a1fa54cc00757078fc8be0d1aa06036d27dc09786f9393a5aadf"
+  },
+  {
+    "key": "ui/frames/input",
+    "path": "assets/ui/frames/input.png",
+    "source": "art-source/ui/Assets_placeholders_2.png",
+    "crop": [
+      36,
+      887,
+      380,
+      955
+    ],
+    "cropConvention": "left,top,right-exclusive,bottom-exclusive; original pixels",
+    "sha256": "dbbc38636b56dff6ef9fcd265e797e3fe01b0b72181e51951abd66ec189955ae"
+  }
+]

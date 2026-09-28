@@ -1,4 +1,10 @@
-# Current v1.3.1 source verification
+# Validation — Super Wiss Ascension 1.4.1
+
+Current Android version: **1.4.1-playtest**, versionCode **46**. Run `npm test`, `npm run validate:weapon-art`, and `npm run validate:maps` from the project root. Build and lint the installable QA APK with `./gradlew :app:assembleQa :app:lintQa` using JDK 17 and Android SDK 36. Current local build results are recorded in [docs/BUILD-1.4.1.md](docs/BUILD-1.4.1.md).
+
+The supplied UI evidence is documented in [UI-POLISH-DELIVERY.md](UI-POLISH-DELIVERY.md). All v1.3.1 and older results below are historical.
+
+## Historical v1.3.1 source verification
 
 Read [this patch's report](docs/reviews/1.3.1/TEST-REPORT.md). No native compilation/installation succeeded here. All Android successes below are historical and must not be applied to this candidate. Real weapon art remains pending.
 

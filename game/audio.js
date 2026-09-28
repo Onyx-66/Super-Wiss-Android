@@ -63,7 +63,7 @@ export class AudioEngine {
     play(type, event = {}) {
         if (!this.enabled || !this.context || this.context.state !== 'running' || this.voices >= 20)
             return;
-        const aliases = { bounce: 'stomp', gameover: 'knockout', blast: 'skill', scales: 'shield', shrine: 'power', crate: 'block', treasure: 'chest', 'water-save': 'prince' };
+        const aliases = { punch:'stomp', 'unarmed-hit':'armor', bounce: 'stomp', gameover: 'knockout', blast: 'skill', scales: 'shield', shrine: 'power', crate: 'block', treasure: 'chest', 'water-save': 'prince' };
         let name = aliases[type] || type;
         if (type === 'skill' && event.skill === 'gravity')
             name = 'gravity';

@@ -1,0 +1,450 @@
+[
+  [
+    "Crouch authored art",
+    "Wissem",
+    "crouch-idle",
+    "assets/heroes/wissem/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Wissem",
+    "crouch-move",
+    "assets/heroes/wissem/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Wissem",
+    "crouch-transition",
+    "assets/heroes/wissem/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Wissem",
+    "crouch-attack",
+    "assets/heroes/wissem/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Wissem",
+    "crouch-sockets",
+    "assets/heroes/wissem/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Kael",
+    "crouch-idle",
+    "assets/heroes/kossay/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Kael",
+    "crouch-move",
+    "assets/heroes/kossay/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Kael",
+    "crouch-transition",
+    "assets/heroes/kossay/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Kael",
+    "crouch-attack",
+    "assets/heroes/kossay/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Kael",
+    "crouch-sockets",
+    "assets/heroes/kossay/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Astra",
+    "crouch-idle",
+    "assets/heroes/yakine/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Astra",
+    "crouch-move",
+    "assets/heroes/yakine/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Astra",
+    "crouch-transition",
+    "assets/heroes/yakine/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Astra",
+    "crouch-attack",
+    "assets/heroes/yakine/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Astra",
+    "crouch-sockets",
+    "assets/heroes/yakine/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Nyx",
+    "crouch-idle",
+    "assets/heroes/taky/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Nyx",
+    "crouch-move",
+    "assets/heroes/taky/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Nyx",
+    "crouch-transition",
+    "assets/heroes/taky/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Nyx",
+    "crouch-attack",
+    "assets/heroes/taky/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Nyx",
+    "crouch-sockets",
+    "assets/heroes/taky/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Bront",
+    "crouch-idle",
+    "assets/heroes/garsi/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Bront",
+    "crouch-move",
+    "assets/heroes/garsi/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Bront",
+    "crouch-transition",
+    "assets/heroes/garsi/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Bront",
+    "crouch-attack",
+    "assets/heroes/garsi/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Bront",
+    "crouch-sockets",
+    "assets/heroes/garsi/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Zephyr",
+    "crouch-idle",
+    "assets/heroes/tounsi/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Zephyr",
+    "crouch-move",
+    "assets/heroes/tounsi/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Zephyr",
+    "crouch-transition",
+    "assets/heroes/tounsi/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Zephyr",
+    "crouch-attack",
+    "assets/heroes/tounsi/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Zephyr",
+    "crouch-sockets",
+    "assets/heroes/tounsi/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Volt",
+    "crouch-idle",
+    "assets/heroes/youssef/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Volt",
+    "crouch-move",
+    "assets/heroes/youssef/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Volt",
+    "crouch-transition",
+    "assets/heroes/youssef/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Volt",
+    "crouch-attack",
+    "assets/heroes/youssef/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Volt",
+    "crouch-sockets",
+    "assets/heroes/youssef/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Skye",
+    "crouch-idle",
+    "assets/heroes/loey/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Skye",
+    "crouch-move",
+    "assets/heroes/loey/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Skye",
+    "crouch-transition",
+    "assets/heroes/loey/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Skye",
+    "crouch-attack",
+    "assets/heroes/loey/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Skye",
+    "crouch-sockets",
+    "assets/heroes/loey/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Sol",
+    "crouch-idle",
+    "assets/heroes/rayan/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Sol",
+    "crouch-move",
+    "assets/heroes/rayan/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Sol",
+    "crouch-transition",
+    "assets/heroes/rayan/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Sol",
+    "crouch-attack",
+    "assets/heroes/rayan/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Sol",
+    "crouch-sockets",
+    "assets/heroes/rayan/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "Crouch authored art",
+    "Rime",
+    "crouch-idle",
+    "assets/heroes/mira/crouch-idle.png",
+    "One 128\u00d7160 transparent crouched idle pose, bent knees and lowered torso, feet on the same baseline.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Rime",
+    "crouch-move",
+    "assets/heroes/mira/crouch-move.png",
+    "Four 128\u00d7160 transparent crouch locomotion frames in one row, same origin/feet line.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Rime",
+    "crouch-transition",
+    "assets/heroes/mira/crouch-transition.png",
+    "Four 128\u00d7160 transition cells: two enter, two exit. Standing clearance remains owned by physics.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch authored art",
+    "Rime",
+    "crouch-attack",
+    "assets/heroes/mira/crouch-attack.png",
+    "Three 128\u00d7160 cells: startup, active, recovery. Preserve existing combat phase timing and reach.",
+    "MISSING: temporary independent limb cutout exists, not final hand-drawn art. Add a separate clip/manifest hook on receipt, not an undocumented frame14."
+  ],
+  [
+    "Crouch rig data",
+    "Rime",
+    "crouch-sockets",
+    "assets/heroes/mira/crouch-sockets.json",
+    "Main/offhand sockets for every crouch clip; leg/torso, foreground fingers, clothing/weapon occlusion review.",
+    "MISSING: current approximate cutout torso transform is not final per-frame calibration."
+  ],
+  [
+    "UI glyph finish",
+    "All heroes",
+    "crouch",
+    "assets/ui/icons/crouch-pose-final.png",
+    "32\u00d732 logical icon: bent-knee side silhouette under a low overhead bar; one contiguous readable shape, dark outline, cream/gold highlights, transparent. Read at32 and grayscale.",
+    "OPTIONAL REPLACEMENT: original runtime SVG is functional and supplied in icons.js, not a missing runtime reference."
+  ],
+  [
+    "UI glyph finish",
+    "All heroes",
+    "unarmed",
+    "assets/ui/icons/fist-final.png",
+    "32\u00d732 clenched fist silhouette, short wrist, visible thumb and distinct finger grouping; transparent; no lettering.",
+    "OPTIONAL REPLACEMENT: current original runtime SVG is functional, not an existing supplied-sheet crop."
+  ],
+  [
+    "Mockup fidelity",
+    "Global shell",
+    "night-scenery",
+    "assets/backgrounds/menu-moon-castle.png",
+    "Clean full landscape moon/castle/forest scenery matching mockups, with no text, frames or heroes.",
+    "MISSING: current cosmic/castle source is not the same night scene. No screenshot background is baked over live UI."
+  ],
+  [
+    "Mockup fidelity",
+    "Home",
+    "pedestal",
+    "assets/ui/home/rocky-pedestal.png",
+    "Isolated pixel-art rocky floating hero platform, transparent, matching target perspective.",
+    "MISSING: original procedural platform remains; not claimed as matched."
+  ],
+  [
+    "Mockup fidelity",
+    "Home / Missions",
+    "illustrations",
+    "assets/ui/illustrations/<mode-or-mission>.png",
+    "Clean isolated page-appropriate mode/quest vignettes (no text or frames).",
+    "PARTIAL: current portraits use existing source map scenery and supplied icons, not exact custom target illustrations."
+  ],
+  [
+    "Mockup fidelity",
+    "Typography",
+    "original-typeface",
+    "NOT_A_BUNDLED_FILE",
+    "Original licensed display/body typeface identification plus device rendering approval.",
+    "NOT SUPPLIED: display uses locally rendered Georgia/serif pixel-raster fallback, body Georgia (VT323 when locally available); no font binaries distributed."
+  ]
+]

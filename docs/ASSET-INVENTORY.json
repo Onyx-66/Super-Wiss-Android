@@ -1622,58 +1622,620 @@
   {
     "key": "weapon/gauntlet",
     "path": "assets/weapons/gravity_gauntlet.png",
-    "status": "awaiting-user-art"
+    "size": 1234425,
+    "sha256": "91d4b2c6e3bd2c2118a1cb1447a611d43d168789bb69a90358b4651e5aee6f77"
   },
   {
     "key": "weapon/dual",
     "path": "assets/weapons/twin_fang_dagger.png",
-    "status": "awaiting-user-art"
+    "size": 669524,
+    "sha256": "6f5802c5944fdfad61bcf24b81f40b42339059c50263316f61c5f735bf10ca84"
   },
   {
     "key": "weapon/staff",
     "path": "assets/weapons/orbit_crescent_staff.png",
-    "status": "awaiting-user-art"
+    "size": 761491,
+    "sha256": "bd056c439f3483374c43c5c8a108f86298348ebd5609f6c03b8c2001e7aede91"
   },
   {
     "key": "weapon/dagger",
     "path": "assets/weapons/shadow_knife.png",
-    "status": "awaiting-user-art"
+    "size": 733769,
+    "sha256": "a857b86b671285af8a1309549b78920eb2048a1ab9a05d3a60ea95d8212ea3c4"
   },
   {
     "key": "weapon/shield",
     "path": "assets/weapons/stonebreaker_hammer.png",
-    "status": "awaiting-user-art"
+    "size": 1062229,
+    "sha256": "fe3e9bcaa3d28540011655377292069da104610a37cf6af8ce0c7da5384f2c3e"
   },
   {
     "key": "weapon/sabre",
     "path": "assets/weapons/wind_scimitar.png",
-    "status": "awaiting-user-art"
+    "size": 905504,
+    "sha256": "589931dd1c65027b78ff6491b95ebfc14870b8ea1af8f88f100cc28ae7b5cb71"
   },
   {
     "key": "weapon/gadget",
     "path": "assets/weapons/clockwork_knuckle.png",
-    "status": "awaiting-user-art"
+    "size": 1341584,
+    "sha256": "05d3a4ce7a05f9a3e1f3a360acb8de0515bfa74cba707439452c56381ea7ff4e"
   },
   {
     "key": "weapon/bow",
     "path": "assets/weapons/sky_bow.png",
-    "status": "awaiting-user-art"
+    "size": 847719,
+    "sha256": "81aa4a50b50740b0013095cb0504406a989009412c3e307b34b6ff782c30ffe0"
   },
   {
     "key": "weapon/lance",
     "path": "assets/weapons/sun_lance.png",
-    "status": "awaiting-user-art"
+    "size": 650985,
+    "sha256": "6359b59a8cc7fc062bb815be013163d1727f4cab5783a558e968b7b5befc5ceb"
   },
   {
     "key": "weapon/frost_staff",
     "path": "assets/weapons/frost_staff.png",
-    "status": "awaiting-user-art"
+    "size": 860656,
+    "sha256": "b7fe3edb5c02a628d23d5914efe86d62f22011b9377bf30655892593cfae123c"
   },
   {
     "key": "branding/logo",
     "path": "assets/branding/logo.png",
     "size": 408412,
     "sha256": "791339b43c9810a044da3a3c7f34c7f977487daea31387556e60fc58dedb2ada"
+  },
+  {
+    "key": "ui/icons/coin",
+    "path": "assets/ui/icons/coin.png",
+    "size": 14932,
+    "sha256": "4bafa662c317be6714beb48f15607f932d32fc4d5e09bb32c5a4527197cb1f7f"
+  },
+  {
+    "key": "ui/icons/star",
+    "path": "assets/ui/icons/star.png",
+    "size": 14826,
+    "sha256": "d93142fa01358a4c0f9128b94cd5e51538b9b8a62e266c5d2b4252ffe364ff4a"
+  },
+  {
+    "key": "ui/icons/plus",
+    "path": "assets/ui/icons/plus.png",
+    "size": 9603,
+    "sha256": "9217dd1808e5cb57e5628dd12eac5dc5c9794c9ae2395889be486e2d071bc149"
+  },
+  {
+    "key": "ui/icons/friends",
+    "path": "assets/ui/icons/friends.png",
+    "size": 13256,
+    "sha256": "9b94684d0cd2c8204e78c6059e2d4a3d4f6a2870d1dd0680855c5a9d3237343f"
+  },
+  {
+    "key": "ui/icons/settings",
+    "path": "assets/ui/icons/settings.png",
+    "size": 16691,
+    "sha256": "a76419c08796d5a1e422f28cd2ccd19684ece3706a79a2dca9f5fc7fd2de0e42"
+  },
+  {
+    "key": "ui/icons/close",
+    "path": "assets/ui/icons/close.png",
+    "size": 14463,
+    "sha256": "51af1a948e0151cbf7215e990d134093971de780d30c709a67b702a0da2f840b"
+  },
+  {
+    "key": "ui/icons/edit",
+    "path": "assets/ui/icons/edit.png",
+    "size": 10537,
+    "sha256": "9045c72ac629f36d95225862e86df767abee52e7ca4570b3da407c24b59236ee"
+  },
+  {
+    "key": "ui/icons/help",
+    "path": "assets/ui/icons/help.png",
+    "size": 13674,
+    "sha256": "04c9705a9457c7d47e26605a18ec3e51e82cf7d292ec7f11e97d104e9daea941"
+  },
+  {
+    "key": "ui/icons/info",
+    "path": "assets/ui/icons/info.png",
+    "size": 12424,
+    "sha256": "6e259a437c98481aa4b217e7c8f414f7549a8d9a64d2f165bb4e01975fd75b4d"
+  },
+  {
+    "key": "ui/icons/check",
+    "path": "assets/ui/icons/check.png",
+    "size": 12091,
+    "sha256": "eb4cde1e41ffb10ff13b604c666891eb02ce2582d7b2d2a9e2d8998a6673efe0"
+  },
+  {
+    "key": "ui/icons/lock",
+    "path": "assets/ui/icons/lock.png",
+    "size": 10829,
+    "sha256": "f107ead34f5debed1cd4a9c84ed455cce3f8923d8bde65646cdc8a301a1db440"
+  },
+  {
+    "key": "ui/icons/online",
+    "path": "assets/ui/icons/online.png",
+    "size": 9969,
+    "sha256": "67ebfd2857a8b2d0a9012eb9cee1c592e5a32d40311c12cc2b1242326cd294fc"
+  },
+  {
+    "key": "ui/icons/clock",
+    "path": "assets/ui/icons/clock.png",
+    "size": 16806,
+    "sha256": "50efb8edef4f60a4800018fedc369124d756a0757783cbb663db2ec2f8a10a36"
+  },
+  {
+    "key": "ui/icons/daily",
+    "path": "assets/ui/icons/daily.png",
+    "size": 11156,
+    "sha256": "549428dbea811813cb6c1dd67c4bd62f30fda73ae2397839116e1ff16bb32268"
+  },
+  {
+    "key": "ui/icons/home",
+    "path": "assets/ui/icons/home.png",
+    "size": 11170,
+    "sha256": "05fac636a84c57a4ecbbe37c5f5d1b38aefa8388dfe9c6be114ff4060e3f6b94"
+  },
+  {
+    "key": "ui/icons/worlds",
+    "path": "assets/ui/icons/worlds.png",
+    "size": 19212,
+    "sha256": "758bc8a533dc95300a02fc2084eefe6938326d2fc41c66dc04eead2e75a1c3fe"
+  },
+  {
+    "key": "ui/icons/heroes",
+    "path": "assets/ui/icons/heroes.png",
+    "size": 16473,
+    "sha256": "8af71c5ce8e77565fc05b683bca934822a3d87c1194175201c563dac18e7aa5a"
+  },
+  {
+    "key": "ui/icons/pets",
+    "path": "assets/ui/icons/pets.png",
+    "size": 16105,
+    "sha256": "59c8d06005e70befa94f907cebfb7ab635c45f1ee405a81684683bbb85c50c96"
+  },
+  {
+    "key": "ui/icons/shop",
+    "path": "assets/ui/icons/shop.png",
+    "size": 15332,
+    "sha256": "ee7f131eb3d8ab317a7fa68287e36f0bf2f8a71526456c6a6a599df89b843685"
+  },
+  {
+    "key": "ui/icons/missions",
+    "path": "assets/ui/icons/missions.png",
+    "size": 12175,
+    "sha256": "8afcf03679880a57648615db3eeddf1554ee333ac1d3a9bfd8a17a8c558a11cf"
+  },
+  {
+    "key": "ui/icons/records",
+    "path": "assets/ui/icons/records.png",
+    "size": 9385,
+    "sha256": "0beabdd8ad3b496b32f8ee380a27f74e75f39fcabe2cc4e90fef2b18cfca4294"
+  },
+  {
+    "key": "ui/icons/profile",
+    "path": "assets/ui/icons/profile.png",
+    "size": 12475,
+    "sha256": "5a6331457275a30cd753861a331f7819d53526bd3ae72755cddc2ac7e702a216"
+  },
+  {
+    "key": "ui/icons/swords",
+    "path": "assets/ui/icons/swords.png",
+    "size": 23917,
+    "sha256": "a16dc2d8416754026636795cc07085e26eda7b928a66c23d6805816cb71f8768"
+  },
+  {
+    "key": "ui/icons/boss",
+    "path": "assets/ui/icons/boss.png",
+    "size": 19930,
+    "sha256": "16ba7290fa189674f7189c0f7a961cb8da6f663e0c64f8398759a3ee847bc4c7"
+  },
+  {
+    "key": "ui/icons/compass",
+    "path": "assets/ui/icons/compass.png",
+    "size": 18653,
+    "sha256": "c6618a31aa4b6c5db039560727495ed6922bd6c8d15b744b2eeddeef789ba07a"
+  },
+  {
+    "key": "ui/icons/map",
+    "path": "assets/ui/icons/map.png",
+    "size": 25170,
+    "sha256": "3a2fe05e3463b3a04e633de7fc6903fc2f26355e6bae472ab18cc28ba9baff13"
+  },
+  {
+    "key": "ui/icons/gamepad",
+    "path": "assets/ui/icons/gamepad.png",
+    "size": 13481,
+    "sha256": "605d402200f2e30ab98ec1800b3a41a6b5ba6e904a180b2828ec8efdd6e49f61"
+  },
+  {
+    "key": "ui/icons/controls",
+    "path": "assets/ui/icons/controls.png",
+    "size": 10414,
+    "sha256": "f3ca879ae4c204b835dbfe24985f2b2e20eb9390518d10b1ed064d299fc31ecb"
+  },
+  {
+    "key": "ui/icons/flag",
+    "path": "assets/ui/icons/flag.png",
+    "size": 20335,
+    "sha256": "a6048c6c9506782057f01bd414a5b2b94632668f031894b521f72f8199251c43"
+  },
+  {
+    "key": "ui/icons/skull",
+    "path": "assets/ui/icons/skull.png",
+    "size": 14119,
+    "sha256": "2d0bbb7bd172d07ef2f3055ad4c6dbb5f33615e77f56bc5dc2e8d9bc73a0cf90"
+  },
+  {
+    "key": "ui/icons/touch",
+    "path": "assets/ui/icons/touch.png",
+    "size": 22542,
+    "sha256": "f2e0c23fc516fe3fc49ac71c4a0fa20f32e95cb8afa9ac3f0cf5236babf3f4d8"
+  },
+  {
+    "key": "ui/icons/volume",
+    "path": "assets/ui/icons/volume.png",
+    "size": 17323,
+    "sha256": "9a1ed44b2c79cd9713848fa17bd8bdf5ba1e5bf9cfb14c3dea003c54fd4515d8"
+  },
+  {
+    "key": "ui/icons/music",
+    "path": "assets/ui/icons/music.png",
+    "size": 11298,
+    "sha256": "5dbc65c5866d97550e3a024b36d059062bcd3d3732fd756d395f6bd2afd56050"
+  },
+  {
+    "key": "ui/icons/speed",
+    "path": "assets/ui/icons/speed.png",
+    "size": 14514,
+    "sha256": "a3a60efd22862eb66802148d56a08ee0d977268f32803bfebde202eee367bb0c"
+  },
+  {
+    "key": "ui/icons/palette",
+    "path": "assets/ui/icons/palette.png",
+    "size": 18911,
+    "sha256": "5c801c4cd5eceb791164d29dd5973a3f14291b574ad4ad6e3437aa3b01a942cb"
+  },
+  {
+    "key": "ui/icons/power",
+    "path": "assets/ui/icons/power.png",
+    "size": 11660,
+    "sha256": "5605de7a84710cf02c51a5226258cdb484390ee3481c63566c29d412a81ec72a"
+  },
+  {
+    "key": "ui/icons/sword",
+    "path": "assets/ui/icons/sword.png",
+    "size": 13101,
+    "sha256": "d255f66a07133fec3a7c5270bb8ccca63e7f394c11fdfba2aee9832e8a4349f7"
+  },
+  {
+    "key": "ui/icons/gold-star",
+    "path": "assets/ui/icons/gold-star.png",
+    "size": 11936,
+    "sha256": "e4208ce94f530816094d9ab59b912b646e0f7557b568e7412ba1206ccb2ea0d9"
+  },
+  {
+    "key": "ui/icons/magic",
+    "path": "assets/ui/icons/magic.png",
+    "size": 12629,
+    "sha256": "5a43e2469e964f4e0386664136457beac2f7839c9ee47fe814013c1b9034d73b"
+  },
+  {
+    "key": "ui/icons/stamina",
+    "path": "assets/ui/icons/stamina.png",
+    "size": 12116,
+    "sha256": "72178a68b6d53e7e3c8f36a1b29cddfc9a0a3971bc4d6e82946b0131516fd640"
+  },
+  {
+    "key": "ui/icons/bow",
+    "path": "assets/ui/icons/bow.png",
+    "size": 18133,
+    "sha256": "b538f6a788b1b439796ecb4cd4dd7f7da97b7ac41fed44f69c33969b554fb5dc"
+  },
+  {
+    "key": "ui/icons/sun",
+    "path": "assets/ui/icons/sun.png",
+    "size": 15913,
+    "sha256": "a69bd52f2c9d1ce6aa597a200cb306b61c561c77f52bb71b530a9e4a347bacaf"
+  },
+  {
+    "key": "ui/icons/frost",
+    "path": "assets/ui/icons/frost.png",
+    "size": 19331,
+    "sha256": "9aa02726d4dd415116f035e517d75f1cfb909a46569a95fa70486a4babddb9e6"
+  },
+  {
+    "key": "ui/icons/wind",
+    "path": "assets/ui/icons/wind.png",
+    "size": 22193,
+    "sha256": "285a5bdf325ef0cd7d2b5367cb2c77094f79917fdb6c6a4dd2243889d8a56757"
+  },
+  {
+    "key": "ui/icons/crown",
+    "path": "assets/ui/icons/crown.png",
+    "size": 15253,
+    "sha256": "c4ffb73c0ace7304b6a2f5b243c0db912102f3c7e44fa5f0adbb16536b72d4d1"
+  },
+  {
+    "key": "ui/icons/earned-star",
+    "path": "assets/ui/icons/earned-star.png",
+    "size": 12650,
+    "sha256": "b2d4241cfc07e41c64c39145057b6c5f5f88d723bf158712ce4089def984b4d6"
+  },
+  {
+    "key": "ui/icons/empty-star",
+    "path": "assets/ui/icons/empty-star.png",
+    "size": 12074,
+    "sha256": "2268c2a7c7194e49d3b59a5804800df28c4119fe540e5883b2428b8340f9c829"
+  },
+  {
+    "key": "ui/icons/medal-gold",
+    "path": "assets/ui/icons/medal-gold.png",
+    "size": 23966,
+    "sha256": "96d8d663da6fa001f999ead8c6a7d32a353c77b7c40992577ab6a38788e4dd37"
+  },
+  {
+    "key": "ui/icons/medal-silver",
+    "path": "assets/ui/icons/medal-silver.png",
+    "size": 27005,
+    "sha256": "449b2dfea300df80023efc0eebcc44daa9cd3fa33de7cc6cfa83cb5edf72d01b"
+  },
+  {
+    "key": "ui/icons/medal-bronze",
+    "path": "assets/ui/icons/medal-bronze.png",
+    "size": 26018,
+    "sha256": "912b080a15a40c5ee471fb6dbeb12ebfc000d3abc0f6f912b0c74708996aec19"
+  },
+  {
+    "key": "ui/icons/trophy",
+    "path": "assets/ui/icons/trophy.png",
+    "size": 17370,
+    "sha256": "ca9e0e00fd9eea19d8330c1b60e06e81a54966d2a00fd6f282a0a49c561899e6"
+  },
+  {
+    "key": "ui/icons/quest-coins",
+    "path": "assets/ui/icons/quest-coins.png",
+    "size": 33593,
+    "sha256": "87f05d0c9958ea6a9e217e431f63312514d43bb0371f7acc7ca12852156af5f6"
+  },
+  {
+    "key": "ui/icons/quest-power",
+    "path": "assets/ui/icons/quest-power.png",
+    "size": 24328,
+    "sha256": "d17ff8f9a7f9e3f74738adb5813313eb82cc21b796e76c7f76dd1427f096e4e3"
+  },
+  {
+    "key": "ui/icons/quest-potion",
+    "path": "assets/ui/icons/quest-potion.png",
+    "size": 23627,
+    "sha256": "5a6498438b614c7985b4c4a72198ee3eeaf3edecd26e765ef4904a058d2c5bea"
+  },
+  {
+    "key": "ui/icons/quest-shrine",
+    "path": "assets/ui/icons/quest-shrine.png",
+    "size": 38189,
+    "sha256": "cfcdb3c30cbac9f8f0b4eca82ab6f91e5ae252f1148885b5502c70ae6a90a332"
+  },
+  {
+    "key": "ui/icons/quest-monster",
+    "path": "assets/ui/icons/quest-monster.png",
+    "size": 33568,
+    "sha256": "468e9e28e70da4d1ccbead6fcd62531982ae4707106d5ba6bd5eb891919e9ae5"
+  },
+  {
+    "key": "ui/icons/left",
+    "path": "assets/ui/icons/left.png",
+    "size": 8892,
+    "sha256": "94bec736520bcfb95e5b6077de671b133a027a4fa03a909092a0597e9977ee67"
+  },
+  {
+    "key": "ui/icons/right",
+    "path": "assets/ui/icons/right.png",
+    "size": 8609,
+    "sha256": "dca547afc7eb4af631dbe9152ade395bf25311e8753da3cdba20e5178673d364"
+  },
+  {
+    "key": "ui/icons/crouch",
+    "path": "assets/ui/icons/crouch.png",
+    "size": 7663,
+    "sha256": "f67f02f409207d014faf6a38505e8b876308ca305f410271e5a50c5b77616ddd"
+  },
+  {
+    "key": "ui/icons/diamond",
+    "path": "assets/ui/icons/diamond.png",
+    "size": 12261,
+    "sha256": "83960834a8354998e859ff1c6ecb3582f4a9a81cd207a193d967e9c2f658eef8"
+  },
+  {
+    "key": "ui/frames/currency",
+    "path": "assets/ui/frames/currency.png",
+    "size": 24296,
+    "sha256": "c879373ca20f78ce7fff187449b700188bc35d7fb755b48de44847f21aba0a48"
+  },
+  {
+    "key": "ui/frames/tab",
+    "path": "assets/ui/frames/tab.png",
+    "size": 12742,
+    "sha256": "1cbff2a023d44d8eb2c4d7c5a3ce1a8ee06570be375b22b92816fac1eb1dee61"
+  },
+  {
+    "key": "ui/frames/tab-selected",
+    "path": "assets/ui/frames/tab-selected.png",
+    "size": 13720,
+    "sha256": "00e01fe73ced78f08bade668f78f6b88fd71ec46f150ab7e4584658bf2717a89"
+  },
+  {
+    "key": "ui/frames/button",
+    "path": "assets/ui/frames/button.png",
+    "size": 15530,
+    "sha256": "5acc2b60e40eeb73f167a7006fa20e931c10a2b6dd079ffb6dff289b0f8f1c47"
+  },
+  {
+    "key": "ui/frames/button-gold",
+    "path": "assets/ui/frames/button-gold.png",
+    "size": 20396,
+    "sha256": "34b8e83a4546b84804a5d9366eb155890b5cea000443fefd9655212ba08d4079"
+  },
+  {
+    "key": "ui/frames/hero-card",
+    "path": "assets/ui/frames/hero-card.png",
+    "size": 40996,
+    "sha256": "8655e11efd974e5357267b28a6cf499b3fda4261231c763b91480e31ea023b2b"
+  },
+  {
+    "key": "ui/frames/hero-selected",
+    "path": "assets/ui/frames/hero-selected.png",
+    "size": 42140,
+    "sha256": "41a005b35ffadde97fc7f4e7d1bd00af70986c2dbcb76b50a474105a44a4fca7"
+  },
+  {
+    "key": "ui/frames/hero-locked",
+    "path": "assets/ui/frames/hero-locked.png",
+    "size": 41854,
+    "sha256": "15f5ad3d1d7ad2d92ddc133d2af316f03a3ccd6aecf2b11b9e9bc7123cbc3a39"
+  },
+  {
+    "key": "ui/frames/hero-purple",
+    "path": "assets/ui/frames/hero-purple.png",
+    "size": 39868,
+    "sha256": "0713fc050e2acb7cfab9a68e5c86985348ba414087e7580eefe82228a05f1c3a"
+  },
+  {
+    "key": "ui/frames/quest",
+    "path": "assets/ui/frames/quest.png",
+    "size": 29177,
+    "sha256": "4ba3c57ec541c2ca5ebb6b70e75512d39bbfdbb04a95830fe1d1ecaafdb29de3"
+  },
+  {
+    "key": "ui/frames/price",
+    "path": "assets/ui/frames/price.png",
+    "size": 12317,
+    "sha256": "966594897afc048a558fb784f7167e2abfd739c2abbbad7bc27373559fc58768"
+  },
+  {
+    "key": "ui/frames/nav",
+    "path": "assets/ui/frames/nav.png",
+    "size": 36941,
+    "sha256": "2fffc13c71ac44708afff6ce576085201e3446e2da569f887d2a857229048288"
+  },
+  {
+    "key": "ui/frames/setting-row",
+    "path": "assets/ui/frames/setting-row.png",
+    "size": 29518,
+    "sha256": "ebe637552ac09132236d68930ae594a4f13b782e642d85a69ce60be55746da06"
+  },
+  {
+    "key": "ui/frames/button-large",
+    "path": "assets/ui/frames/button-large.png",
+    "size": 31780,
+    "sha256": "6efbf331889c589ee49c6dfeec736c70e3af80b7f16bfb6206de432e916d95a5"
+  },
+  {
+    "key": "ui/frames/toggle-on",
+    "path": "assets/ui/frames/toggle-on.png",
+    "size": 9379,
+    "sha256": "5614c9de4017113b717fe6edd4bdc8b0fe12f8caf8c668d7c8e7feb4eec77eef"
+  },
+  {
+    "key": "ui/frames/toggle-off",
+    "path": "assets/ui/frames/toggle-off.png",
+    "size": 9350,
+    "sha256": "0fe6bc7e4d31c5393f387aca07a4b4c030811a6dace6bba25d6c4789a0b6c022"
+  },
+  {
+    "key": "ui/frames/progress-empty",
+    "path": "assets/ui/frames/progress-empty.png",
+    "size": 9884,
+    "sha256": "b7ff49eecfada1ada6665c4598c8416785abe90ac309011765aa7a9ac4e215f7"
+  },
+  {
+    "key": "ui/frames/progress-full",
+    "path": "assets/ui/frames/progress-full.png",
+    "size": 7644,
+    "sha256": "26fb1de96ad8b84f7ee0a89768eaf57848c5074067e8ebf9fc64fceec1b5a642"
+  },
+  {
+    "key": "ui/frames/panel",
+    "path": "assets/ui/frames/panel.png",
+    "size": 102649,
+    "sha256": "eb0989593a028583e2ec2e25a306a0bf62913cccad7f97de60425f63d51cc231"
+  },
+  {
+    "key": "ui/frames/profile",
+    "path": "assets/ui/frames/profile.png",
+    "size": 108962,
+    "sha256": "b2df4fc5fa718a4760d6454056c3b67bc0bbc24928915464b2b4659849121252"
+  },
+  {
+    "key": "ui/frames/identity",
+    "path": "assets/ui/frames/identity.png",
+    "size": 48233,
+    "sha256": "86394263e733bae0b68841393e62b30c8a0825c856cc560f34b187da68a84f43"
+  },
+  {
+    "key": "ui/frames/portrait",
+    "path": "assets/ui/frames/portrait.png",
+    "size": 40566,
+    "sha256": "8a03b4517ac7ca8b253780f3b42f12047affb72c647dfbda03714004cebd91d3"
+  },
+  {
+    "key": "ui/frames/portrait-selected",
+    "path": "assets/ui/frames/portrait-selected.png",
+    "size": 55915,
+    "sha256": "51c9662bfb50a1fa54cc00757078fc8be0d1aa06036d27dc09786f9393a5aadf"
+  },
+  {
+    "key": "ui/frames/input",
+    "path": "assets/ui/frames/input.png",
+    "size": 22226,
+    "sha256": "dbbc38636b56dff6ef9fcd265e797e3fe01b0b72181e51951abd66ec189955ae"
+  },
+  {
+    "key": "ui/frames/panel-shell",
+    "path": "assets/ui/frames/panel-shell.png",
+    "size": 16599,
+    "sha256": "bdfb4ce1a159c0056e0753199cb06f32237046c1a3aaad81bd541fa62460beac"
+  },
+  {
+    "key": "ui/ornaments/diamond",
+    "path": "assets/ui/ornaments/diamond.png",
+    "size": 1844,
+    "sha256": "002acb15001353a5a76eaac547a16db6ac30d81ce52d878bcae12c123824d8c1"
+  },
+  {
+    "key": "ui/ornaments/rule",
+    "path": "assets/ui/ornaments/rule.png",
+    "size": 208,
+    "sha256": "7c436e851a095aafe4ac1fb9d934679bf799f6f9c47cd97ddfbe41f4d9313f46"
+  },
+  {
+    "key": "ui/icons/crown-silver",
+    "path": "assets/ui/icons/crown-silver.png",
+    "size": 15728,
+    "sha256": "01a9c56c363d7ef008328faefcd468c39455b68b2f8e2d3d2bca51688ea76a75"
+  },
+  {
+    "key": "ui/icons/crown-red",
+    "path": "assets/ui/icons/crown-red.png",
+    "size": 14771,
+    "sha256": "f37acb7aacda4566e258e285e98c7215da32c3731e21cc1b6307079825696967"
+  },
+  {
+    "key": "ui/icons/crown-green",
+    "path": "assets/ui/icons/crown-green.png",
+    "size": 15102,
+    "sha256": "0833d2b03c5e245c6f22c7747ac328d006f7c3a0c4bd78633270aa386b3bc427"
+  },
+  {
+    "key": "ui/icons/crown-cyan",
+    "path": "assets/ui/icons/crown-cyan.png",
+    "size": 15477,
+    "sha256": "36ba5dc99dfa814e96663d3159ea2c097371c874389959e68368c5f44486a53f"
+  },
+  {
+    "key": "ui/icons/crown-pink",
+    "path": "assets/ui/icons/crown-pink.png",
+    "size": 15905,
+    "sha256": "64fce3ee8891569a5f631d8836b3b2099971297207471d0b102889f5cc762159"
   },
   {
     "key": "sfx/click",

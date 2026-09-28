@@ -20,18 +20,32 @@ for(const [key,meta] of Object.entries({...manifest.images,...manifest.audio})){
 for(const h of data.heroes)if(!manifest.images[h.asset])throw Error('Missing hero asset '+h.asset);
 for(const p of data.pets)if(!manifest.images['pet/'+p.id])throw Error('Missing pet '+p.id);
 for(const w of data.maps){if(!manifest.images['tiles/'+w.tileSet])throw Error('Missing tileSet '+w.tileSet);if(!manifest.audio['music/'+w.music])throw Error('Missing music '+w.music);}
-const order=['content','data','assets','bosses','controls','cosmetics','ascension','world-physics','world-regions','placement','combat-profiles','weapon-art','engine','arena','link','social','icons','render','progress','audio','app','ascension-ui'];
+const order=['content','data','assets','bosses','controls','cosmetics','combat-profiles','hero-stats','equipment','wardrobe','ascension','world-physics','world-regions','placement','weapon-art','hero-presentation','engine','arena','link','social','ui-crops','icons','render','progress','audio','app','ascension-ui'];
 const read=name=>fs.readFileSync(path.join(root,'game',name),'utf8');
 const strip=name=>read(name+'.js').replace(/^import .*?;\s*$/gm,'').replace(/^export /gm,'');
 const core=order.filter(n=>!['app','ascension-ui'].includes(n)).map(strip).join('\n');
-const app=['app','ascension-ui','upgrade-ui'].map(strip).join('\n');
+const app=['app','ascension-ui','upgrade-ui','atelier-ui','ui-polish'].map(strip).join('\n');
 const makeCode=assets=>'(()=>{\n"use strict";\n'+core.replace('/*__ASSET_CONFIG__*/{}',JSON.stringify(manifest)).replace('/*__ASSET_DATA__*/{}',JSON.stringify(assets))+'\n(async()=>{try{await assetsReady;\n'+app+'\n}catch(e){window.SuperWissBoot.fail(e);}})();\n})();';
-const template=read('index.html'),css=read('style.css'),boot=read('boot.js');
+const template=read('index.html'),css=read('style.css')+'\n'+read('atelier.css')+'\n'+read('ui-polish.css'),boot=read('boot.js');
+const optionalFonts=[{name:'Pixelify Sans',file:'pixelify-sans-latin.woff2',weight:700},{name:'VT323',file:'vt323-latin.woff2',weight:400}];
+function buildCss(embeddedMode){
+ const faces=[];
+ for(const font of optionalFonts){
+  const source=path.join(root,'assets/fonts',font.file);if(!fs.existsSync(source))continue;
+  const bytes=fs.readFileSync(source);if(bytes.toString('ascii',0,4)!=='wOF2')throw Error('Invalid optional WOFF2 font: '+font.file);
+  const url=embeddedMode?'data:font/woff2;base64,'+bytes.toString('base64'):'assets/fonts/'+font.file;
+  faces.push(`@font-face{font-family:'${font.name}';font-style:normal;font-weight:${font.weight};font-display:swap;src:url('${url}') format('woff2')}`);
+ }
+ return css.replace('/*__OPTIONAL_FONTS__*/',faces.join('\n')).replace(/url\(['"]asset:([^'"]+)['"]\)/g,(_,key)=>{
+  if(!manifest.images[key])throw Error('Unknown CSS asset '+key);
+  return 'url("'+(embeddedMode?embedded[key]:manifest.images[key].path)+'")';
+ });
+}
 const resolveStaticImages=(markup,embeddedMode)=>markup.replace(/data-bundled-image="([^"]+)"/g,(_,key)=>{
  const meta=manifest.images[key];if(!meta||meta.available===false)throw Error('Missing branding image '+key);
  return 'src="'+(embeddedMode?embedded[key]:meta.path)+'"';
 });
-const html=template.replace('/*__STYLE__*/',()=>css).replace('/*__BOOT__*/',()=>boot).replace('/*__CODE__*/',()=>makeCode(embedded));
+const html=template.replace('/*__STYLE__*/',()=>buildCss(true)).replace('/*__BOOT__*/',()=>boot).replace('/*__CODE__*/',()=>makeCode(embedded));
 fs.mkdirSync(path.join(root,'dist'),{recursive:true});
 const browserHtml=resolveStaticImages(html,true);
 fs.writeFileSync(path.join(root,'dist/Super-Wiss-Odyssey.html'),browserHtml);
@@ -43,10 +57,11 @@ let android=template.replace('<style>/*__STYLE__*/</style>','<link rel="styleshe
  .replace("script-src 'unsafe-inline'", "script-src 'self'").replace("style-src 'unsafe-inline'", "style-src 'self' 'unsafe-inline'")
  .replace('img-src data:', "img-src 'self' data:").replace('media-src data:', "media-src 'self' data:");
 android=resolveStaticImages(android,false);
-for(const [name,content] of Object.entries({'game.html':android,'game.js':makeCode({}),'boot.js':boot,'style.css':css}))fs.writeFileSync(path.join(assets,name),content);
+for(const [name,content] of Object.entries({'game.html':android,'game.js':makeCode({}),'boot.js':boot,'style.css':buildCss(false)}))fs.writeFileSync(path.join(assets,name),content);
 for(const meta of Object.values({...manifest.images,...manifest.audio})){
  const target=path.join(assets,meta.path);if(meta.available===false){fs.rmSync(target,{force:true});continue;}fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,meta.path),target);
 }
+for(const font of optionalFonts){const source=path.join(root,'assets/fonts',font.file);if(fs.existsSync(source)){const dest=path.join(assets,'assets/fonts',font.file);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(source,dest);}}
 for(const name of fs.readdirSync(path.join(root,'licenses')))fs.copyFileSync(path.join(root,'licenses',name),path.join(assets,name));
 fs.writeFileSync(path.join(root,'docs/ASSET-INVENTORY.json'),JSON.stringify(inventory,null,2)+'\n');
 console.log(`Bundled ${data.maps.length} maps, ${inventory.filter(x=>x.size!==undefined).length} present assets + ${inventory.filter(x=>x.status==='awaiting-user-art').length} pending weapons; Android shell ${Buffer.byteLength(android)} bytes; browser ${(Buffer.byteLength(browserHtml)/1024/1024).toFixed(2)} MiB.`);

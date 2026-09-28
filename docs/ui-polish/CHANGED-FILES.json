@@ -1,0 +1,979 @@
+{
+  "baseline": "Super-Wiss-v1.4.0-Complete-Source.zip",
+  "note": "All byte-changed/new members except this manifest itself. gradlew and shell scripts also have executable permissions restored. Generated bundles and old evidence remain in the complete project.",
+  "files": [
+    {
+      "path": "Build-QA.bat",
+      "status": "modified",
+      "old_sha256": "1438cd2325694781acb88c876ada4a940f9a4f98054584eb6e3fcf20bddb5844",
+      "new_sha256": "fd98dae1ed29d3360bde8324d243e39f72cf7bfdbb0085a2d89b1e5a613f702d",
+      "bytes": 400
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "modified",
+      "old_sha256": "f476b6aba7fc3b3ee00f04557731214b28dd96e4782c696c72b9f2fb7682158f",
+      "new_sha256": "9c2d5b12353870ca48677ea0819402bc0a296a1d77b57b3bc6a9bb53760d3c4e",
+      "bytes": 5825
+    },
+    {
+      "path": "LOCAL-DELIVERY.md",
+      "status": "modified",
+      "old_sha256": "5e92a59c00d2ba962e1287f55ec558ef3786ba32eb433ba6a62071e6a577d8f8",
+      "new_sha256": "29041fc8664b0936ee38bf0fc557b54addddacc7bd0a20782e6546193725dc71",
+      "bytes": 6180
+    },
+    {
+      "path": "PUBLISHING.md",
+      "status": "modified",
+      "old_sha256": "08fc8ff3d713b310a54e96c09eb962db325fdbd98b130a5c09b769edc202255e",
+      "new_sha256": "9a2c20d49bbee52e41ae705df9c321184df03138ed3329e5ef6da673c8b7383b",
+      "bytes": 1025
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "old_sha256": "35e65f998debf6b10593502134210315b6175710fa45a22a9323c1483857b0ee",
+      "new_sha256": "5c46778d52d029cc4710f3ebfd46f3d22a0c7e725dbbe61bc764f615d95248fd",
+      "bytes": 2840
+    },
+    {
+      "path": "UI-POLISH-DELIVERY.md",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "49da7ff1ddb51ba291ef54df2bec586ac0aab8d3d16a7cdd2bb35895b9ac1315",
+      "bytes": 2019
+    },
+    {
+      "path": "VERSION",
+      "status": "modified",
+      "old_sha256": "78b591400c56b7b67b8cb3b2b8a8e65e9093897f02ce0878e6b5405c68620fa7",
+      "new_sha256": "7d072b48526b023950e4c48db01e8c273554a6401119f5691e7589ba9bc65d9d",
+      "bytes": 6
+    },
+    {
+      "path": "VERSIONING.md",
+      "status": "modified",
+      "old_sha256": "75c6510e318b3aab59a0105e256ef26704bebbf829451678d15255a249088ee6",
+      "new_sha256": "e4099c4104d03854535d37b290011882d0a93b327e369e939cf73e68f01d3aef",
+      "bytes": 741
+    },
+    {
+      "path": "app/build.gradle",
+      "status": "modified",
+      "old_sha256": "3fec50e46e946af6c319905f4d1dd33ddd915f7fcf415240f1f7ad672d31913d",
+      "new_sha256": "43eee3f033a1cce65c2fe75986048ed89b7a9d9baa99361e0378cebdaead863e",
+      "bytes": 3536
+    },
+    {
+      "path": "app/src/debug/assets/game.js",
+      "status": "modified",
+      "old_sha256": "43757dd56d358a71a60ee8d1697ec17f1cafa3915eb12ba1faa5eabfcd8a4040",
+      "new_sha256": "304650422081b99c5b30954f16e5fd1f20b8dc61b496fb3bbe39a07daaea4ca0",
+      "bytes": 477625
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/frames/panel-shell.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "bdfb4ce1a159c0056e0753199cb06f32237046c1a3aaad81bd541fa62460beac",
+      "bytes": 16599
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/icons/crown-cyan.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "36ba5dc99dfa814e96663d3159ea2c097371c874389959e68368c5f44486a53f",
+      "bytes": 15477
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/icons/crown-green.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0833d2b03c5e245c6f22c7747ac328d006f7c3a0c4bd78633270aa386b3bc427",
+      "bytes": 15102
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/icons/crown-pink.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "64fce3ee8891569a5f631d8836b3b2099971297207471d0b102889f5cc762159",
+      "bytes": 15905
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/icons/crown-red.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f37acb7aacda4566e258e285e98c7215da32c3731e21cc1b6307079825696967",
+      "bytes": 14771
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/icons/crown-silver.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "01a9c56c363d7ef008328faefcd468c39455b68b2f8e2d3d2bca51688ea76a75",
+      "bytes": 15728
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/ornaments/diamond.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "002acb15001353a5a76eaac547a16db6ac30d81ce52d878bcae12c123824d8c1",
+      "bytes": 1844
+    },
+    {
+      "path": "app/src/main/assets/assets/ui/ornaments/rule.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "7c436e851a095aafe4ac1fb9d934679bf799f6f9c47cd97ddfbe41f4d9313f46",
+      "bytes": 208
+    },
+    {
+      "path": "app/src/main/assets/game.html",
+      "status": "modified",
+      "old_sha256": "1da554ddf1b56546a9e1f888d32fdaf135b26c8bd57f8a38b80a6308d9f30734",
+      "new_sha256": "341340874811cbac4752d53afc3947a87e35246db09ba45b63739ddf11c72ee1",
+      "bytes": 12864
+    },
+    {
+      "path": "app/src/main/assets/game.js",
+      "status": "modified",
+      "old_sha256": "1cbd98162978a41d6149f35131d8aa2416e72e17cd61b98b9e74de4e8b450f96",
+      "new_sha256": "418e1dd6506be82491d529e1fee169ff4060598094342f19c8590af89a415b39",
+      "bytes": 477451
+    },
+    {
+      "path": "app/src/main/assets/style.css",
+      "status": "modified",
+      "old_sha256": "3f60ee30229929f06be6e06b8a15fd57f7080dc2c74031c400fc75ff83cf1e66",
+      "new_sha256": "dd2bb92ade2059c409a35c3925042599cf39bd653a86901727b956a3f85579bf",
+      "bytes": 191149
+    },
+    {
+      "path": "art-source/ui/polish-crops.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "34c7112443da4ff9d1b285865ba6de045fc8717f192ef9c8e3f9306bd6bbee35",
+      "bytes": 4083
+    },
+    {
+      "path": "assets/manifest.json",
+      "status": "modified",
+      "old_sha256": "e677a97aa71cc4ffdbc3f6c3984b47cb1cfb04cccc9670951620837a53b86651",
+      "new_sha256": "92006a5c516b35fbd77c987afbc155101d43f965caf53538deff32f646c05fdc",
+      "bytes": 75474
+    },
+    {
+      "path": "assets/ui/frames/panel-shell.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "bdfb4ce1a159c0056e0753199cb06f32237046c1a3aaad81bd541fa62460beac",
+      "bytes": 16599
+    },
+    {
+      "path": "assets/ui/icons/crown-cyan.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "36ba5dc99dfa814e96663d3159ea2c097371c874389959e68368c5f44486a53f",
+      "bytes": 15477
+    },
+    {
+      "path": "assets/ui/icons/crown-green.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0833d2b03c5e245c6f22c7747ac328d006f7c3a0c4bd78633270aa386b3bc427",
+      "bytes": 15102
+    },
+    {
+      "path": "assets/ui/icons/crown-pink.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "64fce3ee8891569a5f631d8836b3b2099971297207471d0b102889f5cc762159",
+      "bytes": 15905
+    },
+    {
+      "path": "assets/ui/icons/crown-red.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f37acb7aacda4566e258e285e98c7215da32c3731e21cc1b6307079825696967",
+      "bytes": 14771
+    },
+    {
+      "path": "assets/ui/icons/crown-silver.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "01a9c56c363d7ef008328faefcd468c39455b68b2f8e2d3d2bca51688ea76a75",
+      "bytes": 15728
+    },
+    {
+      "path": "assets/ui/ornaments/diamond.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "002acb15001353a5a76eaac547a16db6ac30d81ce52d878bcae12c123824d8c1",
+      "bytes": 1844
+    },
+    {
+      "path": "assets/ui/ornaments/rule.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "7c436e851a095aafe4ac1fb9d934679bf799f6f9c47cd97ddfbe41f4d9313f46",
+      "bytes": 208
+    },
+    {
+      "path": "dist/Super-Wiss-Odyssey.html",
+      "status": "modified",
+      "old_sha256": "224c7c9b3bdbaf6f561e871627cfb002346cc4c52297686714872f43abf05327",
+      "new_sha256": "9662d88d4690b4517fb8c2db1fdf99c4791ba5bbc6e3e0824443605e3ae33db0",
+      "bytes": 37394579
+    },
+    {
+      "path": "docs/ASSET-INVENTORY.json",
+      "status": "modified",
+      "old_sha256": "f17bf1671768a2f94a43a95130667d16697fc2cb24e6081d84dd41cb82cb1d12",
+      "new_sha256": "edddb44e8ff7b29971c3f08740bd837aeb52ab91597009ea928585057b59745d",
+      "bytes": 78304
+    },
+    {
+      "path": "docs/ASSET-INVENTORY.xlsx",
+      "status": "modified",
+      "old_sha256": "e7f34e3ab68ac47dca402a27e87c83743004bad550824c61072afa95a0385470",
+      "new_sha256": "6665507b014899015c2bb8a09840ee69bfe6707ca50014a9399cb4274602434d",
+      "bytes": 68946
+    },
+    {
+      "path": "docs/CONFLICTS.md",
+      "status": "modified",
+      "old_sha256": "62c959633fe05baebbe66a7f5a52b3fe6eeb7c06ff30d52f824fb1ec35b3b960",
+      "new_sha256": "de4f4c18ad372c2fc4d8b277d924cbeb8f06ff5efe219cf75a55a7aea277061a",
+      "bytes": 3878
+    },
+    {
+      "path": "docs/FONT-SETUP.md",
+      "status": "modified",
+      "old_sha256": "08a3666828b32ae66465427b3786c69ae790037ab3731df86a8661d8e338e5c9",
+      "new_sha256": "c94a250f4725c89dec360efeb065efd9ef5b567034d92147cf7010194e74749f",
+      "bytes": 3655
+    },
+    {
+      "path": "docs/HUD-ICON-MAPPING.md",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "e743680fb5163c6301dc784dd23ab45647a0f19a822bc38a3d7e4b0604dafa12",
+      "bytes": 4145
+    },
+    {
+      "path": "docs/MISSING-ASSETS.md",
+      "status": "modified",
+      "old_sha256": "5a270c29b4f6659e9e2fea1b1d1cbcf9f80ce262e3e633d5aac743c1331da07f",
+      "new_sha256": "8bd30bfdee5adbc76149842cb49419020d1a4450a50b89de60df08dedb113074",
+      "bytes": 99565
+    },
+    {
+      "path": "docs/UI-ASSET-MAPPING.md",
+      "status": "modified",
+      "old_sha256": "620c6587193105f37d90fa1e7434931c87b3972707abff7f6543411027d980da",
+      "new_sha256": "8d8328997c7a81c271cefc4f86c12afb1b95870bffc2c4efc3d3ed687aebc659",
+      "bytes": 40007
+    },
+    {
+      "path": "docs/UI-POLISH-CODE.diff",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "964d73d79f2e896dce95da590a23e67483ab8cbf0dcd80f731678ef6e4d71684",
+      "bytes": 335126
+    },
+    {
+      "path": "docs/UI-POLISH-REPORT.md",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "6bd33c278521e2acb3bfeb192b20c766c8fbc016b740d1e57d09028df80d1bd8",
+      "bytes": 14443
+    },
+    {
+      "path": "docs/UI-POLISH-SKILL-DECISIONS.md",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3bad703a029c5eb798eba56c9edc0e148801388e845ccc68d7a0787340b3e99b",
+      "bytes": 4025
+    },
+    {
+      "path": "docs/ui-polish/AFTER-OVERVIEW.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a579c00eff5fa265b195a3a49c5605fd812760b7bc28ef1cc3c9ca7b3c6b3345",
+      "bytes": 596359
+    },
+    {
+      "path": "docs/ui-polish/BASELINE-NODE-TESTS.txt",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "4ad6a488646370d46cec6f406eb14a063ea3b59607f6a21ed63607d9b754d242",
+      "bytes": 58912
+    },
+    {
+      "path": "docs/ui-polish/BROWSER-CHECKS.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "981d26c27c7c43698bbbf9bb730587056e6ff3a4b1a0cd2f6ca456297211e82b",
+      "bytes": 100719
+    },
+    {
+      "path": "docs/ui-polish/BROWSER-SUMMARY.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f5b94a4e5770a40c438d1ff3240f2005096e0c2d2c662c1867d8a11858aed679",
+      "bytes": 53
+    },
+    {
+      "path": "docs/ui-polish/BUILD.txt",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "beca8e73bf03446e3dc17437d3743ea79a012f328b16b853fe4e0a284f68bb78",
+      "bytes": 164
+    },
+    {
+      "path": "docs/ui-polish/CAPTURE-COMPACT.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "fd0ea4a55cf88258be84dffca021396b843de0f1daee3dd30ac999e6da2e38ee",
+      "bytes": 151
+    },
+    {
+      "path": "docs/ui-polish/CAPTURE-DESKTOP.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a9fb917fb5bc723dcd81ce29d692a1b2c74daf5d9d828fa4340687240d8fb243",
+      "bytes": 147
+    },
+    {
+      "path": "docs/ui-polish/GALLERY.html",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "168f72b4f7dd9d901a58fb46698ae817ca30c2c1aca11a97e07a4bff89d536ba",
+      "bytes": 10754
+    },
+    {
+      "path": "docs/ui-polish/NEW-MISSING-ITEMS.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "e532ee8488daab6b0eb242c166a0015d34336081473ab49968f7c2744180ec5f",
+      "bytes": 20502
+    },
+    {
+      "path": "docs/ui-polish/NODE-TESTS.txt",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3b8e3d3fb62f31d565ed00293d0628d4aa07b72ed19e2d4825727fb7116db79f",
+      "bytes": 67669
+    },
+    {
+      "path": "docs/ui-polish/SKILL-READ-LEDGER.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "04dce2b72220dd4f5e9cfea6ad84a6df519215bd601b6e7f5ce53e7c10b0b0a6",
+      "bytes": 3652
+    },
+    {
+      "path": "docs/ui-polish/SOURCE-PROVENANCE.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a98e2c173f32099972c95a8170b35b24efa02020226a86379aeda271ea20327d",
+      "bytes": 217
+    },
+    {
+      "path": "docs/ui-polish/VERIFICATION.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f26872931b6cc395c35449e6ca6cea508e6a92e8b9694aab3d56d25ff7005005",
+      "bytes": 3640
+    },
+    {
+      "path": "docs/ui-polish/after/01-home.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "dadafc4986ca996f9564ba7e3cf0d24164a8d65c7b9044d9f4fb6075c1b2aa8b",
+      "bytes": 1281183
+    },
+    {
+      "path": "docs/ui-polish/after/02-campaign.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "719eea33b6f550d9a4f61997fc21d522d55680ab0b37aa514982a497321b1cc8",
+      "bytes": 657266
+    },
+    {
+      "path": "docs/ui-polish/after/03-heroes.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "435119e43ac35f4bbff0fe07d03793bf75f4f60eee0fb63c4ffbaf19b4096e67",
+      "bytes": 918515
+    },
+    {
+      "path": "docs/ui-polish/after/04-pets.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "eb4748a3bdcc82022f075b4b5d8b077a2fcdf4acc0986713deb2af3c4e48b950",
+      "bytes": 723663
+    },
+    {
+      "path": "docs/ui-polish/after/05-forge.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0ef10a343dbda6b40490b901c0b6fa1c6ab21451e1343bf0f66bed2f2bc54803",
+      "bytes": 612870
+    },
+    {
+      "path": "docs/ui-polish/after/06-missions.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "80577bfb47c15281dcf9deba8a84e78eff419da0ae3fae9757aaaf26beb09898",
+      "bytes": 751050
+    },
+    {
+      "path": "docs/ui-polish/after/07-records.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "c7c6c1634df788c311db33d129cfe4e65966bebc19109ffac696ce89cca3fd17",
+      "bytes": 594584
+    },
+    {
+      "path": "docs/ui-polish/after/08-profile.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "043124506b8ab5b47d7c3a2591a6371d96045e314624b1314df8a79e1c5eecf1",
+      "bytes": 556944
+    },
+    {
+      "path": "docs/ui-polish/after/09-bosses.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "d9eeab696c32286614de8fbf2829ed62e566e1852e0b94c319b51a5a9a3992e9",
+      "bytes": 786925
+    },
+    {
+      "path": "docs/ui-polish/after/10-settings.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "88278e3c834a4f3e18568cd7796becd73e6fd77864c3942d78e6797337d5e85e",
+      "bytes": 332733
+    },
+    {
+      "path": "docs/ui-polish/after/11-kael-null.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "1b1bb4764f1c81818efc4a13fddc34c12ff02eccd3d1a3ecbffb1351c0cf18e7",
+      "bytes": 910995
+    },
+    {
+      "path": "docs/ui-polish/after-960/01-home.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "718d90f21b49c1413301be51ba0ab094729fdbd18842d3b1c21af1a0158b21d6",
+      "bytes": 476509
+    },
+    {
+      "path": "docs/ui-polish/after-960/02-campaign.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3bdae7f04bdca6cddedd2dd4bfc5fe9db02ce7e98f532976c7f8a3fc15d303b6",
+      "bytes": 353856
+    },
+    {
+      "path": "docs/ui-polish/after-960/03-heroes.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a36d15e8605af106f653718edc84c10d6bae3e36b19237281fc539233251937c",
+      "bytes": 407510
+    },
+    {
+      "path": "docs/ui-polish/after-960/04-pets.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "5ecc0cf7842b28b7c9df75438c1d946cbfd103f4a87d74bf4487225645671bf5",
+      "bytes": 362119
+    },
+    {
+      "path": "docs/ui-polish/after-960/05-forge.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "4023c432cacbbf87384cd726397cfe1e82c83e27d8d1b93c9a5f743aac2d929b",
+      "bytes": 350155
+    },
+    {
+      "path": "docs/ui-polish/after-960/06-missions.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "ba70f04490a71456dbb42e440b2878d2f516e76bd368867ceedc646eb69da9bf",
+      "bytes": 349916
+    },
+    {
+      "path": "docs/ui-polish/after-960/07-records.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f4a9063eafb8484bbe7eee10d5e09d1196d6768336a6a5f01563273d12a9cc68",
+      "bytes": 330357
+    },
+    {
+      "path": "docs/ui-polish/after-960/08-profile.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "8bcf6c9ffa9f84d1b641272e97564df8b0f4bb43b69c1676d00339981b0aa20b",
+      "bytes": 336008
+    },
+    {
+      "path": "docs/ui-polish/after-960/09-bosses.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "d1ade55097b707c1e32fbc8177932492429d008620079982ab8253cc3d05e2b0",
+      "bytes": 423465
+    },
+    {
+      "path": "docs/ui-polish/after-960/10-settings.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "4c5f164f6f8a5a6552b611fdf4f4eb84217e6cb5fdba78e6a3fe1ef11b8a9dde",
+      "bytes": 136143
+    },
+    {
+      "path": "docs/ui-polish/after-960/11-kael-null.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "41716652a1aa43c36473478db6ad0d42c7f5e55f4d1011da351a075e0458bf7e",
+      "bytes": 407239
+    },
+    {
+      "path": "docs/ui-polish/before/01-home.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "1a6b61cb572415b3191456addf7d169986e6b7067765a08cab3fd83b84039389",
+      "bytes": 1248196
+    },
+    {
+      "path": "docs/ui-polish/before/02-campaign.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "b6c16b74b35e1d2958ddc6aa2c2dd8a45d9eb9fc1a7643a4690c2fbc92a0a708",
+      "bytes": 805511
+    },
+    {
+      "path": "docs/ui-polish/before/03-heroes.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "e45fb3ca547112d41811885d663cd8f2b4464a5715dc6c012e1645adf9357c36",
+      "bytes": 894981
+    },
+    {
+      "path": "docs/ui-polish/before/04-pets.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3270b16222b5f71bff7d88c49e84e350554c7eebbf06bb373c0a96dffea51ccb",
+      "bytes": 719827
+    },
+    {
+      "path": "docs/ui-polish/before/05-forge.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "dd9e4332fe1bc4e977f0cdced30702c6f61200dcf4ec8fa5fc2c54385b2011cc",
+      "bytes": 699216
+    },
+    {
+      "path": "docs/ui-polish/before/06-missions.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0a845df5a1ea78ffd071ec289b73f8ff5f8b3c857dc4c67f6fb290e9e1b88315",
+      "bytes": 707112
+    },
+    {
+      "path": "docs/ui-polish/before/07-records.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "635b7a66f4aff32fd1b1cb5017ab1ddcd3fe5103ea01036577978c014ee6a42a",
+      "bytes": 514203
+    },
+    {
+      "path": "docs/ui-polish/before/08-profile.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "dfa3b2d2f0470041f58ae222f104e0985aea16271ce59cd49285df34d858dd18",
+      "bytes": 737161
+    },
+    {
+      "path": "docs/ui-polish/before/09-bosses.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "75880e108487eb845b8a512a526cc6f1832a726d93e54fe0c8b2311bf6575bb1",
+      "bytes": 604710
+    },
+    {
+      "path": "docs/ui-polish/before/10-settings.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "9072fb4927db1c239ba47cb0aeddfdbb41b03278d33b9c67fe114a65d6eff7f7",
+      "bytes": 590361
+    },
+    {
+      "path": "docs/ui-polish/before/11-kael-null.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "beded3d09e0c71b539c654cf6cee29c8b41c1052677006bee3689d091979533a",
+      "bytes": 872534
+    },
+    {
+      "path": "docs/ui-polish/comparisons/01-home.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "2576cbb35679d0a70cef76115da7a7d0b9c08492b75fb7d28a1bef28c7658c48",
+      "bytes": 240183
+    },
+    {
+      "path": "docs/ui-polish/comparisons/02-campaign.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "58deb9dfb2134cb3ff45ef69383d0654288663ba68be0ba22f310ed5b99d7384",
+      "bytes": 237969
+    },
+    {
+      "path": "docs/ui-polish/comparisons/03-heroes.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "54481a73a4a11475576e7a8588db5c4636a5e0818397be8d7b28dd296b72e6ce",
+      "bytes": 260269
+    },
+    {
+      "path": "docs/ui-polish/comparisons/04-pets.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "d40a505e23628eeba18a85d27a8aa738ea17e5b247d439b8c751469a95b2c679",
+      "bytes": 222115
+    },
+    {
+      "path": "docs/ui-polish/comparisons/05-forge.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "51f0a36f15696b6db0f8861207cf613c5a601a6e9a6d6746d597448ac4095ab7",
+      "bytes": 224537
+    },
+    {
+      "path": "docs/ui-polish/comparisons/06-missions.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "318294603b842326dd4d2f0e1191092ff42d13f9aa89ffa10f19c445d5b8a9ab",
+      "bytes": 235052
+    },
+    {
+      "path": "docs/ui-polish/comparisons/07-records.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "ad054579c11b20acd22035f6141110f123584cc847a306cbbb9dc05aeb41aae0",
+      "bytes": 202005
+    },
+    {
+      "path": "docs/ui-polish/comparisons/08-profile.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "be06f9b0d09d01179e67891031a02ec23bab74958b1f25bf1df6b6a1b8206d8e",
+      "bytes": 220272
+    },
+    {
+      "path": "docs/ui-polish/comparisons/09-bosses.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "6de5333451fb160244ad9fb44c3c932c0645a80f96a95c78ea1cd0f100746eb8",
+      "bytes": 244988
+    },
+    {
+      "path": "docs/ui-polish/comparisons/10-settings.jpg",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "1b3d4d478bc2aaff744eafcd6ab544ca795a064f3931ee6611ac421ef62a91d1",
+      "bytes": 191565
+    },
+    {
+      "path": "docs/ui-polish/hud-armed-1648.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "e9544744c35fc55a2b66039681beb9cf0e94874e9b36761d8e806584cb4f3930",
+      "bytes": 581960
+    },
+    {
+      "path": "docs/ui-polish/hud-armed-844.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "9eed8d19249a8d59d56116813416c46bb019f3568dae20d10fd024cdb2390976",
+      "bytes": 227021
+    },
+    {
+      "path": "docs/ui-polish/hud-armed-960.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "bb39235d2a54ecb736c188226d50e10a9dc1651575b3d6ef2314191dd8794b3d",
+      "bytes": 275662
+    },
+    {
+      "path": "docs/ui-polish/hud-crouched-1648.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "ad2e0ae5e05fa193f3e3af75bfa62eaaa8eedf4a763135331457c76464453c39",
+      "bytes": 565356
+    },
+    {
+      "path": "docs/ui-polish/hud-crouched-844.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "ff2fbc46ccda5c07e26418ca420c5f14bac0db8bf2a0c36f72339da077d542da",
+      "bytes": 224354
+    },
+    {
+      "path": "docs/ui-polish/hud-crouched-960.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3f7b0365d84d4d97c28890a7410e1d82859a561a8dbb3e164b00d3eff6d65bbb",
+      "bytes": 271188
+    },
+    {
+      "path": "docs/ui-polish/hud-unarmed-1648.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "9367ed3889cb560465fb9af858f8995df941470bd41e5151fcdd3554d2fb3bd0",
+      "bytes": 632203
+    },
+    {
+      "path": "docs/ui-polish/hud-unarmed-844.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0683398dd4fdb35bc1a46860e8d99ae1b38b8ff69a65a70fd302214bec43a4e4",
+      "bytes": 242256
+    },
+    {
+      "path": "docs/ui-polish/hud-unarmed-960.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "687edad7a1a90ce45f788c4a8bb6b0193877f4ff89c3e312ce30c707b488c5e4",
+      "bytes": 294390
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160242.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "9b63e35e91a473162fc35fe7d05a5ea291f1ad1b64e376522ffc23bbbb459185",
+      "bytes": 2135872
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160243.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "28637f4689ca1a7c886d4e7d79f555625f8ccf9fab7c9cccba347ff827a1bc7b",
+      "bytes": 765161
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160244.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "d7bd30301943e16cbcbe758d3057c6b312156871968f74f848d95a11551f958c",
+      "bytes": 823813
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160245.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "818274f51b65791f0f031f705c2374398b36ae1a69c6a91948a9608b7a399401",
+      "bytes": 662689
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160246.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "65eb34eb10c95da0803281150512838b2004492b2f58ed0357c01b00929137f1",
+      "bytes": 732948
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160247.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "00229b2c0319909cc9e9f1378e4fec1746b39a75c27806952fe78b2f46f4651c",
+      "bytes": 604841
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160248.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "802f6a54fca32c67676d4d3b906e2c528886a0e7375491b175451d82c7c0055d",
+      "bytes": 457049
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160249.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "c0f6b9730e3c816cf7f14111894c0bce16296bcac5326e7437d853c5c9ed251f",
+      "bytes": 677481
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160250.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a9350a19d0d55f625502e1ed834c48c6c86ca557928def9c9d6d3128209a75d3",
+      "bytes": 487231
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160251.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "2605f1abb58a0d8794b3db7f1307259d28e611b96b51d74af68ad9ecac73f1c3",
+      "bytes": 810533
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160252.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "fc3602727f400ea9e5700a46c0ac830d29d98a324ad33107cc8e31cb30e3f4cc",
+      "bytes": 808008
+    },
+    {
+      "path": "docs/ui-polish/user-reported/1000160253.png",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "5f8a92cb9dbd398539c32e348a19acb4d34e39b62650ca3a55ac276b66cf643a",
+      "bytes": 281017
+    },
+    {
+      "path": "game/ascension-ui.js",
+      "status": "modified",
+      "old_sha256": "769e089d9ece67db647dbe43a84f9088c01617f5b30d25e4612063b9f77a7c73",
+      "new_sha256": "5532c605e00f156b1237ba734c63a37110228fe4ee68b390754e9e4ee44078cd",
+      "bytes": 40023
+    },
+    {
+      "path": "game/atelier-ui.js",
+      "status": "modified",
+      "old_sha256": "1ce9b46ff531440ecc45a70ba6799e03d1daf2af45b2f8540c6a789b29ffe96e",
+      "new_sha256": "188613d6e04d45d1b596a965bb13bcd62f6d4768d9182bb571d717597e854639",
+      "bytes": 14292
+    },
+    {
+      "path": "game/controls.js",
+      "status": "modified",
+      "old_sha256": "6700308db38f02540bf1bf29eb04d5b28eae2d556d1e06e6abc2473c963a7650",
+      "new_sha256": "910313fb8f2851fcefa3bce92c76dfd57fd0f53514baddd88244fbfbaa38dd97",
+      "bytes": 3956
+    },
+    {
+      "path": "game/data.js",
+      "status": "modified",
+      "old_sha256": "4badc9288410a0ab252b011ccfc92cdf294eecf0e99283b1760fa90bde475813",
+      "new_sha256": "ffe67ae331f3ea06daa4cf4fb1f52d4004f57e1b55ba291b62290fa9f393ad50",
+      "bytes": 4921
+    },
+    {
+      "path": "game/hero-presentation.js",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "f5699460108c64400f2e816be6c572674e257320d5fc905546e22b1b59e8bbaa",
+      "bytes": 1571
+    },
+    {
+      "path": "game/icons.js",
+      "status": "modified",
+      "old_sha256": "529662b01b8e10dcfb6da664c586d68ff32c7ca756ec8cdbec31732fc6b2bdd6",
+      "new_sha256": "e800da58cc5054834e1dd0e0a31ea1310cd0c1f05f3a27538ad5c4a131f93e86",
+      "bytes": 39021
+    },
+    {
+      "path": "game/index.html",
+      "status": "modified",
+      "old_sha256": "4795f6343b790e56e07ce7c09c20151b1ce17bf238e9bc3e630d52aff410962f",
+      "new_sha256": "f84fb60b0d3d4aeed1c3c72ab4b42928e480cf708463d36047fc48aa6b70fc41",
+      "bytes": 12838
+    },
+    {
+      "path": "game/render.js",
+      "status": "modified",
+      "old_sha256": "09c941efa260e488c4b0511552ab38442423a34d0826145ba09f9fafb0ee34a2",
+      "new_sha256": "dac420c05a3b0a0b090211ee82eedc6d2f0c8b4110dee63bf40a32c01945aece",
+      "bytes": 53161
+    },
+    {
+      "path": "game/ui-polish.css",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "341b4f670156d654172c7fb8a52115a9ed8d5c9c1bca8bf58cd79100bc92d037",
+      "bytes": 43782
+    },
+    {
+      "path": "game/ui-polish.js",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "22403e1c61affc642809ba3e68d6d8fb10e645aec146f9f4855ed3c04ed9c04a",
+      "bytes": 12768
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "old_sha256": "aa9dbde65bdc21da12704f90703ef4f4cfe6472c2074bb23e63b3c8d0f0629a0",
+      "new_sha256": "0bfb4187b9b32cd423cfd4c90ed8e589f96bb84233856548b981c3fdfc20908b",
+      "bytes": 1346
+    },
+    {
+      "path": "scripts/build-qa.sh",
+      "status": "modified",
+      "old_sha256": "cf6cbf890dbfb4d3f2e5cd66666c290f8a3854c5ab7bc9db44a7a20c264ebb54",
+      "new_sha256": "1f9517588c14a18f5dec88ec4c714690e1750921020bc6b2d11fb9a4c36b1620",
+      "bytes": 396
+    },
+    {
+      "path": "scripts/bundle.mjs",
+      "status": "modified",
+      "old_sha256": "fed1d37eb7eb6dc45f6f07b46397c3e593627105a2d8c1b1fd9568a04a1a3525",
+      "new_sha256": "bd142753bcd7d950f72a2f96f4a44e59fdbb7410dffb8a6d0a45d1094a3b65e3",
+      "bytes": 6794
+    },
+    {
+      "path": "scripts/prepare-ui-polish.py",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "0b0dbd24fed36f3b8f0271acd1005c466368e89e97045a4390ddaccf31d7600d",
+      "bytes": 2058
+    },
+    {
+      "path": "tests/ascension.test.mjs",
+      "status": "modified",
+      "old_sha256": "68fe4d7213cc9b0dbe8c0ddc904b5e2af428dcf322b0295bfd3b8f9dea31d7eb",
+      "new_sha256": "85db722a70797d8c8904449922a7b7a71efe564774f21fc46ad1796770905229",
+      "bytes": 17935
+    },
+    {
+      "path": "tests/atelier.test.mjs",
+      "status": "modified",
+      "old_sha256": "d81463af7f01ef06edd9c3cb6ace72a6af6b6f873dddfb43562b16d119cfab67",
+      "new_sha256": "8d82116ffd842884fd37b60b3f0cff6071fd46e37860806a7499e526651e2805",
+      "bytes": 14410
+    },
+    {
+      "path": "tests/ui-polish-browser.py",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "bf38b848f9b9354c27181b60b77ede77484719566cf1ddbff16023091609e047",
+      "bytes": 8711
+    },
+    {
+      "path": "tests/ui-polish-capture.py",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "9df24b953039822c5033ff2528349b8a877ec0c57a3ac1dd2a7ffc0d26b1dac3",
+      "bytes": 2390
+    },
+    {
+      "path": "tests/ui-polish.test.mjs",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "fbcd55920e20ea9648aeb9453bb463b7d8ea92fdded2c737e3f56041aa355697",
+      "bytes": 4598
+    },
+    {
+      "path": "tests/version.test.mjs",
+      "status": "modified",
+      "old_sha256": "e0b3811890df116e2a1a301c0de88a13869e5649a239ccc419b8dcccb1fcca1a",
+      "new_sha256": "6c68813d79c6dedc62ecf0bcb52c2ec285eefb96ea0ff32a7cdd771b201a3ae3",
+      "bytes": 721
+    }
+  ]
+}

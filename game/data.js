@@ -1,6 +1,6 @@
 /** Runtime data. Edit game/*.json then run npm run build. */
 import { CONTENT } from './content.js';
-export const VERSION = '1.3.1';
+export const VERSION = '1.4.1';
 export const TILE = 40, GROUND = 480, DT = 1 / 60;
 export const HEROES = CONTENT.heroes.map(h => ({ ...h, skill: h.skills[0].name, icon: h.skills[0].icon, cooldown: h.skills[0].cooldown, description: h.skills[0].description, hint: h.skills[0].description }));
 export const HERO_ALIASES = { wiss: 'wissem', nova: 'yakine', rafi: 'youssef', aya: 'loey', zed: 'kossay', luna: 'taky', koa: 'garsi', pip: 'tounsi' };

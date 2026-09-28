@@ -1,0 +1,233 @@
+[
+  {
+    "kind": "source candidate",
+    "source": "Super-Wiss-1.3.1-Source-Candidate.zip",
+    "copiedTo": "project root",
+    "sha256": "5329bfaa93ef8230dda8576cb95b330157acc141ff2171b8598052503ce64282"
+  },
+  {
+    "kind": "weapon source",
+    "source": "Heroes_weapons-assets.zip",
+    "copiedTo": "assets/weapons/ (10 original PNGs)",
+    "sha256": "e713fe4995f5d6b52109bef08e21c417980fd46465a19fbb697480e919f19801"
+  },
+  {
+    "kind": "skill",
+    "source": "action-combat-movement-feel.zip",
+    "copiedTo": "agent-skills/action-combat-movement-feel/SKILL.md",
+    "sha256": "9f6a4de029425078b549889486591b4983aaaec9c681c7b8a8454186c3d16b5e",
+    "sourceZipSha256": "828e690bee397c397fcc1b4619c9b60d06cec058f236aa6f1c67ec256301a223",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "ads-monetization-rewarded-interstitial.zip",
+    "copiedTo": "agent-skills/ads-monetization-rewarded-interstitial/SKILL.md",
+    "sha256": "c5bdfee571e612d7640fbad1040e05587a2945b335d026a70793a2e9cd67e331",
+    "sourceZipSha256": "fa31bb2db57f54d5c174c4e2f8fc6e2e7b3ae12bc02618bea3a058e1e0ddc6fd",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "aso-store-listing.zip",
+    "copiedTo": "agent-skills/aso-store-listing/SKILL.md",
+    "sha256": "0c6139a85224625819b75afc077c87882cac4a64be74e5f74350b21c0c227915",
+    "sourceZipSha256": "b085e9cd0383b81fbc7c5cc0f3b98ea1d8f040f92fa832df1d9ba7672567a613",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "audio-sfx-vo-emotes.zip",
+    "copiedTo": "agent-skills/audio-sfx-vo-emotes/SKILL.md",
+    "sha256": "4d5da0ca9700230266fe63465cb9cd0527aa4e6baabd8c8ced870babbae8c67f",
+    "sourceZipSha256": "df7e50adab8a283e09358b5b040e4805988ae4176b166c7ebe31cda54580d4f2",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "character-narrative-skills-pets.zip",
+    "copiedTo": "agent-skills/character-narrative-skills-pets/SKILL.md",
+    "sha256": "c8fe8873fb54767f4130c99d3ee70860dd028565a56659c9ab0290ad259b219a",
+    "sourceZipSha256": "d314b790f936a93bdc5ebc59fb096687f0d079559e0d039b8a6ff4eb92f48558",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "game-economy-balancing.zip",
+    "copiedTo": "agent-skills/game-economy-balancing/SKILL.md",
+    "sha256": "56ab308677e014b60fb3355fc7a7f53516623c33d7d6cae125c7ed2b135b791a",
+    "sourceZipSha256": "dbeb45e073fcc84f5f8cf9405eb736ce771d20bac86f87ad62dbfe58beef345a",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "google-play-compliance-monetization.zip",
+    "copiedTo": "agent-skills/google-play-compliance-monetization/SKILL.md",
+    "sha256": "655b3ab63a68cff0237351412d69fdd641c3c07853e103886022104decaddb7e",
+    "sourceZipSha256": "142d54cce5e0ebc5a1948d4dbb763e4258d699c0f7383de71db5e7bb1ffe01ee",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "hollow-knight-combat-2d.zip",
+    "copiedTo": "agent-skills/hollow-knight-combat-2d/SKILL.md",
+    "sha256": "4d3ca018660f3487deab4055c39389c686877ced4464e79cb5753a53043a4473",
+    "sourceZipSha256": "a7fa6cbf34c46398b63ed7c5dc7b2fcc04fff25d5d544762ee79b8d0e5837fb2",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "mobile-pixel-art-ui-ux.zip",
+    "copiedTo": "agent-skills/mobile-pixel-art-ui-ux/SKILL.md",
+    "sha256": "74079701dcffd87ae28c9bd2037d89e9ac0dc8a40073fe05cd1d253927e21596",
+    "sourceZipSha256": "3a521e3a5594bf829b3c6e613ba2e05f0b74935789ef738c623f86c70f22e862",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "monetization-shop-design.zip",
+    "copiedTo": "agent-skills/monetization-shop-design/SKILL.md",
+    "sha256": "9a841d254a2b91fbcde37533654d7691b3aebb928967bc4a79b2e318e526788e",
+    "sourceZipSha256": "d80414a94f8424d0e9aa370222c178092d0f2747f646ae406c448bf696d6eee6",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "pixel-art-page-layout-system.zip",
+    "copiedTo": "agent-skills/pixel-art-page-layout-system/SKILL.md",
+    "sha256": "5bc680454fe05cd3a87da7f93d5a9db7ef1c9c096adcc9ba9aaf8a894fbc085d",
+    "sourceZipSha256": "39790a0031f3f1c7f9b3c895cc81367fa6574992a5deb2372d4ccd5f95aa5316",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "player-onboarding-ftue.zip",
+    "copiedTo": "agent-skills/player-onboarding-ftue/SKILL.md",
+    "sha256": "a3719c40f7bc0f68e7896b35d6b64c4cc7f272b2aa799d8d753b1abc16795dc1",
+    "sourceZipSha256": "ca55180bae118570c70cbe46c2c4035aa897d40cbf73c0b923072d13e19f97fb",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "retention-liveops-calendar.zip",
+    "copiedTo": "agent-skills/retention-liveops-calendar/SKILL.md",
+    "sha256": "64643008ab521e4cbf9df91d40e52e870c6b0aa1e32f97a540ded43176d07cf0",
+    "sourceZipSha256": "943d5c8cc47909720614a6c7f69f7d2a8003a119d7f4ed7a607f77c068831e7a",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "social-virality-referral.zip",
+    "copiedTo": "agent-skills/social-virality-referral/SKILL.md",
+    "sha256": "d963b6a29cda64b6b29255617ec4bd98864e7243276de1ef35c5f08c8ed9cb09",
+    "sourceZipSha256": "3f4ce642d0f99f4a3e1685647fad454d1ca1e1c09d8ce8797ae69e26dda29081",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "telemetry-analytics-instrumentation.zip",
+    "copiedTo": "agent-skills/telemetry-analytics-instrumentation/SKILL.md",
+    "sha256": "ea9dcfcac8606c351c6b405d71caec1a1f4c78d332284663bf073347a9c1276b",
+    "sourceZipSha256": "dd2ba71c3a7b87fd73529ded8858f39c00a0d068715f014f9d3b8b7ec155fc17",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "skill",
+    "source": "world-level-generation.zip",
+    "copiedTo": "agent-skills/world-level-generation/SKILL.md",
+    "sha256": "e66119b67cca3a22df1da800629a435b338a07b9f1ade3e94818b1bfb84b59ad",
+    "sourceZipSha256": "fbaba5553097b20ed054a49757a62dc1711999c432aacdf40ec4481b9e679906",
+    "read": "full SKILL.md read before implementation"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_boss_hunt_mode.png",
+    "copiedTo": "design/references/ui/sw_boss_hunt_mode.png",
+    "sha256": "f8e721309ee3f2c23f8dfd072de23be8f3ff81c61f998ed19445393b98639e29",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_heroes_page.png",
+    "copiedTo": "design/references/ui/sw_heroes_page.png",
+    "sha256": "e5d34a676da1034e8dc6a87224f8fe41c1e04bf028e47568315952c3522cae1d",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_home_page.png",
+    "copiedTo": "design/references/ui/sw_home_page.png",
+    "sha256": "81429e58fe555fca8a07efb599d6c4d6c4f47920932d0b86addd21ddddb4db0f",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_missions_page.png",
+    "copiedTo": "design/references/ui/sw_missions_page.png",
+    "sha256": "b8a8a094cbd0613272f32aae7033f265bde910a46223de460751912fdb6c7c49",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_pets_page.png",
+    "copiedTo": "design/references/ui/sw_pets_page.png",
+    "sha256": "0e12fb3fcd1ba2a8c9306c8fc2fcd66ccfe6b35517786ecea6be13d5eda0193b",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_profile_page.png",
+    "copiedTo": "design/references/ui/sw_profile_page.png",
+    "sha256": "7ec38b47207715037959e3a5beedc314168a7eb8e2df54c0b3c04978332e5b1b",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_records_page.png",
+    "copiedTo": "design/references/ui/sw_records_page.png",
+    "sha256": "57ed360b2bda83ba59761340713e6a7cdd79f7a5261ffffee382653bed1399f2",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_settings_page.png",
+    "copiedTo": "design/references/ui/sw_settings_page.png",
+    "sha256": "846485f4dd553cb35629a76c106a68bf6ade0a163fbbf7ca24375a6486753e59",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_shop_page.png",
+    "copiedTo": "design/references/ui/sw_shop_page.png",
+    "sha256": "e89dca3213fb097589bf8fa82224fba0e6de2c110342df1671e0023956c5ca7b",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "mockup",
+    "source": "sw_worlds_page.png",
+    "copiedTo": "design/references/ui/sw_worlds_page.png",
+    "sha256": "6108c29bffdbe4b0c046ed2f743bcd9dc67a8c207e561e6c9e15e4602a147e4e",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "source sheet",
+    "source": "Assets_icons.png",
+    "copiedTo": "art-source/ui/Assets_icons.png",
+    "sha256": "82ccc5e11e87a394d3e7f4380c8e3586d5566d577d9d48d8121e8abd9b08b750",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "source sheet",
+    "source": "Assets_placeholders.png",
+    "copiedTo": "art-source/ui/Assets_placeholders.png",
+    "sha256": "2cd79bea7e116ef28bdfb925029a18109a2674f7cefc1c4beef8b7a780a67edf",
+    "read": "visually inspected"
+  },
+  {
+    "kind": "source sheet",
+    "source": "Assets_placeholders_2.png",
+    "copiedTo": "art-source/ui/Assets_placeholders_2.png",
+    "sha256": "592f57ae47083ab948b5d8e0099a562a0e38f8e1c5dd6087d8180dd31396b7e8",
+    "read": "visually inspected"
+  }
+]

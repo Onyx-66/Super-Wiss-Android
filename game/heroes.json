@@ -37,7 +37,7 @@
   },
   {
     "id": "kossay",
-    "name": "Kossay",
+    "name": "Kael",
     "role": "The twin-fang ranger",
     "color": "#81c88c",
     "dark": "#326b59",
@@ -62,7 +62,7 @@
     ],
     "passive": "Fast attacks, precise escapes.",
     "asset": "hero/kossay",
-    "backstory": "A pathfinder from the Moonlit border. Kossay left the royal hunters when they marked an innocent village as prey; his twin blades now protect the people they once threatened.",
+    "backstory": "A pathfinder from the Moonlit border. Kael left the royal hunters when they marked an innocent village as prey; his twin blades now protect the people they once threatened.",
     "weapon": "Twin fangs",
     "combatStyle": {
       "cooldown": 0.27,
@@ -73,7 +73,7 @@
   },
   {
     "id": "yakine",
-    "name": "Yakine",
+    "name": "Astra",
     "role": "The astral spellcaster",
     "color": "#95a7ff",
     "dark": "#493f8f",
@@ -98,7 +98,7 @@
     ],
     "passive": "Keep moving while the world slows down.",
     "asset": "hero/yakine",
-    "backstory": "Keeper of an observatory lost between seconds. Yakine bends brief moments of time, searching the floating worlds for the missing constellations.",
+    "backstory": "Keeper of an observatory lost between seconds. Astra bends brief moments of time, searching the floating worlds for the missing constellations.",
     "weapon": "Orbit crescent",
     "combatStyle": {
       "cooldown": 0.38,
@@ -109,7 +109,7 @@
   },
   {
     "id": "taky",
-    "name": "Taky",
+    "name": "Nyx",
     "role": "The shadow rogue",
     "color": "#cc879e",
     "dark": "#502c50",
@@ -134,7 +134,7 @@
     ],
     "passive": "Disappear, reposition, strike.",
     "asset": "hero/taky",
-    "backstory": "A courier nobody remembers seeing. Taky learned to step through shadows to carry a final message across a kingdom swallowed by night.",
+    "backstory": "A courier nobody remembers seeing. Nyx learned to step through shadows to carry a final message across a kingdom swallowed by night.",
     "weapon": "Shadow knives",
     "combatStyle": {
       "cooldown": 0.29,
@@ -145,7 +145,7 @@
   },
   {
     "id": "garsi",
-    "name": "Garsi",
+    "name": "Bront",
     "role": "The iron guardian",
     "color": "#b4c6e4",
     "dark": "#4d607a",
@@ -170,7 +170,7 @@
     ],
     "passive": "Armor does not protect you from an unbridged cliff.",
     "asset": "hero/garsi",
-    "backstory": "The last guardian of a shattered citadel. Garsi rebuilt a suit of armor from its gates and carries the duty of sheltering others into every trial.",
+    "backstory": "The last guardian of a shattered citadel. Bront rebuilt a suit of armor from its gates and carries the duty of sheltering others into every trial.",
     "weapon": "Stonebreaker hammer",
     "combatStyle": {
       "cooldown": 0.43,
@@ -181,7 +181,7 @@
   },
   {
     "id": "tounsi",
-    "name": "Tounsi",
+    "name": "Zephyr",
     "role": "The desert corsair",
     "color": "#ffce94",
     "dark": "#92604b",
@@ -206,7 +206,7 @@
     ],
     "passive": "A dancer above the dunes.",
     "asset": "hero/tounsi",
-    "backstory": "A sailor of sand and wind, exiled after returning a stolen relic to its rightful village. Tounsi follows the sky currents with a blade and an unfinished map.",
+    "backstory": "A sailor of sand and wind, exiled after returning a stolen relic to its rightful village. Zephyr follows the sky currents with a blade and an unfinished map.",
     "weapon": "Wind scimitar",
     "combatStyle": {
       "cooldown": 0.32,
@@ -217,7 +217,7 @@
   },
   {
     "id": "youssef",
-    "name": "Youssef",
+    "name": "Volt",
     "role": "The spark inventor",
     "color": "#69d3f2",
     "dark": "#365e89",
@@ -242,7 +242,7 @@
     ],
     "passive": "Invention is your superpower.",
     "asset": "hero/youssef",
-    "backstory": "An inventor whose rescue machine accidentally awakened a Sovereign. Youssef enters the ruins to repair what he started, one improbable gadget at a time.",
+    "backstory": "An inventor whose rescue machine accidentally awakened a Sovereign. Volt enters the ruins to repair what he started, one improbable gadget at a time.",
     "weapon": "Clockwork knuckles",
     "combatStyle": {
       "cooldown": 0.31,
@@ -253,7 +253,7 @@
   },
   {
     "id": "loey",
-    "name": "Loey",
+    "name": "Skye",
     "role": "The wind scout",
     "color": "#b6d778",
     "dark": "#617741",
@@ -278,7 +278,7 @@
     ],
     "passive": "Read the wind. Find your route.",
     "asset": "hero/loey",
-    "backstory": "A scout who can hear the language of the old trees. Loey searches for the seed of the first forest while defending the creatures displaced by the trials.",
+    "backstory": "A scout who can hear the language of the old trees. Skye searches for the seed of the first forest while defending the creatures displaced by the trials.",
     "weapon": "Sky bow",
     "combatStyle": {
       "cooldown": 0.38,
@@ -289,7 +289,7 @@
   },
   {
     "id": "rayan",
-    "name": "Rayan",
+    "name": "Sol",
     "role": "The sun-forged lancer",
     "color": "#efd083",
     "dark": "#4d607a",
@@ -314,7 +314,7 @@
     ],
     "passive": "Distinct skills; shared fair movement physics.",
     "asset": "hero/rayan",
-    "backstory": "Rayan once kept the bridges of Amber Skyway open through a century of storms. His oath is simple: nobody crosses the last bridge alone.",
+    "backstory": "Sol once kept the bridges of Amber Skyway open through a century of storms. His oath is simple: nobody crosses the last bridge alone.",
     "weapon": "Sun lance",
     "combatStyle": {
       "cooldown": 0.4,
@@ -325,7 +325,7 @@
   },
   {
     "id": "mira",
-    "name": "Mira",
+    "name": "Rime",
     "role": "The frost archivist",
     "color": "#8ae2e9",
     "dark": "#493f8f",
@@ -350,7 +350,7 @@
     ],
     "passive": "Distinct skills; shared fair movement physics.",
     "asset": "hero/mira",
-    "backstory": "Mira reads memories trapped inside Crystal Hollow. She entered the trials to recover the names erased by the Sovereigns, not for a crown.",
+    "backstory": "Rime reads memories trapped inside Crystal Hollow. She entered the trials to recover the names erased by the Sovereigns, not for a crown.",
     "weapon": "Frost staff",
     "combatStyle": {
       "cooldown": 0.39,

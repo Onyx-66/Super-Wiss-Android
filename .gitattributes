@@ -1,0 +1,5 @@
+# These supplied evidence files contain verbatim patches/code, including original
+# line endings and whitespace. Preserve their bytes instead of normalizing them.
+docs/CHANGES.diff -text -whitespace
+docs/UI-POLISH-CODE.diff -text -whitespace
+docs/OLD-NEW-CODE.md -text -whitespace

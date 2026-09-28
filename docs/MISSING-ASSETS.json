@@ -1,0 +1,1955 @@
+[
+  {
+    "category": "Unarmed / polish",
+    "hero": "Wissem",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/wissem/unarmed-guard.png",
+    "requirement": "Optional authored bespoke fist guard/idle to replace existing weapon-free frame11.",
+    "status": "OPTIONAL POLISH",
+    "notes": "Current real body is weapon-free and functional; no weapon-erasure request."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Wissem",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/wissem/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "OPTIONAL POLISH",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Wissem",
+    "slot": "active",
+    "proposed_path": "assets/heroes/wissem/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "OPTIONAL POLISH",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Wissem",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/wissem/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "OPTIONAL POLISH",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Wissem",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/wissem/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Wissem",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/wissem/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Wissem",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/wissem/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Wissem",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/wissem/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Wissem",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Wissem",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/wissem/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Wissem",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Wissem",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/wissem/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Wissem",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Wissem",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/wissem/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Wissem",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Wissem",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/wissem/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Wissem",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Wissem",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/wissem/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for gauntlet; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Wissem",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/wissem/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Kael",
+    "slot": "body",
+    "proposed_path": "assets/heroes/kossay/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Kael",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/kossay/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Kael",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/kossay/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Kael",
+    "slot": "active",
+    "proposed_path": "assets/heroes/kossay/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Kael",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/kossay/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Kael",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/kossay/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Kael",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/kossay/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Kael",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/kossay/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Kael",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/kossay/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Kael",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Kael",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/kossay/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Kael",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Kael",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/kossay/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Kael",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Kael",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/kossay/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Kael",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Kael",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/kossay/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Kael",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Kael",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/kossay/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for dual; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Kael",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/kossay/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Kael",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/kossay/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Astra",
+    "slot": "body",
+    "proposed_path": "assets/heroes/yakine/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Astra",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/yakine/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Astra",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/yakine/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Astra",
+    "slot": "active",
+    "proposed_path": "assets/heroes/yakine/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Astra",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/yakine/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Astra",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/yakine/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Astra",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/yakine/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Astra",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/yakine/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Astra",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/yakine/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Astra",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Astra",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/yakine/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Astra",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Astra",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/yakine/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Astra",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Astra",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/yakine/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Astra",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Astra",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/yakine/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Astra",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Astra",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/yakine/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for staff; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Astra",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/yakine/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Astra",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/yakine/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Nyx",
+    "slot": "body",
+    "proposed_path": "assets/heroes/taky/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Nyx",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/taky/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Nyx",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/taky/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Nyx",
+    "slot": "active",
+    "proposed_path": "assets/heroes/taky/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Nyx",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/taky/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Nyx",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/taky/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Nyx",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/taky/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Nyx",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/taky/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Nyx",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/taky/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Nyx",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Nyx",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/taky/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Nyx",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Nyx",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/taky/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Nyx",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Nyx",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/taky/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Nyx",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Nyx",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/taky/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Nyx",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Nyx",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/taky/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for dagger; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Nyx",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/taky/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Nyx",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/taky/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Bront",
+    "slot": "body",
+    "proposed_path": "assets/heroes/garsi/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Bront",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/garsi/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Bront",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/garsi/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Bront",
+    "slot": "active",
+    "proposed_path": "assets/heroes/garsi/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Bront",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/garsi/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Bront",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/garsi/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Bront",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/garsi/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Bront",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/garsi/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Bront",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/garsi/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Bront",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Bront",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/garsi/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Bront",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Bront",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/garsi/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Bront",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Bront",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/garsi/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Bront",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Bront",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/garsi/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Bront",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Bront",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/garsi/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for shield; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Bront",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/garsi/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Bront",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/garsi/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Zephyr",
+    "slot": "body",
+    "proposed_path": "assets/heroes/tounsi/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Zephyr",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/tounsi/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Zephyr",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/tounsi/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Zephyr",
+    "slot": "active",
+    "proposed_path": "assets/heroes/tounsi/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Zephyr",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/tounsi/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Zephyr",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/tounsi/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Zephyr",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/tounsi/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Zephyr",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/tounsi/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Zephyr",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/tounsi/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Zephyr",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Zephyr",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/tounsi/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Zephyr",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Zephyr",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/tounsi/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Zephyr",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Zephyr",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/tounsi/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Zephyr",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Zephyr",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/tounsi/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Zephyr",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Zephyr",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/tounsi/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for sabre; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Zephyr",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/tounsi/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Zephyr",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/tounsi/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Volt",
+    "slot": "body",
+    "proposed_path": "assets/heroes/youssef/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Volt",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/youssef/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Volt",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/youssef/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Volt",
+    "slot": "active",
+    "proposed_path": "assets/heroes/youssef/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Volt",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/youssef/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Volt",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/youssef/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Volt",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/youssef/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Volt",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/youssef/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Volt",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/youssef/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Volt",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Volt",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/youssef/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Volt",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Volt",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/youssef/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Volt",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Volt",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/youssef/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Volt",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Volt",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/youssef/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Volt",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Volt",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/youssef/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for gadget; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Volt",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/youssef/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Volt",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/youssef/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Skye",
+    "slot": "body",
+    "proposed_path": "assets/heroes/loey/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Skye",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/loey/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Skye",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/loey/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Skye",
+    "slot": "active",
+    "proposed_path": "assets/heroes/loey/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Skye",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/loey/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Skye",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/loey/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Skye",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/loey/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Skye",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/loey/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Skye",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/loey/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Skye",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Skye",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/loey/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Skye",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Skye",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/loey/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Skye",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Skye",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/loey/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Skye",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Skye",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/loey/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Skye",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Skye",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/loey/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for bow; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Skye",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/loey/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Skye",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/loey/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Sol",
+    "slot": "body",
+    "proposed_path": "assets/heroes/rayan/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Sol",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/rayan/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Sol",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/rayan/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Sol",
+    "slot": "active",
+    "proposed_path": "assets/heroes/rayan/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Sol",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/rayan/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Sol",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/rayan/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Sol",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/rayan/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Sol",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/rayan/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Sol",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/rayan/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Sol",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Sol",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/rayan/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Sol",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Sol",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/rayan/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Sol",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Sol",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/rayan/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Sol",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Sol",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/rayan/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Sol",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Sol",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/rayan/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for lance; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Sol",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/rayan/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Sol",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/rayan/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Unarmed / clean rig",
+    "hero": "Rime",
+    "slot": "body",
+    "proposed_path": "assets/heroes/mira/body-unarmed.png",
+    "requirement": "Weapon-free body, transparent 128\u00d7160 cells, all 14 legacy frames: idle0, run1\u20138, jump9, fall10, attack11\u201312, dodge13. Retain original identity and draw envelope.",
+    "status": "MISSING ART",
+    "notes": "Do not paint over/erase held weapons without redrawing occluded hands, torso and outfit; training proxy is temporary."
+  },
+  {
+    "category": "Unarmed / lobby",
+    "hero": "Rime",
+    "slot": "idle-guard",
+    "proposed_path": "assets/heroes/mira/unarmed-guard.png",
+    "requirement": "Distinct readable bare-hand guard/idle, 128\u00d7160, same origin as body.",
+    "status": "MISSING ART",
+    "notes": "A dedicated guard clip needs a manifest hook when supplied; presently the labelled generic proxy is shown."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Rime",
+    "slot": "startup",
+    "proposed_path": "assets/heroes/mira/unarmed-startup.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Rime",
+    "slot": "active",
+    "proposed_path": "assets/heroes/mira/unarmed-active.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Unarmed / authored phase poses",
+    "hero": "Rime",
+    "slot": "recovery",
+    "proposed_path": "assets/heroes/mira/unarmed-recovery.png",
+    "requirement": "128\u00d7160 transparent pose/clip aligned to original body origin; distinct fist anticipation, extension and return silhouette.",
+    "status": "MISSING ART",
+    "notes": "Current renderer uses legacy attack11\u201312 (Wissem) or phase-responsive generic proxy (others). Separate clips require a phase\u2192frame/asset adapter; no claim they are already wired."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Rime",
+    "slot": "base",
+    "proposed_path": "assets/cosmetics/mira/base.png",
+    "requirement": "Clean neutral-clothed/covered body rig, no replaceable outerwear/weapon baked in; 14\u00d7128\u00d7160 aligned cells.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.base manifest key required. This is a substantial authored rig split, not six overlays pasted on complete clothes."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Rime",
+    "slot": "front-mask",
+    "proposed_path": "assets/cosmetics/mira/front.png",
+    "requirement": "Foreground hands/arms/hair occlusion mask, same 14 aligned frames.",
+    "status": "MISSING ART",
+    "notes": "Body.modularBody.front required; optional rear sheet if clothing/hair extends behind body."
+  },
+  {
+    "category": "Modular body architecture",
+    "hero": "Rime",
+    "slot": "rear-mask",
+    "proposed_path": "assets/cosmetics/mira/rear.png",
+    "requirement": "Optional rear hair/cape/weapon-strap occlusion split, 14 aligned frames.",
+    "status": "CONDITIONAL ART",
+    "notes": "Only needed for silhouettes with rear components. Body.modularBody.rear is supported."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Rime",
+    "slot": "hat",
+    "proposed_path": "assets/cosmetics/mira/hat/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Rime",
+    "slot": "hat-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/hat/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Rime",
+    "slot": "top",
+    "proposed_path": "assets/cosmetics/mira/top/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Rime",
+    "slot": "top-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/top/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Rime",
+    "slot": "bottom",
+    "proposed_path": "assets/cosmetics/mira/bottom/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Rime",
+    "slot": "bottom-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/bottom/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Rime",
+    "slot": "shoes",
+    "proposed_path": "assets/cosmetics/mira/shoes/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Rime",
+    "slot": "shoes-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/shoes/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Independent wardrobe slots",
+    "hero": "Rime",
+    "slot": "eyewear",
+    "proposed_path": "assets/cosmetics/mira/eyewear/<piece-id>.png",
+    "requirement": "Each sellable piece: transparent 14\u00d7128\u00d7160 aligned sprite layer; all animation states; colors/opaque areas must not obscure required face/hand cues.",
+    "status": "MISSING ART",
+    "notes": "Catalog id, hero, slot, key, status:ready, cost and ownership required. Current catalog empty; art must be previewed before enabling sales."
+  },
+  {
+    "category": "Wardrobe previews",
+    "hero": "Rime",
+    "slot": "eyewear-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/eyewear/<piece-id>-preview.png",
+    "requirement": "One isolated square preview/thumbnail per piece; transparent, same pixel style.",
+    "status": "MISSING ART",
+    "notes": "Future populated catalog UI still needs to render ready-item cards; present UI explicitly says art pending."
+  },
+  {
+    "category": "Weapon-skin slots",
+    "hero": "Rime",
+    "slot": "weaponSkin",
+    "proposed_path": "assets/cosmetics/mira/weaponSkin/<skin-id>.png",
+    "requirement": "Class-matched replacement for frost_staff; single transparent image, explicit dimensions, normalized grip anchor, angle and logical height.",
+    "status": "MISSING ART",
+    "notes": "Original signature PNG exists but is not a new sellable skin. New image requires a separate body and ready catalog item; no stats change."
+  },
+  {
+    "category": "Weapon-skin previews",
+    "hero": "Rime",
+    "slot": "weaponSkin-thumbnail",
+    "proposed_path": "assets/cosmetics/mira/weaponSkin/<skin-id>-preview.png",
+    "requirement": "Isolated square preview of the new skin (may reuse the full single-image weapon PNG with contain fit).",
+    "status": "MISSING ART",
+    "notes": "Can share source image if sufficiently readable, not necessarily a separate unique drawing."
+  },
+  {
+    "category": "Weapon holding",
+    "hero": "Rime",
+    "slot": "sockets",
+    "proposed_path": "assets/heroes/mira/weapon-sockets.json",
+    "requirement": "Main and offhand grip positions for all 14 frames and per-body orientation review against real signature weapon.",
+    "status": "MISSING ART / RIG DATA",
+    "notes": "Do not enable separate until clean body is approved. Bront hammer and Sol lance need corrected silhouettes."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/menu-background.png",
+    "requirement": "Clean layered midnight fantasy backdrop without text, characters, mode cards or UI; match mockups.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/hero-pedestal.png",
+    "requirement": "Pixel-art foreground pedestal/cliff as isolated layer; replace the current procedural lobby platform.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/mode-adventure.png",
+    "requirement": "Text-free Adventure card background matching mockup.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/mode-raid.png",
+    "requirement": "Text-free Raid card background.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/mode-endless.png",
+    "requirement": "Text-free Endless card background.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Mockup fidelity",
+    "hero": "All",
+    "slot": "environment",
+    "proposed_path": "assets/ui/scenes/mode-daily.png",
+    "requirement": "Text-free Daily Challenge banner background.",
+    "status": "MISSING ART",
+    "notes": "Not redrawn from a full composite mockup; existing world/cosmic art used as interim."
+  },
+  {
+    "category": "Fonts",
+    "hero": "All",
+    "slot": "display",
+    "proposed_path": "assets/fonts/pixelify-sans-latin.woff2",
+    "requirement": "Pixelify Sans 700, optional user-installed Google Fonts input.",
+    "status": "NOT INCLUDED",
+    "notes": "No font binaries delivered. Installer script is optional; license review and device render check required."
+  },
+  {
+    "category": "Fonts",
+    "hero": "All",
+    "slot": "body",
+    "proposed_path": "assets/fonts/vt323-latin.woff2",
+    "requirement": "VT323 400, optional user-installed Google Fonts input.",
+    "status": "NOT INCLUDED",
+    "notes": "Fallback is Courier New/monospace until provided locally."
+  },
+  {
+    "category": "Audio",
+    "hero": "All",
+    "slot": "fist",
+    "proposed_path": "assets/audio/sfx/fist-<variant>.ogg",
+    "requirement": "Short fist action and impact variants; optional per-material hit confirmation.",
+    "status": "MISSING AUDIO / POLISH",
+    "notes": "Existing stomp/armor samples reused for functional action/impact distinction; no new VO recorded."
+  }
+]

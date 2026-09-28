@@ -1,0 +1,230 @@
+[
+  {
+    "key": "ui/frames/panel-shell",
+    "path": "assets/ui/frames/panel-shell.png",
+    "source": "assets/ui/frames/panel.png",
+    "operations": [
+      {
+        "crop": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "paste": [
+          0,
+          0
+        ]
+      },
+      {
+        "crop": [
+          64,
+          0,
+          96,
+          32
+        ],
+        "paste": [
+          32,
+          0
+        ]
+      },
+      {
+        "crop": [
+          408,
+          0,
+          440,
+          32
+        ],
+        "paste": [
+          64,
+          0
+        ]
+      },
+      {
+        "crop": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "paste": [
+          0,
+          32
+        ]
+      },
+      {
+        "crop": [
+          64,
+          64,
+          96,
+          96
+        ],
+        "paste": [
+          32,
+          32
+        ]
+      },
+      {
+        "crop": [
+          408,
+          64,
+          440,
+          96
+        ],
+        "paste": [
+          64,
+          32
+        ]
+      },
+      {
+        "crop": [
+          0,
+          195,
+          32,
+          227
+        ],
+        "paste": [
+          0,
+          64
+        ]
+      },
+      {
+        "crop": [
+          64,
+          195,
+          96,
+          227
+        ],
+        "paste": [
+          32,
+          64
+        ]
+      },
+      {
+        "crop": [
+          408,
+          195,
+          440,
+          227
+        ],
+        "paste": [
+          64,
+          64
+        ]
+      }
+    ],
+    "sha256": "bdfb4ce1a159c0056e0753199cb06f32237046c1a3aaad81bd541fa62460beac"
+  },
+  {
+    "key": "ui/ornaments/diamond",
+    "path": "assets/ui/ornaments/diamond.png",
+    "source": "assets/ui/frames/panel.png",
+    "operations": [
+      {
+        "crop": [
+          211,
+          2,
+          235,
+          26
+        ]
+      }
+    ],
+    "sha256": "002acb15001353a5a76eaac547a16db6ac30d81ce52d878bcae12c123824d8c1"
+  },
+  {
+    "key": "ui/ornaments/rule",
+    "path": "assets/ui/ornaments/rule.png",
+    "source": "assets/ui/frames/panel.png",
+    "operations": [
+      {
+        "crop": [
+          65,
+          11,
+          97,
+          14
+        ]
+      }
+    ],
+    "sha256": "7c436e851a095aafe4ac1fb9d934679bf799f6f9c47cd97ddfbe41f4d9313f46"
+  },
+  {
+    "key": "ui/icons/crown-silver",
+    "path": "assets/ui/icons/crown-silver.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "operations": [
+      {
+        "crop": [
+          143,
+          604,
+          250,
+          696
+        ]
+      }
+    ],
+    "sha256": "01a9c56c363d7ef008328faefcd468c39455b68b2f8e2d3d2bca51688ea76a75"
+  },
+  {
+    "key": "ui/icons/crown-red",
+    "path": "assets/ui/icons/crown-red.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "operations": [
+      {
+        "crop": [
+          256,
+          604,
+          363,
+          696
+        ]
+      }
+    ],
+    "sha256": "f37acb7aacda4566e258e285e98c7215da32c3731e21cc1b6307079825696967"
+  },
+  {
+    "key": "ui/icons/crown-green",
+    "path": "assets/ui/icons/crown-green.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "operations": [
+      {
+        "crop": [
+          376,
+          604,
+          486,
+          696
+        ]
+      }
+    ],
+    "sha256": "0833d2b03c5e245c6f22c7747ac328d006f7c3a0c4bd78633270aa386b3bc427"
+  },
+  {
+    "key": "ui/icons/crown-cyan",
+    "path": "assets/ui/icons/crown-cyan.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "operations": [
+      {
+        "crop": [
+          503,
+          604,
+          612,
+          696
+        ]
+      }
+    ],
+    "sha256": "36ba5dc99dfa814e96663d3159ea2c097371c874389959e68368c5f44486a53f"
+  },
+  {
+    "key": "ui/icons/crown-pink",
+    "path": "assets/ui/icons/crown-pink.png",
+    "source": "art-source/ui/Assets_icons.png",
+    "operations": [
+      {
+        "crop": [
+          622,
+          604,
+          731,
+          696
+        ]
+      }
+    ],
+    "sha256": "64fce3ee8891569a5f631d8836b3b2099971297207471d0b102889f5cc762159"
+  }
+]

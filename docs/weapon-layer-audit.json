@@ -1,0 +1,62 @@
+{
+  "wissem": {
+    "weaponLayer": "separate",
+    "evidence": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+    "unarmedArtReady": true,
+    "cosmeticLayerArtReady": false
+  },
+  "kossay": {
+    "weaponLayer": "baked",
+    "evidence": "Twin blades baked in both hands.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "yakine": {
+    "weaponLayer": "baked",
+    "evidence": "Glowing crescent staff baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "taky": {
+    "weaponLayer": "baked",
+    "evidence": "Knives baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "garsi": {
+    "weaponLayer": "baked",
+    "evidence": "Shield and weapon haft baked in; does not visually match new hammer.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "tounsi": {
+    "weaponLayer": "baked",
+    "evidence": "Scimitar baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "youssef": {
+    "weaponLayer": "baked",
+    "evidence": "Powered gauntlet/gadget silhouette baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "loey": {
+    "weaponLayer": "baked",
+    "evidence": "Bow and arrow baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "rayan": {
+    "weaponLayer": "baked",
+    "evidence": "Recolored shield-knight sheet; shield baked in, not the new lance.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  },
+  "mira": {
+    "weaponLayer": "baked",
+    "evidence": "Recolored staff caster; staff baked in.",
+    "unarmedArtReady": false,
+    "cosmeticLayerArtReady": false
+  }
+}

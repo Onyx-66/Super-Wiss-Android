@@ -1,0 +1,1220 @@
+{
+  "reference": {
+    "cycle": 0.46,
+    "baseDamage": 2,
+    "percentScale": 100,
+    "weights": {
+      "speed": 0.5,
+      "accel": 0.3,
+      "air": 0.2
+    }
+  },
+  "rules": {
+    "gauntlet": {
+      "class": "gauntlet",
+      "label": "Gravity gauntlet",
+      "min": {
+        "power": 100,
+        "speed": 100
+      }
+    },
+    "dual": {
+      "class": "dual-dagger",
+      "label": "Twin Fang daggers",
+      "min": {
+        "power": 120,
+        "speed": 105
+      }
+    },
+    "staff": {
+      "class": "staff",
+      "label": "Orbit Crescent staff",
+      "min": {
+        "magic": 50
+      }
+    },
+    "dagger": {
+      "class": "dagger",
+      "label": "Shadow knife",
+      "min": {
+        "power": 120,
+        "speed": 110
+      }
+    },
+    "shield": {
+      "class": "hammer",
+      "label": "Stonebreaker hammer",
+      "min": {
+        "power": 95,
+        "stamina": 120
+      }
+    },
+    "sabre": {
+      "class": "sabre",
+      "label": "Wind scimitar",
+      "min": {
+        "power": 100,
+        "speed": 95
+      }
+    },
+    "gadget": {
+      "class": "gadget",
+      "label": "Clockwork knuckle",
+      "min": {
+        "speed": 90,
+        "stamina": 100
+      }
+    },
+    "bow": {
+      "class": "bow",
+      "label": "Sky bow",
+      "min": {
+        "speed": 100,
+        "stamina": 95
+      }
+    },
+    "lance": {
+      "class": "lance",
+      "label": "Sun lance",
+      "min": {
+        "power": 95,
+        "stamina": 95
+      }
+    },
+    "frost_staff": {
+      "class": "staff",
+      "label": "Frost staff",
+      "min": {
+        "magic": 50
+      }
+    }
+  },
+  "heroes": [
+    {
+      "id": "wissem",
+      "name": "Wissem",
+      "role": "The gravity pioneer",
+      "profile": {
+        "weapon": "gauntlet",
+        "speed": 1.08,
+        "accel": 1.1,
+        "air": 1.12,
+        "startup": 0.025,
+        "active": 0.17,
+        "recovery": 0.15,
+        "dodge": 0.21
+      },
+      "stats": {
+        "power": 133,
+        "magic": 0,
+        "speed": 109,
+        "stamina": 75,
+        "cycle": 0.345,
+        "baseDamage": 2,
+        "staminaPerSecond": 23.188405797101453,
+        "provenance": {
+          "startup": 0.025,
+          "active": 0.17,
+          "recovery": 0.15,
+          "speed": 1.08,
+          "accel": 1.1,
+          "air": 1.12,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1.08,
+        "accel": 1.1,
+        "air": 1.12,
+        "startup": 0.05,
+        "active": 0.08333333333333333,
+        "recovery": 0.21666666666666667,
+        "dodge": 0.21,
+        "startupFrames": 3,
+        "activeFrames": 5,
+        "recoveryFrames": 13,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/gauntlet",
+        "file": "gravity_gauntlet.png",
+        "height": 16,
+        "anchor": [
+          0.23,
+          0.78
+        ],
+        "motion": "punch",
+        "angle": 1.85,
+        "dual": true
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "dual": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "staff": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "gadget": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "bow": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "lance": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": true,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "kossay",
+      "name": "Kael",
+      "role": "The twin-fang ranger",
+      "profile": {
+        "weapon": "dual",
+        "speed": 1.12,
+        "accel": 1.25,
+        "air": 1,
+        "startup": 0.025,
+        "active": 0.12,
+        "recovery": 0.12,
+        "dodge": 0.17
+      },
+      "stats": {
+        "power": 174,
+        "magic": 0,
+        "speed": 114,
+        "stamina": 58,
+        "cycle": 0.265,
+        "baseDamage": 2,
+        "staminaPerSecond": 30.188679245283016,
+        "provenance": {
+          "startup": 0.025,
+          "active": 0.12,
+          "recovery": 0.12,
+          "speed": 1.12,
+          "accel": 1.25,
+          "air": 1,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1.12,
+        "accel": 1.25,
+        "air": 1,
+        "startup": 0.05,
+        "active": 0.06666666666666667,
+        "recovery": 0.18333333333333332,
+        "dodge": 0.17,
+        "startupFrames": 3,
+        "activeFrames": 4,
+        "recoveryFrames": 11,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/dual",
+        "file": "twin_fang_dagger.png",
+        "height": 30,
+        "anchor": [
+          0.24,
+          0.73
+        ],
+        "motion": "slash",
+        "angle": -0.72,
+        "dual": true
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "yakine",
+      "name": "Astra",
+      "role": "The astral spellcaster",
+      "profile": {
+        "weapon": "staff",
+        "speed": 0.86,
+        "accel": 0.85,
+        "air": 0.92,
+        "startup": 0.17,
+        "active": 0.12,
+        "recovery": 0.3,
+        "dodge": 0.23,
+        "projectile": "arcane"
+      },
+      "stats": {
+        "power": 78,
+        "magic": 117,
+        "speed": 87,
+        "stamina": 128,
+        "cycle": 0.5900000000000001,
+        "baseDamage": 2,
+        "staminaPerSecond": 13.559322033898303,
+        "provenance": {
+          "startup": 0.17,
+          "active": 0.12,
+          "recovery": 0.3,
+          "speed": 0.86,
+          "accel": 0.85,
+          "air": 0.92,
+          "projectile": "arcane"
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 0.86,
+        "accel": 0.85,
+        "air": 0.92,
+        "startup": 0.1,
+        "active": 0.06666666666666667,
+        "recovery": 0.3,
+        "dodge": 0.23,
+        "startupFrames": 6,
+        "activeFrames": 4,
+        "recoveryFrames": 18,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/staff",
+        "file": "orbit_crescent_staff.png",
+        "height": 58,
+        "anchor": [
+          0.35,
+          0.65
+        ],
+        "motion": "cast",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "taky",
+      "name": "Nyx",
+      "role": "The shadow rogue",
+      "profile": {
+        "weapon": "dagger",
+        "speed": 1.1,
+        "accel": 1.3,
+        "air": 1.18,
+        "startup": 0.035,
+        "active": 0.13,
+        "recovery": 0.14,
+        "dodge": 0.16
+      },
+      "stats": {
+        "power": 151,
+        "magic": 0,
+        "speed": 118,
+        "stamina": 66,
+        "cycle": 0.30500000000000005,
+        "baseDamage": 2,
+        "staminaPerSecond": 26.22950819672131,
+        "provenance": {
+          "startup": 0.035,
+          "active": 0.13,
+          "recovery": 0.14,
+          "speed": 1.1,
+          "accel": 1.3,
+          "air": 1.18,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1.1,
+        "accel": 1.3,
+        "air": 1.18,
+        "startup": 0.05,
+        "active": 0.06666666666666667,
+        "recovery": 0.16666666666666666,
+        "dodge": 0.16,
+        "startupFrames": 3,
+        "activeFrames": 4,
+        "recoveryFrames": 10,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/dagger",
+        "file": "shadow_knife.png",
+        "height": 29,
+        "anchor": [
+          0.27,
+          0.72
+        ],
+        "motion": "slash",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "garsi",
+      "name": "Bront",
+      "role": "The iron guardian",
+      "profile": {
+        "weapon": "shield",
+        "speed": 0.8,
+        "accel": 0.63,
+        "air": 0.78,
+        "startup": 0.14,
+        "active": 0.22,
+        "recovery": 0.32,
+        "dodge": 0.26
+      },
+      "stats": {
+        "power": 101,
+        "magic": 0,
+        "speed": 75,
+        "stamina": 148,
+        "cycle": 0.6799999999999999,
+        "baseDamage": 3,
+        "staminaPerSecond": 11.764705882352942,
+        "provenance": {
+          "startup": 0.14,
+          "active": 0.22,
+          "recovery": 0.32,
+          "speed": 0.8,
+          "accel": 0.63,
+          "air": 0.78,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 0.8,
+        "accel": 0.63,
+        "air": 0.78,
+        "startup": 0.1,
+        "active": 0.08333333333333333,
+        "recovery": 0.3333333333333333,
+        "dodge": 0.26,
+        "startupFrames": 6,
+        "activeFrames": 5,
+        "recoveryFrames": 20,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/shield",
+        "file": "stonebreaker_hammer.png",
+        "height": 48,
+        "anchor": [
+          0.25,
+          0.72
+        ],
+        "motion": "heavy",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "sabre": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "tounsi",
+      "name": "Zephyr",
+      "role": "The desert corsair",
+      "profile": {
+        "weapon": "sabre",
+        "speed": 1.04,
+        "accel": 1.1,
+        "air": 1.12,
+        "startup": 0.06,
+        "active": 0.2,
+        "recovery": 0.18,
+        "dodge": 0.2
+      },
+      "stats": {
+        "power": 105,
+        "magic": 0,
+        "speed": 107,
+        "stamina": 96,
+        "cycle": 0.44,
+        "baseDamage": 2,
+        "staminaPerSecond": 18.181818181818183,
+        "provenance": {
+          "startup": 0.06,
+          "active": 0.2,
+          "recovery": 0.18,
+          "speed": 1.04,
+          "accel": 1.1,
+          "air": 1.12,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1.04,
+        "accel": 1.1,
+        "air": 1.12,
+        "startup": 0.06666666666666667,
+        "active": 0.08333333333333333,
+        "recovery": 0.2,
+        "dodge": 0.2,
+        "startupFrames": 4,
+        "activeFrames": 5,
+        "recoveryFrames": 12,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/sabre",
+        "file": "wind_scimitar.png",
+        "height": 44,
+        "anchor": [
+          0.25,
+          0.79
+        ],
+        "motion": "slash",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "gadget": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "youssef",
+      "name": "Volt",
+      "role": "The spark inventor",
+      "profile": {
+        "weapon": "gadget",
+        "speed": 0.94,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.1,
+        "active": 0.1,
+        "recovery": 0.3,
+        "dodge": 0.22,
+        "projectile": "bolt"
+      },
+      "stats": {
+        "power": 92,
+        "magic": 0,
+        "speed": 97,
+        "stamina": 109,
+        "cycle": 0.5,
+        "baseDamage": 2,
+        "staminaPerSecond": 16,
+        "provenance": {
+          "startup": 0.1,
+          "active": 0.1,
+          "recovery": 0.3,
+          "speed": 0.94,
+          "accel": 1,
+          "air": 1,
+          "projectile": "bolt"
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 0.94,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.1,
+        "active": 0.05,
+        "recovery": 0.3,
+        "dodge": 0.22,
+        "startupFrames": 6,
+        "activeFrames": 3,
+        "recoveryFrames": 18,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/gadget",
+        "file": "clockwork_knuckle.png",
+        "height": 22,
+        "anchor": [
+          0.21,
+          0.75
+        ],
+        "motion": "recoil",
+        "angle": 0.78
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "bow": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "loey",
+      "name": "Skye",
+      "role": "The wind scout",
+      "profile": {
+        "weapon": "bow",
+        "speed": 1.03,
+        "accel": 1.12,
+        "air": 1.16,
+        "startup": 0.2,
+        "active": 0.08,
+        "recovery": 0.24,
+        "dodge": 0.18,
+        "projectile": "arrow"
+      },
+      "stats": {
+        "power": 88,
+        "magic": 0,
+        "speed": 108,
+        "stamina": 113,
+        "cycle": 0.52,
+        "baseDamage": 2,
+        "staminaPerSecond": 15.384615384615383,
+        "provenance": {
+          "startup": 0.2,
+          "active": 0.08,
+          "recovery": 0.24,
+          "speed": 1.03,
+          "accel": 1.12,
+          "air": 1.16,
+          "projectile": "arrow"
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1.03,
+        "accel": 1.12,
+        "air": 1.16,
+        "startup": 0.1,
+        "active": 0.05,
+        "recovery": 0.25,
+        "dodge": 0.18,
+        "startupFrames": 6,
+        "activeFrames": 3,
+        "recoveryFrames": 15,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/bow",
+        "file": "sky_bow.png",
+        "height": 44,
+        "anchor": [
+          0.5,
+          0.51
+        ],
+        "motion": "bow",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "lance": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "rayan",
+      "name": "Sol",
+      "role": "The sun-forged lancer",
+      "profile": {
+        "weapon": "lance",
+        "speed": 1,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.08,
+        "active": 0.18,
+        "recovery": 0.2,
+        "dodge": 0.22
+      },
+      "stats": {
+        "power": 100,
+        "magic": 0,
+        "speed": 100,
+        "stamina": 100,
+        "cycle": 0.46,
+        "baseDamage": 2,
+        "staminaPerSecond": 17.391304347826086,
+        "provenance": {
+          "startup": 0.08,
+          "active": 0.18,
+          "recovery": 0.2,
+          "speed": 1,
+          "accel": 1,
+          "air": 1,
+          "projectile": null
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.08333333333333333,
+        "active": 0.08333333333333333,
+        "recovery": 0.23333333333333334,
+        "dodge": 0.22,
+        "startupFrames": 5,
+        "activeFrames": 5,
+        "recoveryFrames": 14,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/lance",
+        "file": "sun_lance.png",
+        "height": 63,
+        "anchor": [
+          0.28,
+          0.72
+        ],
+        "motion": "thrust",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        },
+        "frost_staff": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        }
+      }
+    },
+    {
+      "id": "mira",
+      "name": "Rime",
+      "role": "The frost archivist",
+      "profile": {
+        "weapon": "frost_staff",
+        "speed": 1,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.08,
+        "active": 0.18,
+        "recovery": 0.2,
+        "dodge": 0.22,
+        "projectile": "ice"
+      },
+      "stats": {
+        "power": 100,
+        "magic": 100,
+        "speed": 100,
+        "stamina": 100,
+        "cycle": 0.46,
+        "baseDamage": 2,
+        "staminaPerSecond": 17.391304347826086,
+        "provenance": {
+          "startup": 0.08,
+          "active": 0.18,
+          "recovery": 0.2,
+          "speed": 1,
+          "accel": 1,
+          "air": 1,
+          "projectile": "ice"
+        }
+      },
+      "unarmed": {
+        "weapon": "unarmed",
+        "speed": 1,
+        "accel": 1,
+        "air": 1,
+        "startup": 0.08333333333333333,
+        "active": 0.08333333333333333,
+        "recovery": 0.23333333333333334,
+        "dodge": 0.22,
+        "startupFrames": 5,
+        "activeFrames": 5,
+        "recoveryFrames": 14,
+        "damage": 1,
+        "reach": 26,
+        "staminaCost": 8
+      },
+      "weapon": {
+        "key": "weapon/frost_staff",
+        "file": "frost_staff.png",
+        "height": 58,
+        "anchor": [
+          0.37,
+          0.64
+        ],
+        "motion": "cast",
+        "angle": -0.72
+      },
+      "eligibility": {
+        "gauntlet": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dual": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "staff": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "dagger": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "shield": {
+          "stats": false,
+          "art": false,
+          "equippable": false
+        },
+        "sabre": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "gadget": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "bow": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "lance": {
+          "stats": true,
+          "art": false,
+          "equippable": false
+        },
+        "frost_staff": {
+          "stats": true,
+          "art": true,
+          "equippable": true
+        }
+      }
+    }
+  ]
+}

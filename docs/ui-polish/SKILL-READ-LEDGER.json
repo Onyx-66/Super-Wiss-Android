@@ -1,0 +1,114 @@
+[
+  {
+    "path": "agent-skills/action-combat-movement-feel/SKILL.md",
+    "bytes": 3979,
+    "lines": 39,
+    "sha256": "9f6a4de029425078b549889486591b4983aaaec9c681c7b8a8454186c3d16b5e",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/ads-monetization-rewarded-interstitial/SKILL.md",
+    "bytes": 4142,
+    "lines": 35,
+    "sha256": "c5bdfee571e612d7640fbad1040e05587a2945b335d026a70793a2e9cd67e331",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/aso-store-listing/SKILL.md",
+    "bytes": 3938,
+    "lines": 33,
+    "sha256": "0c6139a85224625819b75afc077c87882cac4a64be74e5f74350b21c0c227915",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/audio-sfx-vo-emotes/SKILL.md",
+    "bytes": 4174,
+    "lines": 35,
+    "sha256": "4d5da0ca9700230266fe63465cb9cd0527aa4e6baabd8c8ced870babbae8c67f",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/character-narrative-skills-pets/SKILL.md",
+    "bytes": 4366,
+    "lines": 33,
+    "sha256": "c8fe8873fb54767f4130c99d3ee70860dd028565a56659c9ab0290ad259b219a",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/game-economy-balancing/SKILL.md",
+    "bytes": 3891,
+    "lines": 28,
+    "sha256": "56ab308677e014b60fb3355fc7a7f53516623c33d7d6cae125c7ed2b135b791a",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/google-play-compliance-monetization/SKILL.md",
+    "bytes": 6074,
+    "lines": 47,
+    "sha256": "655b3ab63a68cff0237351412d69fdd641c3c07853e103886022104decaddb7e",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/hollow-knight-combat-2d/SKILL.md",
+    "bytes": 2319,
+    "lines": 34,
+    "sha256": "4d3ca018660f3487deab4055c39389c686877ced4464e79cb5753a53043a4473",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/mobile-pixel-art-ui-ux/SKILL.md",
+    "bytes": 3509,
+    "lines": 35,
+    "sha256": "74079701dcffd87ae28c9bd2037d89e9ac0dc8a40073fe05cd1d253927e21596",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/monetization-shop-design/SKILL.md",
+    "bytes": 4809,
+    "lines": 38,
+    "sha256": "9a841d254a2b91fbcde37533654d7691b3aebb928967bc4a79b2e318e526788e",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/pixel-art-page-layout-system/SKILL.md",
+    "bytes": 19392,
+    "lines": 130,
+    "sha256": "5bc680454fe05cd3a87da7f93d5a9db7ef1c9c096adcc9ba9aaf8a894fbc085d",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/player-onboarding-ftue/SKILL.md",
+    "bytes": 3927,
+    "lines": 36,
+    "sha256": "a3719c40f7bc0f68e7896b35d6b64c4cc7f272b2aa799d8d753b1abc16795dc1",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/retention-liveops-calendar/SKILL.md",
+    "bytes": 3744,
+    "lines": 30,
+    "sha256": "64643008ab521e4cbf9df91d40e52e870c6b0aa1e32f97a540ded43176d07cf0",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/social-virality-referral/SKILL.md",
+    "bytes": 3554,
+    "lines": 30,
+    "sha256": "d963b6a29cda64b6b29255617ec4bd98864e7243276de1ef35c5f08c8ed9cb09",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/telemetry-analytics-instrumentation/SKILL.md",
+    "bytes": 3788,
+    "lines": 31,
+    "sha256": "ea9dcfcac8606c351c6b405d71caec1a1f4c78d332284663bf073347a9c1276b",
+    "read": "full supplied document"
+  },
+  {
+    "path": "agent-skills/world-level-generation/SKILL.md",
+    "bytes": 4076,
+    "lines": 39,
+    "sha256": "e66119b67cca3a22df1da800629a435b338a07b9f1ade3e94818b1bfb84b59ad",
+    "read": "full supplied document"
+  }
+]

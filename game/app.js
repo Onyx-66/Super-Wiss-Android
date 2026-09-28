@@ -1,5 +1,11 @@
 import { ASC_RULES_REVISION, ASC_OUTFITS, ASC_FUSIONS, ASC_PET_FUSIONS, ASC_SKILL_ICONS, ascSkill, ascHeroSkills, ascBuyOutfit, ascLearn, ascFuseSkill, ascFusePet, ascEquipSkill, ascApplyRun, ascCompare, ascResult } from './ascension.js';
 import { BOSSES, DIFFICULTIES } from './bosses.js';
+import {heroStats,STAT_HELP,STAT_LABELS} from './hero-stats.js';
+import {equippedWeapon,equipWeapon,equipmentStatus,weaponEligibility,signatureWeapon,WEAPON_RULES} from './equipment.js';
+import {WARDROBE_SLOTS,WARDROBE_LABELS,equipWardrobe} from './wardrobe.js';
+import {CONTROL_ART} from './controls.js';
+import {ASSET_CONFIG} from './assets.js';
+import {drawHero} from './render.js';
 import { analogVector, CONTROL_IDS, defaultControlPreset, controlRect, sanitizeControlPresets } from './controls.js';
 import { AccountClient } from './social.js';
 import { NearbySession, validRoomCode } from './link.js';
@@ -46,7 +52,7 @@ function toast(text, seconds = 2.5) { $('toast').textContent = text; $('toast').
 function persist() { if (!saveProgress(storage, save) && !storageWarning) {
     storageWarning = true;
     toast('Storage is unavailable. This session will not be saved.', 5);
-} renderer.menuOutfit=save.ascension.outfits[save.hero]||'starter';renderer.menuParts=save.ascension.parts?.[save.hero]; updateTop(); }
+} renderer.menuOutfit=save.ascension.outfits[save.hero]||'starter';renderer.menuParts=save.ascension.parts?.[save.hero];renderer.menuWeapon=equippedWeapon(save.ascension,save.hero);renderer.menuWardrobe=save.ascension.wardrobe?.[save.hero]; updateTop(); }
 function audioGesture() { audio.enabled = save.settings.sound; audio.music = save.settings.music; if (save.settings.sound)
     audio.unlock(); }
 function click() { audioGesture(); audio.play('click'); }
@@ -63,9 +69,11 @@ function updateTop() {
     $('profileName').textContent = save.profile.name;
     $('profileLevel').textContent = `EXPLORER LV. ${1 + Math.floor(save.xp / 500)}`;
     $('xpBar').style.width = ((save.xp % 500) / 5) + '%';
+    if($('xpFraction'))$('xpFraction').textContent=(save.xp%500)+' / 500';
+    if($('homeLoadout'))$('homeLoadout').textContent=loadoutDescription(save.hero);
     $('homeHero').textContent = h.name.toUpperCase();
     $('homeSkill').textContent = h.skill.toUpperCase();
-    paintPortrait($('profilePortrait'), save.profile.avatar, true);
+    paintPortrait($('profilePortrait'), save.profile.avatar, true,localHeroLoadout(save.profile.avatar));
     $('profileButton').dataset.avatar=save.profile.avatar;
     $('profileButton').className='profile frame-'+save.profile.frame+' banner-'+save.profile.banner;
     $('profileButton').title=save.profile.name+' — open player profile';
@@ -76,7 +84,7 @@ function updateTop() {
     const ready = QUESTS.some(q => !save.claims.includes(q.id) && questValue(save, q) >= q.target) || dailyQuests(save.daily.day).some(q => !save.daily.claims.includes(q.id) && (save.daily.stats[q.stat] || 0) >= q.target);
     $('questDot').hidden = !ready;
 }
-function applySettings() { ascApplyControls(); renderer.menuOutfit=save.ascension.outfits[save.hero]||'starter';renderer.menuParts=save.ascension.parts?.[save.hero]; audio.enabled = save.settings.sound; audio.music = save.settings.music; audio.sfxVolume = save.settings.sfxVolume; audio.musicVolume = save.settings.musicVolume; renderer.motion = save.settings.motion; renderer.blood=save.settings.blood; document.body.classList.toggle('analog-mode',save.settings.controlMode==='analog'); document.body.classList.toggle('arrows-mode',save.settings.controlMode==='arrows'); renderer.trail = save.trail; renderer.close = save.settings.zoom === 'close'; document.body.classList.toggle('reduce-motion', !save.settings.motion); $('touchControls').classList.toggle('left-handed', save.settings.leftHanded); document.documentElement.style.setProperty('--control-opacity', save.settings.opacity); $('sprintControl').classList.toggle('enabled', save.settings.sprint); renderer.resize(innerWidth, innerHeight, save.settings.quality); if (!save.settings.sound && audio.context)
+function applySettings() { ascApplyControls(); renderer.menuOutfit=save.ascension.outfits[save.hero]||'starter';renderer.menuParts=save.ascension.parts?.[save.hero];renderer.menuWeapon=equippedWeapon(save.ascension,save.hero);renderer.menuWardrobe=save.ascension.wardrobe?.[save.hero]; audio.enabled = save.settings.sound; audio.music = save.settings.music; audio.sfxVolume = save.settings.sfxVolume; audio.musicVolume = save.settings.musicVolume; renderer.motion = save.settings.motion; renderer.blood=save.settings.blood; document.body.classList.toggle('analog-mode',save.settings.controlMode==='analog'); document.body.classList.toggle('arrows-mode',save.settings.controlMode==='arrows'); renderer.trail = save.trail; renderer.close = save.settings.zoom === 'close'; document.body.classList.toggle('reduce-motion', !save.settings.motion); $('touchControls').classList.toggle('left-handed', save.settings.leftHanded); document.documentElement.style.setProperty('--control-opacity', save.settings.opacity); $('sprintControl').classList.toggle('enabled', save.settings.sprint); renderer.resize(innerWidth, innerHeight, save.settings.quality); if (!save.settings.sound && audio.context)
     audio.context.suspend().catch(() => { }); }
 function dailyWorld() { let hash = 0; for (const c of utcDay())
     hash = (hash * 31 + c.charCodeAt(0)) >>> 0; return hash % WORLDS.length; }
@@ -131,14 +139,14 @@ function renderPetsBase() {
     $('practicePetButton').onclick = () => { click(); practicePet = pet.id; practice = true; selectedMap = pet.unlockWorld; showPage('campaign'); toast(pet.name + ' selected for practice. Choose any world.', 4); };
     $('noPetButton').onclick = () => { click(); equipPet(save, null); practicePet = null; persist(); renderPets(); toast('No companion equipped'); };
 }
-function renderQuests() { refreshDay(save); $('journeyTab').classList.toggle('selected', !dailyTab); $('dailyTab').classList.toggle('selected', dailyTab); const qs = dailyTab ? dailyQuests(save.daily.day) : QUESTS, claims = dailyTab ? save.daily.claims : save.claims; $('questList').innerHTML = (dailyTab ? `<div class="chapter-label">${escapeText(save.daily.day)} UTC • RESETS DAILY • OFFLINE DEVICE CLOCK</div>` : '') + qs.map(q => { const v = dailyTab ? save.daily.stats[q.stat] || 0 : questValue(save, q), claimed = claims.includes(q.id), ready = v >= q.target; return `<article class="quest-card"><div class="quest-head"><span class="quest-icon">${icon(q.icon)}</span><strong>${q.name}</strong></div><p>${q.text}</p><div class="quest-progress"><i style="width:${Math.min(100, v / q.target * 100)}%"></i></div><div class="quest-foot"><span>${formatNumber(Math.min(v, q.target))} / ${formatNumber(q.target)}</span><button class="quest-claim ${claimed ? 'claimed' : ready ? 'ready' : ''}" data-claim="${q.id}" ${!ready || claimed ? 'disabled' : ''}>${icon(claimed ? 'check' : 'coins')}${claimed ? 'Claimed' : ready ? 'Claim ' + q.reward : q.reward}</button></div></article>`; }).join(''); $('questList').querySelectorAll('[data-claim]').forEach(b => b.onclick = () => { click(); const reward = claimQuest(save, b.dataset.claim, dailyTab); if (reward) {
+function renderQuests() { refreshDay(save); $('journeyTab').classList.toggle('selected', !dailyTab); $('dailyTab').classList.toggle('selected', dailyTab); const qs = dailyTab ? dailyQuests(save.daily.day) : QUESTS, claims = dailyTab ? save.daily.claims : save.claims; $('questList').innerHTML = (dailyTab ? `<div class="chapter-label">${escapeText(save.daily.day)} UTC • RESETS DAILY • OFFLINE DEVICE CLOCK</div>` : '') + qs.map(q => { const v = dailyTab ? save.daily.stats[q.stat] || 0 : questValue(save, q), claimed = claims.includes(q.id), ready = v >= q.target; return `<article class="quest-card"><div class="quest-head"><span class="quest-icon">${icon(questThumbnail(q.stat,q.icon))}</span><strong>${q.name}</strong></div><p>${q.text}</p><div class="quest-progress"><i style="width:${Math.min(100, v / q.target * 100)}%"></i></div><div class="quest-foot"><span>${formatNumber(Math.min(v, q.target))} / ${formatNumber(q.target)}</span><button class="quest-claim ${claimed ? 'claimed' : ready ? 'ready' : ''}" data-claim="${q.id}" ${!ready || claimed ? 'disabled' : ''}>${icon(claimed ? 'check' : 'coins')}${claimed ? 'Claimed' : ready ? 'Claim ' + q.reward : q.reward}</button></div></article>`; }).join(''); $('questList').querySelectorAll('[data-claim]').forEach(b => b.onclick = () => { click(); const reward = claimQuest(save, b.dataset.claim, dailyTab); if (reward) {
     audio.play('power');
     toast(`Mission complete • +${reward} coins`);
     persist();
     renderQuests();
 } }); }
 function renderRecordsBase() { const e = save.endless, clears = save.maps.filter(m => m.clear).length; $('recordContent').innerHTML = `<div class="record-hero">${icon('trophy')}<small>ENDLESS PERSONAL BEST</small><strong>${e.best ? formatNumber(e.best) : '—'}</strong><p>${e.best ? `Farthest world reached: ${e.stage}` : 'Your first great run is still ahead.'}</p><button id="recordEndless" class="primary">${icon('infinity')}Beat your best</button></div><div class="record-right"><div class="stats-row"><div class="stat-box"><small>CAMPAIGN</small><b>${clears}<small style="display:inline"> / ${WORLDS.length}</small></b></div><div class="stat-box"><small>STARS EARNED</small><b>${starsTotal(save)}<small style="display:inline"> / ${WORLDS.length * 3}</small></b></div><div class="stat-box"><small>MONSTERS BEATEN</small><b>${formatNumber(save.totals.kills)}</b></div></div><div class="record-label">BEST ENDLESS RUNS • LOCAL ONLY</div>${e.runs.length ? e.runs.map((r, i) => `<div class="record-row"><span class="rank">${i + 1}</span><span class="record-info"><b>${heroById(r.hero).name} • World ${r.stage}</b><small>${formatNumber(r.distance)} m • ${escapeText(r.date)}</small></span><b>${formatNumber(r.score)}</b></div>`).join('') : '<div class="empty-record">Nothing invented. Nothing online.<br>Finish an endless attempt to put your first real score here.</div>'}<div class="record-label">DAILY CHALLENGE • ${escapeText(save.daily.day)} UTC</div><div class="record-row"><span class="rank">${icon('bullseye')}</span><span class="record-info"><b>${WORLDS[dailyWorld()].name}</b><small>Today’s best on this device</small></span><b>${save.daily.best ? formatNumber(save.daily.best) : '—'}</b></div></div>`; $('recordEndless').onclick = showEndlessIntro; }
-function openModal(type, html) { previousFocus = document.activeElement; modalType = type; $('modalPanel').className = 'modal-panel' + (type === 'result' ? ' result' : ''); $('modalPanel').innerHTML = html; $('modal').hidden = false; requestAnimationFrame(() => { $('modalPanel').querySelector('button:not(:disabled)')?.focus({ preventScroll: true }); }); }
+function openModal(type, html) { previousFocus = document.activeElement; modalType = type; $('modalPanel').dataset.modal=type; $('modalPanel').className = 'modal-panel' + (type === 'result' ? ' result' : ''); $('modalPanel').innerHTML = html; $('modal').hidden = false; requestAnimationFrame(() => { $('modalPanel').querySelector('button:not(:disabled)')?.focus({ preventScroll: true }); }); }
 function closeModal() { const was = modalType; $('modal').hidden = true; modalType = null; if (previousFocus?.isConnected)
     previousFocus.focus({ preventScroll: true }); if (was === 'settings' && !run)
     audioGesture(); }

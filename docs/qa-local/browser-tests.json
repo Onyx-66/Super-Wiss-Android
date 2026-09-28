@@ -1,0 +1,864 @@
+{
+  "environment": "Chromium set_content; test-only MemoryStorage; not Android/native QA",
+  "checks": [
+    {
+      "check": "home large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "campaign large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "heroes large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "pets large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "forge large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "missions large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "records large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "profile large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "bosses large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "settings large shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "home compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "campaign compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "heroes compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "pets compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "forge compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "missions compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "records compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "profile compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "bosses compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "settings compact shell within viewport",
+      "passed": true
+    },
+    {
+      "check": "Kael cannot visually swap baked knives to a foreign class",
+      "passed": true
+    },
+    {
+      "check": "zero Magic denies staff",
+      "passed": true
+    },
+    {
+      "check": "null unarmed choice persisted under original hero ID",
+      "passed": true
+    },
+    {
+      "check": "unarmed proxy is explicitly labelled in hero detail",
+      "passed": true
+    },
+    {
+      "check": "lobby states proxy",
+      "passed": true
+    },
+    {
+      "check": "Wissem equip dual",
+      "passed": true
+    },
+    {
+      "check": "Wissem equip sabre",
+      "passed": true
+    },
+    {
+      "check": "Wissem equip gauntlet",
+      "passed": true
+    },
+    {
+      "check": "Wissem equip unarmed",
+      "passed": true
+    },
+    {
+      "check": "independent clear: hat",
+      "passed": true
+    },
+    {
+      "check": "independent clear: top",
+      "passed": true
+    },
+    {
+      "check": "independent clear: bottom",
+      "passed": true
+    },
+    {
+      "check": "independent clear: shoes",
+      "passed": true
+    },
+    {
+      "check": "independent clear: eyewear",
+      "passed": true
+    },
+    {
+      "check": "independent clear: weaponSkin",
+      "passed": true
+    },
+    {
+      "check": "pending pieces are not purchasable",
+      "passed": true
+    },
+    {
+      "check": "journey missions still render",
+      "passed": true
+    },
+    {
+      "check": "sound switch changes setting",
+      "passed": true
+    },
+    {
+      "check": "volume slider saves",
+      "passed": true
+    },
+    {
+      "check": "serialized save retains null, slots and stable hero ID",
+      "passed": true
+    },
+    {
+      "check": "unarmed run starts with actual null equipment",
+      "passed": true
+    },
+    {
+      "check": "knife control disabled while unarmed",
+      "passed": true
+    },
+    {
+      "check": "attack control says PUNCH",
+      "passed": true
+    },
+    {
+      "check": "holding cropped crouch control reduces actual body hurtbox",
+      "passed": true
+    },
+    {
+      "check": "release restores standing height and clears input",
+      "passed": true
+    },
+    {
+      "check": "touch PUNCH starts unarmed phases",
+      "passed": true
+    },
+    {
+      "check": "all visible IMG assets resolve",
+      "passed": true
+    },
+    {
+      "check": "no JavaScript page errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "geometry": [
+    {
+      "page": "home",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "campaign",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "heroes",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "pets",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "forge",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "missions",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "records",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "profile",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "bosses",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "settings",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "shell": {
+        ".topbar": {
+          "x": 27,
+          "y": 12,
+          "right": 1645,
+          "bottom": 88,
+          "w": 1618,
+          "h": 76
+        },
+        "#pages": {
+          "x": 27,
+          "y": 98,
+          "right": 1645,
+          "bottom": 841,
+          "w": 1618,
+          "h": 743
+        },
+        ".bottom-nav": {
+          "x": 27,
+          "y": 851,
+          "right": 1645,
+          "bottom": 931,
+          "w": 1618,
+          "h": 80
+        }
+      }
+    },
+    {
+      "page": "home",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "campaign",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "heroes",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "pets",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "forge",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "missions",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "records",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "profile",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "bosses",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    },
+    {
+      "page": "settings",
+      "viewport": {
+        "width": 960,
+        "height": 440
+      },
+      "shell": {
+        ".topbar": {
+          "x": 24,
+          "y": 5,
+          "right": 936,
+          "bottom": 61,
+          "w": 912,
+          "h": 56
+        },
+        "#pages": {
+          "x": 24,
+          "y": 65,
+          "right": 936,
+          "bottom": 375,
+          "w": 912,
+          "h": 310
+        },
+        ".bottom-nav": {
+          "x": 24,
+          "y": 379,
+          "right": 936,
+          "bottom": 435,
+          "w": 912,
+          "h": 56
+        }
+      }
+    }
+  ],
+  "fonts": {
+    "display": false,
+    "body": false
+  }
+}

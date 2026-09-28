@@ -1,0 +1,537 @@
+
+> super-wiss-odyssey@1.3.1 test:atelier
+> node scripts/compile-content.mjs && node --test tests/atelier.test.mjs tests/weapon-ui.test.mjs
+
+Content compiled.
+TAP version 13
+# Subtest: hero IDs/save key are unchanged; display names are unique; Wissem is retained
+ok 1 - hero IDs/save key are unchanged; display names are unique; Wissem is retained
+  ---
+  duration_ms: 1.35111
+  type: 'test'
+  ...
+# Subtest: wissem: every displayed rating is derived from the actual legacy profile
+ok 2 - wissem: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.307742
+  type: 'test'
+  ...
+# Subtest: wissem: signature passes actual thresholds, with no exemption
+ok 3 - wissem: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.26588
+  type: 'test'
+  ...
+# Subtest: wissem: unarmed phases are bounded and never emit a ranged or knife attack
+ok 4 - wissem: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 40.439031
+  type: 'test'
+  ...
+# Subtest: wissem: old hero-ID inventory and mastery survive renamed saves
+ok 5 - wissem: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 2.865406
+  type: 'test'
+  ...
+# Subtest: kossay: every displayed rating is derived from the actual legacy profile
+ok 6 - kossay: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.094462
+  type: 'test'
+  ...
+# Subtest: kossay: signature passes actual thresholds, with no exemption
+ok 7 - kossay: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.167943
+  type: 'test'
+  ...
+# Subtest: kossay: unarmed phases are bounded and never emit a ranged or knife attack
+ok 8 - kossay: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 25.020431
+  type: 'test'
+  ...
+# Subtest: kossay: old hero-ID inventory and mastery survive renamed saves
+ok 9 - kossay: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.894885
+  type: 'test'
+  ...
+# Subtest: yakine: every displayed rating is derived from the actual legacy profile
+ok 10 - yakine: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.289785
+  type: 'test'
+  ...
+# Subtest: yakine: signature passes actual thresholds, with no exemption
+ok 11 - yakine: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.12688
+  type: 'test'
+  ...
+# Subtest: yakine: unarmed phases are bounded and never emit a ranged or knife attack
+ok 12 - yakine: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 30.677462
+  type: 'test'
+  ...
+# Subtest: yakine: old hero-ID inventory and mastery survive renamed saves
+ok 13 - yakine: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 1.010529
+  type: 'test'
+  ...
+# Subtest: taky: every displayed rating is derived from the actual legacy profile
+ok 14 - taky: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.075574
+  type: 'test'
+  ...
+# Subtest: taky: signature passes actual thresholds, with no exemption
+ok 15 - taky: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.052378
+  type: 'test'
+  ...
+# Subtest: taky: unarmed phases are bounded and never emit a ranged or knife attack
+ok 16 - taky: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 22.662958
+  type: 'test'
+  ...
+# Subtest: taky: old hero-ID inventory and mastery survive renamed saves
+ok 17 - taky: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.603958
+  type: 'test'
+  ...
+# Subtest: garsi: every displayed rating is derived from the actual legacy profile
+ok 18 - garsi: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.110185
+  type: 'test'
+  ...
+# Subtest: garsi: signature passes actual thresholds, with no exemption
+ok 19 - garsi: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.116125
+  type: 'test'
+  ...
+# Subtest: garsi: unarmed phases are bounded and never emit a ranged or knife attack
+ok 20 - garsi: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 18.42527
+  type: 'test'
+  ...
+# Subtest: garsi: old hero-ID inventory and mastery survive renamed saves
+ok 21 - garsi: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.845641
+  type: 'test'
+  ...
+# Subtest: tounsi: every displayed rating is derived from the actual legacy profile
+ok 22 - tounsi: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.072449
+  type: 'test'
+  ...
+# Subtest: tounsi: signature passes actual thresholds, with no exemption
+ok 23 - tounsi: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.057577
+  type: 'test'
+  ...
+# Subtest: tounsi: unarmed phases are bounded and never emit a ranged or knife attack
+ok 24 - tounsi: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 17.034729
+  type: 'test'
+  ...
+# Subtest: tounsi: old hero-ID inventory and mastery survive renamed saves
+ok 25 - tounsi: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.622746
+  type: 'test'
+  ...
+# Subtest: youssef: every displayed rating is derived from the actual legacy profile
+ok 26 - youssef: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.117447
+  type: 'test'
+  ...
+# Subtest: youssef: signature passes actual thresholds, with no exemption
+ok 27 - youssef: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.088954
+  type: 'test'
+  ...
+# Subtest: youssef: unarmed phases are bounded and never emit a ranged or knife attack
+ok 28 - youssef: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 18.961856
+  type: 'test'
+  ...
+# Subtest: youssef: old hero-ID inventory and mastery survive renamed saves
+ok 29 - youssef: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.67892
+  type: 'test'
+  ...
+# Subtest: loey: every displayed rating is derived from the actual legacy profile
+ok 30 - loey: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.082634
+  type: 'test'
+  ...
+# Subtest: loey: signature passes actual thresholds, with no exemption
+ok 31 - loey: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.059439
+  type: 'test'
+  ...
+# Subtest: loey: unarmed phases are bounded and never emit a ranged or knife attack
+ok 32 - loey: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 20.361189
+  type: 'test'
+  ...
+# Subtest: loey: old hero-ID inventory and mastery survive renamed saves
+ok 33 - loey: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.899181
+  type: 'test'
+  ...
+# Subtest: rayan: every displayed rating is derived from the actual legacy profile
+ok 34 - rayan: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.251298
+  type: 'test'
+  ...
+# Subtest: rayan: signature passes actual thresholds, with no exemption
+ok 35 - rayan: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.089865
+  type: 'test'
+  ...
+# Subtest: rayan: unarmed phases are bounded and never emit a ranged or knife attack
+ok 36 - rayan: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 29.145991
+  type: 'test'
+  ...
+# Subtest: rayan: old hero-ID inventory and mastery survive renamed saves
+ok 37 - rayan: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.967423
+  type: 'test'
+  ...
+# Subtest: mira: every displayed rating is derived from the actual legacy profile
+ok 38 - mira: every displayed rating is derived from the actual legacy profile
+  ---
+  duration_ms: 0.122945
+  type: 'test'
+  ...
+# Subtest: mira: signature passes actual thresholds, with no exemption
+ok 39 - mira: signature passes actual thresholds, with no exemption
+  ---
+  duration_ms: 0.09294
+  type: 'test'
+  ...
+# Subtest: mira: unarmed phases are bounded and never emit a ranged or knife attack
+ok 40 - mira: unarmed phases are bounded and never emit a ranged or knife attack
+  ---
+  duration_ms: 22.42502
+  type: 'test'
+  ...
+# Subtest: mira: old hero-ID inventory and mastery survive renamed saves
+ok 41 - mira: old hero-ID inventory and mastery survive renamed saves
+  ---
+  duration_ms: 0.667342
+  type: 'test'
+  ...
+# Subtest: zero-magic physical heroes cannot equip either staff; caster signatures stay legal
+ok 42 - zero-magic physical heroes cannot equip either staff; caster signatures stay legal
+  ---
+  duration_ms: 0.362364
+  type: 'test'
+  ...
+# Subtest: eligibility truth table uses only all requested minima; unknown values fail closed
+ok 43 - eligibility truth table uses only all requested minima; unknown values fail closed
+  ---
+  duration_ms: 0.807834
+  type: 'test'
+  ...
+# Subtest: an art gate is not a hidden stats exception
+ok 44 - an art gate is not a hidden stats exception
+  ---
+  duration_ms: 0.223376
+  type: 'test'
+  ...
+# Subtest: missing weapon preserves default but explicit null survives save/load
+ok 45 - missing weapon preserves default but explicit null survives save/load
+  ---
+  duration_ms: 0.675064
+  type: 'test'
+  ...
+# Subtest: unarmed and alternative weapons enter Open records; revision history is kept
+ok 46 - unarmed and alternative weapons enter Open records; revision history is kept
+  ---
+  duration_ms: 19.096758
+  type: 'test'
+  ...
+# Subtest: one-damage fist hits only in active, once per target, and freezes three frames
+ok 47 - one-damage fist hits only in active, once per target, and freezes three frames
+  ---
+  duration_ms: 23.223631
+  type: 'test'
+  ...
+# Subtest: fist hurtbox is not expanded with the attack; directional fist reach stays compact
+ok 48 - fist hurtbox is not expanded with the attack; directional fist reach stays compact
+  ---
+  duration_ms: 16.256549
+  type: 'test'
+  ...
+# Subtest: a dodge cancels recovery only; no free attack during dodge
+ok 49 - a dodge cancels recovery only; no free attack during dodge
+  ---
+  duration_ms: 19.742654
+  type: 'test'
+  ...
+# Subtest: half-rate substeps agree with the fixed 60 Hz unarmed clock
+ok 50 - half-rate substeps agree with the fixed 60 Hz unarmed clock
+  ---
+  duration_ms: 36.377177
+  type: 'test'
+  ...
+# Subtest: unarmed damage interruption clears stale attacks and knockout cannot carry a fist hit
+ok 51 - unarmed damage interruption clears stale attacks and knockout cannot carry a fist hit
+  ---
+  duration_ms: 16.8551
+  type: 'test'
+  ...
+# Subtest: normalized combat ignores cosmetic weapon selection and never gains fists advantage
+ok 52 - normalized combat ignores cosmetic weapon selection and never gains fists advantage
+  ---
+  duration_ms: 0.346551
+  type: 'test'
+  ...
+# Subtest: all Wissem frame sockets remain at the supplied hand, even during attack translation
+ok 53 - all Wissem frame sockets remain at the supplied hand, even during attack translation
+  ---
+  duration_ms: 0.617969
+  type: 'test'
+  ...
+# Subtest: all body and legacy outfit flags reflect the same visual audit
+ok 54 - all body and legacy outfit flags reflect the same visual audit
+  ---
+  duration_ms: 0.265539
+  type: 'test'
+  ...
+# Subtest: all 84 cropped PNGs match their provenance checksums and rectangle dimensions
+ok 55 - all 84 cropped PNGs match their provenance checksums and rectangle dimensions
+  ---
+  duration_ms: 4.002895
+  type: 'test'
+  ...
+# Subtest: cropped crouch icon is wired to the unchanged continuous control ID
+ok 56 - cropped crouch icon is wired to the unchanged continuous control ID
+  ---
+  duration_ms: 0.168903
+  type: 'test'
+  ...
+# Subtest: six slots are independent, clearable and frame-compatible
+ok 57 - six slots are independent, clearable and frame-compatible
+  ---
+  duration_ms: 0.775936
+  type: 'test'
+  ...
+# Subtest: wrong hero, unowned, pending, misaligned or non-modular clothing cannot equip/sell
+ok 58 - wrong hero, unowned, pending, misaligned or non-modular clothing cannot equip/sell
+  ---
+  duration_ms: 0.410277
+  type: 'test'
+  ...
+# Subtest: weapon skin requires correct class, source grip and separate body; hides while unarmed
+ok 59 - weapon skin requires correct class, source grip and separate body; hides while unarmed
+  ---
+  duration_ms: 0.469646
+  type: 'test'
+  ...
+# Subtest: render stack is explicit and includes all equipped layers in the intended order
+ok 60 - render stack is explicit and includes all equipped layers in the intended order
+  ---
+  duration_ms: 0.874514
+  type: 'test'
+  ...
+# Subtest: cosmetic purchase is one-time, cannot mint gold, and never touches combat stats
+ok 61 - cosmetic purchase is one-time, cannot mint gold, and never touches combat stats
+  ---
+  duration_ms: 0.21333
+  type: 'test'
+  ...
+# Subtest: no unauthored new pieces are sold and no font binary is required to boot
+ok 62 - no unauthored new pieces are sold and no font binary is required to boot
+  ---
+  duration_ms: 0.268213
+  type: 'test'
+  ...
+# Subtest: Wissem has explicit combat type and one registered weapon PNG
+ok 63 - Wissem has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 1.948849
+  type: 'test'
+  ...
+# Subtest: Kael has explicit combat type and one registered weapon PNG
+ok 64 - Kael has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.507252
+  type: 'test'
+  ...
+# Subtest: Astra has explicit combat type and one registered weapon PNG
+ok 65 - Astra has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.587843
+  type: 'test'
+  ...
+# Subtest: Nyx has explicit combat type and one registered weapon PNG
+ok 66 - Nyx has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.41208
+  type: 'test'
+  ...
+# Subtest: Bront has explicit combat type and one registered weapon PNG
+ok 67 - Bront has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.740282
+  type: 'test'
+  ...
+# Subtest: Zephyr has explicit combat type and one registered weapon PNG
+ok 68 - Zephyr has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 1.292202
+  type: 'test'
+  ...
+# Subtest: Volt has explicit combat type and one registered weapon PNG
+ok 69 - Volt has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.862667
+  type: 'test'
+  ...
+# Subtest: Skye has explicit combat type and one registered weapon PNG
+ok 70 - Skye has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.408153
+  type: 'test'
+  ...
+# Subtest: Sol has explicit combat type and one registered weapon PNG
+ok 71 - Sol has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.570798
+  type: 'test'
+  ...
+# Subtest: Rime has explicit combat type and one registered weapon PNG
+ok 72 - Rime has explicit combat type and one registered weapon PNG
+  ---
+  duration_ms: 0.695986
+  type: 'test'
+  ...
+# Subtest: ten unique requested PNGs, no accidental extra shield asset
+ok 73 - ten unique requested PNGs, no accidental extra shield asset
+  ---
+  duration_ms: 0.18622
+  type: 'test'
+  ...
+# Subtest: Loey display data matches bow behavior
+ok 74 - Loey display data matches bow behavior
+  ---
+  duration_ms: 0.086249
+  type: 'test'
+  ...
+# Subtest: PvP behavior remains normalized for all ten heroes
+ok 75 - PvP behavior remains normalized for all ten heroes
+  ---
+  duration_ms: 0.23323
+  type: 'test'
+  ...
+# Subtest: Rayan retains fallback timing but now has explicit lance art
+ok 76 - Rayan retains fallback timing but now has explicit lance art
+  ---
+  duration_ms: 0.1397
+  type: 'test'
+  ...
+# Subtest: Mira basic attack actually emits ice after anticipation
+ok 77 - Mira basic attack actually emits ice after anticipation
+  ---
+  duration_ms: 36.376867
+  type: 'test'
+  ...
+# Subtest: attack frames follow elapsed attack, not global wall-clock flicker
+ok 78 - attack frames follow elapsed attack, not global wall-clock flicker
+  ---
+  duration_ms: 0.214272
+  type: 'test'
+  ...
+# Subtest: idle/run/jump/fall/dodge retain the 14-frame contract
+ok 79 - idle/run/jump/fall/dodge retain the 14-frame contract
+  ---
+  duration_ms: 0.300031
+  type: 'test'
+  ...
+# Subtest: weapon sockets, angles and size are finite for all heroes and sheet frames
+ok 80 - weapon sockets, angles and size are finite for all heroes and sheet frames
+  ---
+  duration_ms: 0.966543
+  type: 'test'
+  ...
+# Subtest: attack motion changes socket/angle; facing is inherited rather than double flipped
+ok 81 - attack motion changes socket/angle; facing is inherited rather than double flipped
+  ---
+  duration_ms: 0.118718
+  type: 'test'
+  ...
+# Subtest: visual audit enables only the weapon-free Wissem body
+ok 82 - visual audit enables only the weapon-free Wissem body
+  ---
+  duration_ms: 0.098208
+  type: 'test'
+  ...
+# Subtest: attack phase remains bounded for stale or zero values
+ok 83 - attack phase remains bounded for stale or zero values
+  ---
+  duration_ms: 0.088203
+  type: 'test'
+  ...
+# Subtest: new solo results use a distinct revision after unarmed / loadout changes
+ok 84 - new solo results use a distinct revision after unarmed / loadout changes
+  ---
+  duration_ms: 22.43135
+  type: 'test'
+  ...
+# Subtest: old and new solo records survive sanitization without relabelling
+ok 85 - old and new solo records survive sanitization without relabelling
+  ---
+  duration_ms: 22.330879
+  type: 'test'
+  ...
+# Subtest: per-body frame sockets permit calibration; invalid overrides use safe defaults
+ok 86 - per-body frame sockets permit calibration; invalid overrides use safe defaults
+  ---
+  duration_ms: 0.152629
+  type: 'test'
+  ...
+# Subtest: weapon directory has exactly the ten registered PNG filenames
+ok 87 - weapon directory has exactly the ten registered PNG filenames
+  ---
+  duration_ms: 0.275454
+  type: 'test'
+  ...
+1..87
+# tests 87
+# suites 0
+# pass 87
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 483.980693

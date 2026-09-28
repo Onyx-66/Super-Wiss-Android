@@ -1,0 +1,114 @@
+{
+  "version": "1.4.1",
+  "android_version_code": 46,
+  "retained_original_file_paths": 2212,
+  "original_paths_missing": [],
+  "runtime_registrations": 423,
+  "original_weapon_pngs_unchanged": [
+    {
+      "path": "assets/weapons/clockwork_knuckle.png",
+      "sha256": "05d3a4ce7a05f9a3e1f3a360acb8de0515bfa74cba707439452c56381ea7ff4e"
+    },
+    {
+      "path": "assets/weapons/frost_staff.png",
+      "sha256": "b7fe3edb5c02a628d23d5914efe86d62f22011b9377bf30655892593cfae123c"
+    },
+    {
+      "path": "assets/weapons/gravity_gauntlet.png",
+      "sha256": "91d4b2c6e3bd2c2118a1cb1447a611d43d168789bb69a90358b4651e5aee6f77"
+    },
+    {
+      "path": "assets/weapons/orbit_crescent_staff.png",
+      "sha256": "bd056c439f3483374c43c5c8a108f86298348ebd5609f6c03b8c2001e7aede91"
+    },
+    {
+      "path": "assets/weapons/shadow_knife.png",
+      "sha256": "a857b86b671285af8a1309549b78920eb2048a1ab9a05d3a60ea95d8212ea3c4"
+    },
+    {
+      "path": "assets/weapons/sky_bow.png",
+      "sha256": "81aa4a50b50740b0013095cb0504406a989009412c3e307b34b6ff782c30ffe0"
+    },
+    {
+      "path": "assets/weapons/stonebreaker_hammer.png",
+      "sha256": "fe3e9bcaa3d28540011655377292069da104610a37cf6af8ce0c7da5384f2c3e"
+    },
+    {
+      "path": "assets/weapons/sun_lance.png",
+      "sha256": "6359b59a8cc7fc062bb815be013163d1727f4cab5783a558e968b7b5befc5ceb"
+    },
+    {
+      "path": "assets/weapons/twin_fang_dagger.png",
+      "sha256": "6f5802c5944fdfad61bcf24b81f40b42339059c50263316f61c5f735bf10ca84"
+    },
+    {
+      "path": "assets/weapons/wind_scimitar.png",
+      "sha256": "589931dd1c65027b78ff6491b95ebfc14870b8ea1af8f88f100cc28ae7b5cb71"
+    }
+  ],
+  "new_crops_verified": [
+    {
+      "path": "assets/ui/frames/panel-shell.png",
+      "source_pixels_match": true,
+      "sha256": "bdfb4ce1a159c0056e0753199cb06f32237046c1a3aaad81bd541fa62460beac"
+    },
+    {
+      "path": "assets/ui/ornaments/diamond.png",
+      "source_pixels_match": true,
+      "sha256": "002acb15001353a5a76eaac547a16db6ac30d81ce52d878bcae12c123824d8c1"
+    },
+    {
+      "path": "assets/ui/ornaments/rule.png",
+      "source_pixels_match": true,
+      "sha256": "7c436e851a095aafe4ac1fb9d934679bf799f6f9c47cd97ddfbe41f4d9313f46"
+    },
+    {
+      "path": "assets/ui/icons/crown-silver.png",
+      "source_pixels_match": true,
+      "sha256": "01a9c56c363d7ef008328faefcd468c39455b68b2f8e2d3d2bca51688ea76a75"
+    },
+    {
+      "path": "assets/ui/icons/crown-red.png",
+      "source_pixels_match": true,
+      "sha256": "f37acb7aacda4566e258e285e98c7215da32c3731e21cc1b6307079825696967"
+    },
+    {
+      "path": "assets/ui/icons/crown-green.png",
+      "source_pixels_match": true,
+      "sha256": "0833d2b03c5e245c6f22c7747ac328d006f7c3a0c4bd78633270aa386b3bc427"
+    },
+    {
+      "path": "assets/ui/icons/crown-cyan.png",
+      "source_pixels_match": true,
+      "sha256": "36ba5dc99dfa814e96663d3159ea2c097371c874389959e68368c5f44486a53f"
+    },
+    {
+      "path": "assets/ui/icons/crown-pink.png",
+      "source_pixels_match": true,
+      "sha256": "64fce3ee8891569a5f631d8836b3b2099971297207471d0b102889f5cc762159"
+    }
+  ],
+  "node_tests_passed": 333,
+  "node_tests_failed": 0,
+  "browser_checks_passed": 544,
+  "browser_checks_failed": 0,
+  "browser_viewports": [
+    [
+      1648,
+      928
+    ],
+    [
+      960,
+      440
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "native_android_build_executed": false,
+  "real_origin_persistence_tested": false,
+  "font_binaries_distributed": false,
+  "mockup_match": "partial; see UI-POLISH-REPORT.md",
+  "crouch_animation": "temporary articulated cutout; authored frames missing"
+}

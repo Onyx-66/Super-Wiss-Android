@@ -1,5 +1,5 @@
 import {buildRegionalRoutes} from './world-regions.js';
-import {combatProfile} from './combat-profiles.js';
+import {combatProfile,isUnarmed,unarmedPhase} from './combat-profiles.js';
 import {finalizePlacements,spawnPickup} from './placement.js';
 import {addWorldFeatures,sampleWorldPhysics,stepWorldFeatures} from './world-physics.js';
 import { ascSkill } from './ascension.js';
@@ -426,6 +426,7 @@ export function damagePlayer(r, fall = false, amount = 1) {
         return;
     }
     p.hp -= amount;
+    if(isUnarmed(p)){p.unarmedAttack=null;p.attackTime=0;p.attackCD=0;p.attackHits=[];r.bufferedCombat=null;r.impactPause=0;}
     p.stagger = .16; p.invincible = .75;
     r.hits++;
     r.combo = 0;
@@ -647,7 +648,8 @@ export function stepRun(r, input = {}, dt = DT) {
     const p = r.player, l = r.level;
     p.elapsed += dt;
     r.mapTime += dt;
-    if(r.impactPause>0&&!r.localPvp){r.impactPause=Math.max(0,r.impactPause-dt);return;}
+    if(r.impactPause>0&&!r.localPvp){if(isUnarmed(p))r.bufferedCombat={attack:!!(r.bufferedCombat?.attack||input.attack),dodge:!!(r.bufferedCombat?.dodge||input.dodge),aim:input.aim||0};r.impactPause=Math.max(0,r.impactPause-dt);return;}
+    if(r.bufferedCombat){input={...input,attack:input.attack||r.bufferedCombat.attack,dodge:input.dodge||r.bufferedCombat.dodge,aim:input.aim||r.bufferedCombat.aim};r.bufferedCombat=null;}
     p.animation += dt;
     r.transition = Math.max(0, r.transition - dt);
     r.comboClock = Math.max(0, r.comboClock - dt);
@@ -1123,38 +1125,52 @@ export function activateSummon(r) {
     emit(r,'summon',p.x,p.y,{label:'Spirit covenant • 18 seconds'});return true;
 }
 export function meleeAttack(r,aim=0) {
-    const p=r.player;if(r.complete||r.failed||p.deadFor>0||p.attackCD>0||p.stamina<8||p.stagger>0)return false;
+    const p=r.player;if(r.complete||r.failed||p.deadFor>0||p.attackCD>0||(isUnarmed(p)&&p.dodge>0)||p.stamina<8||p.stagger>0)return false;
     const profile=combatProfile(p);p.stamina-=8;p.combatIdle=0;p.attackDuration=profile.startup+profile.active;p.attackCD=p.attackDuration+profile.recovery;p.attackTime=p.attackDuration;p.attackStartup=profile.startup;p.attackReleased=false;p.attackSerial++;p.attackChain=p.attackChain%3+1;p.attackHits=[];p.attackAim=clamp(aim,-1,1);
-    emit(r,'slash',p.x,p.y,{chain:p.attackChain});return true;
+    if(isUnarmed(p)){p.unarmedAttack={tick:0,startup:profile.startupFrames,active:profile.activeFrames,total:profile.startupFrames+profile.activeFrames+profile.recoveryFrames,accumulator:0};}
+    else emit(r,'slash',p.x,p.y,{chain:p.attackChain});return true;
 }
 export function throwKnife(r,aim=0) {
-    const p=r.player;if(r.complete||r.failed||p.deadFor>0||p.throwCD>0||p.knives<=0||p.stagger>0)return false;
+    const p=r.player;if(r.complete||r.failed||p.deadFor>0||isUnarmed(p)||p.throwCD>0||p.knives<=0||p.stagger>0)return false;
     p.knives--;p.throwCD=.45;const a=clamp(aim,-1,1)*.7;
     fireShot(r,{vx:p.facing*720*Math.cos(a),vy:a*550,kind:'knife',damage:3,life:1.6});emit(r,'knife',p.x,p.y);return true;
 }
 export function dodgeStep(r) {
     const p=r.player;if(r.complete||r.failed||p.deadFor>0||p.dodgeCD>0||p.stamina<25||p.stagger>0)return false;
+    // A dodge can cancel unarmed recovery, but neither startup nor the active strike.
+    if(isUnarmed(p)&&['startup','active'].includes(unarmedPhase(p)))return false;
+    if(isUnarmed(p)&&unarmedPhase(p)==='recovery'){p.unarmedAttack=null;p.attackCD=0;p.attackTime=0;}
     p.stamina-=25;p.combatIdle=0;p.dodge=combatProfile(p).dodge;p.dodgeCD=.9;p.vy=Math.min(0,p.vy);emit(r,'dodge',p.x,p.y);return true;
 }
 export function meleeBox(p){
+    if(isUnarmed(p)){const reach=26;if(p.attackAim>.5&&!p.grounded)return {x:p.x+2,y:p.y+p.h-3,w:p.w-4,h:reach};if(p.attackAim<-.5)return {x:p.x+2,y:p.y-reach+3,w:p.w-4,h:reach};return {x:p.facing>0?p.x+p.w-3:p.x-reach+3,y:p.y+9,w:reach,h:20};}
     if(p.attackAim>.5&&!p.grounded)return {x:p.x-18,y:p.y+p.h-5,w:p.w+36,h:65};
     if(p.attackAim<-.5)return {x:p.x-18,y:p.y-66,w:p.w+36,h:70};
-    const reach=p.normalizedCombat?82:(heroById(p.character).combatStyle?.reach||82);
+    const reach=p.normalizedCombat?82:(combatProfile(p).reach||heroById(p.character).combatStyle?.reach||82);
     return {x:p.facing>0?p.x+p.w-6:p.x-reach+6,y:p.y-14,w:reach,h:p.h+20};
 }
 function updateCombat(r,input,dt) {
     const p=r.player;
     for(const k of ['globalSkill','dodge','dodgeCD','attackCD','attackTime','throwCD','summonCD','stagger','castTime','landTime'])p[k]=Math.max(0,p[k]-dt);
+    if(isUnarmed(p)&&p.unarmedAttack){
+        const a=p.unarmedAttack;a.accumulator+=dt*60;const ticks=Math.floor(a.accumulator+1e-8);a.accumulator-=ticks;a.tick+=ticks;
+        p.attackCD=Math.max(0,(a.total-a.tick)/60);p.attackTime=Math.max(0,(a.startup+a.active-a.tick)/60);
+        if(a.tick>=a.total)p.unarmedAttack=null;
+    }
     p.combatIdle+=dt;p.focus=Math.min(100,p.focus+DIFFICULTIES[r.difficulty].focus*dt);p.stamina=Math.min(100,p.stamina+(p.combatIdle>.55?25:5)*dt);
     if(input.attack)meleeAttack(r,input.aim||0);
     if(input.knife)throwKnife(r,input.aim||0);
     if(input.dodge&&!p.dodgeHeld)dodgeStep(r);p.dodgeHeld=!!input.dodge;
     if(input.summon&&!p.summonHeld){if(r.petId)activateCompanion(r);else activateSummon(r);};p.summonHeld=!!input.summon;
-    const profile=combatProfile(p),active=p.attackTime>0&&p.attackTime<=profile.active;
+    const profile=combatProfile(p),active=isUnarmed(p)?unarmedPhase(p)==='active':p.attackTime>0&&p.attackTime<=profile.active;
+    if(active&&isUnarmed(p)&&!p.attackReleased){p.attackReleased=true;emit(r,'punch',p.x,p.y,{chain:p.attackChain});}
     const ranged=profile.projectile&&!(p.attackAim>.5&&!p.grounded);
     if(active&&ranged&&!p.attackReleased){p.attackReleased=true;const a=p.attackAim*.75;fireShot(r,{x:p.x+p.w/2+p.facing*24,y:p.y+p.h*.4-7,vx:p.facing*(profile.weapon==='bow'?780:560)*Math.cos(a),vy:Math.sin(a)*600,kind:profile.projectile,life:1.25,damage:profile.weapon==='staff'?3:2});p.vx-=p.facing*28;emit(r,'shot',p.x,p.y);}
     if(active&&!ranged){const box=meleeBox(p);for(const e of r.level.enemies)if(e.alive&&!p.attackHits.includes(e.id)&&overlap(box,e)){
-        p.attackHits.push(e.id);defeat(r,e,(p.normalizedCombat?2:heroById(p.character).combatStyle?.damage||2)+(p.attackChain===3?1:0),'melee');p.focus=Math.min(100,p.focus+5);p.soul=Math.min(100,p.soul+5);
+        p.attackHits.push(e.id);const before=e.hp;
+        defeat(r,e,isUnarmed(p)?1:(p.normalizedCombat?2:combatProfile(p).damage||heroById(p.character).combatStyle?.damage||2)+(p.attackChain===3?1:0),'melee');
+        if(isUnarmed(p)&&e.hp<before){r.impactPause=3/60;emit(r,'unarmed-hit',e.x,e.y);}
+        p.focus=Math.min(100,p.focus+5);p.soul=Math.min(100,p.soul+5);
         if(p.attackAim>.5&&!p.grounded){p.vy=-590;emit(r,'pogo',p.x,p.y);}
     }}
     if(r.summon){const z=r.summon;z.life-=dt;z.t+=dt;z.timer-=dt;z.guard=Math.max(0,z.guard-dt);

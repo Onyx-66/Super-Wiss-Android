@@ -23,7 +23,7 @@ data/
 artifacts/*-stdout.log
 artifacts/*-stderr.log
 
-# Private/local files. The QA test key is intentionally public.
+# Preserve repository exclusions and keep local build outputs out of Git.
 *.jks
 *.keystore
 *.pfx
@@ -38,3 +38,12 @@ dist/
 app/src/main/assets/
 .DS_Store
 Thumbs.db
+app/src/debug/assets/
+*.apk
+*.aab
+*.apks
+artifacts/*.apk.sha256
+artifacts/*.zip
+artifacts/local-backups/
+artifacts/local-validation/
+artifacts/emulator-*/

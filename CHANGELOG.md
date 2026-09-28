@@ -1,3 +1,26 @@
+# v1.4.1 — local UI polish / source playtest
+
+- Fix unarmed Kael/other baked-body roster identities: preview policy uses actual identity art with an explicit reference-only notice; no save mutation or false clean-body flag.
+- Alpha-bound, uniform contain-fit portrait previews include the weapon envelope and a safety margin. Remove selected-red canvas fills.
+- Repack supplied source corners into a common 9-slice shell; separate headline diamond rules, normalize panel spacing and icon alignment across ten screens.
+- Gallery/cards/detail, illustrated missions, grouped Settings and icon-only HUD refinements. HUD minima:44 logical pixels; Jump/Attack56; edge clearance24 plus safe insets.
+- Add visible bent-leg/leaned-torso runtime crouch cutout, not a standing-sprite y-squash. All ten authored crouch packs remain missing; physics44/26 and attack phases unchanged.
+- Restore actual small supplied crown sprites in Boss Hunt thumbnails using original enemy source art.
+- Add regression and in-memory browser QA, actual before/after captures, updated asset workbook and merged missing-art ledger. No font binary or APK/AAB is included.
+
+---
+# v1.4.0 — Atelier source/playtest WIP (2026-09-27)
+
+- Integrate all ten original 1254×1254 weapon PNGs as required/ready assets. Separate Wissem only; retain nine baked hero weapons.
+- Add 84 original-pixel UI crops and layouts for all ten requested screens; detailed fidelity remains WIP.
+- Add explicit unarmed equipment, deterministic fist phases, calibrated sockets, a clearer crouch control, profile-derived ratings, display-name updates with stable IDs, and stat/art weapon eligibility.
+- Add independent hat/top/bottom/shoes/eyewear/weapon-skin save/render contracts. Missing modular art keeps the new item catalog empty.
+- Include asset inventory, missing-art briefs, skill decisions, exact historical implementation diffs and browser QA evidence.
+- Advance package/runtime version to 1.4.0 and Android versionCode to 45. No application ID, save key or signing certificate change.
+- This is a source/playtest tag, not proof of a native build or device QA. Font binaries and the documented hero/cosmetic art gaps remain missing.
+
+---
+
 # v1.3.1 — source candidate, unreleased / native build blocked
 
 - Remove procedural hero/cosmetic weapon rods; add registry-based PNG weapon rendering with frame-indexed sockets and phase-synchronized attack frames.

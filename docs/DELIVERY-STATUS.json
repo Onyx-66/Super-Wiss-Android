@@ -1,0 +1,52 @@
+[
+  {
+    "task": "Step 0",
+    "status": "Complete locally",
+    "scope": "Ten byte-identical original PNGs; 1254\u00d71254; required/ready registrations; tests updated."
+  },
+  {
+    "task": "1 \u2014 layering",
+    "status": "Complete audit and configuration",
+    "scope": "Only Wissem is separate; nine stay baked. Hammer/lance visual conflicts documented."
+  },
+  {
+    "task": "2 \u2014 ten-screen UI",
+    "status": "Partial visual delivery",
+    "scope": "Shared shell, 84 source-pixel crops, page layouts and interactions implemented. Not pixel-identical to mockups; background/pedestal/font and detailed embellishment gaps remain."
+  },
+  {
+    "task": "3 \u2014 crouch",
+    "status": "Complete locally",
+    "scope": "Actual down-chevron crop, CROUCH label, hold/release semantics retained and browser-tested."
+  },
+  {
+    "task": "4 \u2014 unarmed / holding",
+    "status": "Partial art delivery; combat implemented",
+    "scope": "Null equipment, deterministic fist phases, distinct hitbox, sockets, saved selection. Wissem uses real weapon-free frames; nine use an explicitly labelled training proxy."
+  },
+  {
+    "task": "5 \u2014 hero ratings",
+    "status": "Complete locally",
+    "scope": "Fixed Power/Magic/Speed/Stamina derived from original profiles; no new XP power multiplier."
+  },
+  {
+    "task": "6 \u2014 names",
+    "status": "Complete locally",
+    "scope": "Nine display renames; internal hero IDs and existing save key unchanged."
+  },
+  {
+    "task": "7 \u2014 six-slot wardrobe",
+    "status": "Partial content delivery; foundation implemented",
+    "scope": "Independent saves, ownership/purchase validation, layer contract and UI. Ready-piece catalog is empty because no modular clothing art exists."
+  },
+  {
+    "task": "8 \u2014 eligibility",
+    "status": "Complete locally",
+    "scope": "All ten signatures pass ordinary stat rules without exemptions; separate art gate prevents foreign weapons on baked bodies."
+  },
+  {
+    "task": "9 \u2014 fonts",
+    "status": "Partial",
+    "scope": "Family selection, hierarchy, gradient, Canvas fallback and optional build wiring implemented. No font binaries included; stock Android uses monospace fallback."
+  }
+]

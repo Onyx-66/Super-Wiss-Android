@@ -3,7 +3,7 @@ import {cleanCosmetics,COSMETIC_PARTS}from '../game/cosmetics.js';import{default
 test('eight cosmetic slots reject unknown or unowned accessories',()=>{assert.equal(COSMETIC_PARTS.length,8);assert.equal(cleanCosmetics({head:'<script>',boots:'ember'}).head,'original');assert.equal(cleanCosmetics({boots:'ember'}).boots,'original');assert.equal(cleanCosmetics({boots:'ember'},true).boots,'ember');});
 test('owned cosmetics survive save sanitization and never change combat resources',()=>{const s=defaultSave();s.ascension.ownedOutfits.push('wissem:ember');s.ascension.parts.wissem={head:'frost',weapon:'ember'};const clean=sanitizeSave(s),r=createRun();const hp=r.player.hp,focus=r.player.focus;ascApplyRun(clean,r);assert.equal(r.player.parts.weapon,'ember');assert.equal(r.player.parts.head,'frost');assert.equal(r.player.hp,hp);assert.equal(r.player.focus,focus);});
 test('all three graphics budgets survive save normalization',()=>{for(const quality of ['low','balanced','high']){const s=defaultSave();s.settings.quality=quality;assert.equal(sanitizeSave(s).settings.quality,quality);}});
-test('new solo records include player count, deaths, revives and rules revision',()=>{const r=createRun();r.knockouts=2;const row=ascResult(r);assert.equal(row.playerCount,1);assert.equal(row.deaths,2);assert.equal(row.revives,0);assert.equal(row.revision,4);});
+test('new solo records include player count, deaths, revives and rules revision',()=>{const r=createRun();r.knockouts=2;const row=ascResult(r);assert.equal(row.playerCount,1);assert.equal(row.deaths,2);assert.equal(row.revives,0);assert.equal(row.revision,5);});
 
 import {LocalMatch}from '../game/arena.js';
 import {meleeBox}from '../game/engine.js';

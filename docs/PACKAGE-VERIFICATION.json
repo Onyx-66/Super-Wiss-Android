@@ -1,0 +1,22 @@
+{
+  "baseCandidateSha256": "5329bfaa93ef8230dda8576cb95b330157acc141ff2171b8598052503ce64282",
+  "allOriginalCandidatePathsRetained": true,
+  "originalFileCount": 1552,
+  "runtimeRegistrations": 415,
+  "runtimeAssetsCopiedToAndroidByteIdentically": true,
+  "weaponPngCount": 10,
+  "weaponDimensions": [
+    1254,
+    1254
+  ],
+  "sourcePixelCrops": 84,
+  "skillDocuments": 16,
+  "mockupPngs": 10,
+  "automatedTestsPassed": 290,
+  "browserChecksPassed": 48,
+  "browserScreenshotCount": 28,
+  "fontBinariesIncluded": false,
+  "nativeApkAabBuildPerformed": false,
+  "textSourceFilesInOldNewReport": 30,
+  "archiveCRC": "Verified after writing archive; companion ZIP SHA-256 is outside archive to avoid self-reference."
+}

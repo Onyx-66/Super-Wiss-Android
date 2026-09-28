@@ -1,0 +1,11 @@
+{
+  "stage": "after-960",
+  "errors": [],
+  "assets": {
+    "done": 373,
+    "total": 373,
+    "failed": 0,
+    "missing": [],
+    "pending": []
+  }
+}

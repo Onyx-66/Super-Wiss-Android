@@ -6,7 +6,124 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "hero/kossay": {
       "path": "assets/animated/hero-kossay.png",
@@ -14,7 +131,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "hero/yakine": {
       "path": "assets/animated/hero-yakine.png",
@@ -22,7 +140,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "hero/taky": {
       "path": "assets/animated/hero-taky.png",
@@ -30,7 +149,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "hero/garsi": {
       "path": "assets/animated/hero-garsi.png",
@@ -38,7 +158,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "hero/tounsi": {
       "path": "assets/animated/hero-tounsi.png",
@@ -46,7 +167,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "hero/youssef": {
       "path": "assets/animated/hero-youssef.png",
@@ -54,7 +176,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "hero/loey": {
       "path": "assets/animated/hero-loey.png",
@@ -62,7 +185,8 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "enemy/slime": {
       "path": "assets/animated/enemy-slime.png",
@@ -455,49 +579,181 @@
       "path": "assets/heroes/wissem.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "hero/kossay/still": {
       "path": "assets/heroes/kossay.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "hero/yakine/still": {
       "path": "assets/heroes/yakine.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "hero/taky/still": {
       "path": "assets/heroes/taky.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "hero/garsi/still": {
       "path": "assets/heroes/garsi.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "hero/tounsi/still": {
       "path": "assets/heroes/tounsi.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "hero/youssef/still": {
       "path": "assets/heroes/youssef.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "hero/loey/still": {
       "path": "assets/heroes/loey.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "enemy/slime/still": {
       "path": "assets/enemies/slime.png",
@@ -1075,13 +1331,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "hero/rayan/still": {
       "path": "assets/ascension/hero-rayan-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "hero/mira": {
       "path": "assets/ascension/hero-mira.png",
@@ -1089,13 +1348,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "hero/mira/still": {
       "path": "assets/ascension/hero-mira-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "outfit/wissem/frost": {
       "path": "assets/ascension/outfits/wissem-frost.png",
@@ -1103,13 +1365,248 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "outfit/wissem/frost/still": {
       "path": "assets/ascension/outfits/wissem-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "outfit/wissem/ember": {
       "path": "assets/ascension/outfits/wissem-ember.png",
@@ -1117,13 +1614,248 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "outfit/wissem/ember/still": {
       "path": "assets/ascension/outfits/wissem-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "separate",
+      "weaponLayerAudit": "All 14 frames: bare costume gloves/bracers, no held weapon. Palette variants have identical alpha masks.",
+      "weaponSockets": {
+        "0": [
+          18.141,
+          -24.2
+        ],
+        "1": [
+          18.562,
+          -23.35
+        ],
+        "2": [
+          18.562,
+          -23.35
+        ],
+        "3": [
+          17.719,
+          -22.925
+        ],
+        "4": [
+          16.875,
+          -23.35
+        ],
+        "5": [
+          18.141,
+          -23.35
+        ],
+        "6": [
+          19.828,
+          -24.2
+        ],
+        "7": [
+          19.828,
+          -24.2
+        ],
+        "8": [
+          18.562,
+          -24.625
+        ],
+        "9": [
+          17.297,
+          -23.775
+        ],
+        "10": [
+          18.141,
+          -24.2
+        ],
+        "11": [
+          21.938,
+          -26.75
+        ],
+        "12": [
+          22.359,
+          -29.725
+        ],
+        "13": [
+          18.141,
+          -23.35
+        ],
+        "offhand": {
+          "0": [
+            -14.344,
+            -26.325
+          ],
+          "1": [
+            -13.922,
+            -25.475
+          ],
+          "2": [
+            -13.078,
+            -25.475
+          ],
+          "3": [
+            -15.188,
+            -26.75
+          ],
+          "4": [
+            -16.453,
+            -28.875
+          ],
+          "5": [
+            -15.609,
+            -28.025
+          ],
+          "6": [
+            -18.984,
+            -23.35
+          ],
+          "7": [
+            -18.562,
+            -23.775
+          ],
+          "8": [
+            -14.344,
+            -24.2
+          ],
+          "9": [
+            -13.5,
+            -28.025
+          ],
+          "10": [
+            -13.922,
+            -27.175
+          ],
+          "11": [
+            -18.141,
+            -29.3
+          ],
+          "12": [
+            -19.828,
+            -33.55
+          ],
+          "13": [
+            -12.656,
+            -24.625
+          ]
+        }
+      }
     },
     "outfit/kossay/frost": {
       "path": "assets/ascension/outfits/kossay-frost.png",
@@ -1131,13 +1863,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "outfit/kossay/frost/still": {
       "path": "assets/ascension/outfits/kossay-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "outfit/kossay/ember": {
       "path": "assets/ascension/outfits/kossay-ember.png",
@@ -1145,13 +1880,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "outfit/kossay/ember/still": {
       "path": "assets/ascension/outfits/kossay-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Twin blades baked in both hands."
     },
     "outfit/yakine/frost": {
       "path": "assets/ascension/outfits/yakine-frost.png",
@@ -1159,13 +1897,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "outfit/yakine/frost/still": {
       "path": "assets/ascension/outfits/yakine-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "outfit/yakine/ember": {
       "path": "assets/ascension/outfits/yakine-ember.png",
@@ -1173,13 +1914,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "outfit/yakine/ember/still": {
       "path": "assets/ascension/outfits/yakine-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Glowing crescent staff baked in."
     },
     "outfit/taky/frost": {
       "path": "assets/ascension/outfits/taky-frost.png",
@@ -1187,13 +1931,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "outfit/taky/frost/still": {
       "path": "assets/ascension/outfits/taky-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "outfit/taky/ember": {
       "path": "assets/ascension/outfits/taky-ember.png",
@@ -1201,13 +1948,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "outfit/taky/ember/still": {
       "path": "assets/ascension/outfits/taky-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Knives baked in."
     },
     "outfit/garsi/frost": {
       "path": "assets/ascension/outfits/garsi-frost.png",
@@ -1215,13 +1965,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "outfit/garsi/frost/still": {
       "path": "assets/ascension/outfits/garsi-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "outfit/garsi/ember": {
       "path": "assets/ascension/outfits/garsi-ember.png",
@@ -1229,13 +1982,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "outfit/garsi/ember/still": {
       "path": "assets/ascension/outfits/garsi-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Shield and weapon haft baked in; does not visually match new hammer."
     },
     "outfit/tounsi/frost": {
       "path": "assets/ascension/outfits/tounsi-frost.png",
@@ -1243,13 +1999,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "outfit/tounsi/frost/still": {
       "path": "assets/ascension/outfits/tounsi-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "outfit/tounsi/ember": {
       "path": "assets/ascension/outfits/tounsi-ember.png",
@@ -1257,13 +2016,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "outfit/tounsi/ember/still": {
       "path": "assets/ascension/outfits/tounsi-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Scimitar baked in."
     },
     "outfit/youssef/frost": {
       "path": "assets/ascension/outfits/youssef-frost.png",
@@ -1271,13 +2033,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "outfit/youssef/frost/still": {
       "path": "assets/ascension/outfits/youssef-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "outfit/youssef/ember": {
       "path": "assets/ascension/outfits/youssef-ember.png",
@@ -1285,13 +2050,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "outfit/youssef/ember/still": {
       "path": "assets/ascension/outfits/youssef-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Powered gauntlet/gadget silhouette baked in."
     },
     "outfit/loey/frost": {
       "path": "assets/ascension/outfits/loey-frost.png",
@@ -1299,13 +2067,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "outfit/loey/frost/still": {
       "path": "assets/ascension/outfits/loey-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "outfit/loey/ember": {
       "path": "assets/ascension/outfits/loey-ember.png",
@@ -1313,13 +2084,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "outfit/loey/ember/still": {
       "path": "assets/ascension/outfits/loey-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Bow and arrow baked in."
     },
     "outfit/rayan/frost": {
       "path": "assets/ascension/outfits/rayan-frost.png",
@@ -1327,13 +2101,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "outfit/rayan/frost/still": {
       "path": "assets/ascension/outfits/rayan-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "outfit/rayan/ember": {
       "path": "assets/ascension/outfits/rayan-ember.png",
@@ -1341,13 +2118,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "outfit/rayan/ember/still": {
       "path": "assets/ascension/outfits/rayan-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored shield-knight sheet; shield baked in, not the new lance."
     },
     "outfit/mira/frost": {
       "path": "assets/ascension/outfits/mira-frost.png",
@@ -1355,13 +2135,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "outfit/mira/frost/still": {
       "path": "assets/ascension/outfits/mira-frost-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "outfit/mira/ember": {
       "path": "assets/ascension/outfits/mira-ember.png",
@@ -1369,13 +2152,16 @@
       "frameHeight": 160,
       "frames": 14,
       "animation": "idle:0, run:1-8, jump:9, fall:10, attack:11-12, dodge:13",
-      "weaponLayer": "baked"
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "outfit/mira/ember/still": {
       "path": "assets/ascension/outfits/mira-ember-still.png",
       "frameWidth": 128,
       "frameHeight": 160,
-      "frames": 1
+      "frames": 1,
+      "weaponLayer": "baked",
+      "weaponLayerAudit": "Recolored staff caster; staff baked in."
     },
     "pet/skywolf": {
       "path": "assets/community/pets/skywolf.png",
@@ -1405,88 +2191,640 @@
     },
     "weapon/gauntlet": {
       "path": "assets/weapons/gravity_gauntlet.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/dual": {
       "path": "assets/weapons/twin_fang_dagger.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/staff": {
       "path": "assets/weapons/orbit_crescent_staff.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/dagger": {
       "path": "assets/weapons/shadow_knife.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/shield": {
       "path": "assets/weapons/stonebreaker_hammer.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/sabre": {
       "path": "assets/weapons/wind_scimitar.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/gadget": {
       "path": "assets/weapons/clockwork_knuckle.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/bow": {
       "path": "assets/weapons/sky_bow.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/lance": {
       "path": "assets/weapons/sun_lance.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "weapon/frost_staff": {
       "path": "assets/weapons/frost_staff.png",
-      "frameWidth": 256,
-      "frameHeight": 256,
+      "frameWidth": 1254,
+      "frameHeight": 1254,
       "frames": 1,
-      "optional": true,
-      "status": "awaiting-user-art"
+      "optional": false,
+      "status": "ready"
     },
     "branding/logo": {
       "path": "assets/branding/logo.png",
       "frameWidth": 640,
       "frameHeight": 640,
+      "frames": 1
+    },
+    "ui/icons/coin": {
+      "path": "assets/ui/icons/coin.png",
+      "frameWidth": 86,
+      "frameHeight": 89,
+      "frames": 1
+    },
+    "ui/icons/star": {
+      "path": "assets/ui/icons/star.png",
+      "frameWidth": 96,
+      "frameHeight": 95,
+      "frames": 1
+    },
+    "ui/icons/plus": {
+      "path": "assets/ui/icons/plus.png",
+      "frameWidth": 83,
+      "frameHeight": 82,
+      "frames": 1
+    },
+    "ui/icons/friends": {
+      "path": "assets/ui/icons/friends.png",
+      "frameWidth": 93,
+      "frameHeight": 82,
+      "frames": 1
+    },
+    "ui/icons/settings": {
+      "path": "assets/ui/icons/settings.png",
+      "frameWidth": 97,
+      "frameHeight": 98,
+      "frames": 1
+    },
+    "ui/icons/close": {
+      "path": "assets/ui/icons/close.png",
+      "frameWidth": 84,
+      "frameHeight": 84,
+      "frames": 1
+    },
+    "ui/icons/edit": {
+      "path": "assets/ui/icons/edit.png",
+      "frameWidth": 86,
+      "frameHeight": 85,
+      "frames": 1
+    },
+    "ui/icons/help": {
+      "path": "assets/ui/icons/help.png",
+      "frameWidth": 85,
+      "frameHeight": 85,
+      "frames": 1
+    },
+    "ui/icons/info": {
+      "path": "assets/ui/icons/info.png",
+      "frameWidth": 85,
+      "frameHeight": 85,
+      "frames": 1
+    },
+    "ui/icons/check": {
+      "path": "assets/ui/icons/check.png",
+      "frameWidth": 108,
+      "frameHeight": 87,
+      "frames": 1
+    },
+    "ui/icons/lock": {
+      "path": "assets/ui/icons/lock.png",
+      "frameWidth": 78,
+      "frameHeight": 95,
+      "frames": 1
+    },
+    "ui/icons/online": {
+      "path": "assets/ui/icons/online.png",
+      "frameWidth": 76,
+      "frameHeight": 76,
+      "frames": 1
+    },
+    "ui/icons/clock": {
+      "path": "assets/ui/icons/clock.png",
+      "frameWidth": 91,
+      "frameHeight": 91,
+      "frames": 1
+    },
+    "ui/icons/daily": {
+      "path": "assets/ui/icons/daily.png",
+      "frameWidth": 79,
+      "frameHeight": 87,
+      "frames": 1
+    },
+    "ui/icons/home": {
+      "path": "assets/ui/icons/home.png",
+      "frameWidth": 87,
+      "frameHeight": 85,
+      "frames": 1
+    },
+    "ui/icons/worlds": {
+      "path": "assets/ui/icons/worlds.png",
+      "frameWidth": 99,
+      "frameHeight": 101,
+      "frames": 1
+    },
+    "ui/icons/heroes": {
+      "path": "assets/ui/icons/heroes.png",
+      "frameWidth": 94,
+      "frameHeight": 99,
+      "frames": 1
+    },
+    "ui/icons/pets": {
+      "path": "assets/ui/icons/pets.png",
+      "frameWidth": 101,
+      "frameHeight": 89,
+      "frames": 1
+    },
+    "ui/icons/shop": {
+      "path": "assets/ui/icons/shop.png",
+      "frameWidth": 102,
+      "frameHeight": 87,
+      "frames": 1
+    },
+    "ui/icons/missions": {
+      "path": "assets/ui/icons/missions.png",
+      "frameWidth": 84,
+      "frameHeight": 92,
+      "frames": 1
+    },
+    "ui/icons/records": {
+      "path": "assets/ui/icons/records.png",
+      "frameWidth": 90,
+      "frameHeight": 86,
+      "frames": 1
+    },
+    "ui/icons/profile": {
+      "path": "assets/ui/icons/profile.png",
+      "frameWidth": 92,
+      "frameHeight": 94,
+      "frames": 1
+    },
+    "ui/icons/swords": {
+      "path": "assets/ui/icons/swords.png",
+      "frameWidth": 108,
+      "frameHeight": 109,
+      "frames": 1
+    },
+    "ui/icons/boss": {
+      "path": "assets/ui/icons/boss.png",
+      "frameWidth": 102,
+      "frameHeight": 122,
+      "frames": 1
+    },
+    "ui/icons/compass": {
+      "path": "assets/ui/icons/compass.png",
+      "frameWidth": 112,
+      "frameHeight": 117,
+      "frames": 1
+    },
+    "ui/icons/map": {
+      "path": "assets/ui/icons/map.png",
+      "frameWidth": 118,
+      "frameHeight": 110,
+      "frames": 1
+    },
+    "ui/icons/gamepad": {
+      "path": "assets/ui/icons/gamepad.png",
+      "frameWidth": 100,
+      "frameHeight": 77,
+      "frames": 1
+    },
+    "ui/icons/controls": {
+      "path": "assets/ui/icons/controls.png",
+      "frameWidth": 81,
+      "frameHeight": 81,
+      "frames": 1
+    },
+    "ui/icons/flag": {
+      "path": "assets/ui/icons/flag.png",
+      "frameWidth": 108,
+      "frameHeight": 127,
+      "frames": 1
+    },
+    "ui/icons/skull": {
+      "path": "assets/ui/icons/skull.png",
+      "frameWidth": 83,
+      "frameHeight": 91,
+      "frames": 1
+    },
+    "ui/icons/touch": {
+      "path": "assets/ui/icons/touch.png",
+      "frameWidth": 113,
+      "frameHeight": 118,
+      "frames": 1
+    },
+    "ui/icons/volume": {
+      "path": "assets/ui/icons/volume.png",
+      "frameWidth": 110,
+      "frameHeight": 89,
+      "frames": 1
+    },
+    "ui/icons/music": {
+      "path": "assets/ui/icons/music.png",
+      "frameWidth": 79,
+      "frameHeight": 91,
+      "frames": 1
+    },
+    "ui/icons/speed": {
+      "path": "assets/ui/icons/speed.png",
+      "frameWidth": 94,
+      "frameHeight": 95,
+      "frames": 1
+    },
+    "ui/icons/palette": {
+      "path": "assets/ui/icons/palette.png",
+      "frameWidth": 108,
+      "frameHeight": 98,
+      "frames": 1
+    },
+    "ui/icons/power": {
+      "path": "assets/ui/icons/power.png",
+      "frameWidth": 81,
+      "frameHeight": 104,
+      "frames": 1
+    },
+    "ui/icons/sword": {
+      "path": "assets/ui/icons/sword.png",
+      "frameWidth": 91,
+      "frameHeight": 94,
+      "frames": 1
+    },
+    "ui/icons/gold-star": {
+      "path": "assets/ui/icons/gold-star.png",
+      "frameWidth": 89,
+      "frameHeight": 88,
+      "frames": 1
+    },
+    "ui/icons/magic": {
+      "path": "assets/ui/icons/magic.png",
+      "frameWidth": 88,
+      "frameHeight": 93,
+      "frames": 1
+    },
+    "ui/icons/stamina": {
+      "path": "assets/ui/icons/stamina.png",
+      "frameWidth": 80,
+      "frameHeight": 98,
+      "frames": 1
+    },
+    "ui/icons/bow": {
+      "path": "assets/ui/icons/bow.png",
+      "frameWidth": 96,
+      "frameHeight": 98,
+      "frames": 1
+    },
+    "ui/icons/sun": {
+      "path": "assets/ui/icons/sun.png",
+      "frameWidth": 100,
+      "frameHeight": 104,
+      "frames": 1
+    },
+    "ui/icons/frost": {
+      "path": "assets/ui/icons/frost.png",
+      "frameWidth": 92,
+      "frameHeight": 105,
+      "frames": 1
+    },
+    "ui/icons/wind": {
+      "path": "assets/ui/icons/wind.png",
+      "frameWidth": 116,
+      "frameHeight": 101,
+      "frames": 1
+    },
+    "ui/icons/crown": {
+      "path": "assets/ui/icons/crown.png",
+      "frameWidth": 103,
+      "frameHeight": 90,
+      "frames": 1
+    },
+    "ui/icons/earned-star": {
+      "path": "assets/ui/icons/earned-star.png",
+      "frameWidth": 93,
+      "frameHeight": 91,
+      "frames": 1
+    },
+    "ui/icons/empty-star": {
+      "path": "assets/ui/icons/empty-star.png",
+      "frameWidth": 92,
+      "frameHeight": 88,
+      "frames": 1
+    },
+    "ui/icons/medal-gold": {
+      "path": "assets/ui/icons/medal-gold.png",
+      "frameWidth": 110,
+      "frameHeight": 111,
+      "frames": 1
+    },
+    "ui/icons/medal-silver": {
+      "path": "assets/ui/icons/medal-silver.png",
+      "frameWidth": 111,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "ui/icons/medal-bronze": {
+      "path": "assets/ui/icons/medal-bronze.png",
+      "frameWidth": 115,
+      "frameHeight": 112,
+      "frames": 1
+    },
+    "ui/icons/trophy": {
+      "path": "assets/ui/icons/trophy.png",
+      "frameWidth": 104,
+      "frameHeight": 106,
+      "frames": 1
+    },
+    "ui/icons/quest-coins": {
+      "path": "assets/ui/icons/quest-coins.png",
+      "frameWidth": 139,
+      "frameHeight": 137,
+      "frames": 1
+    },
+    "ui/icons/quest-power": {
+      "path": "assets/ui/icons/quest-power.png",
+      "frameWidth": 139,
+      "frameHeight": 138,
+      "frames": 1
+    },
+    "ui/icons/quest-potion": {
+      "path": "assets/ui/icons/quest-potion.png",
+      "frameWidth": 86,
+      "frameHeight": 138,
+      "frames": 1
+    },
+    "ui/icons/quest-shrine": {
+      "path": "assets/ui/icons/quest-shrine.png",
+      "frameWidth": 129,
+      "frameHeight": 152,
+      "frames": 1
+    },
+    "ui/icons/quest-monster": {
+      "path": "assets/ui/icons/quest-monster.png",
+      "frameWidth": 142,
+      "frameHeight": 139,
+      "frames": 1
+    },
+    "ui/icons/left": {
+      "path": "assets/ui/icons/left.png",
+      "frameWidth": 64,
+      "frameHeight": 94,
+      "frames": 1
+    },
+    "ui/icons/right": {
+      "path": "assets/ui/icons/right.png",
+      "frameWidth": 64,
+      "frameHeight": 94,
+      "frames": 1
+    },
+    "ui/icons/crouch": {
+      "path": "assets/ui/icons/crouch.png",
+      "frameWidth": 79,
+      "frameHeight": 55,
+      "frames": 1
+    },
+    "ui/icons/diamond": {
+      "path": "assets/ui/icons/diamond.png",
+      "frameWidth": 85,
+      "frameHeight": 85,
+      "frames": 1
+    },
+    "ui/frames/currency": {
+      "path": "assets/ui/frames/currency.png",
+      "frameWidth": 246,
+      "frameHeight": 73,
+      "frames": 1
+    },
+    "ui/frames/tab": {
+      "path": "assets/ui/frames/tab.png",
+      "frameWidth": 137,
+      "frameHeight": 73,
+      "frames": 1
+    },
+    "ui/frames/tab-selected": {
+      "path": "assets/ui/frames/tab-selected.png",
+      "frameWidth": 138,
+      "frameHeight": 72,
+      "frames": 1
+    },
+    "ui/frames/button": {
+      "path": "assets/ui/frames/button.png",
+      "frameWidth": 182,
+      "frameHeight": 66,
+      "frames": 1
+    },
+    "ui/frames/button-gold": {
+      "path": "assets/ui/frames/button-gold.png",
+      "frameWidth": 200,
+      "frameHeight": 68,
+      "frames": 1
+    },
+    "ui/frames/hero-card": {
+      "path": "assets/ui/frames/hero-card.png",
+      "frameWidth": 148,
+      "frameHeight": 215,
+      "frames": 1
+    },
+    "ui/frames/hero-selected": {
+      "path": "assets/ui/frames/hero-selected.png",
+      "frameWidth": 146,
+      "frameHeight": 214,
+      "frames": 1
+    },
+    "ui/frames/hero-locked": {
+      "path": "assets/ui/frames/hero-locked.png",
+      "frameWidth": 147,
+      "frameHeight": 213,
+      "frames": 1
+    },
+    "ui/frames/hero-purple": {
+      "path": "assets/ui/frames/hero-purple.png",
+      "frameWidth": 137,
+      "frameHeight": 214,
+      "frames": 1
+    },
+    "ui/frames/quest": {
+      "path": "assets/ui/frames/quest.png",
+      "frameWidth": 219,
+      "frameHeight": 106,
+      "frames": 1
+    },
+    "ui/frames/price": {
+      "path": "assets/ui/frames/price.png",
+      "frameWidth": 138,
+      "frameHeight": 58,
+      "frames": 1
+    },
+    "ui/frames/nav": {
+      "path": "assets/ui/frames/nav.png",
+      "frameWidth": 655,
+      "frameHeight": 52,
+      "frames": 1
+    },
+    "ui/frames/setting-row": {
+      "path": "assets/ui/frames/setting-row.png",
+      "frameWidth": 345,
+      "frameHeight": 70,
+      "frames": 1
+    },
+    "ui/frames/button-large": {
+      "path": "assets/ui/frames/button-large.png",
+      "frameWidth": 317,
+      "frameHeight": 78,
+      "frames": 1
+    },
+    "ui/frames/toggle-on": {
+      "path": "assets/ui/frames/toggle-on.png",
+      "frameWidth": 103,
+      "frameHeight": 55,
+      "frames": 1
+    },
+    "ui/frames/toggle-off": {
+      "path": "assets/ui/frames/toggle-off.png",
+      "frameWidth": 104,
+      "frameHeight": 55,
+      "frames": 1
+    },
+    "ui/frames/progress-empty": {
+      "path": "assets/ui/frames/progress-empty.png",
+      "frameWidth": 296,
+      "frameHeight": 32,
+      "frames": 1
+    },
+    "ui/frames/progress-full": {
+      "path": "assets/ui/frames/progress-full.png",
+      "frameWidth": 220,
+      "frameHeight": 30,
+      "frames": 1
+    },
+    "ui/frames/panel": {
+      "path": "assets/ui/frames/panel.png",
+      "frameWidth": 440,
+      "frameHeight": 227,
+      "frames": 1
+    },
+    "ui/frames/profile": {
+      "path": "assets/ui/frames/profile.png",
+      "frameWidth": 449,
+      "frameHeight": 235,
+      "frames": 1
+    },
+    "ui/frames/identity": {
+      "path": "assets/ui/frames/identity.png",
+      "frameWidth": 356,
+      "frameHeight": 107,
+      "frames": 1
+    },
+    "ui/frames/portrait": {
+      "path": "assets/ui/frames/portrait.png",
+      "frameWidth": 163,
+      "frameHeight": 207,
+      "frames": 1
+    },
+    "ui/frames/portrait-selected": {
+      "path": "assets/ui/frames/portrait-selected.png",
+      "frameWidth": 182,
+      "frameHeight": 219,
+      "frames": 1
+    },
+    "ui/frames/input": {
+      "path": "assets/ui/frames/input.png",
+      "frameWidth": 344,
+      "frameHeight": 68,
+      "frames": 1
+    },
+    "ui/frames/panel-shell": {
+      "path": "assets/ui/frames/panel-shell.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frames": 1
+    },
+    "ui/ornaments/diamond": {
+      "path": "assets/ui/ornaments/diamond.png",
+      "frameWidth": 24,
+      "frameHeight": 24,
+      "frames": 1
+    },
+    "ui/ornaments/rule": {
+      "path": "assets/ui/ornaments/rule.png",
+      "frameWidth": 32,
+      "frameHeight": 3,
+      "frames": 1
+    },
+    "ui/icons/crown-silver": {
+      "path": "assets/ui/icons/crown-silver.png",
+      "frameWidth": 107,
+      "frameHeight": 92,
+      "frames": 1
+    },
+    "ui/icons/crown-red": {
+      "path": "assets/ui/icons/crown-red.png",
+      "frameWidth": 107,
+      "frameHeight": 92,
+      "frames": 1
+    },
+    "ui/icons/crown-green": {
+      "path": "assets/ui/icons/crown-green.png",
+      "frameWidth": 110,
+      "frameHeight": 92,
+      "frames": 1
+    },
+    "ui/icons/crown-cyan": {
+      "path": "assets/ui/icons/crown-cyan.png",
+      "frameWidth": 109,
+      "frameHeight": 92,
+      "frames": 1
+    },
+    "ui/icons/crown-pink": {
+      "path": "assets/ui/icons/crown-pink.png",
+      "frameWidth": 109,
+      "frameHeight": 92,
       "frames": 1
     }
   },

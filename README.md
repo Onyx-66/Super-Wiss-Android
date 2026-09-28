@@ -1,53 +1,41 @@
-# Super Wiss Ascension — v1.3.1 source candidate
+# Super Wiss Ascension — v1.4.1 UI polish
 
-Weapon sprite integration, portrait/roster fixes and supplied-logo integration, based on the uploaded v1.3.0 source.
+**Complete source/playtest project.** The current editable game lives at the repository root. Android versionCode: **46**; versionName: **1.4.1-playtest**. Start with [UI-POLISH-DELIVERY.md](UI-POLISH-DELIVERY.md) for the supplied UI changes and [BUILDING.md](BUILDING.md) to build the mobile APK. Exact reference backgrounds, typefaces and dedicated animation art remain work in progress.
 
-**No new APK or AAB was compiled in this delivery.** Gradle distribution download failed with `UnknownHostException: services.gradle.org`; this environment also lacks Android SDK/ADB. Old `artifacts/` reports/screenshots belong to previous builds. They do not validate these changes.
+## Implemented
 
-**Final weapon PNGs are pending.** The reference image was not extracted as art. Existing weapon-bearing hero sheets remain visible without procedural sticks; external weapons require the final PNGs plus weapon-free body/outfit sheets marked `weaponLayer: "separate"`. See [weapon handoff](assets/weapons/README.md).
+Ten final weapon PNGs, the 84 cropped UI pieces, ten-screen layouts, clearer crouch controls, deterministic unarmed combat, profile-derived hero ratings, nine display renames with stable internal IDs, weapon restrictions, and the six-slot wardrobe architecture are included.
 
-## Source changes
-- Remove both procedural weapon drawings, including cosmetic rods.
-- Manifest/cache/sprite weapon pipeline keyed by actual COMBAT_PROFILES.weapon; per-frame grip sockets; shared attack-phase body/weapon motion.
-- Explicit Rayan lance and Mira frost-staff/ice profiles. Loey label corrected to Sky bow. Preserve normalized PvP behavior.
-- New solo results revision 4 avoids comparing changed combat directly with stored revision 3 results; existing save key/schema/origin unchanged.
-- Identity card uses saved profile avatar, not equipped hero. Names/XP unchanged.
-- Distinct still portraits with no combat overlays; bounded responsive roster and intentional scroll reset on re-entry.
-- Supplied logo on Home/web loading/native fallback; supplied W derivative in adaptive/themed launcher.
-- Optional pending-art support is limited to weapon entries. Missing required media still fails validation/normal boot.
+## Still partial
 
-## Read first
-- [Pre-edit investigation and full original drawHeroWeapon](docs/reviews/1.3.1/INVESTIGATION.md)
-- [Weapon PNG contract / enable real sprites](assets/weapons/README.md)
-- [Current tests and native build blocker](docs/reviews/1.3.1/TEST-REPORT.md)
-- [Quality follow-ups / unavailable private skills](docs/reviews/1.3.1/QUALITY-FOLLOWUPS.md)
-- [Building](BUILDING.md)
+Nine heroes need authored weapon-free/unarmed rigs. Bront and Sol retain conflicting baked shield art. Modular clothing pieces are not supplied and the ready-piece shop catalog is empty. Typography uses a fallback until separately licensed fonts are installed, and mockup fidelity remains incomplete. Native WebView, persistent storage, devices, Bluetooth and performance require QA. No production readiness or APK success is implied by the source tag.
 
-## Build
+## Build and test
 
-```powershell
-npm run validate
-npm run build
+Use Node.js 22, JDK 17 and the checked-in Gradle wrapper.
+
+```sh
 npm test
-npm run test:weapon-ui
-npm run validate:maps
-.\gradlew.bat :app:assembleDebug :app:assembleQa :app:bundleQa :app:lintDebug :app:lintQa
+npm run validate:weapon-art
+npm run build
 ```
 
-`npm run validate:weapon-art` intentionally fails until all ten final weapon PNGs are present. The included public QA certificate is only for local tests, never production.
+The last command generates `dist/Super-Wiss-Odyssey.html` and the Android web assets. Run `npm run serve` for a browser preview. For Android, configure the Android SDK and run `./gradlew :app:assembleDebug :app:assembleQa :app:bundleQa`. See [BUILDING.md](BUILDING.md). The checked-in QA signing key is public and NONPRODUCTION. Never use it for a production release.
 
-Working game code: `game/`; metadata: `game/*.json`; source art: `assets/`; Android host: `app/src/main/java/`. Gradle preBuild regenerates the small shell and separate APK media; do not reintroduce giant HTML through native loadDataWithBaseURL. The standalone browser preview may embed media, but Android never loads that file.
+The 1.4.1 project-root integration passed the 333-test suite, asset/map validation, and the native QA build and lint. See [current build results](docs/BUILD-1.4.1.md) for the installable APK location and remaining phone checks.
 
-The requested Agent Skills were unavailable when this patch was implemented. Subsequently supplied packs are now stored in `agent-skills/`, and ten target mockups in `design/references/ui/`. Their inclusion does not certify compliance or implement the mockup layouts.
+GitHub Actions: **Super Wiss Android - Debug and QA**, in `.github/workflows/android-build.yml`, compiles debug/QA APKs and a QA AAB and uploads them with test logs. A green build is not device certification.
 
-## Repository use
+## Handoff and evidence
 
-This snapshot contains ordinary project files at the root. No split-pack restore or bootstrap is required. Open `settings.gradle` in Android Studio. Older v1.0.0 source packs, where present, are historical and are not current build input.
+- [Task-by-task status](LOCAL-DELIVERY.md)
+- [Asset inventory](docs/ASSET-INVENTORY.xlsx)
+- [Missing assets](docs/MISSING-ASSETS.md)
+- [UI crop mapping](docs/UI-ASSET-MAPPING.md)
+- [Hero stats](docs/HERO-STATS.md)
+- [Skill decisions](docs/SKILL-DECISIONS.md)
+- [Conflicts](docs/CONFLICTS.md)
+- [Original implementation OLD/NEW report](docs/OLD-NEW-CODE.md)
+- [Versioning](VERSIONING.md)
 
-### Browser runtime previews
-
-These are browser renders, not Android device-test evidence.
-
-![Home](docs/reviews/1.3.1/home-after-1600.png)
-
-![Heroes](docs/reviews/1.3.1/heroes-after-960.png)
+`agent-skills/` contains the 16 supplied standards; `design/references/ui/` contains target mockups, not runtime evidence. `docs/qa-local/` contains screenshots/tests from the local implementation before its version-label bump. Historical files under `artifacts/`, `qa/`, and `docs/repository-import/` describe earlier builds, not current Android validation.

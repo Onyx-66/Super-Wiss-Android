@@ -1,0 +1,437 @@
+{
+  "ui/icons/coin": [
+    "game/audio.js:78",
+    "game/content.js:2",
+    "game/engine.js:826",
+    "game/engine.js:1013",
+    "game/app.js:142",
+    "game/app.js:156",
+    "game/app.js:263",
+    "game/render.js:25",
+    "game/render.js:300",
+    "game/render.js:301",
+    "game/render.js:302",
+    "game/render.js:710",
+    "game/data.js:15",
+    "game/data.js:22",
+    "game/data.js:31",
+    "game/data.js:40",
+    "game/progress.js:131",
+    "game/world-regions.js:15",
+    "game/index.html:4",
+    "game/index.html:27"
+  ],
+  "ui/icons/star": [
+    "game/content.js:2",
+    "game/app.js:102",
+    "game/app.js:108",
+    "game/app.js:158",
+    "game/app.js:226",
+    "game/app.js:263",
+    "game/data.js:19",
+    "game/index.html:4"
+  ],
+  "ui/icons/plus": [
+    "game/index.html:4"
+  ],
+  "ui/icons/friends": [
+    "game/ascension-ui.js:95",
+    "game/social.js:11",
+    "game/index.html:4",
+    "game/index.html:11"
+  ],
+  "ui/icons/settings": [
+    "game/content.js:2",
+    "game/app.js:151",
+    "game/app.js:239",
+    "game/app.js:281",
+    "game/app.js:309",
+    "game/index.html:4",
+    "game/index.html:25"
+  ],
+  "ui/icons/close": [
+    "game/ascension-ui.js:58",
+    "game/app.js:87",
+    "game/app.js:153",
+    "game/app.js:282",
+    "game/app.js:293",
+    "game/progress.js:52"
+  ],
+  "ui/icons/edit": [],
+  "ui/icons/help": [
+    "game/app.js:283"
+  ],
+  "ui/icons/info": [
+    "game/app.js:283"
+  ],
+  "ui/icons/check": [
+    "game/atelier-ui.js:15",
+    "game/app.js:118",
+    "game/app.js:131",
+    "game/app.js:142",
+    "game/app.js:263",
+    "game/app.js:283"
+  ],
+  "ui/icons/lock": [
+    "game/atelier-ui.js:33",
+    "game/ascension-ui.js:77",
+    "game/app.js:102",
+    "game/app.js:108",
+    "game/app.js:131"
+  ],
+  "ui/icons/online": [],
+  "ui/icons/clock": [
+    "game/atelier-ui.js:89",
+    "game/content.js:2",
+    "game/engine.js:88",
+    "game/render.js:212",
+    "game/render.js:270"
+  ],
+  "ui/icons/daily": [
+    "game/ascension-ui.js:86",
+    "game/ascension.js:35",
+    "game/upgrade-ui.js:9",
+    "game/app.js:157",
+    "game/app.js:183",
+    "game/progress.js:187"
+  ],
+  "ui/icons/home": [
+    "game/app.js:39",
+    "game/app.js:239",
+    "game/app.js:252",
+    "game/app.js:263",
+    "game/app.js:329",
+    "game/app.js:330",
+    "game/app.js:521",
+    "game/app.js:530",
+    "game/render.js:315",
+    "game/render.js:320",
+    "game/render.js:321",
+    "game/index.html:25"
+  ],
+  "ui/icons/worlds": [
+    "game/index.html:25"
+  ],
+  "ui/icons/heroes": [
+    "game/atelier-ui.js:25",
+    "game/upgrade-ui.js:22",
+    "game/content.js:2",
+    "game/app.js:92",
+    "game/app.js:93",
+    "game/app.js:536",
+    "game/index.html:25"
+  ],
+  "ui/icons/pets": [
+    "game/atelier-ui.js:64",
+    "game/content.js:2",
+    "game/app.js:94",
+    "game/app.js:538",
+    "game/index.html:25"
+  ],
+  "ui/icons/shop": [
+    "game/app.js:282",
+    "game/index.html:7",
+    "game/index.html:25"
+  ],
+  "ui/icons/missions": [
+    "game/content.js:2",
+    "game/app.js:95",
+    "game/app.js:148",
+    "game/index.html:13",
+    "game/index.html:25"
+  ],
+  "ui/icons/records": [
+    "game/upgrade-ui.js:25",
+    "game/app.js:96",
+    "game/index.html:25"
+  ],
+  "ui/icons/profile": [
+    "game/atelier-ui.js:15",
+    "game/app.js:96",
+    "game/app.js:118",
+    "game/app.js:354",
+    "game/app.js:355",
+    "game/app.js:509",
+    "game/app.js:543",
+    "game/index.html:4",
+    "game/index.html:25"
+  ],
+  "ui/icons/swords": [],
+  "ui/icons/boss": [
+    "game/audio.js:93",
+    "game/ascension-ui.js:82",
+    "game/ascension-ui.js:86",
+    "game/ascension-ui.js:137",
+    "game/ascension.js:35",
+    "game/ascension.js:49",
+    "game/upgrade-ui.js:9",
+    "game/upgrade-ui.js:19",
+    "game/engine.js:1087",
+    "game/app.js:156",
+    "game/app.js:172",
+    "game/app.js:282",
+    "game/app.js:496",
+    "game/app.js:499",
+    "game/data.js:16",
+    "game/data.js:23",
+    "game/data.js:31",
+    "game/data.js:41",
+    "game/progress.js:121",
+    "game/progress.js:155",
+    "game/index.html:11"
+  ],
+  "ui/icons/compass": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/map": [
+    "game/data.js:20"
+  ],
+  "ui/icons/gamepad": [
+    "game/app.js:106",
+    "game/app.js:131",
+    "game/app.js:282",
+    "game/index.html:16"
+  ],
+  "ui/icons/controls": [],
+  "ui/icons/flag": [
+    "game/atelier-ui.js:89",
+    "game/data.js:14",
+    "game/data.js:30",
+    "game/index.html:10"
+  ],
+  "ui/icons/skull": [
+    "game/app.js:156",
+    "game/app.js:282",
+    "game/data.js:16",
+    "game/data.js:23",
+    "game/data.js:31",
+    "game/data.js:41",
+    "game/index.html:11"
+  ],
+  "ui/icons/touch": [
+    "game/app.js:282"
+  ],
+  "ui/icons/volume": [
+    "game/app.js:282"
+  ],
+  "ui/icons/music": [
+    "game/atelier-ui.js:70",
+    "game/content.js:2",
+    "game/app.js:282",
+    "game/progress.js:43"
+  ],
+  "ui/icons/speed": [
+    "game/content.js:2",
+    "game/app.js:282",
+    "game/index.html:27"
+  ],
+  "ui/icons/palette": [
+    "game/atelier-ui.js:33",
+    "game/app.js:282"
+  ],
+  "ui/icons/power": [
+    "game/audio.js:66",
+    "game/audio.js:71",
+    "game/combat-profiles.js:10",
+    "game/ascension.js:15",
+    "game/content.js:2",
+    "game/engine.js:139",
+    "game/engine.js:390",
+    "game/engine.js:554",
+    "game/engine.js:990",
+    "game/app.js:143",
+    "game/app.js:156",
+    "game/app.js:446",
+    "game/render.js:300",
+    "game/data.js:17",
+    "game/data.js:32",
+    "game/data.js:42",
+    "game/index.html:27"
+  ],
+  "ui/icons/sword": [
+    "game/atelier-ui.js:33",
+    "game/ascension-ui.js:14",
+    "game/ascension.js:16",
+    "game/content.js:2",
+    "game/index.html:27"
+  ],
+  "ui/icons/gold-star": [
+    "game/content.js:2",
+    "game/app.js:102",
+    "game/app.js:108",
+    "game/app.js:158",
+    "game/app.js:226",
+    "game/app.js:263",
+    "game/data.js:19"
+  ],
+  "ui/icons/magic": [
+    "game/ascension.js:17",
+    "game/content.js:2",
+    "game/app.js:225"
+  ],
+  "ui/icons/stamina": [
+    "game/content.js:2",
+    "game/app.js:218"
+  ],
+  "ui/icons/bow": [
+    "game/combat-profiles.js:11",
+    "game/weapon-art.js:15",
+    "game/weapon-art.js:67",
+    "game/engine.js:1168",
+    "game/equipment.js:12"
+  ],
+  "ui/icons/sun": [],
+  "ui/icons/frost": [
+    "game/ascension-ui.js:124",
+    "game/ascension.js:11",
+    "game/ascension.js:34",
+    "game/arena.js:6",
+    "game/content.js:2",
+    "game/cosmetics.js:3",
+    "game/engine.js:218",
+    "game/render.js:740"
+  ],
+  "ui/icons/wind": [
+    "game/world-physics.js:22",
+    "game/world-physics.js:27",
+    "game/content.js:2",
+    "game/index.html:27"
+  ],
+  "ui/icons/crown": [
+    "game/atelier-ui.js:64",
+    "game/content.js:2",
+    "game/app.js:226"
+  ],
+  "ui/icons/earned-star": [],
+  "ui/icons/empty-star": [],
+  "ui/icons/medal-gold": [
+    "game/atelier-ui.js:64"
+  ],
+  "ui/icons/medal-silver": [],
+  "ui/icons/medal-bronze": [],
+  "ui/icons/trophy": [
+    "game/atelier-ui.js:64",
+    "game/upgrade-ui.js:9",
+    "game/app.js:148",
+    "game/app.js:156",
+    "game/data.js:25"
+  ],
+  "ui/icons/quest-coins": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/quest-power": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/quest-potion": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/quest-shrine": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/quest-monster": [
+    "game/atelier-ui.js:89"
+  ],
+  "ui/icons/left": [
+    "game/arena.js:5",
+    "game/app.js:394",
+    "game/app.js:401",
+    "game/index.html:27"
+  ],
+  "ui/icons/right": [
+    "game/arena.js:5",
+    "game/app.js:263",
+    "game/app.js:394",
+    "game/app.js:401",
+    "game/index.html:12",
+    "game/index.html:13",
+    "game/index.html:27"
+  ],
+  "ui/icons/crouch": [
+    "game/controls.js:20",
+    "game/app.js:394",
+    "game/app.js:401",
+    "game/index.html:27"
+  ],
+  "ui/icons/diamond": [],
+  "ui/frames/currency": [
+    "game/atelier.css:30"
+  ],
+  "ui/frames/tab": [
+    "game/atelier.css:22",
+    "game/atelier.css:33",
+    "game/atelier.css:34",
+    "game/atelier.css:70"
+  ],
+  "ui/frames/tab-selected": [
+    "game/atelier.css:22",
+    "game/atelier.css:34",
+    "game/atelier.css:70"
+  ],
+  "ui/frames/button": [
+    "game/atelier.css:17",
+    "game/atelier.css:18",
+    "game/atelier.css:42",
+    "game/atelier.css:45",
+    "game/atelier.css:60",
+    "game/atelier.css:83"
+  ],
+  "ui/frames/button-gold": [
+    "game/atelier.css:60"
+  ],
+  "ui/frames/hero-card": [
+    "game/atelier.css:50",
+    "game/atelier.css:57",
+    "game/atelier.css:58",
+    "game/atelier.css:66",
+    "game/atelier.css:68",
+    "game/atelier.css:85",
+    "game/atelier.css:103"
+  ],
+  "ui/frames/hero-selected": [
+    "game/atelier.css:51",
+    "game/atelier.css:86",
+    "game/atelier.css:104"
+  ],
+  "ui/frames/hero-locked": [],
+  "ui/frames/hero-purple": [],
+  "ui/frames/quest": [
+    "game/atelier.css:60",
+    "game/atelier.css:64"
+  ],
+  "ui/frames/price": [
+    "game/atelier.css:42"
+  ],
+  "ui/frames/nav": [
+    "game/atelier.css:32"
+  ],
+  "ui/frames/setting-row": [
+    "game/atelier.css:68"
+  ],
+  "ui/frames/button-large": [
+    "game/atelier.css:18",
+    "game/atelier.css:45"
+  ],
+  "ui/frames/toggle-on": [
+    "game/atelier.css:68"
+  ],
+  "ui/frames/toggle-off": [
+    "game/atelier.css:68"
+  ],
+  "ui/frames/progress-empty": [],
+  "ui/frames/progress-full": [],
+  "ui/frames/panel": [
+    "game/atelier.css:14",
+    "game/atelier.css:44"
+  ],
+  "ui/frames/profile": [],
+  "ui/frames/identity": [
+    "game/atelier.css:26",
+    "game/atelier.css:43",
+    "game/atelier.css:101"
+  ],
+  "ui/frames/portrait": [
+    "game/atelier.css:27"
+  ],
+  "ui/frames/portrait-selected": [],
+  "ui/frames/input": []
+}

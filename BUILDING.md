@@ -1,70 +1,37 @@
-# v1.3.1 source candidate — current packaging status
+# Building Super Wiss Ascension 1.4.1
 
-No current APK/AAB has been built here. Official Gradle attempt failed before compilation because services.gradle.org did not resolve; Android SDK/ADB are unavailable. The commands below are for a configured development computer, not evidence of executed builds.
-
-Use Node 22.16+ and JDK17 with Android SDK36 installed. Open the project root containing settings.gradle. Do not use the old native/apktool fallback: its resources/host scripts are historical and not updated for this patch.
-
-```powershell
-npm run validate
-npm run build
-npm test
-npm run test:weapon-ui
-npm run validate:maps
-.\gradlew.bat :app:assembleDebug :app:assembleQa :app:bundleQa :app:lintDebug :app:lintQa
-```
-
-Expected outputs only after a successful local Gradle build:
-- app/build/outputs/apk/debug/app-debug.apk (debug identity suffix)
-- app/build/outputs/apk/qa/app-qa.apk (same QA identity/certificate, version code44)
-- app/build/outputs/bundle/qa/app-qa.aab
-
-Build-QA.bat copies QA outputs to versioned artifacts filenames only after success. Keep Play Protect enabled. Do not uninstall merely to upgrade, as that deletes local saves. An AAB is not directly installable; use bundletool or an appropriate Play testing flow after verification.
-
-Artwork prerequisites and optional-body gates: [assets/weapons/README.md](assets/weapons/README.md).
-Optional browser checks: install Python Playwright, set CHROMIUM_PATH to your Chromium executable, then `python tests/weapon-ui-browser.py`. These are set_content fixture checks, not Android tests. Rebuilding logo derivatives requires Pillow and the retained docs/branding/logo-supplied.png; run `python scripts/prepare-branding.py`.
-
----
-# Historical building guidance from the source baseline
-
-# Building Super Wiss Ascension 1.3.0
-
-The existing Android project root is this folder; do not create a replacement project.
+The project root contains `settings.gradle`, `game/`, `assets/`, and `app/`. Current Android metadata is **1.4.1-playtest**, versionCode **46**, application ID `com.superwiss.game.playtest`.
 
 ## Requirements
 
-- JDK 17, Node.js 22.16 or newer, Android SDK Platform 36, Build Tools 35/36.
-- Gradle 8.13 and Android Gradle Plugin 8.13.2 are pinned. Android Studio's Java 25 cannot run this Gradle version; set `JAVA_HOME` to JDK 17.
-- `ANDROID_HOME` points to your Android SDK, or set `sdk.dir` in untracked `local.properties`.
-- Official compatibility reference: https://developer.android.com/build/releases/agp-8-13-0-release-notes
+- Node.js 22.16 or newer.
+- JDK 17. The pinned Gradle 8.13 wrapper is incompatible with Java 25.
+- Android SDK Platform 36 and Build Tools 35/36.
+- `ANDROID_HOME` or an untracked `local.properties` with `sdk.dir` pointing to the SDK.
 
-## Windows
+## Windows build
+
+Run from the project root with the installed JDK and SDK paths:
 
 ```powershell
 $env:JAVA_HOME='C:/path/to/jdk-17'
 $env:ANDROID_HOME='C:/Users/YOU/AppData/Local/Android/Sdk'
 npm test
-npm run validate
-./gradlew.bat :app:assembleQa :app:bundleQa :app:lintQa :app:assembleDebug :app:lintDebug --console=plain
+npm run validate:weapon-art
+npm run validate:maps
+./gradlew.bat clean :app:assembleQa :app:lintQa --console=plain
 ```
 
-`preBuild` runs `scripts/bundle.mjs`, so edits to `game/`, source assets, and licenses cannot silently leave a stale APK. The Windows wrapper verifies its downloaded JAR with SHA-256 using .NET; it no longer depends on `Get-FileHash` being available in Windows PowerShell.
+The installable APK is `app/build/outputs/apk/qa/app-qa.apk`. The local delivery copy is `artifacts/Super-Wiss-Ascension-1.4.1.apk`. Current build evidence is described in [docs/BUILD-1.4.1.md](docs/BUILD-1.4.1.md).
 
-Outputs: `app/build/outputs/apk/qa/app-qa.apk`, `app/build/outputs/bundle/qa/app-qa.aab`, and `app/build/outputs/apk/debug/app-debug.apk`.
+`Build-QA.bat` also builds the QA AAB and copies both outputs to versioned artifact filenames after success. For a separate debug app, use `:app:assembleDebug`; its application ID has the `.debug` suffix. An AAB is not directly installable on a phone.
 
-The portable JDK in `.tools/` was installed for this session and is excluded from the source archive. It is tooling, never an APK asset.
+## Bundled game and updates
 
-## Bundle architecture
+Gradle's `preBuild` regenerates the Android web assets from editable source through `scripts/bundle.mjs`. Android streams them from `https://appassets.androidplatform.net`; the browser preview in `dist/Super-Wiss-Odyssey.html` is generated separately by the same script. Debug diagnostic assets are excluded from the QA variant.
 
-Android streams `game.html`, `boot.js`, `style.css`, `game.js`, and manifest-selected media from APK assets through the exact HTTPS origin `https://appassets.androidplatform.net`. All required files work offline. The previous origin and save key are unchanged.
+The QA APK uses the existing public testing certificate and app identity, so it can update prior QA installations while retaining local app data. Install the new APK over the existing app; uninstalling removes local saves. Android 8.0/API 26 or newer is required.
 
-The standalone `dist/Super-Wiss-Odyssey.html` browser preview remains a self-contained convenience file. It must not be loaded through Android `loadDataWithBaseURL`.
+The checked-in QA key is for testing. Production signing uses a private, untracked `keystore.properties`; the build rejects the public QA certificate for production releases. Generated APK/AAB files, web bundles, local tooling and private signing files are excluded from Git.
 
-The debug variant overlays a generated `app/src/debug/assets/game.js` diagnostic probe for emulator tests. QA/release assets have no probe and WebView debugging is disabled for them.
-
-## Signing
-
-QA uses the existing deliberately public testing certificate. The APK updates the previous QA identity (`com.superwiss.game.playtest`); versionCode is 42. The AAB is QA-signed, not a Play Store production release. Production signing still requires a private `keystore.properties`, and the build rejects the public QA key for production.
-
-## Source archive
-
-The source ZIP contains editable game/native code, assets, artwork sources, tests, build scripts and notices. Generated APK/AAB copies, local SDK/JDK/Gradle caches, and duplicate generated game bundles are excluded. `npm run build` recreates the bundles.
+See [UI-POLISH-DELIVERY.md](UI-POLISH-DELIVERY.md) and [docs/MISSING-ASSETS.md](docs/MISSING-ASSETS.md) for the inherited visual and content limitations. Earlier versioned logs remain historical evidence.

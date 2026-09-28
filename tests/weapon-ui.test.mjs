@@ -10,8 +10,13 @@ for(const h of heroes)test(`${h.name} has explicit combat type and one registere
  const type=COMBAT_PROFILES[h.id]?.weapon;assert(type);
  const spec=weaponArtForHero(h.id);assert(spec);assert.equal(spec,WEAPON_ART[type]);
  const entry=manifest.images[spec.key];assert.equal(entry.path,`assets/weapons/${spec.file}`);
- assert.equal(entry.frameWidth,256);assert.equal(entry.frameHeight,256);assert.equal(entry.frames,1);
- assert.equal(entry.optional,true);
+ const png=fs.readFileSync(new URL(`../${entry.path}`,import.meta.url));
+ assert.deepEqual(png.subarray(0,8),Buffer.from([137,80,78,71,13,10,26,10]));
+ assert.equal(png.toString('ascii',12,16),'IHDR');
+ assert.equal(entry.frameWidth,png.readUInt32BE(16));
+ assert.equal(entry.frameHeight,png.readUInt32BE(20));
+ assert.equal(entry.frames,1);assert.equal(entry.optional,false);
+ assert.equal(entry.status,'ready');
 });
 test('ten unique requested PNGs, no accidental extra shield asset',()=>{
  assert.equal(new Set(heroes.map(h=>weaponArtForHero(h.id).file)).size,10);
@@ -55,8 +60,8 @@ test('attack motion changes socket/angle; facing is inherited rather than double
  const b=weaponPose({character:'tounsi',grounded:true,attackTime:.04,attackDuration:.26,attackChain:1},12);
  assert.notEqual(a.angle,b.angle);assert.notEqual(a.x,b.x);
 });
-test('body sheets remain marked baked until weapon-free art is provided',()=>{
- for(const h of heroes)assert.equal(manifest.images['hero/'+h.id].weaponLayer,'baked');
+test('visual audit enables only the weapon-free Wissem body',()=>{
+ for(const h of heroes)assert.equal(manifest.images['hero/'+h.id].weaponLayer,h.id==='wissem'?'separate':'baked');
 });
 test('attack phase remains bounded for stale or zero values',()=>{
  assert.equal(weaponAttackPhase({character:'wissem'}).attacking,false);
@@ -65,8 +70,8 @@ test('attack phase remains bounded for stale or zero values',()=>{
 
 // Separate changed combat results without deleting old player history.
 import {ascResult,ascSanitize,ASC_RULES_REVISION} from '../game/ascension.js';
-test('new solo results use a distinct revision after Mira changes',()=>{
- const result=ascResult(createRun(0,'mira'));assert.equal(ASC_RULES_REVISION,4);assert.equal(result.revision,4);
+test('new solo results use a distinct revision after unarmed / loadout changes',()=>{
+ const result=ascResult(createRun(0,'mira'));assert.equal(ASC_RULES_REVISION,5);assert.equal(result.revision,5);
 });
 test('old and new solo records survive sanitization without relabelling',()=>{
  const r=ascResult(createRun(0,'mira'));const s=ascSanitize({records:[{...r,revision:3},{...r,revision:4}]});
@@ -77,4 +82,11 @@ test('per-body frame sockets permit calibration; invalid overrides use safe defa
  const p={character:'tounsi'};
  const custom=weaponPose(p,0,0,0,false,{0:[7,-28]});assert.equal(custom.x,7);assert.equal(custom.y,-28);
  assert.deepEqual(weaponPose(p,0,0,0,false,{0:[NaN,-2]}),weaponPose(p,0));
+});
+
+// Required weapon registration must describe real files, not optional placeholders.
+test('weapon directory has exactly the ten registered PNG filenames',()=>{
+ const actual=fs.readdirSync(new URL('../assets/weapons/',import.meta.url)).filter(n=>n.toLowerCase().endsWith('.png')).sort();
+ const expected=[...new Set(heroes.map(h=>weaponArtForHero(h.id).file))].sort();
+ assert.deepEqual(actual,expected);
 });
